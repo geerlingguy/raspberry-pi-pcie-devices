@@ -10,7 +10,7 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | (still testing) | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/) |
+| [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | (currently testing) | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/) |
 
 ### USB cards
 
@@ -32,13 +32,13 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | (still testing) | N/A | N/A |
+| [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | (awaiting arrival) | N/A | N/A |
 
 ### SATA adapters
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| N/A | N/A | N/A | N/A |
+| [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | (awaiting arrival) | N/A | User 6by9 [mentioned](https://www.raspberrypi.org/forums/viewtopic.php?p=1744542#p1744542) compatibility, required kernel modules `CONFIG_ATA` and `CONFIG_SATA_AHCI` |
 
 ## Author
 
