@@ -6,23 +6,33 @@ If you would like to have a device added to this list, or find any missing or in
 
 ### GPUs (Graphics Cards)
 
-TODO.
+| Device | Functionality | Driver required? | Notes |
+| ------ | ------------- | ---------------- | ----- |
+| [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | (still testing) | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/) |
 
 ### USB cards
 
-TODO.
+| Device | Functionality | Driver required? | Notes |
+| ------ | ------------- | ---------------- | ----- |
+| N/A | N/A | N/A | N/A |
 
 ### NVMe adapters
 
-TODO.
+| Device | Functionality | Driver required? | Notes |
+| ------ | ------------- | ---------------- | ----- |
+| N/A | N/A | N/A | N/A |
 
 ### Network adapters
 
-TODO.
+| Device | Functionality | Driver required? | Notes |
+| ------ | ------------- | ---------------- | ----- |
+| N/A | N/A | N/A | N/A |
 
 ### SATA adapters
 
-TODO.
+| Device | Functionality | Driver required? | Notes |
+| ------ | ------------- | ---------------- | ----- |
+| N/A | N/A | N/A | N/A |
 
 ## Author
 
