@@ -23,3 +23,7 @@ TODO.
 ### SATA adapters
 
 TODO.
+
+## Author
+
+This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com).
