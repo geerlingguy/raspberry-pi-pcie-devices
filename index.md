@@ -11,7 +11,7 @@ If you would like to have a device added to this list, or find any missing or in
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
 | [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | (currently testing - see [#2](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2)) | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/) |
-| [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | (awaiting arrival - see [#4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4)) | N/A | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD) |
+| [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | (currently testing - see [#4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4)) | N/A | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD) |
 
 ### USB cards
 
