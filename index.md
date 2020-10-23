@@ -6,6 +6,8 @@ Many of these devices were tested for Jeff Geerling's [Raspberry Pi Compute Modu
 
 If you would like to have a device added to this list, or find any missing or incorrect information, please file an Issue and/or Pull Request against [this project on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices).
 
+> Many of the device links on this page are Amazon affiliate links. If you do not wish to use those links, copy the device name to search for it at any major electronics retailer (e.g. [Newegg](https://www.newegg.com), [Micro Center](https://www.microcenter.com), [Amazon](https://www.amazon.com), etc.).
+
 ### GPUs (Graphics Cards)
 
 | Device | Functionality | Driver required? | Notes |
