@@ -8,7 +8,8 @@ If you would like to have a device added to this list, or find any missing or in
 
 > Many of the device links on this page are Amazon affiliate links. If you do not wish to use those links, copy the device name to search for it at any major electronics retailer (e.g. [Newegg](https://www.newegg.com), [Micro Center](https://www.microcenter.com), [Amazon](https://www.amazon.com), etc.).
 
-## Contents
+## Categories
+{: .no_toc}
 
 - TOC
 {:toc}
