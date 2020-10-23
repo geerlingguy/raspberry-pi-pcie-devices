@@ -12,6 +12,7 @@ If you would like to have a device added to this list, or find any missing or in
 
 ## Contents
 
+- TOC
 {:toc}
 
 ### GPUs (Graphics Cards)
@@ -50,5 +51,6 @@ If you would like to have a device added to this list, or find any missing or in
 | [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | (awaiting arrival - see [#1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1)) | N/A | User 6by9 [mentioned](https://www.raspberrypi.org/forums/viewtopic.php?p=1744542#p1744542) compatibility, required kernel modules `CONFIG_ATA` and `CONFIG_SATA_AHCI` |
 
 ## About
+{: .no_toc}
 
 This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
