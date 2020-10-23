@@ -2,7 +2,7 @@
 
 The following list of PCIe devices have been tested with the Raspberry Pi Compute Module 4 PCIe x1 slot.
 
-Many of these devices were tested for Jeff Geerling's [Raspberry Pi Compute Module 4 Review](https://www.jeffgeerling.com/blog/2020/raspberry-pi-compute-module-4-review).
+Many of these devices were tested for Jeff Geerling's [Raspberry Pi Compute Module 4 Review](https://www.jeffgeerling.com/blog/2020/raspberry-pi-compute-module-4-review) and follow-up videos on his [YouTube channel](https://www.youtube.com/c/JeffGeerling).
 
 If you would like to have a device added to this list, or find any missing or incorrect information, please file an Issue and/or Pull Request against [this project on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices).
 
@@ -37,13 +37,13 @@ If you would like to have a device added to this list, or find any missing or in
 | [MZHOU NVMe M.2 SSD M Key to PCIe 1x Adapter](https://amzn.to/3maJ6NF) | Full | No | Tested with [Samsung 970 EVO Plus](https://amzn.to/3mfJM4a). |
 | [Xiwai NGFF M Key M.2 SSD to PCIe 1x Adapter](https://amzn.to/3ogoQvL) | Full | No | Tested with [Samsung 970 EVO Plus](https://amzn.to/3mfJM4a). |
 
-### Network adapters
+### Network cards (NICs)
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
 | [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | (awaiting arrival - see [#3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3)) | N/A | N/A |
 
-### SATA adapters
+### SATA cards
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
