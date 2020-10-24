@@ -18,8 +18,8 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | (currently testing - see [#2](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2)) | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/). |
-| [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | (currently testing - see [#4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4)) | N/A | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD). |
+| [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | None | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/). Nouveau driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). See issue: [#2](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2). |
+| [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | None | Yes | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD). Radeon driver requires compilation (incompatible with amdgpu). Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). See issue: [#4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4) |
 
 ### USB cards
 
@@ -47,7 +47,7 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | (awaiting arrival - see [#1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1)) | N/A | User 6by9 [mentioned](https://www.raspberrypi.org/forums/viewtopic.php?p=1744542#p1744542) compatibility, required kernel modules `CONFIG_ATA` and `CONFIG_SATA_AHCI` |
+| [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | (still testing - see [#1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1)) | N/A | User 6by9 [mentioned](https://www.raspberrypi.org/forums/viewtopic.php?p=1744542#p1744542) compatibility, required kernel modules `CONFIG_ATA` and `CONFIG_SATA_AHCI` |
 
 ## About
 {: .no_toc}
