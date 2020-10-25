@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+@media screen and (max-width: 800px) {
+  img {
+    height: auto;
+  }
+}
+
 .inner {
   max-width: 1000px;
 }
