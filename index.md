@@ -1,4 +1,4 @@
-<img src="{{ site.url }}/images/pcie-usb-3-cards.jpeg" style="display: block; margin: auto;" width="600" height="280" />
+<img src="{{ site.url }}/images/cm4-pcie-cards.jpeg" style="display: block; margin: auto;" width="600" height="390" />
 
 The following list of PCIe devices have been tested with the Raspberry Pi Compute Module 4 PCIe x1 slot.
 
