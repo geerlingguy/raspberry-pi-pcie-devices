@@ -20,6 +20,7 @@ If you would like to have a device added to this list, or find any missing or in
 | ------ | ------------- | ---------------- | ----- |
 | [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | None | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/). Nouveau driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #2](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2). |
 | [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | None | Yes | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD). Radeon driver requires compilation (incompatible with amdgpu). Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4). |
+| [Sapphire Radeon RX 550 2GB PCIe x16](https://amzn.to/34vadwW) | (awaiting arrival - see [#6](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6)) | Yes | Needs [x1 to x16 powered adapter](https://amzn.to/3dZQM2u). AMDGPU driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #6](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6).
 
 ### USB cards
 
@@ -41,7 +42,7 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | (awaiting arrival - see [#3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3)) | N/A | N/A |
+| [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | (still testing - see [#3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3)) | N/A | N/A |
 
 ### SATA cards
 
