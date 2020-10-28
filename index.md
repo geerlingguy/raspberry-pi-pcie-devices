@@ -42,7 +42,7 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
-| [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | (still testing - see [#3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3)) | Yes | Requires installation of [Intel Linux base driver](https://www.intel.com/content/www/us/en/support/articles/000005480/network-and-i-o/ethernet-products.html). More details: [Issue #3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3)). |
+| [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | Full | Yes | Requires installation of [Intel Linux base driver](https://www.intel.com/content/www/us/en/support/articles/000005480/network-and-i-o/ethernet-products.html). More details: [Issue #3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3). |
 
 ### SATA cards
 
