@@ -3,9 +3,9 @@
   gather_facts: false
 
   tasks:
-    - name: Run iperf server on each interface for 5 minutes.
+    - name: Run iperf server on each interface for 2 minutes.
       command: "iperf --server --bind {{ item }}"
-      async: 300
+      async: 120
       poll: 0
       with_items:
         - '10.0.100.120'
