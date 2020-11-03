@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian/buster64"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "cross-compiler"
+    vb.gui = false
+    vb.memory = "8192"
+    vb.cpus = "4"
+    vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+    vb.customize ['modifyvm', :id, '--ioapic', 'on']
+    vb.customize ['modifyvm', :id, '--audio', 'none']
+
+    # See: https://www.jeffgeerling.com/blogs/jeff-geerling/mounting-raspberry-pis-ext4-sd
+    vb.customize ["modifyvm", :id, "--usb", "on"]
+    vb.customize ["modifyvm", :id, "--usbxhci", "on"]
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev crossbuild-essential-armhf crossbuild-essential-arm64
+  SHELL
+end
