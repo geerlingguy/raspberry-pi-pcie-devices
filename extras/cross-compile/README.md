@@ -1,12 +1,12 @@
 # Raspberry Pi Linux Cross-compilation Environment
 
-This environment can be used to cross-compile the Raspberry Pi OS kernel from a Linux, Windows, or Mac workstation using Vagrant and VirtualBox.
+This environment can be used to [cross-compile the Raspberry Pi OS kernel](https://www.raspberrypi.org/documentation/linux/kernel/building.md) from a Linux, Windows, or Mac workstation using Vagrant and VirtualBox.
 
 Note that on Linux, you're probably better off doing things natively, or in a Docker container, which reduces the overhead of installing VirtualBox.
 
 Plus, Oracle. Yuck.
 
-This configuration has only been tested with the Raspberry Pi 4, CM4, and Pi 400.
+This build configuration has only been tested with the Raspberry Pi 4, CM4, and Pi 400, and run on macOS.
 
 ## Bringing up the VM
 
