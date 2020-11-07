@@ -42,6 +42,7 @@ If you would like to have a device added to this list, or find any missing or in
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
+| [ASUS XG-C100C 10G Network Adapter](https://amzn.to/38wYOiL) | Currently Testing | Maybe | More details: [Issue #15](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/15). |
 | [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | Full | Yes | Requires installation of [Intel Linux base driver](https://www.intel.com/content/www/us/en/support/articles/000005480/network-and-i-o/ethernet-products.html). PCIe lane limits to ~3.2 Gbps total bandwidth. More details: [Issue #3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3). |
 
 ### SATA cards
