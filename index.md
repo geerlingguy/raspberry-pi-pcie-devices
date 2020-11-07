@@ -51,6 +51,14 @@ If you would like to have a device added to this list, or find any missing or in
 | ------ | ------------- | ---------------- | ----- |
 | [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | Full | Yes | Requires kernel recompile with `CONFIG_ATA` and `CONFIG_SATA_AHCI`. More details: [Issue #1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1). |
 
+### PCIe Switches and Adapters
+
+| Device | Functionality | Driver required? | Notes |
+| ------ | ------------- | ---------------- | ----- |
+| [I/O Crest SI-PEX60016 1 to 2 Port PCIe Switch](https://amzn.to/2Ie0bI3) | Full | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
+| [HLT PCIe 1x to 16x extension cable](https://amzn.to/32oz9ou) | Full | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
+| [Rosewill RCRC-17001 Mining Card 1x to 16x](https://www.newegg.com/p/N82E16812119888?Item=9SIA85VAN30509) | None | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
+
 ## About
 {: .no_toc}
 
