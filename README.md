@@ -1,4 +1,4 @@
-# Raspberry Pi PCIe device compatibility database
+# Raspberry Pi PCI Express device compatibility database
 
 This repository builds the GitHub pages site: [http://pipci.jeffgeerling.com](http://pipci.jeffgeerling.com)
 
