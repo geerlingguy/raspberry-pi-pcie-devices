@@ -49,7 +49,7 @@ Note that if you have an older Mac, you might need to modify the Vagrantfile to 
   1. (Optionally) Either edit the .config file by hand or use menuconfig:
 
      ```
-     make menuconfig
+     make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
      ```
 
   1. Compile the Kernel:
