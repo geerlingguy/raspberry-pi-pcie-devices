@@ -48,11 +48,12 @@ If you would like to have a device added to this list, or find any missing or in
 | [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | Full | Yes | Requires installation of [Intel Linux base driver](https://www.intel.com/content/www/us/en/support/articles/000005480/network-and-i-o/ethernet-products.html). PCIe lane limits to ~3.2 Gbps total bandwidth. More details: [Issue #3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3). |
 | [ASUS PCE-AC51 802.11ac WiFi Adapter](https://amzn.to/3ldzLVn) | Currently Testing | Maybe | More details: [Issue #20](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/20). |
 
-### SATA cards
+### SATA cards and storage
 
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
 | [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | Full | Yes | Requires kernel recompile with `CONFIG_ATA` and `CONFIG_SATA_AHCI`. More details: [Issue #1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1). |
+| [IBM ServeRAID BR10i / LSI SAS3082E-R SAS RAID controller](https://amzn.to/2GVMZae) | Currently Testing | Maybe | Having trouble initializing. More details: [Issue #18](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/18). |
 
 ### PCIe Switches and Adapters
 
