@@ -1,12 +1,16 @@
+The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane directly on the board:
+
+<img src="{{ site.url }}/images/cm4-io-board-pcie-slot.jpeg" style="display: block; margin: auto;" width="600" height="315" />
+
+I'm on a mission to test out these and _many_ more PCIe cards on the Pi, and see what works, what doesn't, and what I can learn.
+
 <img src="{{ site.url }}/images/cm4-pcie-cards.jpeg" style="display: block; margin: auto;" width="600" height="390" />
 
-The following list of PCIe devices have been tested with the Raspberry Pi Compute Module 4 PCIe x1 slot.
+Below is a listing of _all_ the PCIe devices I've tested so far.
 
-Many of these devices were tested for Jeff Geerling's [Raspberry Pi Compute Module 4 Review](https://www.jeffgeerling.com/blog/2020/raspberry-pi-compute-module-4-review) and follow-up videos on his [YouTube channel](https://www.youtube.com/c/JeffGeerling).
+I post videos with a lot more detail for many of the devices, like my [Raspberry Pi Compute Module 4 Review](https://www.jeffgeerling.com/blog/2020/raspberry-pi-compute-module-4-review) and more on my [YouTube channel](https://www.youtube.com/c/JeffGeerling).
 
-If you would like to have a device added to this list, or find any missing or incorrect information, please file an Issue and/or Pull Request against [this project on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices).
-
-> Many of the device links on this page are Amazon affiliate links. If you do not wish to use those links, copy the device name to search for it at any major electronics retailer (e.g. [Newegg](https://www.newegg.com), [Micro Center](https://www.microcenter.com), [Amazon](https://www.amazon.com), etc.).
+[This project is on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices), and you can follow along with the testing or suggest new things to test there.
 
 ## Categories
 {: .no_toc}
@@ -20,7 +24,8 @@ If you would like to have a device added to this list, or find any missing or in
 | ------ | ------------- | ---------------- | ----- |
 | [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | None | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/). Nouveau driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #2](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2). |
 | [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | None | Yes | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD). Radeon driver requires compilation (incompatible with amdgpu). Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4). |
-| [Sapphire Radeon RX 550 2GB PCIe x16](https://amzn.to/34vadwW) | (awaiting arrival - see [#6](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6)) | Yes | Needs [x1 to x16 powered adapter](https://amzn.to/3dZQM2u). AMDGPU driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #6](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6).
+| [Sapphire Radeon RX 550 2GB PCIe x16](https://amzn.to/34vadwW) | [Currently Testing](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6)) | Yes | Needs [x1 to x16 powered adapter](https://amzn.to/3dZQM2u). AMDGPU driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #6](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6).
+| [EVGA GeForce GTX 750 Ti](https://amzn.to/3l2rrXs) | [Currently Testing](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26) | Yes | Needs [x1 to x16 powered adapter](https://amzn.to/3dZQM2u). Nouveau driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #26](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26).
 
 ### USB cards
 
@@ -69,3 +74,5 @@ If you would like to have a device added to this list, or find any missing or in
 [![GitHub Stats](https://github-readme-stats.vercel.app/api/pin?username=geerlingguy&repo=raspberry-pi-pcie-devices&show_icons=true&hide_border=true&show_owner=true&theme=graywhite)](https://github.com/geerlingguy/raspberry-pi-pcie-devices)
 
 This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
+
+> Many of the device links on this page are Amazon affiliate links. If you do not wish to use those links, copy the device name to search for it at any major electronics retailer (e.g. [Newegg](https://www.newegg.com), [Micro Center](https://www.microcenter.com), [Amazon](https://www.amazon.com), etc.).
