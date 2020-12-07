@@ -59,6 +59,8 @@ I post videos with a lot more detail for many of the devices, like my [Raspberry
 | ------ | ------------- | ---------------- | ----- |
 | [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | Full | Yes | Requires kernel recompile with `CONFIG_ATA` and `CONFIG_SATA_AHCI`. More details: [Issue #1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1). |
 | [IBM ServeRAID BR10i / LSI SAS3082E-R SAS RAID controller](https://amzn.to/2GVMZae) | Currently Testing | Maybe | Having trouble initializing. More details: [Issue #18](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/18). |
+| [Teratrend 2-port SATA-III Marvell 88SE9130](http://www.computex.biz/teratrend/default.aspx?com_id=6828&pdt_id=48154&PageType=ProductDetail&ContentTab=Specification) | Currently Testing | Maybe | More details: [Issue #29](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/29). |
+| [4-port (2-active) ASM1061 SATA adapter](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/30) | Currently Testing | Maybe | More details: [Issue #30](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/30). |
 
 ### PCIe Switches and Adapters
 
