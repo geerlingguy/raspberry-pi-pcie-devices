@@ -14,8 +14,9 @@ Vagrant.configure("2") do |config|
     vb.customize ['modifyvm', :id, '--audio', 'none']
 
     # See: https://www.jeffgeerling.com/blogs/jeff-geerling/mounting-raspberry-pis-ext4-sd
-    vb.customize ["modifyvm", :id, "--usb", "on"]
-    vb.customize ["modifyvm", :id, "--usbxhci", "on"]
+    # Requires "VirtualBox Extension Pack" to be installed.
+    # vb.customize ["modifyvm", :id, "--usb", "on"]
+    # vb.customize ["modifyvm", :id, "--usbxhci", "on"]
   end
 
   config.vm.provision "shell", inline: <<-SHELL

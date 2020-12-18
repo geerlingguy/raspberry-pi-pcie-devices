@@ -18,6 +18,8 @@ This build configuration has only been tested with the Raspberry Pi 4, CM4, and 
 
 In order to compile the kernel and copy it into place on a Pi OS image/card, you need to directly attach a USB microSD card reader (or a flash/SSD/whatever drive) to the VirtualBox VM.
 
+You will likely need to install the "VirtualBox Extension Pack", which you can download from the [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads) page, then double-click on it to install it.
+
 To do this:
 
   1. Shut down the Vagrant machine: `vagrant halt`
