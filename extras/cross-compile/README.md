@@ -63,7 +63,69 @@ Note that if you have an older Mac, you might need to modify the Vagrantfile to 
 
 > I set the jobs argument (`-j12`) based on a bit of benchmarking using different numbers of jobs, settling on the ratio of `floor([vCPU count] * 1.6)`.
 
-## Mounting the Pi microSD or USB drive
+## Copying built Kernel via remote SSHFS filesystem
+
+It is most convenient to manage the built modules by copying them over to a running Pi, instead of doing a microSD card swap dance every time you recompile.
+
+One prerequisite for this particular method is to set a `root` password on the Pi and allow root password login (there are other more secure ways... this is for convenience!).
+
+### Configuring Root Password SSH login on the Pi
+
+Logged into the Pi with SSH, run `sudo su`, then `passwd`, and set a password.
+
+Edit the `/etc/ssh/sshd_config`, find the `PermitRootLogin` line, uncomment it, and change the value from `prohibit-password` to `yes`.
+
+Restart SSHD:
+
+```
+sudo systemctl restart sshd
+```
+
+Now make sure you can SSH into the Pi as `root` from the cross-compile VM, with:
+
+```
+ssh root@10.0.100.119
+```
+
+### Setting up an SSHFS mount
+
+Set up SSHFS, and mount the Pi's filesystems into the cross-compile environment:
+
+```
+sudo apt-get install sshfs
+sudo mkdir -p /mnt/pi-ext4
+sudo mkdir /mnt/pi-fat32
+sudo sshfs root@10.0.100.119:/ /mnt/pi-ext4
+sudo sshfs root@10.0.100.119:/boot /mnt/pi-fat32
+```
+
+Install the kernel modules onto the drive:
+
+```
+sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=/mnt/pi-ext4 modules_install
+```
+
+Copy the kernel and DTBs onto the drive:
+
+```
+sudo cp arch/arm64/boot/Image /mnt/pi-fat32/kernel8.img
+sudo cp arch/arm64/boot/dts/broadcom/*.dtb /mnt/pi-fat32/
+sudo cp arch/arm64/boot/dts/overlays/*.dtb* /mnt/pi-fat32/overlays/
+sudo cp arch/arm64/boot/dts/overlays/README /mnt/pi-fat32/overlays/
+```
+
+Unmount the filesystems:
+
+```
+sudo umount /mnt/pi-ext4
+sudo umount /mnt/pi-fat32
+```
+
+Reboot the Pi and _voila!_, you're done!
+
+## Copying built Kernel via mounted USB drive or microSD
+
+The other option is to shut down the Pi, pull it's card or USB boot drive, and connect it to your computer so it can attach to the VM.
 
 Mount the FAT and ext4 partitions of the USB card to the system. First, insert your microSD card into the reader you attached to the VM earlier, then run the following commands:
 
@@ -74,7 +136,16 @@ sudo mount /dev/sdb1 mnt/fat32
 sudo mount /dev/sdb2 mnt/ext4
 ```
 
-## Installing modules and copying the built Kernel
+Copy the kernel and DTBs onto the drive:
+
+```
+sudo cp arch/arm64/boot/Image mnt/fat32/kernel8.img
+sudo cp arch/arm64/boot/dts/broadcom/*.dtb mnt/fat32/
+sudo cp arch/arm64/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
+sudo cp arch/arm64/boot/dts/overlays/README mnt/fat32/overlays/
+```
+
+### Installing modules and copying the built Kernel
 
 Install the kernel modules onto the drive:
 
@@ -95,7 +166,7 @@ sudo cp arch/arm64/boot/dts/overlays/README mnt/fat32/overlays/
 
 > For 32-bit Pi OS, use `kernel7l` instead of `kernel8`.
 
-## Unmounting the drive
+### Unmounting the drive
 
 Unmount the disk before you remove it from the card reader or unplug it.
 
