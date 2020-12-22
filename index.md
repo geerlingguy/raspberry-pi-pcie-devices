@@ -48,7 +48,7 @@ I post videos with a lot more detail for many of the devices, like my [Raspberry
 | Device | Functionality | Driver required? | Notes |
 | ------ | ------------- | ---------------- | ----- |
 | [ASUS XG-C100C 10G Network Adapter](https://amzn.to/38wYOiL) | Currently Testing | Maybe | More details: [Issue #15](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/15). |
-| [EDUP PCIe Intel AX200 WiFi 6 Adapter](https://amzn.to/3pnFF8S) | Currently Testing | Maybe | More details: [Issue #22](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/22). |
+| [EDUP PCIe Intel AX200 WiFi 6 Adapter](https://amzn.to/3pnFF8S) | Full | Yes | Requires driver patch and Intel firmware install. More details: [Issue #22](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/22). |
 | [Mellanox ConnectX-2 MNPA19-XTR SFP+ 10G Ethernet Adapter]() | Currently Testing | Maybe | More details: [Issue #21](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/21). |
 | [Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter](https://amzn.to/37vHQR6) | Full | Yes | Requires installation of [Intel Linux base driver](https://www.intel.com/content/www/us/en/support/articles/000005480/network-and-i-o/ethernet-products.html). PCIe lane limits to ~3.2 Gbps total bandwidth. More details: [Issue #3](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3). |
 | [ASUS PCE-AC51 802.11ac WiFi Adapter](https://amzn.to/3ldzLVn) | Currently Testing | Maybe | More details: [Issue #20](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/20). |
