@@ -20,12 +20,34 @@ I post videos with a lot more detail for many of the devices, like my [Raspberry
 
 ### GPUs (Graphics Cards)
 
-| Device | Functionality | Driver required? | Notes |
-| ------ | ------------- | ---------------- | ----- |
-| [Zotac GeForce GT 710 1GB PCIe x1](https://amzn.to/3mdy1LE) | None | Yes | Drivers for ARM: [32-bit](https://www.nvidia.com/en-us/drivers/unix/linux-arm-display-archive/), [64-bit](https://www.nvidia.com/en-us/drivers/unix/linux-aarch64-archive/). Nouveau driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #2](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2). |
-| [VisionTek Radeon 5450 1GB PCIe x16](https://amzn.to/2Hh6KcI) | None | Yes | Needs [x1 to x16 cable](https://amzn.to/2ThfzFD). Radeon driver requires compilation (incompatible with amdgpu). Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #4](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4). |
-| [Sapphire Radeon RX 550 2GB PCIe x16](https://amzn.to/34vadwW) | [Currently Testing](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6)) | Yes | Needs [x1 to x16 powered adapter](https://amzn.to/3dZQM2u). AMDGPU driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #6](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6).
-| [EVGA GeForce GTX 750 Ti](https://amzn.to/3l2rrXs) | [Currently Testing](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26) | Yes | Needs [x1 to x16 powered adapter](https://amzn.to/3dZQM2u). Nouveau driver requires compilation. Requires extra [BAR space](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df). More details: [Issue #26](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26).
+<table class="card_table">
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Device</th>
+      <th>Functionality</th>
+      <th>Driver Required?</th>
+      <th>Issue Link</th>
+      <th>Buy Link</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in site.cards_gpu %}
+    <tr>
+      <td>
+        {% if card.picture %}
+          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+        {% endif %}
+      </td>
+      <td><a href="{{ card.url }}">{{ card.title }}</a></td>
+      <td>{{ card.functionality }}</td>
+      <td>{{ card.driver_required }}</td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
 
 ### USB cards
 

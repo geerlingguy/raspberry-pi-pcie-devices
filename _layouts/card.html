@@ -60,7 +60,7 @@
 
         <div class="card_videos">
           <h3>Videos Related to this Card</h2>
-            {% if page.videos %}
+            {% if page.videos.size >= 1 %}
               <ul>
                 {% for video_url in page.videos %}
                   <li><a href="{{ video_url }}">{{ video_url }}</a></li>
