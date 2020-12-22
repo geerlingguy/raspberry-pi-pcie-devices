@@ -44,7 +44,6 @@ Note that if you have an older Mac, you might need to modify the Vagrantfile to 
 
      ```
      cd linux
-     KERNEL=kernel8
      make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
      ```
 
@@ -57,10 +56,12 @@ Note that if you have an older Mac, you might need to modify the Vagrantfile to 
   1. Compile the Kernel:
 
      ```
-     make -j4 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+     make -j12 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
      ```
 
-> For 32-bit Pi OS, use `KERNEL=kernel7l`, `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
+> For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
+
+> I set the jobs argument (`-j12`) based on a bit of benchmarking using different numbers of jobs, settling on the ratio of `floor([vCPU count] * 1.6)`.
 
 ## Mounting the Pi microSD or USB drive
 
@@ -86,12 +87,13 @@ sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD
 Copy the kernel and DTBs onto the drive:
 
 ```
-sudo cp mnt/fat32/$KERNEL.img mnt/fat32/$KERNEL-backup.img
-sudo cp arch/arm64/boot/Image mnt/fat32/$KERNEL.img
+sudo cp arch/arm64/boot/Image mnt/fat32/kernel8.img
 sudo cp arch/arm64/boot/dts/broadcom/*.dtb mnt/fat32/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README mnt/fat32/overlays/
 ```
+
+> For 32-bit Pi OS, use `kernel7l` instead of `kernel8`.
 
 ## Unmounting the drive
 
@@ -100,4 +102,13 @@ Unmount the disk before you remove it from the card reader or unplug it.
 ```
 sudo umount mnt/fat32
 sudo umount mnt/ext4
+```
+
+## Resetting the build environment
+
+If you want to reset things without wiping out the VM or re-cloning the source, run:
+
+```
+git reset --hard
+git clean -f -d -X
 ```

@@ -1,14 +1,29 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Get the number of logical cpu cores.
+def os_cpu_cores
+  case RbConfig::CONFIG['host_os']
+  when /darwin/
+    Integer(`sysctl -n hw.ncpu`)
+  when /linux/
+    Integer(`cat /proc/cpuinfo | grep processor | wc -l`)
+  else
+    raise StandardError, "Unsupported platform"
+  end
+end
+
+# Vagrant configuration.
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/buster64"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "cross-compiler"
     vb.gui = false
-    vb.memory = "8192"
-    vb.cpus = "4"
+    vb.memory = "16384"
+    # Set CPU count to logical cores / 2.
+    # See: https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/39
+    vb.cpus = os_cpu_cores / 2
     vb.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
     vb.customize ['modifyvm', :id, '--ioapic', 'on']
     vb.customize ['modifyvm', :id, '--audio', 'none']

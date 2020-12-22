@@ -1,5 +1,6 @@
 
-make -j4 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+# In the cross-compile environment.
+make -j12 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
 
 mkdir -p mnt/fat32
 mkdir -p mnt/ext4
@@ -19,11 +20,7 @@ sudo umount mnt/fat32
 sudo umount mnt/ext4
 
 
-
-
-
-
-
+# On the Pi, to replace the dtb with larger BAR allocation.
 dtc -I dts -O dtb ~/test.dts -o ~/test.dtb
 sudo mv ~/test.dtb /boot/bcm2711-rpi-cm4.dtb
 sudo reboot
