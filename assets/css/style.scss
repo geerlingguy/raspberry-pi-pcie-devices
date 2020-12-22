@@ -3,12 +3,66 @@
 
 @import "{{ site.theme }}";
 
-@media screen and (max-width: 800px) {
-  img {
-    height: auto;
-  }
+// Site layout.
+#header_wrap .inner {
+  padding: 40px 10px 10px;
 }
 
 .inner {
   max-width: 1000px;
+}
+
+#project_title {
+  background: none;
+  padding: 0;
+
+  a {
+    color: inherit;
+  }
+}
+
+#project_tagline {
+  font-size: 18px;
+}
+
+// Home page.
+.card_table {
+  td {
+    vertical-align: top;
+  }
+}
+
+.card_table_picture {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0;
+}
+
+// Card pages.
+#card_title {
+  font-size: 24px;
+}
+
+.card_picture {
+  text-align: center;
+  width: 100%;
+
+  img {
+    max-width: 500px;
+  }
+}
+
+.card_details_table {
+  margin: 0 auto;
+}
+
+// Responsive styles.
+@media screen and (max-width: 800px) {
+  img {
+    height: auto;
+  }
+
+  .card_picture img {
+    max-width: 100%;
+  }
 }

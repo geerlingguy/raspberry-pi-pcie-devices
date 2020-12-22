@@ -20,22 +20,68 @@
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           {% endif %}
 
-          <h2 id="project_title"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h1>
+          <h2 id="project_title"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h2>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        {{ content }}
+
+        <h1 id="card_title">{{ page.title }}</h1>
+
+        <div class="card_picture">
+          {% if page.picture %}
+            <a href="/images/card-pictures/{{ page.picture }}"><img src="/images/card-pictures/{{ page.picture }}" alt="{{ page.title }}"></a>
+          {% else %}
+            <p><em>There is no picture for this card yet.</em></p>
+          {% endif %}
+        </div>
+
+        <table class="card_details_table">
+          <thead>
+            <tr>
+              <th>Functionality</th>
+              <th>Driver Required?</th>
+              <th>Issue Link</th>
+              <th>Buy Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ page.functionality }}</td>
+              <td>{{ page.driver_required }}</td>
+              <td><a href="{{ page.github_issue }}">GitHub Issue</a></td>
+              <td><a href="{{ page.buy_link }}">Buy this Card</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="card_videos">
+          <h3>Videos Related to this Card</h2>
+            {% if page.videos %}
+              <ul>
+                {% for video_url in page.videos %}
+                  <li><a href="{{ video_url }}">{{ video_url }}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>There are no videos for this card yet.</p>
+            {% endif %}
+        </div>
+
+        <div class="card_content">
+          <h3>Description and Notes</h3>
+          {{ content }}
+        </div>
+
+        <div class="card_buy_link">
+          <h3>Buy this Card</h3>
+          <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
+          <a href="{{ page.buy_link }}">{{ page.title }}</a></p>
+        </div>
+
       </section>
     </div>
 
