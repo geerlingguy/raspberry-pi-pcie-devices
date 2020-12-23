@@ -2,9 +2,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
 
 <img src="{{ site.url }}/images/cm4-io-board-pcie-slot.jpeg" style="display: block; margin: auto;" width="595" height="300" />
 
-I'm on a mission to test out these and _many_ more PCIe cards on the Pi, and see what works, what doesn't, and what I can learn.
-
-Below is a listing of _all_ the PCIe devices I've tested so far. There are videos going into depth on some of the cards on my [YouTube channel](https://www.youtube.com/c/JeffGeerling).
+Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post videos to [my YouTube channel](https://www.youtube.com/c/JeffGeerling) covering many of the cards.
 
 [This project is on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices), and you can follow along with the testing or suggest new things to test there. I also have a few other extra tidbits that may help you in your own card-testing adventures:
 
