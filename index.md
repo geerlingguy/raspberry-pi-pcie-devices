@@ -73,13 +73,34 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
   </tbody>
 </table>
 
-### M.2 / NVMe adapters
+### M.2 and NVMe adapters
 
-| Device | Functionality | Driver required? | Notes |
-| ------ | ------------- | ---------------- | ----- |
-| [NGFF M.2 M Key SSD to PCIe 1x Adapter](https://amzn.to/37tfWW1) | Full | No | Tested with [Samsung 970 EVO Plus](https://amzn.to/3mfJM4a). |
-| [MZHOU NVMe M.2 SSD M Key to PCIe 1x Adapter](https://amzn.to/3maJ6NF) | Full | No | Tested with [Samsung 970 EVO Plus](https://amzn.to/3mfJM4a). |
-| [Xiwai NGFF M Key M.2 SSD to PCIe 1x Adapter](https://amzn.to/3ogoQvL) | Full | No | Tested with [Samsung 970 EVO Plus](https://amzn.to/3mfJM4a). |
+<table class="card_table">
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Device</th>
+      <th>Functionality</th>
+      <th>Driver Required?</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in site.cards_m2 %}
+    <tr>
+      <td>
+        {% if card.picture %}
+          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+        {% endif %}
+      </td>
+      <td><a href="{{ card.url }}">{{ card.title }}</a></td>
+      <td>{{ card.functionality }}</td>
+      <td>{{ card.driver_required }}</td>
+      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
 
 ### Network cards (NICs)
 
