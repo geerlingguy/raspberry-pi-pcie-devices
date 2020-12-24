@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Mellanox ConnectX-2 MNPA19-XTR SFP+ 10G Ethernet Adapter"
-picture: false
+picture: "network-mellanox-connectx-2-mnpa19-xtr.jpg"
 functionality: "Currently Testing"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/21"

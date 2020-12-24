@@ -1,9 +1,18 @@
+---
 theme: jekyll-theme-slate
 title: Raspberry Pi PCIe Devices
 url: https://pipci.jeffgeerling.com/
 fathom_analytics: true
 collections:
+  cards_adapter:
+    output: true
   cards_gpu:
     output: true
+  cards_m2:
+    output: true
   cards_network:
+    output: true
+  cards_storage:
+    output: true
+  cards_usb:
     output: true
