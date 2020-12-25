@@ -38,7 +38,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -67,7 +67,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -96,7 +96,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -125,7 +125,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -154,7 +154,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
