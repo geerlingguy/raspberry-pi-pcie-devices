@@ -133,12 +133,32 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
 
 ### SATA cards and storage
 
-| Device | Functionality | Driver required? | Notes |
-| ------ | ------------- | ---------------- | ----- |
-| [IO Crest 4 Port SATA III PCIe x1 with Marvell 9215](https://amzn.to/2HpEWCP) | Full | Yes | Requires kernel recompile with `CONFIG_ATA` and `CONFIG_SATA_AHCI`. More details: [Issue #1](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1). |
-| [IBM ServeRAID BR10i / LSI SAS3082E-R SAS RAID controller](https://amzn.to/2GVMZae) | Currently Testing | Maybe | Having trouble initializing. More details: [Issue #18](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/18). |
-| [Teratrend 2-port SATA-III Marvell 88SE9130](http://www.computex.biz/teratrend/default.aspx?com_id=6828&pdt_id=48154&PageType=ProductDetail&ContentTab=Specification) | Currently Testing | Maybe | More details: [Issue #29](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/29). |
-| [4-port (2-active) ASM1061 SATA adapter](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/30) | Currently Testing | Maybe | More details: [Issue #30](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/30). |
+<table class="card_table">
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Device</th>
+      <th>Functionality</th>
+      <th>Driver Required?</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in site.cards_storage %}
+    <tr>
+      <td>
+        {% if card.picture %}
+          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+        {% endif %}
+      </td>
+      <td><a href="{{ card.url }}">{{ card.title }}</a></td>
+      <td>{{ card.functionality }}</td>
+      <td>{{ card.driver_required }}</td>
+      <td><a href="{{ card.github_issue }}">GH Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
 
 ### PCIe Switches and Adapters
 
