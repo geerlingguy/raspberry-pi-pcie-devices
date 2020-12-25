@@ -162,13 +162,32 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
 
 ### PCIe Switches and Adapters
 
-| Device | Functionality | Driver required? | Notes |
-| ------ | ------------- | ---------------- | ----- |
-| [I/O Crest SI-PEX60016 1 to 2 Port PCIe Switch](https://amzn.to/2Ie0bI3) | Currently Testing | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
-| [Exacq Technologies TI XIO3130 1 to 2 Port PCIe Switch](https://www.ti.com/product/XIO3130) | Currently Testing | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
-| [HLT PCIe 1x to 16x extension cable](https://amzn.to/32oz9ou) | Full | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
-| [Rosewill RCRC-17001 Mining Card 1x to 16x](https://www.newegg.com/p/N82E16812119888?Item=9SIA85VAN30509) | Currently Testing | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
-| [PCE164P-N06 VER008S PCIe 1x to 16x riser](https://amzn.to/3oslmpo) | Currently Testing | No | More details: [Issue #14](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14). |
+<table class="card_table">
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Device</th>
+      <th>Functionality</th>
+      <th>Driver Required?</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in site.cards_adapter %}
+    <tr>
+      <td>
+        {% if card.picture %}
+          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+        {% endif %}
+      </td>
+      <td><a href="{{ card.url }}">{{ card.title }}</a></td>
+      <td>{{ card.functionality }}</td>
+      <td>{{ card.driver_required }}</td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
 
 ## About
 {: .no_toc}
