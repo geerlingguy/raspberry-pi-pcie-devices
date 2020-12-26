@@ -4,5 +4,9 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem 'github-pages', group: :jekyll_plugins
-gem "smartcropper", "~> 0.7.1"
+gem "jekyll", "~> 3.9"
+gem "jekyll-theme-slate", "~> 0.1"
+gem "kramdown-parser-gfm"
+gem 'nokogiri', '~> 1.10'
+
+gem "mini_magick", "~> 4.11"

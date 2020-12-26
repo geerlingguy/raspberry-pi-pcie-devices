@@ -21,6 +21,9 @@ jobs:
           path: site/vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
 
+      # - name: Install ImageMagick.
+      #   run: sudo apt-get install imagemagick
+
       - name: Install Ruby dependencies.
         run: |
           gem install bundler

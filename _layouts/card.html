@@ -16,12 +16,10 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-          {% endif %}
+          <a id="forkme_banner" href="https://github.com/geerlingguy/raspberry-pi-pcie-devices">View on GitHub</a>
 
-          <h2 id="project_title"><a href="/">{{ site.title | default: site.github.repository_name }}</a></h2>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <h2 id="project_title"><a href="/">{{ site.title }}</a></h2>
+          <h2 id="project_tagline">{{ site.description }}</h2>
         </header>
     </div>
 
@@ -51,7 +49,8 @@
             <tr>
               <td>{{ page.functionality }}</td>
               <td>{{ page.driver_required }}</td>
-              <td><a href="{{ page.github_issue }}">GitHub Issue</a> | <a href="{{ page.buy_link }}">Buy Card</a></td>
+              <td><a href="{{ page.github_issue }}">GitHub Issue</a><br>
+<a href="{{ page.buy_link }}">Buy Card</a></td>
             </tr>
           </tbody>
         </table>
@@ -86,9 +85,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">The {{ site.title | default: site.github.repository_name }} project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+        <p class="copyright">The {{ site.title }} project is maintained by <a href="https://github.com/geerlingguy">geerlingguy</a></p>
       </footer>
     </div>
 

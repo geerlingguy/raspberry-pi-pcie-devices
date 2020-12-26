@@ -1,5 +1,5 @@
 # post_thumbnail_generator.rb
-require "smartcropper"
+require 'mini_magick'
 
 module Jekyll
 
@@ -10,6 +10,7 @@ module Jekyll
       @dir = dir
       @dest_dir = File.join("images", "thumbnail")
       @name = name
+      @@mtimes = {}
     end
 
     def destination(dest)
@@ -23,7 +24,9 @@ module Jekyll
       @@mtimes[path] = mtime
 
       FileUtils.mkdir_p(File.dirname(dest_path))
-      SmartCropper.from_file(path).smart_crop_and_scale(200, 200).write(dest_path)
+      image = MiniMagick::Image.open(path)
+      image.resize "200"
+      image.write(dest_path)
 
       true
     end
@@ -31,12 +34,18 @@ module Jekyll
 
   class PostThumbnailGenerator < Generator
     def generate(site)
-      # TODO: cards_m2, cards_network, cards_storage, etc...
-      site.cards_gpu.each {|post|
-        if post.data.has_key?("picture")
-          site.static_files << PostThumbnailImage.new(site, site.source, "_images", File.basename(post.data["image"]))
+      # Loop through all site collections.
+      site.collections.each do |name, collection|
+
+        if name.include? "cards_"
+          collection.docs.each do |doc|
+            if doc.data.has_key?("picture")
+              site.static_files << PostThumbnailImage.new(site, site.source, "images", File.basename(doc.data["picture"]))
+            end
+          end
         end
-      }
+
+      end
     end
   end
 

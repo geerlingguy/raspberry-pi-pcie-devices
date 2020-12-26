@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane directly on the board:
 
 <img src="{{ site.url }}/images/cm4-io-board-pcie-slot.jpeg" style="display: block; margin: auto;" width="595" height="300" />
@@ -32,14 +36,14 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <p>TESTING: <code>{{ card.picture | image_thumbnail }}</code></p>
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
+<a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -62,13 +66,14 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
+<a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -91,13 +96,14 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
+<a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -120,13 +126,14 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
+<a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -149,13 +156,14 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
+<a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -178,13 +186,14 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a> | <a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
+<a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
