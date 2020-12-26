@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "4-port (2-active) ASM1061 SATA adapter"
-picture: "storage-asm1061-2-port-adapter.jpg"
+picture: "/images/storage-asm1061-2-port-adapter.jpg"
 functionality: "Currently Testing"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/30"

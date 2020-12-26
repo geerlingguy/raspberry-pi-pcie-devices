@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "IBM ServeRAID BR10i / LSI SAS3082E-R SAS RAID controller"
-picture: "storage-ibm-servraid-br10i-lsi-sas3082e-r-sas-raid.jpg"
+picture: "/images/storage-ibm-servraid-br10i-lsi-sas3082e-r-sas-raid.jpg"
 functionality: "Currently Testing"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/18"

@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Sapphire Radeon RX 550 2GB PCIe x16"
-picture: gpu-sapphire-radeon-rx550.jpg
+picture: "/images/gpu-sapphire-radeon-rx550.jpg"
 functionality: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6"

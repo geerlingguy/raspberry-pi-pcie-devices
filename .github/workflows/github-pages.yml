@@ -1,0 +1,38 @@
+# GitHub Action for Jekyll
+#
+# Runs jekyll build on master and pushes output to gh-pages branch.
+# (Then GitHub deploys that static content.)
+
+name: Build & Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    container: ruby:2-buster
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        with:
+          path: site/vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+
+      - name: Install Ruby dependencies.
+        run: |
+          gem install bundler
+          bundle install
+        working-directory: site
+
+      - name: Build static site with Jekyll.
+        run: bundle exec jekyll build
+        working-directory: site
+
+      - name: Deploy static site to gh-pages branch.
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/_site

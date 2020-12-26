@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Syba SD-PEX20199 PCIe x1 USB 3.1 & 3.0 adapter"
-picture: "usb-syba-sd-pex20199.jpg"
+picture: "/images/usb-syba-sd-pex20199.jpg"
 functionality: "Full"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/45"

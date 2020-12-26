@@ -33,7 +33,7 @@
 
         <div class="card_picture">
           {% if page.picture %}
-            <a href="/images/card-pictures/{{ page.picture }}"><img src="/images/card-pictures/{{ page.picture }}" alt="{{ page.title }}"></a>
+            <a href="{{ page.picture }}"><img src="{{ page.picture }}" alt="{{ page.title }}"></a>
           {% else %}
             <p><em>There is no picture for this card yet.</em></p>
           {% endif %}

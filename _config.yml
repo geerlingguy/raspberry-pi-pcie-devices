@@ -3,6 +3,7 @@ theme: jekyll-theme-slate
 title: Raspberry Pi PCIe Devices
 url: https://pipci.jeffgeerling.com/
 fathom_analytics: true
+
 collections:
   cards_adapter:
     output: true

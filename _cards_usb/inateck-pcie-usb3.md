@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Inateck PCIe x1 USB 3.0 adapter"
-picture: "usb-inateck-pcie-usb3.jpg"
+picture: "/images/usb-inateck-pcie-usb3.jpg"
 functionality: "Limited"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/45"

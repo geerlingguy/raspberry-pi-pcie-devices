@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "EVGA GeForce GTX 750 Ti"
-picture: gpu-evga-geforce-gtx-750ti.jpg
+picture: "/images/gpu-evga-geforce-gtx-750ti.jpg"
 functionality: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26"

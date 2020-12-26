@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Intel I340-T4 PCIe x4 4-port Gigabit Network Adapter"
-picture: "network-intel-i340-t4.jpg"
+picture: "/images/network-intel-i340-t4.jpg"
 functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3"

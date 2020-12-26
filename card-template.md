@@ -10,7 +10,7 @@ videos: []
 ---
 Copy this template into the appropriate `_cards_[type]` directory, and replace all the values above with the proper information:
 
-  - `picture`: can have a path to a picture inside images/card-pictures, or `false`
+  - `picture`: can have a path to a picture like `/images/[type]-card.jpg`, or `false`
   - `functionality`: can be one of "Currently Testing", "Full", "Partial", or "None"
   - `driver_required`: can be one of "Yes", "Maybe", or "No"
   - `github_issue`: should link to the GitHub issue corresponding to this card.

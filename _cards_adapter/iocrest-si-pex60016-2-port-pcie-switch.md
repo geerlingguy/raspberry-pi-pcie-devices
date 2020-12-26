@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "I/O Crest SI-PEX60016 1 to 2 Port PCIe Switch"
-picture: "adpater-iocrest-si-pex60016-2-port-pcie-switch.jpg"
+picture: "/images/adpater-iocrest-si-pex60016-2-port-pcie-switch.jpg"
 functionality: "Currently Testing"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14"

@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Teratrend 2-port SATA-III Marvell 88SE9130"
-picture: "storage-teratrend-2-port-sata-3-marvell-88se9130.jpg"
+picture: "/images/storage-teratrend-2-port-sata-3-marvell-88se9130.jpg"
 functionality: "Currently Testing"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/29"

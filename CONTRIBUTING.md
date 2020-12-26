@@ -12,12 +12,12 @@ There are many ways to contribute:
 
 Add a file named after the card into the appropriate `_cards_[type]` directory. Copy the template out of [`card-template.md`](card-template.md) into this new file.
 
-Add a picture of the card (named the same as the `picture` frontmatter in your card's markdown file) into the images/card-pictures directory, prefixed by `[type]-`.
+Add a picture of the card into the `images/` directory, prefixed by `[type]-`, and make sure to reference the full path to the image in the `picture` frontmatter on the card post.
 
 For example, for a network card:
 
   1. Make sure there's a GitHub issue that exists for the card.
   2. Copy the template into a new file inside `_cards_network`.
   3. Fill in the details of the card.
-  4. Put a picture of the card named `network-[name-of-card].jpg` inside `images/card-pictures`.
+  4. Put a picture of the card named `network-[name-of-card].jpg` inside `images/`.
   5. File a PR with your changes.

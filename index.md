@@ -32,7 +32,8 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+          <p>TESTING: <code>{{ card.picture | image_thumbnail }}</code></p>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
@@ -61,7 +62,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
@@ -90,7 +91,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
@@ -119,7 +120,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
@@ -148,7 +149,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
@@ -177,7 +178,7 @@ Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post v
     <tr>
       <td>
         {% if card.picture %}
-          <a href="{{ card.url }}"><img class="card_table_picture" src="/images/card-pictures/{{ card.picture }}" alt="{{ card.title }}"></a>
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>

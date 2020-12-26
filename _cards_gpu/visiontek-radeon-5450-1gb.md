@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "VisionTek Radeon 5450 1GB PCIe x16"
-picture: gpu-visiontek-radeon-5450.jpg
+picture: "/images/gpu-visiontek-radeon-5450.jpg"
 functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4"
