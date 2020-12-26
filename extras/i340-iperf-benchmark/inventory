@@ -1,0 +1,10 @@
+[cm4]
+# If changing this IP, also change local interface_ip below!
+10.0.100.119 ansible_user=pi
+
+[controllers]
+10.0.100.132 ansible_user=pi interface_ip=203.0.113.8
+10.0.100.83 ansible_user=pi interface_ip=198.51.100.8
+10.0.100.103 ansible_user=pi interface_ip=172.16.0.8
+10.0.100.142 ansible_user=pi interface_ip=192.168.0.8
+127.0.0.1 ansible_connection=local interface_ip=10.0.100.119

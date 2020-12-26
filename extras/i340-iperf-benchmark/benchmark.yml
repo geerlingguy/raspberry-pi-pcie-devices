@@ -1,0 +1,27 @@
+---
+- hosts: cm4
+  gather_facts: false
+
+  tasks:
+    - name: Run iperf server on each interface for 2 minutes.
+      command: "iperf --server --bind "
+      async: 120
+      poll: 0
+      with_items:
+        - ''
+        - '192.168.0.8'
+        - '172.16.0.8'
+        - '198.51.100.8'
+        - '203.0.113.8'
+
+- hosts: controllers
+  gather_facts: false
+
+  tasks:
+    - name: Run iperf client against each interface.
+      command: "iperf -c "
+      register: iperf_result
+
+    - name: Print the results.
+      debug:
+        var: iperf_result
