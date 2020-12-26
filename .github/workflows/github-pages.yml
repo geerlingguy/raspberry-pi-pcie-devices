@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/cache@v1
         with:
-          path: site/vendor/bundle
+          path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
 
       # - name: Install ImageMagick.
