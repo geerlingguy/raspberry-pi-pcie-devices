@@ -596,6 +596,20 @@ Small Device Styles
 .inner {
   max-width: 1000px; }
 
+#sponsor_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 200px;
+  z-index: 12;
+  padding: 10px 40px 10px 10px;
+  color: #fff;
+  background: url("/images/heart.png") #db61a2 no-repeat 90% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
+
 #project_title {
   background: none;
   padding: 0; }
