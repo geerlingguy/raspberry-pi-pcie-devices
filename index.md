@@ -2,13 +2,11 @@
 layout: default
 title: Home
 ---
-The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane directly on the board:
-
 <img src="{{ site.url }}/images/cm4-io-board-pcie-slot.jpeg" style="display: block; margin: auto;" width="595" height="300" />
 
-Below is a listing of _all_ the PCIe devices I'm testing on the Pi CM4. I post videos to [my YouTube channel](https://www.youtube.com/c/JeffGeerling) covering many of the cards.
+The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane directly on the board. I'm ([Jeff Geerling](https://www.jeffgeerling.com)) testing many PCIe cards with the Pi and adding them to the listing below. Also check out videos about them on [my YouTube channel](https://www.youtube.com/c/JeffGeerling)!
 
-[This project is on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices), and you can follow along with the testing or suggest new things to test there. I also have a few other extra tidbits that may help you in your own card-testing adventures:
+[This project is maintained on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices); suggest new cards to test or share your own experiences there. These helpful resources can help you in your own PCIe testing on the Pi:
 
   - [Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
   - [Instructions for increasing BAR space allocations](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df)
