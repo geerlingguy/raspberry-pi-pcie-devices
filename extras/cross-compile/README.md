@@ -84,7 +84,7 @@ sudo systemctl restart sshd
 Now make sure you can SSH into the Pi as `root` from the cross-compile VM, with:
 
 ```
-ssh root@10.0.100.119
+ssh root@10.0.100.120
 ```
 
 ### Setting up an SSHFS mount
@@ -95,8 +95,8 @@ Set up SSHFS, and mount the Pi's filesystems into the cross-compile environment:
 sudo apt-get install sshfs
 sudo mkdir -p /mnt/pi-ext4
 sudo mkdir -p /mnt/pi-fat32
-sudo sshfs root@10.0.100.119:/ /mnt/pi-ext4
-sudo sshfs root@10.0.100.119:/boot /mnt/pi-fat32
+sudo sshfs root@10.0.100.120:/ /mnt/pi-ext4
+sudo sshfs root@10.0.100.120:/boot /mnt/pi-fat32
 ```
 
 Install the kernel modules onto the drive:
