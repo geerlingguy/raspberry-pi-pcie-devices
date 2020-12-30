@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller"
-picture: "storage-intel-SASUC8I-LSI-SAS3081E-R-raid.jpg"
+picture: "/images/storage-intel-SASUC8I-LSI-SAS3081E-R-raid.jpg"
 functionality: "Currently Testing"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/31"

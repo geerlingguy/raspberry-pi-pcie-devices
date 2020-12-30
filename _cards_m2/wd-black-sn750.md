@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "WD_Black 500GB SN750 NVMe SSD"
-picture: "m2-wd-black-sn750.jpg"
+picture: "/images/m2-wd-black-sn750.jpg"
 functionality: "Currently Testing"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/48"
