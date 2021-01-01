@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Name of Card Here"
-picture: false
+picture: "/images/name-of-image-here.jpg"
 functionality: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/ID-here"
