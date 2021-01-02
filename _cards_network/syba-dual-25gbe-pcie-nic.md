@@ -8,7 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4
 buy_link: https://amzn.to/37QSNwj
 videos: []
 ---
-This card uses the same Realtek 8125 chip that's in the [Rosewill RC20001 2.5 Gbps card]({% post_url rosewill-rc20001-25gbe %}) I tested, but the difference is it has _two_ of them!
+This card uses the same Realtek 8125 chip that's in the [Rosewill RC20001 2.5 Gbps card]({% link _cards_network/rosewill-rc20001-25gbe.md %}) I tested, but the difference is it has _two_ of them!
 
 Between those two chips and the Pi is an ASMedia 1182 PCI Express 2.0 1x packet switch, which allows the two Realtek chips to work with the Pi over its single PCIe 1x lane.
 
