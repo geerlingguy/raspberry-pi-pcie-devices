@@ -56,15 +56,14 @@
             <tr>
               <th>Functionality</th>
               <th>Driver Required?</th>
-              <th>Links</th>
+              <th>More Info</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Full</td>
               <td>Yes</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/40">GitHub Issue</a><br>
-<a href="https://amzn.to/3nJPXP9">Buy Card</a></td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/40">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -84,7 +83,7 @@
           <h3>Description and Notes</h3>
           <p>This adapter works great with the Pi in the built-in 1x PCIe slot on the IO Board. I tried installing the Realtek drivers from their website but had difficulty compiling them.</p>
 
-<p>So instead I recompiled the Pi OS kernel and used menuconfig to select the right driver to build:</p>
+<p>So instead I <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">cross-compiled the Pi OS kernel</a> and used menuconfig to select the right driver to build:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
   &gt; Network device support
