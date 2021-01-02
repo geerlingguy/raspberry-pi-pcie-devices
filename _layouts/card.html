@@ -60,7 +60,7 @@
             {% if page.videos.size >= 1 %}
               <ul>
                 {% for video_url in page.videos %}
-                  <li><a href="{{ video_url }}">{{ video_url }}</a></li>
+                  <li>{% youtube video_url %}</a></li>
                 {% endfor %}
               </ul>
             {% else %}
