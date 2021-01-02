@@ -26,7 +26,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <th>Device</th>
       <th>Functionality</th>
       <th>Driver Required?</th>
-      <th>Links</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -40,8 +40,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
-<a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -56,7 +55,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <th>Device</th>
       <th>Functionality</th>
       <th>Driver Required?</th>
-      <th>Links</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -70,8 +69,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
-<a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -86,7 +84,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <th>Device</th>
       <th>Functionality</th>
       <th>Driver Required?</th>
-      <th>Links</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -100,8 +98,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
-<a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -116,7 +113,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <th>Device</th>
       <th>Functionality</th>
       <th>Driver Required?</th>
-      <th>Links</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -130,8 +127,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
-<a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -146,7 +142,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <th>Device</th>
       <th>Functionality</th>
       <th>Driver Required?</th>
-      <th>Links</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -160,8 +156,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
-<a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>
@@ -176,7 +171,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <th>Device</th>
       <th>Functionality</th>
       <th>Driver Required?</th>
-      <th>Links</th>
+      <th>Link</th>
     </tr>
   </thead>
   <tbody>
@@ -190,8 +185,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
       <td><a href="{{ card.url }}">{{ card.title }}</a></td>
       <td>{{ card.functionality }}</td>
       <td>{{ card.driver_required }}</td>
-      <td><a href="{{ card.github_issue }}">GitHub Issue</a><br>
-<a href="{{ card.buy_link }}">Buy Card</a></td>
+      <td><a href="{{ card.buy_link }}">Buy Card</a></td>
     </tr>
 {% endfor %}
   </tbody>

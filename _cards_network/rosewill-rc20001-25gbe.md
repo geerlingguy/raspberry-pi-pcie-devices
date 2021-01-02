@@ -11,7 +11,7 @@ videos:
 ---
 This adapter works great with the Pi in the built-in 1x PCIe slot on the IO Board. I tried installing the Realtek drivers from their website but had difficulty compiling them.
 
-So instead I recompiled the Pi OS kernel and used menuconfig to select the right driver to build:
+So instead I [cross-compiled the Pi OS kernel](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) and used menuconfig to select the right driver to build:
 
 ```
 Device Drivers
