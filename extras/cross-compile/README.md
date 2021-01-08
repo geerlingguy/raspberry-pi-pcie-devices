@@ -95,8 +95,8 @@ Set up SSHFS, and mount the Pi's filesystems into the cross-compile environment:
 sudo apt-get install sshfs
 sudo mkdir -p /mnt/pi-ext4
 sudo mkdir -p /mnt/pi-fat32
-sudo sshfs root@10.0.100.120:/ /mnt/pi-ext4
-sudo sshfs root@10.0.100.120:/boot /mnt/pi-fat32
+sudo sshfs root@10.0.100.121:/ /mnt/pi-ext4
+sudo sshfs root@10.0.100.121:/boot /mnt/pi-fat32
 ```
 
 Install the kernel modules onto the drive:
