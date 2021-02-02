@@ -17,6 +17,8 @@ end
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/buster64"
 
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+
   config.vm.provider "virtualbox" do |vb|
     vb.name = "cross-compiler"
     vb.gui = false
@@ -36,6 +38,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev crossbuild-essential-armhf crossbuild-essential-arm64
+    apt-get install -y git bc sshfs bison flex libssl-dev make libc6-dev libncurses5-dev crossbuild-essential-armhf crossbuild-essential-arm64
   SHELL
 end
