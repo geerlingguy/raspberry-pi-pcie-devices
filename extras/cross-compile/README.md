@@ -16,6 +16,8 @@ This build configuration has only been tested with the Raspberry Pi 4, CM4, and 
 
 ## Attaching a USB card reader device
 
+> This step is not required if you are copying the built kernel to the Pi over the network or via some other means than the microSD card.
+
 In order to compile the kernel and copy it into place on a Pi OS image/card, you need to directly attach a USB microSD card reader (or a flash/SSD/whatever drive) to the VirtualBox VM.
 
 You will likely need to install the "VirtualBox Extension Pack", which you can download from the [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads) page, then double-click on it to install it.
@@ -84,15 +86,14 @@ sudo systemctl restart sshd
 Now make sure you can SSH into the Pi as `root` from the cross-compile VM, with:
 
 ```
-ssh root@10.0.100.120
+ssh root@10.0.100.121
 ```
 
 ### Setting up an SSHFS mount
 
-Set up SSHFS, and mount the Pi's filesystems into the cross-compile environment:
+Mount the Pi's filesystems into the cross-compile environment (requires `sshfs`):
 
 ```
-sudo apt-get install sshfs
 sudo mkdir -p /mnt/pi-ext4
 sudo mkdir -p /mnt/pi-fat32
 sudo sshfs root@10.0.100.121:/ /mnt/pi-ext4
