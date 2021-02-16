@@ -86,7 +86,7 @@ sudo systemctl restart sshd
 Now make sure you can SSH into the Pi as `root` from the cross-compile VM, with:
 
 ```
-ssh root@10.0.100.121
+ssh root@10.0.100.119
 ```
 
 ### Setting up an SSHFS mount
@@ -96,8 +96,8 @@ Mount the Pi's filesystems into the cross-compile environment (requires `sshfs`)
 ```
 sudo mkdir -p /mnt/pi-ext4
 sudo mkdir -p /mnt/pi-fat32
-sudo sshfs root@10.0.100.121:/ /mnt/pi-ext4
-sudo sshfs root@10.0.100.121:/boot /mnt/pi-fat32
+sudo sshfs root@10.0.100.119:/ /mnt/pi-ext4
+sudo sshfs root@10.0.100.119:/boot /mnt/pi-fat32
 ```
 
 Install the kernel modules onto the drive:
@@ -123,6 +123,29 @@ sudo umount /mnt/pi-fat32
 ```
 
 Reboot the Pi and _voila!_, you're done!
+
+### Kernel Headers
+
+If you also need the kernel headers and source available, you can do the following (before unmounting the filesystems):
+
+```
+# Get the kernel version (usually the last in the listing):
+sudo ls -lah /mnt/pi-ext4/lib/modules
+
+# Create a directory and copy the sources into it:
+sudo mkdir /mnt/pi-ext4/usr/src/linux-headers-5.10.14-v8+
+sudo rsync -avz --exclude .git /home/vagrant/linux/ root@10.0.100.119:/usr/src/linux-headers-5.10.14-v8+
+
+# Update the symlinks in the modules directory on the Pi:
+sudo rm -rf /mnt/pi-ext4/lib/modules/5.10.14-v8+/build
+sudo rm -rf /mnt/pi-ext4/lib/modules/5.10.14-v8+/source
+sudo ln -s /usr/src/linux-headers-5.10.14-v8+ /mnt/pi-ext4/lib/modules/5.10.14-v8+/build
+sudo ln -s /usr/src/linux-headers-5.10.14-v8+ /mnt/pi-ext4/lib/modules/5.10.14-v8+/source
+```
+
+This is sometimes necessary if you're compiling modules on the Pi that require kernel headers.
+
+> Note: This... doesn't work. I opened this issue to see if I could figure out the way: [Getting headers for custom cross-compiled kernel?](https://www.raspberrypi.org/forums/viewtopic.php?f=66&t=303289).
 
 ## Copying built Kernel via mounted USB drive or microSD
 
