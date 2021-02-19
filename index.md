@@ -108,7 +108,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   </tbody>
 </table>
 
-### Network cards (NICs)
+### Network cards (NICs) and WiFi Adapters
 
 <table class="card_table">
   <thead>
