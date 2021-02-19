@@ -8,7 +8,7 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
 
 [This project is maintained on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices); suggest new cards to test or share your own experiences there. These helpful resources can help you in your own PCIe testing on the Pi, or can inspire you to create your own custom Pi boards!
 
-  - [Neat Compute Module 4 Projects and Boards](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25)
+  - [Compute Module 4-based Products and Boards](boards_cm)
   - [Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
   - [Instructions for increasing BAR space allocations](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df)
 

@@ -6,6 +6,8 @@ url: https://pipci.jeffgeerling.com/
 fathom_analytics: true
 
 collections:
+  boards_cm:
+    output: true
   cards_adapter:
     output: true
   cards_gpu:
