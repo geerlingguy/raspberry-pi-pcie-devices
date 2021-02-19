@@ -5,8 +5,6 @@ title: Boards
 ## Compute Module 4 Boards and Projects
 {: .no_toc}
 
-This page lists all the Compute Module 4-based products and boards I have found.
-
 If you think a project should be added here, please [open an issue on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues) to add it.
 
 ### Categories
@@ -28,6 +26,7 @@ The following boards are commercially available and can be purchased today.
   </thead>
   <tbody>
 {% for board in site.boards_cm %}
+  {% if board.status == "production" %}
     <tr>
       <td>
         {% if board.picture %}
@@ -36,14 +35,15 @@ The following boards are commercially available and can be purchased today.
       </td>
       <td>
         <a href="{{ board.url }}">{{ board.title }}</a><br>
-        (<a href="{{ board.buy_link }}">Buy this Board</a>)
+        (<a href="{{ board.link }}">Website</a>)
       </td>
     </tr>
+  {% endif %}
 {% endfor %}
   </tbody>
 </table>
 
-### Prototype / Hobbyist Boards
+### Prototype or Non-Commercial Boards
 
 The following boards are either not yet commercially available or one-offs and _might_ be licensed under an Open Hardware License, allowing you to build your own.
 
@@ -56,6 +56,7 @@ The following boards are either not yet commercially available or one-offs and _
   </thead>
   <tbody>
 {% for board in site.boards_cm %}
+  {% if board.status == "prototype" %}
     <tr>
       <td>
         {% if board.picture %}
@@ -64,9 +65,10 @@ The following boards are either not yet commercially available or one-offs and _
       </td>
       <td>
         <a href="{{ board.url }}">{{ board.title }}</a><br>
-        (<a href="{{ board.buy_link }}">Buy this Board</a>)
+        (<a href="{{ board.link }}">Website</a>)
       </td>
     </tr>
+  {% endif %}
 {% endfor %}
   </tbody>
 </table>

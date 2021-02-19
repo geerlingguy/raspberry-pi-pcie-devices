@@ -36,15 +36,11 @@ module Jekyll
     def generate(site)
       # Loop through all site collections.
       site.collections.each do |name, collection|
-
-        if name.include? "cards_"
-          collection.docs.each do |doc|
-            if doc.data.has_key?("picture")
-              site.static_files << PostThumbnailImage.new(site, site.source, "images", File.basename(doc.data["picture"]))
-            end
+        collection.docs.each do |doc|
+          if doc.data.has_key?("picture")
+            site.static_files << PostThumbnailImage.new(site, site.source, "images", File.basename(doc.data["picture"]))
           end
         end
-
       end
     end
   end
