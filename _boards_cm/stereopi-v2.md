@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "StereoPi - DIY stereoscopic camera"
+short_description: Two cameras for steroscopic vision.
 status: prototype
 picture: "/images/board-stereopi-v2.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-734928825"

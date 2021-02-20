@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "Raspberry Pi Compute Module 4 IO Board"
+short_description: The official CM4 IO Board.
 status: production
 picture: "/images/board-compute-module-4-io-board.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices"

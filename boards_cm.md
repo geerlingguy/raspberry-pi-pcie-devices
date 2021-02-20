@@ -17,7 +17,7 @@ If you think a project should be added here, please [open an issue on GitHub](ht
 
 The following boards are commercially available and can be purchased today.
 
-<table class="card_table">
+<table class="board_table">
   <thead>
     <tr>
       <th>Picture</th>
@@ -28,14 +28,17 @@ The following boards are commercially available and can be purchased today.
 {% for board in site.boards_cm %}
   {% if board.status == "production" %}
     <tr>
-      <td>
+      <td class="board_picture_td">
         {% if board.picture %}
           <a href="{{ board.url }}"><img class="board_table_picture" src="{{ board.picture | image_thumbnail }}" alt="{{ board.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ board.url }}">{{ board.title }}</a><br>
-        (<a href="{{ board.link }}">Website</a>)
+        <a href="{{ board.url }}"><strong>{{ board.title }}</strong></a><br>
+        {{ board.short_description }}
+        <div class="links">
+          <a href="{{ board.url }}">More Info</a> | <a href="{{ board.link }}">Website</a>
+        </div>
       </td>
     </tr>
   {% endif %}
@@ -47,7 +50,7 @@ The following boards are commercially available and can be purchased today.
 
 The following boards are either not yet commercially available or one-offs and _might_ be licensed under an Open Hardware License, allowing you to build your own.
 
-<table class="card_table">
+<table class="board_table">
   <thead>
     <tr>
       <th>Picture</th>
@@ -58,14 +61,17 @@ The following boards are either not yet commercially available or one-offs and _
 {% for board in site.boards_cm %}
   {% if board.status == "prototype" %}
     <tr>
-      <td>
+      <td class="board_picture_td">
         {% if board.picture %}
           <a href="{{ board.url }}"><img class="board_table_picture" src="{{ board.picture | image_thumbnail }}" alt="{{ board.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ board.url }}">{{ board.title }}</a><br>
-        (<a href="{{ board.link }}">Website</a>)
+        <a href="{{ board.url }}"><strong>{{ board.title }}</strong></a><br>
+        {{ board.short_description }}<br>
+        <div class="links">
+          <a href="{{ board.url }}">More Info</a> | <a href="{{ board.link }}">Website</a>
+        </div>
       </td>
     </tr>
   {% endif %}

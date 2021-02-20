@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "PiKeeb - Open Source Digital Typewriter"
+short_description: All-in-one keyboard-enclosure-screen device.
 status: prototype
 picture: "/images/board-pikeeb.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-734625905"

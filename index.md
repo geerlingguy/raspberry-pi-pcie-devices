@@ -32,13 +32,13 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   <tbody>
 {% for card in site.cards_gpu %}
     <tr>
-      <td>
+      <td class="card_picture_td">
         {% if card.picture %}
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ card.url }}">{{ card.title }}</a><br>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
       <td>{{ card.functionality }}</td>
@@ -62,13 +62,13 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   <tbody>
 {% for card in site.cards_usb %}
     <tr>
-      <td>
+      <td class="card_picture_td">
         {% if card.picture %}
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ card.url }}">{{ card.title }}</a><br>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
       <td>{{ card.functionality }}</td>
@@ -92,13 +92,13 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   <tbody>
 {% for card in site.cards_m2 %}
     <tr>
-      <td>
+      <td class="card_picture_td">
         {% if card.picture %}
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ card.url }}">{{ card.title }}</a><br>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
       <td>{{ card.functionality }}</td>
@@ -122,13 +122,13 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   <tbody>
 {% for card in site.cards_network %}
     <tr>
-      <td>
+      <td class="card_picture_td">
         {% if card.picture %}
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ card.url }}">{{ card.title }}</a><br>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
       <td>{{ card.functionality }}</td>
@@ -152,13 +152,13 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   <tbody>
 {% for card in site.cards_storage %}
     <tr>
-      <td>
+      <td class="card_picture_td">
         {% if card.picture %}
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ card.url }}">{{ card.title }}</a><br>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
       <td>{{ card.functionality }}</td>
@@ -182,13 +182,13 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   <tbody>
 {% for card in site.cards_adapter %}
     <tr>
-      <td>
+      <td class="card_picture_td">
         {% if card.picture %}
           <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
         {% endif %}
       </td>
       <td>
-        <a href="{{ card.url }}">{{ card.title }}</a><br>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
       <td>{{ card.functionality }}</td>

@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "CM4 MATX"
+short_description: An open hardware micro-ATX motherboard for the CM4.
 status: prototype
 picture: "/images/board-cm4-matx.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issue-743990222"

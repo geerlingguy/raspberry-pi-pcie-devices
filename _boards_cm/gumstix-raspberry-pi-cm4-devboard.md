@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "Gumstix Raspberry Pi CM4 Development Board"
+short_description: A compact IO Board with an M.2 slot.
 status: prototype
 picture: "/images/board-gumstix-cm4-dev-board.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-731269090"

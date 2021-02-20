@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "Sourcekit PiTray mini"
+short_description: Inexpensive Raspberry Pi 4 model B form factor carrier.
 status: production
 picture: "/images/board-sourcekit-pitray-mini.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issue-743990222"

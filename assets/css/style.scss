@@ -43,8 +43,15 @@
 // Index pages.
 .card_table,
 .board_table {
+  width: 100%;
+
   td {
     vertical-align: top;
+  }
+
+  .links {
+    margin-top: 1em;
+    font-size: .8em;
   }
 }
 
@@ -53,6 +60,11 @@
   max-width: 100px;
   max-height: 100px;
   margin: 0;
+}
+
+.card_picture_td,
+.board_picture_td {
+  width: 100px;
 }
 
 // Detail pages.

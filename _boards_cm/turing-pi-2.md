@@ -1,6 +1,7 @@
 ---
 layout: board
 title: "Turing Pi 2"
+short_description: 4 CM4 Cluster on a Mini ITX board.
 status: prototype
 picture: "/images/board-turing-pi-2.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issue-743990222"

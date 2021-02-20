@@ -55,7 +55,12 @@
           </tbody>
         </table>
 
-        <div class="card_videos">
+        <div class="board_content">
+          <h3>Description</h3>
+          {{ content }}
+        </div>
+
+        <div class="board_videos">
           <h3>Videos Related to this Board</h2>
             {% if page.videos.size >= 1 %}
               <ul>
@@ -66,11 +71,6 @@
             {% else %}
               <p>There are no videos for this board yet.</p>
             {% endif %}
-        </div>
-
-        <div class="card_content">
-          <h3>Description and Notes</h3>
-          {{ content }}
         </div>
 
       </section>
