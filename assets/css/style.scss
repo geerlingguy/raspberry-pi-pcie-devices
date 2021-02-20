@@ -40,25 +40,41 @@
   font-size: 18px;
 }
 
-// Home page.
-.card_table {
+// Index pages.
+.card_table,
+.board_table {
+  width: 100%;
+
   td {
     vertical-align: top;
   }
+
+  .links {
+    margin-top: 1em;
+    font-size: .8em;
+  }
 }
 
-.card_table_picture {
+.card_table_picture,
+.board_table_picture {
   max-width: 100px;
   max-height: 100px;
   margin: 0;
 }
 
-// Card pages.
-#card_title {
+.card_picture_td,
+.board_picture_td {
+  width: 100px;
+}
+
+// Detail pages.
+#card_title,
+#board_title {
   font-size: 24px;
 }
 
-.card_picture {
+.card_picture,
+.board_picture {
   text-align: center;
   width: 100%;
 
@@ -67,7 +83,8 @@
   }
 }
 
-.card_details_table {
+.card_details_table,
+.board_details_table {
   margin: 0 auto;
 }
 
@@ -77,7 +94,8 @@
     height: auto;
   }
 
-  .card_picture img {
+  .card_picture img,
+  .board_picture img {
     max-width: 100%;
   }
 }

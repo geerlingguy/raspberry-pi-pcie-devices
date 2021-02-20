@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <script async="" src="//analytics.midwesternmac.com/tracker.js" id="fathom-script"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+{% seo %}
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="sponsor_banner" href="https://github.com/sponsors/geerlingguy">Sponsor</a>
+          <a id="forkme_banner" href="https://github.com/geerlingguy/raspberry-pi-pcie-devices">View on GitHub</a>
+
+          <h2 id="project_title"><a href="/">{{ site.title }}</a></h2>
+          <h2 id="project_tagline">{{ site.description }}</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <a href="/boards_cm">&lt; Back to Boards and Projects</a>
+
+        <h1 id="board_title">{{ page.title }}</h1>
+
+        <div class="board_picture">
+          {% if page.picture %}
+            <a href="{{ page.picture }}"><img src="{{ page.picture }}" alt="{{ page.title }}"></a>
+          {% else %}
+            <p><em>There is no picture for this board yet.</em></p>
+          {% endif %}
+        </div>
+
+        <table class="board_details_table">
+          <thead>
+            <tr>
+              <th>Website</th>
+              <th>More Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="{{ page.link }}">More Info</a></td>
+              <td><a href="{{ page.github_issue }}">GitHub Issue</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="board_content">
+          <h3>Description</h3>
+          {{ content }}
+        </div>
+
+        <div class="board_videos">
+          <h3>Videos Related to this Board</h2>
+            {% if page.videos.size >= 1 %}
+              <ul>
+                {% for video_url in page.videos %}
+                  <li>{% youtube video_url %}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p>There are no videos for this board yet.</p>
+            {% endif %}
+        </div>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">The {{ site.title }} project is maintained by <a href="https://github.com/geerlingguy">geerlingguy</a></p>
+      </footer>
+    </div>
+
+    {% if site.fathom_analytics %}
+      <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+      <script>
+      (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+          (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+      })(document, window, '//analytics.midwesternmac.com/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'JVIIB');
+      fathom('trackPageview');
+      </script>
+      <!-- / Fathom -->
+    {% endif %}
+  </body>
+</html>
