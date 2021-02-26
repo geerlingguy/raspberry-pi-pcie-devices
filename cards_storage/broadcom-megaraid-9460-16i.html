@@ -13,17 +13,17 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Broadcom MegaRAID 9460-16i storage controller" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS." />
-<meta property="og:description" content="This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS." />
+<meta name="description" content="This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS. The 64-bit version also hits a bug in the Pi 64-bit kernel: writeq() on 64-bit OS does not issue PCIe cycle, switching to two writel() works." />
+<meta property="og:description" content="This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS. The 64-bit version also hits a bug in the Pi 64-bit kernel: writeq() on 64-bit OS does not issue PCIe cycle, switching to two writel() works." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9460-16i.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9460-16i.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-02-20T18:33:05+00:00" />
+<meta property="article:published_time" content="2021-02-26T17:34:24+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Broadcom MegaRAID 9460-16i storage controller" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9460-16i.html"},"description":"This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS.","url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9460-16i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9460-16i storage controller","dateModified":"2021-02-20T18:33:05+00:00","datePublished":"2021-02-20T18:33:05+00:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9460-16i.html"},"description":"This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS. The 64-bit version also hits a bug in the Pi 64-bit kernel: writeq() on 64-bit OS does not issue PCIe cycle, switching to two writel() works.","url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9460-16i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9460-16i storage controller","dateModified":"2021-02-26T17:34:24+00:00","datePublished":"2021-02-26T17:34:24+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -73,13 +73,17 @@
         <div class="card_videos">
           <h3>Videos Related to this Card</h2>
             
-              <p>There are no videos for this card yet.</p>
+              <ul>
+                
+                  <li><a href="https://www.youtube.com/watch?v=Zpfq8ZC2hyI">Hardware RAID for the fastest Raspberry Pi CM4 NAS!</a></a></li>
+                
+              </ul>
             
         </div>
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS.</p>
+          <p>This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS. The 64-bit version also hits a bug in the Pi 64-bit kernel: <a href="https://github.com/raspberrypi/linux/issues/4158">writeq() on 64-bit OS does not issue PCIe cycle, switching to two writel() works</a>.</p>
 
 <p>Driver compilation also requires setting <code class="language-plaintext highlighter-rouge">CONFIG_IRQ_POLL=y</code> in your kernel <code class="language-plaintext highlighter-rouge">.config</code> and recompiling the Pi OS kernel.</p>
 
