@@ -2,7 +2,7 @@
 layout: board
 title: "TOFU Industrial CM4 Carrier"
 short_description: PoE and M.2 2242 B-key industrial CM4 board.
-status: prototype
+status: production
 picture: "/images/board-tofu-industrial-carrier.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-759707983"
 link: https://store.oratek.com/products/tofu
