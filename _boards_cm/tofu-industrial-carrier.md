@@ -6,8 +6,9 @@ status: production
 picture: "/images/board-tofu-industrial-carrier.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-759707983"
 link: https://store.oratek.com/products/tofu
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=m-QSQ24_8LY
 ---
 The TOFU board is a 9cm x 9cm carrier board for use with Raspberry Pi Compute Module 4 (CM4). Inspired by the official CM4IO board, it is intended for industrial applications. With user friendly additions, it may also be used by enthusiasts looking for a compact yet complete solution to interface the many inputs and outputs of the single board computer.
 
-Some highlights include a M.2 2242 type B socket and micro-SIM card holder, Power over Ethernet, and a variety of power inputs accepting a broad range of input voltages.
+Some highlights include a M.2 2242 type B socket and micro-SIM card holder, Power over Ethernet support, and a variety of power inputs accepting a broad range of input voltages.
