@@ -3,7 +3,7 @@ layout: board
 title: "CM Hunter"
 short_description: An open hardware carrier with galvanically-isolated interfaces.
 status: prototype
-picture: "/images/board-cm4-hunter.png"
+picture: "/images/board-cm-hunter.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/88"
 link: https://github.com/sukhoi12/CM-Hunter
 videos: []
