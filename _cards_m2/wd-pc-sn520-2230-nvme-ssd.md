@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/9
 buy_link: https://amzn.to/2MrmvA7
 videos:
   - https://www.youtube.com/watch?v=m-QSQ24_8LY
+  - https://www.youtube.com/watch?v=AoNxDe1a-X8
 ---
 This NVMe SSD works great with the CM4, assuming you have a compatible M.2 B or B+M key slot.
 

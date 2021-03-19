@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/8
 buy_link: https://www.tindie.com/products/alftel/pci-express-carrier-board-for-x12-m2-radio-cards/
 videos:
   - https://www.youtube.com/watch?v=Ozwyh_Pfe6g
+  - https://www.youtube.com/watch?v=AoNxDe1a-X8
 ---
 [Alftel Systems](https://www.alftel.com) sent me this card to do some M.2 device testing, especially with different WiFi cards and Google Coral TPUs.
 
