@@ -6,6 +6,7 @@ functionality: "Currently Testing"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14"
 buy_link: https://amzn.to/2Ie0bI3
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=vBccak8f-VY
 ---
 Follow the GitHub issue for more details about this card's current testing progress.

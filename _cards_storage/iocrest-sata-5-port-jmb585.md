@@ -6,7 +6,8 @@ functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/64"
 buy_link: https://amzn.to/3rkbK1d
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=vBccak8f-VY
 ---
 I had to [cross-compile](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) the Pi OS kernel to get the driver and SATA support required to make this card work. When running `menuconfig`, I selected the following options:
 
