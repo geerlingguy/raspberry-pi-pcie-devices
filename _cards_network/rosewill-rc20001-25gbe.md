@@ -9,6 +9,7 @@ buy_link: https://amzn.to/3nJPXP9
 videos:
   - https://www.youtube.com/watch?v=wCbQQ5-sjGM
   - https://www.youtube.com/watch?v=vBccak8f-VY
+  - https://www.youtube.com/watch?v=KhHAf7mTxkk
 ---
 This adapter works great with the Pi in the built-in 1x PCIe slot on the IO Board. I tried installing the Realtek drivers from their website but had difficulty compiling them.
 
