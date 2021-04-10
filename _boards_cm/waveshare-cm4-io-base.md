@@ -4,7 +4,7 @@ title: "Waveshare CM4 IO Base"
 short_description: A miniature baseboard 
 status: production
 picture: "/images/CM4-IO-BASE-B-details-5.jpg"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-745730511"
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/110"
 link: https://www.waveshare.com/cm4-io-base-b.htm
 videos:
   
