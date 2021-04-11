@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Waveshare CM4 IO Base"
-short_description: A miniature baseboard with plenty IO.
+short_description: A miniature baseboard with tons of IO, including an M.2 slot.
 status: production
 picture: "/images/CM4-IO-BASE-B-details-5.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/110"
