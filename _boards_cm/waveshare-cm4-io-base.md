@@ -6,7 +6,7 @@ status: production
 picture: "/images/CM4-IO-BASE-B-details-5.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/110"
 link: https://www.waveshare.com/cm4-io-base-b.htm
-videos:
+videos: []
   
   
 ---
