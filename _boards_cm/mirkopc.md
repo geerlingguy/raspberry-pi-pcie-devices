@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://hackaday.io/project/177626-mirkopc-cm4-carrier-board
 videos:
   - https://www.youtube.com/watch?v=4Womn10v71s
+  - https://www.youtube.com/watch?v=DZMF1n75Km0
 ---
 The MirkoPC is truly a 'micro' PC, powered by the Compute Module 4. It includes many features that make it stand out, like a full-size M.2 M-key slot on the top, suitable for NVMe SSD drives, and a built-in DAC and headphone amp!
 
