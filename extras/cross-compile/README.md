@@ -75,7 +75,7 @@ One prerequisite for this particular method is to set a `root` password on the P
 
 Logged into the Pi with SSH, run `sudo su`, then `passwd`, and set a password.
 
-Edit the `/etc/ssh/sshd_config`, find the `PermitRootLogin` line, uncomment it, and change the value from `prohibit-password` to `yes`.
+Edit the `/etc/ssh/sshd_config`, find the `PermitRootLogin` line, uncomment it, and change the value from `prohibit-password` to `yes`. (And comment out `PasswordAuthentication` if that line is set to `no`.)
 
 Restart SSHD:
 
