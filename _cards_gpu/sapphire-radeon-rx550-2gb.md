@@ -6,7 +6,8 @@ functionality: "None (so far)"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6"
 buy_link: https://amzn.to/34vadwW
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=MxcafwjWw24
 ---
 The Radeon RX 550 is a slightly older graphics card that is supported by the open source amdgpu driver in the Linux Kernel.
 
