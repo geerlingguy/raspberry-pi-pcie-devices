@@ -13,15 +13,15 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="ASRock Rack M2_VGA" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="See the linked GitHub issue for more details." />
-<meta property="og:description" content="See the linked GitHub issue for more details." />
+<meta name="description" content="The M2_VGA is a tiny M.2 form-factor video card that features the SM750 GPU. This GPU doesn’t have a 3D rendering engine, it only has 16 MB of RAM, and it’s meant more for basic graphics like you’d find in a kiosk or an appliance—or as a very simple and power-efficient graphics processor for a server." />
+<meta property="og:description" content="The M2_VGA is a tiny M.2 form-factor video card that features the SM750 GPU. This GPU doesn’t have a 3D rendering engine, it only has 16 MB of RAM, and it’s meant more for basic graphics like you’d find in a kiosk or an appliance—or as a very simple and power-efficient graphics processor for a server." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_gpu/asrock-rack-m2-vga.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/asrock-rack-m2-vga.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="ASRock Rack M2_VGA" />
 <script type="application/ld+json">
-{"description":"See the linked GitHub issue for more details.","url":"https://pipci.jeffgeerling.com//cards_gpu/asrock-rack-m2-vga.html","@type":"WebPage","headline":"ASRock Rack M2_VGA","@context":"https://schema.org"}</script>
+{"description":"The M2_VGA is a tiny M.2 form-factor video card that features the SM750 GPU. This GPU doesn’t have a 3D rendering engine, it only has 16 MB of RAM, and it’s meant more for basic graphics like you’d find in a kiosk or an appliance—or as a very simple and power-efficient graphics processor for a server.","url":"https://pipci.jeffgeerling.com//cards_gpu/asrock-rack-m2-vga.html","@type":"WebPage","headline":"ASRock Rack M2_VGA","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -61,7 +61,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
+              <td>None (so far)</td>
               <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/62">GitHub Issue</a></td>
             </tr>
@@ -77,7 +77,23 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>See the linked GitHub issue for more details.</p>
+          <p>The M2_VGA is a tiny M.2 form-factor video card that features the SM750 GPU. This GPU doesn’t have a 3D rendering engine, it only has 16 MB of RAM, and it’s meant more for basic graphics like you’d find in a kiosk or an appliance—or as a very simple and power-efficient graphics processor for a server.</p>
+
+<p>It requires an M.2 M-key to PCI express adapter (like the MZHOU adapter I used) to plug into the 1x PCIe slot on the CM4 IO Board.</p>
+
+<p>The card also requires a separate 4-pin molex power source, so I used a separate Molex power adapter to supply power to the board; you could also jumper power to it from the IO board if you’re so inclined, but figuring that out is up to you :)</p>
+
+<p>The SM750 GPU chip requires a driver to operate, and there is an open source driver in the Linux kernel ‘staging’ directory. The driver <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=MTA2OTk">has been panned</a> by some as having poor coding practices, and has not been updated to use the <code class="language-plaintext highlighter-rouge">drm</code> subsystem in Linux, so it could take some work to get it working… but let’s give it a try!</p>
+
+<h3 id="sm750fb-open-source-driver"><code class="language-plaintext highlighter-rouge">sm750fb</code> (open source) driver</h3>
+
+<p>To get the sm750fb driver loaded, you have to <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">recompile the Linux kernel for Pi OS</a>.</p>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">Device Drivers</code> &gt; <code class="language-plaintext highlighter-rouge">Graphics support</code> on the <code class="language-plaintext highlighter-rouge">menuconfig</code> step, and select the <code class="language-plaintext highlighter-rouge">Silicon Motion SM750 framebuffer support</code> driver to install.</p>
+
+<p>After copying over the new kernel and modules, and rebooting, the entire Pi locks up and requires a hard power reset. Go figure.</p>
+
+<p>See the linked GitHub issue for more details on how I tested this card. I’ve even tried contacting kernel maintainers who are or were listed as working on the module in the past, but to no avail.</p>
 
         </div>
 
