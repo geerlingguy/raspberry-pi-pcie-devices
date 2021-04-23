@@ -2,10 +2,26 @@
 layout: card
 title: "ASRock Rack M2_VGA"
 picture: "/images/gpu-asrock-rack-m2-vga.jpg"
-functionality: "Currently Testing"
+functionality: "None (so far)"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/62"
 buy_link: https://www.asrockrack.com/general/productdetail.asp?Model=M2_VGA
 videos: []
 ---
-See the linked GitHub issue for more details.
+The M2_VGA is a tiny M.2 form-factor video card that features the SM750 GPU. This GPU doesn't have a 3D rendering engine, it only has 16 MB of RAM, and it's meant more for basic graphics like you'd find in a kiosk or an appliance—or as a very simple and power-efficient graphics processor for a server.
+
+It requires an M.2 M-key to PCI express adapter (like the MZHOU adapter I used) to plug into the 1x PCIe slot on the CM4 IO Board.
+
+The card also requires a separate 4-pin molex power source, so I used a separate Molex power adapter to supply power to the board; you could also jumper power to it from the IO board if you're so inclined, but figuring that out is up to you :)
+
+The SM750 GPU chip requires a driver to operate, and there is an open source driver in the Linux kernel 'staging' directory. The driver [has been panned](https://www.phoronix.com/scan.php?page=news_item&px=MTA2OTk) by some as having poor coding practices, and has not been updated to use the `drm` subsystem in Linux, so it could take some work to get it working... but let's give it a try!
+
+### `sm750fb` (open source) driver
+
+To get the sm750fb driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile).
+
+Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select the `Silicon Motion SM750 framebuffer support` driver to install.
+
+After copying over the new kernel and modules, and rebooting, the entire Pi locks up and requires a hard power reset. Go figure.
+
+See the linked GitHub issue for more details on how I tested this card. I've even tried contacting kernel maintainers who are or were listed as working on the module in the past, but to no avail.
