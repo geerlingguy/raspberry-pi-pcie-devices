@@ -79,7 +79,7 @@
           <h3>Description and Notes</h3>
           <p>This 10 Gigabit network card has an Aquantia AQC107 802.3bz NBase-T ethernet controller, which requires the AQtion driver.</p>
 
-<p>Currently the drivers from Marvell’s website (Marvell acquired Aquantia in 2019) won’t compile on the 64-bit Pi OS beta (though I haven’t tested this since 2020), so you have to <a href="TODO">recompile the Pi OS kernel</a> to get working driver support.</p>
+<p>Currently the drivers from Marvell’s website (Marvell acquired Aquantia in 2019) won’t compile on the 64-bit Pi OS beta (though I haven’t tested this since 2020), so you have to <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">recompile the Pi OS kernel</a> to get working driver support.</p>
 
 <p>When recompiling, use <code class="language-plaintext highlighter-rouge">menuconfig</code> to enable the following two options:</p>
 
@@ -96,6 +96,8 @@ Device Drivers
 </code></pre></div></div>
 
 <p>After copying over the new kernel and installing modules, you should see a new network interface.</p>
+
+<p>On my Compute Module 4, without any overclock and without changing the MTU from the default of 1500, I was able to get about 3.26 Gbps of bandwidth through the card.</p>
 
 <p>Note that you may be able to get 10 gigabit speeds over shorter Cat5e or Cat6 cable runs, but Cat6a or better cabling is recommended for 10G over copper!</p>
 
