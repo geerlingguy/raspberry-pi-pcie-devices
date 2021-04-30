@@ -16,6 +16,8 @@ collections:
     output: true
   cards_network:
     output: true
+  cards_multimedia:
+    output: true
   cards_storage:
     output: true
   cards_usb:

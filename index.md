@@ -138,6 +138,36 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
   </tbody>
 </table>
 
+### Multimedia (A/V) and sound cards
+
+<table class="card_table">
+  <thead>
+    <tr>
+      <th>Picture</th>
+      <th>Device</th>
+      <th>Functionality</th>
+      <th>Driver Required?</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for card in site.cards_multimedia %}
+    <tr>
+      <td class="card_picture_td">
+        {% if card.picture %}
+          <a href="{{ card.url }}"><img class="card_table_picture" src="{{ card.picture | image_thumbnail }}" alt="{{ card.title }}"></a>
+        {% endif %}
+      </td>
+      <td>
+        <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
+        (<a href="{{ card.buy_link }}">Buy this Card</a>)
+      </td>
+      <td>{{ card.functionality }}</td>
+      <td>{{ card.driver_required }}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
 ### SATA cards and storage
 
 <table class="card_table">
