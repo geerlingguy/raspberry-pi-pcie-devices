@@ -1,6 +1,6 @@
 ---
 layout: board
-title: "Compute Module 4 Powered 3D Printer Board"
+title: "CM4-Powered 3D Printer Board by @MayerMakes"
 short_description: CM4 powered CNC board.
 status: prototype
 picture: "/images/board-cm4-3d-printer.png"
