@@ -124,6 +124,8 @@ sudo umount /mnt/pi-fat32
 
 Reboot the Pi and _voila!_, you're done!
 
+> For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, `zImage` instead of `Image`, `kernel7l` instead of `kernel8`, and `arm` instead of `arm64`.
+
 ### Kernel Headers
 
 If you also need the kernel headers and source available, you can do the following (before unmounting the filesystems):
