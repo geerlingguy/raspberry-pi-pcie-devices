@@ -6,7 +6,8 @@ functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/129"
 buy_link: https://business.kioxia.com/en-apac/ssd/enterprise-ssd/cm6-r.html
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=jOU-NDDyyuY
 ---
 This PCI Express NVMe Gen 4 SSD uses the SFF-TA-1001 protocol (sometimes known as U.3) to connect to enterprise servers.
 

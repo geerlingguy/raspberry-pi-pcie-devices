@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/7
 buy_link: https://amzn.to/3arF4O4
 videos:
   - https://www.youtube.com/watch?v=Zpfq8ZC2hyI
+  - https://www.youtube.com/watch?v=jOU-NDDyyuY
 ---
 This card currently requires a few minor driver modifications to work on both 32-bit and 64-bit ARM on Raspberry Pi OS. The 64-bit version also hits a bug in the Pi 64-bit kernel: [writeq() on 64-bit OS does not issue PCIe cycle, switching to two writel() works](https://github.com/raspberrypi/linux/issues/4158).
 
