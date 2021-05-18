@@ -4,7 +4,7 @@ title: "Seeed Studio Dual Gigabit Ethernet Carrier Board"
 short_description: Two-port gigabit router with USB 3.
 status: prototype
 picture: "/images/board-seeed-dual-gig-cm4-routerboard.jpg"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-751566018"
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/137"
 link: https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html
 videos:
   - https://www.youtube.com/watch?v=w9giSg6ORMk
