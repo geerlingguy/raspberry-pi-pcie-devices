@@ -13,15 +13,15 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="ASUS PCE-AC51 802.11ac WiFi Adapter" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Having trouble getting the drivers to work on Linux for the PCIe card (most drivers I’ve found for the Realtek chip only work on USB versions). See more details in the linked GitHub issue." />
-<meta property="og:description" content="Having trouble getting the drivers to work on Linux for the PCIe card (most drivers I’ve found for the Realtek chip only work on USB versions). See more details in the linked GitHub issue." />
+<meta name="description" content="This WiFi card supports 802.11ac, and has drivers available for Linux and Windows, at least, but I have had trouble getting these drivers running (or even installable) on the Pi." />
+<meta property="og:description" content="This WiFi card supports 802.11ac, and has drivers available for Linux and Windows, at least, but I have had trouble getting these drivers running (or even installable) on the Pi." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/asus-pce-ac51-wifi-5.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/asus-pce-ac51-wifi-5.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="ASUS PCE-AC51 802.11ac WiFi Adapter" />
 <script type="application/ld+json">
-{"description":"Having trouble getting the drivers to work on Linux for the PCIe card (most drivers I’ve found for the Realtek chip only work on USB versions). See more details in the linked GitHub issue.","url":"https://pipci.jeffgeerling.com//cards_network/asus-pce-ac51-wifi-5.html","@type":"WebPage","headline":"ASUS PCE-AC51 802.11ac WiFi Adapter","@context":"https://schema.org"}</script>
+{"description":"This WiFi card supports 802.11ac, and has drivers available for Linux and Windows, at least, but I have had trouble getting these drivers running (or even installable) on the Pi.","url":"https://pipci.jeffgeerling.com//cards_network/asus-pce-ac51-wifi-5.html","@type":"WebPage","headline":"ASUS PCE-AC51 802.11ac WiFi Adapter","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -81,7 +81,34 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>Having trouble getting the drivers to work on Linux for the PCIe card (most drivers I’ve found for the Realtek chip only work on USB versions). See more details in the linked GitHub issue.</p>
+          <p>This WiFi card supports 802.11ac, and has drivers available for Linux and Windows, at least, but I have had trouble getting these drivers running (or even installable) on the Pi.</p>
+
+<p>Many of the forked Linux drivers won’t compile on ARM64 or ARMv7, so I have also tried using the card with a recompiled Linux kernel following my <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">cross-compile guide</a>, with the following module selected via <code class="language-plaintext highlighter-rouge">menuconfig</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
+  &gt; Network device support
+    &gt; Wireless LAN
+      &gt; Realtek rtlwifi family of devices
+        &gt; Realtek RTL8821AE/RTL8812AE Wireless Network Adapter
+</code></pre></div></div>
+
+<p>This seems to load the kernel module (<code class="language-plaintext highlighter-rouge">rtl8821ae</code>), but the card won’t work as in the <code class="language-plaintext highlighter-rouge">dmesg</code> logs I get:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ dmesg | grep rtl
+[    5.122777] rtl8821ae 0000:01:00.0: enabling device (0000 -&gt; 0002)
+[    5.181119] rtl8821ae: Using firmware rtlwifi/rtl8812aefw.bin
+[    5.182443] rtl8821ae 0000:01:00.0: Direct firmware load for rtlwifi/rtl8812aefw.bin failed with error -2
+[    5.183980] rtlwifi: Loading alternative firmware rtlwifi/rtl8821aefw.bin
+[    5.184083] rtl8821ae: Using firmware rtlwifi/rtl8812aefw_wowlan.bin
+[    5.184215] rtl8821ae 0000:01:00.0: Direct firmware load for rtlwifi/rtl8812aefw_wowlan.bin failed with error -2
+[    5.184337] rtlwifi: Loading alternative firmware rtlwifi/rtl8821aefw.bin
+[    5.189198] rtl_pci: Cannot allocate RX ring
+[    5.189218] rtl_pci: tx ring initialization failed
+[    5.189228] rtl_pci: Failed to init PCI
+[    5.189357] rtl8821ae: probe of 0000:01:00.0 failed with error -12
+</code></pre></div></div>
+
+<p>See the linked GitHub issue for the latest status on this card.</p>
 
         </div>
 
