@@ -8,4 +8,8 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://www.waveshare.com/cm4-io-base-b.htm
 videos: []
 ---
-This board has a 1 Gbps Ethernet port and features 2x MIPI-Camera connectors. It also has an M.2 E-key slot capable of using NVMe SSDs or other PCIe peripherals. It has a full size HDMI port, an RTC with battery backup, and a 4-pin fan connector with a fan controller. It also has 2x USB 2.0 ports and a built-in USB 2.0 hub.
+This board has a 1 Gbps Ethernet port and features 2x MIPI-Camera connectors. It also has an M.2 M-key slot capable of using NVMe SSDs or other PCIe peripherals. It has a full size HDMI port, an RTC with battery backup (Version B only), and a 4-pin fan connector with a fan controller (Version B only). It also has 2x USB 2.0 ports and a built-in USB 2.0 hub.
+
+Sold in 2 versions:
+* Version A lacks RTC, RTC battery holder, fan controller (20€/25$ - https://www.waveshare.com/cm4-io-base-a.htm)
+* Version B includes RTC, RTC battery holder, fan controller (37€/40 - https://www.waveshare.com/cm4-io-base-b.htm)
