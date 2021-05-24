@@ -12,4 +12,4 @@ This board has a 1 Gbps Ethernet port and features 2x MIPI-Camera connectors. It
 
 Sold in 2 versions:
 * [Version A](https://www.waveshare.com/cm4-io-base-a.htm) ($25) lacks RTC, RTC battery holder, fan controller
-* Version B includes RTC, RTC battery holder, fan controller (37€/40 - https://www.waveshare.com/cm4-io-base-b.htm)
+* [Version B](https://www.waveshare.com/cm4-io-base-b.htm) ($40) includes RTC, RTC battery holder, fan controller
