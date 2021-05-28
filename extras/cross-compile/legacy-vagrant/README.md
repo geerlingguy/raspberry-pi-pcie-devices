@@ -1,24 +1,40 @@
 # Raspberry Pi Linux Cross-compilation Environment
 
-> **NOTE**: The old Vagrant and VirtualBox-based build environment is now stored in the [`legacy-vagrant`](legacy-vagrant/) directory.
+> **NOTE**: This build environment is deprecated. I no longer need to use it since I don't need VirtualBox's USB device support on my Mac (I now use SSHFS to copy the built kernel to a Pi). Also, with M1 Macs not supporting VirtualBox, this build environment's days are numbered.
 
-This environment can be used to [cross-compile the Raspberry Pi OS kernel](https://www.raspberrypi.org/documentation/linux/kernel/building.md) from a Linux, Windows, or Mac workstation using Docker.
+This environment can be used to [cross-compile the Raspberry Pi OS kernel](https://www.raspberrypi.org/documentation/linux/kernel/building.md) from a Linux, Windows, or Mac workstation using Vagrant and VirtualBox.
+
+Note that on Linux, you're probably better off doing things natively, or in a Docker container, which reduces the overhead of installing VirtualBox.
+
+Plus, Oracle. Yuck.
 
 This build configuration has only been tested with the Raspberry Pi 4, CM4, and Pi 400, and run on macOS.
 
-## Bringing up the build environment
+## Bringing up the VM
 
-  1. Make sure Docker is installed.
-  1. Build the Docker image you'll use for compilation: `docker build -t cross-compile .`
-  1. Run an instance of the Docker image:
+  1. Make sure Vagrant, VirtualBox, and the VirtualBox Extension Pack are installed.
+  1. Bring up the Vagrant machine that you'll use for compilation: `vagrant up`
+  1. Log into the Vagrant machine: `vagrant ssh`
 
-     ```
-     docker run --device /dev/fuse --cap-add SYS_ADMIN --name cross-compile -it cross-compile bash
-     ```
+## Attaching a USB card reader device
 
-You will be dropped into a shell inside the container's `/build` directory. From here you can work on compiling the kernel.
+> This step is not required if you are copying the built kernel to the Pi over the network or via some other means than the microSD card.
 
-> After you `exit` out of that shell, the Docker container will stop, but will not be removed. If you want to jump back into it, you can run `docker start cross-compile` and `docker attach cross-compile`.
+In order to compile the kernel and copy it into place on a Pi OS image/card, you need to directly attach a USB microSD card reader (or a flash/SSD/whatever drive) to the VirtualBox VM.
+
+You will likely need to install the "VirtualBox Extension Pack", which you can download from the [VirtualBox Downloads](https://www.virtualbox.org/wiki/Downloads) page, then double-click on it to install it.
+
+To do this:
+
+  1. Shut down the Vagrant machine: `vagrant halt`
+  1. Open VirtualBox
+  1. Go into the Settings for the 'cross-compiler' VM.
+  1. Go to Ports > USB
+  1. In the 'USB Device Filters' section, add your card reader or drive.
+
+Then restart the VM with `vagrant up`, and log back in with `vagrant ssh`.
+
+Note that if you have an older Mac, you might need to modify the Vagrantfile to use different USB settings. And you could technically configure the device in the Vagrantfile, but since I use at least four different Mac / card reader combinations, I didn't want to hard-code it.
 
 ## Compiling the Kernel
 
@@ -44,7 +60,7 @@ You will be dropped into a shell inside the container's `/build` directory. From
   1. Compile the Kernel:
 
      ```
-     make -j10 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+     make -j12 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
      ```
 
 > For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
@@ -80,32 +96,32 @@ ssh root@10.0.100.119
 Mount the Pi's filesystems into the cross-compile environment (requires `sshfs`):
 
 ```
-mkdir -p /mnt/pi-ext4
-mkdir -p /mnt/pi-fat32
-sshfs root@10.0.100.119:/ /mnt/pi-ext4
-sshfs root@10.0.100.119:/boot /mnt/pi-fat32
+sudo mkdir -p /mnt/pi-ext4
+sudo mkdir -p /mnt/pi-fat32
+sudo sshfs root@10.0.100.119:/ /mnt/pi-ext4
+sudo sshfs root@10.0.100.119:/boot /mnt/pi-fat32
 ```
 
 Install the kernel modules onto the drive:
 
 ```
-env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=/mnt/pi-ext4 modules_install
+sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=/mnt/pi-ext4 modules_install
 ```
 
 Copy the kernel and DTBs onto the drive:
 
 ```
-cp arch/arm64/boot/Image /mnt/pi-fat32/kernel8.img
-cp arch/arm64/boot/dts/broadcom/*.dtb /mnt/pi-fat32/
-cp arch/arm64/boot/dts/overlays/*.dtb* /mnt/pi-fat32/overlays/
-cp arch/arm64/boot/dts/overlays/README /mnt/pi-fat32/overlays/
+sudo cp arch/arm64/boot/Image /mnt/pi-fat32/kernel8.img
+sudo cp arch/arm64/boot/dts/broadcom/*.dtb /mnt/pi-fat32/
+sudo cp arch/arm64/boot/dts/overlays/*.dtb* /mnt/pi-fat32/overlays/
+sudo cp arch/arm64/boot/dts/overlays/README /mnt/pi-fat32/overlays/
 ```
 
 Unmount the filesystems:
 
 ```
-umount /mnt/pi-ext4
-umount /mnt/pi-fat32
+sudo umount /mnt/pi-ext4
+sudo umount /mnt/pi-fat32
 ```
 
 Reboot the Pi and _voila!_, you're done!
