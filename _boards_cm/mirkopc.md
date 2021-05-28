@@ -2,7 +2,7 @@
 layout: board
 title: "MirkoPC - a CM4 Computer"
 short_description: CM4 board with RTC battery, full-size M.2 slot, and audio outputs.
-status: prototype
+status: production
 picture: "/images/board-mirkopc.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/101"
 link: https://hackaday.io/project/177626-mirkopc-cm4-carrier-board
