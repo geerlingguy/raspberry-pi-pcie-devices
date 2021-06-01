@@ -44,12 +44,12 @@ You will be dropped into a shell inside the container's `/build` directory. From
   1. Compile the Kernel:
 
      ```
-     make -j10 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+     make -j8 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
      ```
 
 > For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
 
-> I set the jobs argument (`-j12`) based on a bit of benchmarking using different numbers of jobs, settling on the ratio of `floor([vCPU count] * 1.6)`.
+> I set the jobs argument (`-j8`) based on a bit of benchmarking on my M1 Mac's processor. For different types of processors you may want to use more (or fewer) jobs depending on architecture and how many cores you have.
 
 ## Copying built Kernel via remote SSHFS filesystem
 
