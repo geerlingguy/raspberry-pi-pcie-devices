@@ -6,10 +6,11 @@ status: prototype
 picture: "/images/board-wiretrustee-sata-4x-nas.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-769904055"
 link: https://wiretrustee.com
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=ahrdx3TYxZc
 ---
-This 4x SATA NAS board operates over the PCIe bus on the Compute Module 4 to deliver at least 220 MB/sec RAID performance.
+This 4x SATA NAS board operates over the PCIe bus on the Compute Module 4 to deliver at least 220 MB/sec RAID performance. The integrated Marvell 88SE9215 controller does the PCIe <-> SATA signal conversion.
 
-It also features an optional "control" board (SATA status, power on/off, reset) connected via FPC cable to the main board for a nicer NAS case design. The integrated Marvell 88SE9215 controller does the PCIe <-> SATA signal conversion.
+The board will be made available [through Crowd Supply](https://www.crowdsupply.com/wiretrustee/wiretrustee-sata), and there will be 2.5" and 3.5" hard drive enclosures for it.
 
-Should be available on Crowdsupply at some point in the future, check out the website for the latest updates!
+You can also visit [this GitHub repository](https://github.com/wiretrustee/cm4-sata-board) for open source files for the SATA board and enclosure.
