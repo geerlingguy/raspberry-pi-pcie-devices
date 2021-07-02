@@ -13,15 +13,15 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Mellanox ConnectX-2 MNPA19-XTR SFP+ 10G Ethernet Adapter" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="TODO: Description will go here." />
-<meta property="og:description" content="TODO: Description will go here." />
+<meta name="description" content="Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through menuconfig:" />
+<meta property="og:description" content="Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through menuconfig:" />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-2-mnpa19-xtr-sfp-10g.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-2-mnpa19-xtr-sfp-10g.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Mellanox ConnectX-2 MNPA19-XTR SFP+ 10G Ethernet Adapter" />
 <script type="application/ld+json">
-{"description":"TODO: Description will go here.","url":"https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-2-mnpa19-xtr-sfp-10g.html","@type":"WebPage","headline":"Mellanox ConnectX-2 MNPA19-XTR SFP+ 10G Ethernet Adapter","@context":"https://schema.org"}</script>
+{"description":"Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through menuconfig:","url":"https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-2-mnpa19-xtr-sfp-10g.html","@type":"WebPage","headline":"Mellanox ConnectX-2 MNPA19-XTR SFP+ 10G Ethernet Adapter","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -61,8 +61,8 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
-              <td>Maybe</td>
+              <td>Minimal</td>
+              <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/21">GitHub Issue</a></td>
             </tr>
           </tbody>
@@ -77,7 +77,18 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>TODO: Description will go here.</p>
+          <p>Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through <code class="language-plaintext highlighter-rouge">menuconfig</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
+  -&gt; Network device support
+    -&gt; Ethernet driver support
+      -&gt; Mellanox Devices
+        -&gt; Mellanox Technologies 1/10/40Gbit Ethernet support
+</code></pre></div></div>
+
+<p>Unfortunately, it seems like the driver doesn’t currently work on Pi OS, as the driver spits out an exception whenever you try connecting it to a network (e.g. <code class="language-plaintext highlighter-rouge">NETDEV WATCHDOG: eth1 (mlx4_core): transmit queue 1 timed out</code>).</p>
+
+<p>See the linked GitHub issue for more details.</p>
 
         </div>
 

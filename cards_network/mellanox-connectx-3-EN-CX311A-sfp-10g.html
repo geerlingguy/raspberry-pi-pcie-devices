@@ -9,21 +9,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Syba/IOCrest ASM1064 PCIe SATA 4-port Controller | Raspberry Pi PCIe Devices</title>
+<title>Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Syba/IOCrest ASM1064 PCIe SATA 4-port Controller" />
+<meta property="og:title" content="Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately)." />
-<meta property="og:description" content="This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately)." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html" />
+<meta name="description" content="Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through menuconfig:" />
+<meta property="og:description" content="Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through menuconfig:" />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-3-EN-CX311A-sfp-10g.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-3-EN-CX311A-sfp-10g.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-07-02T17:41:07+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Syba/IOCrest ASM1064 PCIe SATA 4-port Controller" />
+<meta property="twitter:title" content="Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html"},"description":"This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately).","url":"https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html","@type":"BlogPosting","headline":"Syba/IOCrest ASM1064 PCIe SATA 4-port Controller","dateModified":"2021-07-02T17:41:07+00:00","datePublished":"2021-07-02T17:41:07+00:00","@context":"https://schema.org"}</script>
+{"description":"Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through menuconfig:","url":"https://pipci.jeffgeerling.com//cards_network/mellanox-connectx-3-EN-CX311A-sfp-10g.html","@type":"WebPage","headline":"Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -45,11 +43,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Syba/IOCrest ASM1064 PCIe SATA 4-port Controller</h1>
+        <h1 id="card_title">Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter</h1>
 
         <div class="card_picture">
           
-            <a href="/images/storage-syba-sata-4-port-non-raid-asm1064.jpg"><img src="/images/storage-syba-sata-4-port-non-raid-asm1064.jpg" alt="Syba/IOCrest ASM1064 PCIe SATA 4-port Controller"></a>
+            <a href="/images/network-mellanox-connectx-3-EN-CX311A-sfp-10g.jpeg"><img src="/images/network-mellanox-connectx-3-EN-CX311A-sfp-10g.jpeg" alt="Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter"></a>
           
         </div>
 
@@ -63,9 +61,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>Full</td>
+              <td>Minimal</td>
               <td>Yes</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/116">GitHub Issue</a></td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/143">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -79,16 +77,25 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately).</p>
+          <p>Testing this card requires the Mellanox Ethernet driver to be compiled into the Pi OS kernel. Since it is not by default, you need to recompile the kernel with the following option enabled through <code class="language-plaintext highlighter-rouge">menuconfig</code>:</p>
 
-<p>It uses the ASMedia 1064 chipset, which may require recompiling the kernel with the <code class="language-plaintext highlighter-rouge">CONFIG_ATA</code> and <code class="language-plaintext highlighter-rouge">CONFIG_SATA_AHCI</code> options.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
+  -&gt; Network device support
+    -&gt; Ethernet driver support
+      -&gt; Mellanox Devices
+        -&gt; Mellanox Technologies 1/10/40Gbit Ethernet support
+</code></pre></div></div>
+
+<p>Unfortunately, it seems like the driver doesn’t currently work on Pi OS, as the driver spits out an exception whenever you try connecting it to a network (e.g. <code class="language-plaintext highlighter-rouge">NETDEV WATCHDOG: eth1 (mlx4_core): transmit queue 0 timed out</code>).</p>
+
+<p>See the linked GitHub issue for more details.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/3jCMByn">Syba/IOCrest ASM1064 PCIe SATA 4-port Controller</a></p>
+          <a href="https://amzn.to/2TlVSQN">Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter</a></p>
         </div>
 
       </section>
