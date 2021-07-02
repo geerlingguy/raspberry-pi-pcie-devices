@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "IOCrest JMB582 PCIe Gen3 SATA Controller"
+title: "Syba/IOCrest ASM1064 PCIe SATA 4-port Controller"
 picture: "/images/storage-syba-sata-4-port-non-raid-asm1064.jpg"
 functionality: "Full"
 driver_required: "Yes"
