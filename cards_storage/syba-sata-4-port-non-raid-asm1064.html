@@ -9,21 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Inateck PCIe x1 USB 3.0 adapter | Raspberry Pi PCIe Devices</title>
+<title>Syba/IOCrest ASM1064 PCIe SATA 4-port Controller | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Inateck PCIe x1 USB 3.0 adapter" />
+<meta property="og:title" content="Syba/IOCrest ASM1064 PCIe SATA 4-port Controller" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This USB 3.0 controller card has two external USB 3.0 ports, and a male header for two more internal ports, and it uses a Fresco Logic chipset (which is supported by Pi OS out of the box)." />
-<meta property="og:description" content="This USB 3.0 controller card has two external USB 3.0 ports, and a male header for two more internal ports, and it uses a Fresco Logic chipset (which is supported by Pi OS out of the box)." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_usb/inateck-pcie-usb3.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_usb/inateck-pcie-usb3.html" />
+<meta name="description" content="This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately)." />
+<meta property="og:description" content="This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately)." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-07-02T17:34:32+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Inateck PCIe x1 USB 3.0 adapter" />
+<meta property="twitter:title" content="Syba/IOCrest ASM1064 PCIe SATA 4-port Controller" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_usb/inateck-pcie-usb3.html"},"description":"This USB 3.0 controller card has two external USB 3.0 ports, and a male header for two more internal ports, and it uses a Fresco Logic chipset (which is supported by Pi OS out of the box).","url":"https://pipci.jeffgeerling.com//cards_usb/inateck-pcie-usb3.html","@type":"BlogPosting","headline":"Inateck PCIe x1 USB 3.0 adapter","dateModified":"2021-07-02T17:34:32+00:00","datePublished":"2021-07-02T17:34:32+00:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html"},"description":"This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately).","url":"https://pipci.jeffgeerling.com//cards_storage/syba-sata-4-port-non-raid-asm1064.html","@type":"BlogPosting","headline":"Syba/IOCrest ASM1064 PCIe SATA 4-port Controller","dateModified":"2021-07-02T17:34:32+00:00","datePublished":"2021-07-02T17:34:32+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -45,11 +45,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Inateck PCIe x1 USB 3.0 adapter</h1>
+        <h1 id="card_title">Syba/IOCrest ASM1064 PCIe SATA 4-port Controller</h1>
 
         <div class="card_picture">
           
-            <a href="/images/usb-inateck-pcie-usb3.jpg"><img src="/images/usb-inateck-pcie-usb3.jpg" alt="Inateck PCIe x1 USB 3.0 adapter"></a>
+            <a href="/images/storage-syba-sata-4-port-non-raid-asm1064.jpg"><img src="/images/storage-syba-sata-4-port-non-raid-asm1064.jpg" alt="Syba/IOCrest ASM1064 PCIe SATA 4-port Controller"></a>
           
         </div>
 
@@ -63,9 +63,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>Limited</td>
-              <td>No</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/45">GitHub Issue</a></td>
+              <td>Full</td>
+              <td>Yes</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/116">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -73,26 +73,22 @@
         <div class="card_videos">
           <h3>Videos Related to this Card</h2>
             
-              <ul>
-                
-                  <li><a href="https://www.youtube.com/watch?v=HUamq0ey8_M">The Raspberry Pi Compute Module 4 Review</a></a></li>
-                
-              </ul>
+              <p>There are no videos for this card yet.</p>
             
         </div>
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>This USB 3.0 controller card has two external USB 3.0 ports, and a male header for two more internal ports, and it uses a Fresco Logic chipset (which is supported by Pi OS out of the box).</p>
+          <p>This SATA controller works well with Raspberry Pi OS and allows attaching 4 SATA devices (powered separately).</p>
 
-<p>It was always recognized, and allowed USB devices to attach, but sometimes USB 3 devices would mount at USB 2 speeds (e.g. 480 Mbps instead of 5000 Mbps).</p>
+<p>It uses the ASMedia 1064 chipset, which may require recompiling the kernel with the <code class="language-plaintext highlighter-rouge">CONFIG_ATA</code> and <code class="language-plaintext highlighter-rouge">CONFIG_SATA_AHCI</code> options.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/3oplt67">Inateck PCIe x1 USB 3.0 adapter</a></p>
+          <a href="https://amzn.to/3jCMByn">Syba/IOCrest ASM1064 PCIe SATA 4-port Controller</a></p>
         </div>
 
       </section>
