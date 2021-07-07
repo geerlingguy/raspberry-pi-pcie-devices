@@ -6,7 +6,8 @@ functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/15"
 buy_link: https://amzn.to/38wYOiL
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=FTP5h9jnVx0
 ---
 This 10 Gigabit network card has an Aquantia AQC107 802.3bz NBase-T ethernet controller, which requires the AQtion driver.
 
