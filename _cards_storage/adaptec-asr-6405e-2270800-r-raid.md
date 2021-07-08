@@ -1,7 +1,7 @@
 ---
 layout: card
-title: "Adaptec ASR-6045E 2270800-R RAID Storage Controller"
-picture: "/images/storage-adaptec-asr-6045e-2270800-r-raid.jpg"
+title: "Adaptec ASR-6405E 2270800-R RAID Storage Controller"
+picture: "/images/storage-adaptec-asr-6405e-2270800-r-raid.jpg"
 functionality: "Currently Testing"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/42"
