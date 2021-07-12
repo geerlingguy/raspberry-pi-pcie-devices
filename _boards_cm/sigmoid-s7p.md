@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-sigmoid-s7p.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/124"
 link: https://ib-wistinghausen.de/sigmoid-series-3d-printer-control-unit
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
 This is the world's first 3D-Printer Control Unit based on the all new Raspberry Pi 4 Compute Module.
 

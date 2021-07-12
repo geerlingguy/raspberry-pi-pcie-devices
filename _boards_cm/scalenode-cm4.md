@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-scalenode-cm4.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/119"
 link: https://github.com/antmicro/scalenode
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
 The baseboard has been optimized for 19-inch rack mount installations for distributed multi-node computing systems. It includes a PoE circuit, has an M.2 M-key slot for NVMe SSDs, and fits inside a 1U chassis.
 

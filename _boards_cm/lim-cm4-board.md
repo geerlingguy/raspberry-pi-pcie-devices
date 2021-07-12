@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-lim-cm4-board.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/160"
 link: https://github.com/l00nix/rpi-cm4-LiM-board
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
 The LiM is the most minimal implementation of a Raspberry Pi CM4 carrier board, with only a USB-C port for power, and status LEDs.
 

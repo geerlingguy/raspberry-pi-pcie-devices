@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-mercury-streamer.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/94"
 link: https://www.pi2design.com/coming-soon.html
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
 The Mercyruy Streamer (formerly known as 'CM4AES') is built by Pi 2 Design, who has a history of making high-quality audio output devices for the Raspberry Pi.
 

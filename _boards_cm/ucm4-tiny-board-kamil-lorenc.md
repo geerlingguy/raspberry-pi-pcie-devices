@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://hackaday.io/project/179793-ucm4
 videos:
   - https://www.youtube.com/watch?v=mftScuGE_xw
+  - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
 This board is the exact footprint of the CM4, and includes only the necessary components to get wired networking, a microSD card, and power (or USB OTG) to the CM4.
 

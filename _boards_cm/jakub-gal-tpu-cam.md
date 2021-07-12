@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://grabcad.com/library/tpu-cam-with-cm4-1
 videos:
   - https://www.youtube.com/watch?v=6aQB4FLPs9k
+  - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
 This board combines a Coral Edge TPU with a Raspberry Pi CM4 to process two camera streams from imx219 camera sensors.
 
