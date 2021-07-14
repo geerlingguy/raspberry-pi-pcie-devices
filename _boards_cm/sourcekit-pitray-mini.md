@@ -9,6 +9,7 @@ link: https://www.dfrobot.com/product-2196.html
 videos:
   - https://www.youtube.com/watch?v=4vSGl5kpf-k
   - https://www.youtube.com/watch?v=DKV7wv7NaCY
+  - https://www.youtube.com/watch?v=T82rYs9uPLE
 ---
 The Sourcekit PiTray mini is a companion IO board for Raspberry Pi Compute Module (not included). It is designed for use both as a development system for Compute Module 4 and as an embedded board integrated into end products.
 
