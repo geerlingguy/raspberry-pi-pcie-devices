@@ -10,14 +10,7 @@ videos:
   - https://www.youtube.com/watch?v=vBccak8f-VY
   - https://www.youtube.com/watch?v=KhHAf7mTxkk
 ---
-I had to [cross-compile](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) the Pi OS kernel to get the driver and SATA support required to make this card work. When running `menuconfig`, I selected the following options:
-
-```
-> Device Drivers
-  > Serial ATA and Parallel ATA drivers (libata) (enable this - M)
-    > AHCI SATA support (enable this - M)
-    > Marvell SATA support (enable this - M)
-```
+Since mid-2021, [SATA support is built into the Raspberry Pi kernel](https://www.jeffgeerling.com/blog/2021/raspberry-pi-os-now-has-sata-support-built), so assuming you have updated to the latest version (`sudo apt upgrade -y`), this card should work out of the box.
 
 The card shows up as `SATA controller: JMicron Technology Corp. Device 0585 (prog-if 01 [AHCI 1.0])` using `lspci`, and I successfully tested four drives connected to it (I didn't have any more to test, otherwise I would've plugged in a fifth!).
 

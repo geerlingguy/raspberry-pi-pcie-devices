@@ -9,4 +9,4 @@ buy_link: https://amzn.to/2HpEWCP
 videos:
   - https://www.youtube.com/watch?v=oWev1THtA04
 ---
-Requires kernel recompile with `CONFIG_ATA` and `CONFIG_SATA_AHCI`. See linked GitHub issue for more details.
+Since mid-2021, [SATA support is built into the Raspberry Pi kernel](https://www.jeffgeerling.com/blog/2021/raspberry-pi-os-now-has-sata-support-built), so assuming you have updated to the latest version (`sudo apt upgrade -y`), this card should work out of the box.

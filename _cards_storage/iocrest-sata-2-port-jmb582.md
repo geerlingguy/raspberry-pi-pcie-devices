@@ -8,13 +8,6 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6
 buy_link: https://amzn.to/3tmBsUU
 videos: []
 ---
-Multiple people have tried getting this card working. It requires AHCI SATA support to be enabled in the kernel, which may require a recompile with the following options added via `menuconfig`:
+Since mid-2021, [SATA support is built into the Raspberry Pi kernel](https://www.jeffgeerling.com/blog/2021/raspberry-pi-os-now-has-sata-support-built), so assuming you have updated to the latest version (`sudo apt upgrade -y`), this card _should_ work out of the box.
 
-```
-Device Drivers
-  > Serial ATA and Parallel ATA drivers (libata) (enable this - M)
-    > AHCI SATA support (enable this - M)
-    > Marvell SATA support (enable this - M)
-```
-
-However, once the kernel module is installed, the Pi kernel panics any time the controller is initialized; see the linked GitHub issue for more details.
+However, the Pi kernel panics any time this particular controller is initialized; see the linked GitHub issue for more details.
