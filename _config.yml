@@ -18,6 +18,8 @@ collections:
     output: true
   cards_multimedia:
     output: true
+  cards_other:
+    output: true
   cards_storage:
     output: true
   cards_usb:
