@@ -6,7 +6,8 @@ functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/199"
 buy_link: https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Time-Card
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=tU0xC1ynaT8
 ---
 Time Card is the heart of the Open Time Server project. It is an entirely open source board design that can be used with the OCP PTP driver in the Linux kernel to run a computer as a grandmaster clock source with hardware timestamping.
 
