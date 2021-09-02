@@ -3,7 +3,7 @@ layout: board
 title: "Uptime Lab's UpBerry"
 short_description: A tiny CM4 carrier with HDMI, USB-C, and status/activity lights.
 status: prototype
-picture: "/images/uptime-lab-cm4-upberry.jpg"
+picture: "/images/board-uptime-lab-cm4-upberry.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/170"
 link: https://www.instagram.com/p/CQga-_YL5OL/
 videos: []
