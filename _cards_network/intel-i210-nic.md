@@ -12,4 +12,4 @@ In tandem with my work on the Time Card (see [#199](https://github.com/geerlingg
 
 I may try picking one of these up to see if I can get it working with the Time Card.
 
-For more discussion of this card and its driver, see [this thread](https://github.com/raspberrypi/linux/issues/4151), particularly the conversation between @lasselj and me. You can also find @lasselj's current kernel config diff attached as a .txt file.
+For more discussion of this card and its driver, see [this thread about IEEE1588-2008 support in the Pi Linux issues](https://github.com/raspberrypi/linux/issues/4151).
