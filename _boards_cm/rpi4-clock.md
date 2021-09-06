@@ -1,7 +1,7 @@
 ---
 layout: board
-title: "Will Whang's RPi4 Clock"
-short_description: A compact CM4 clock with GNSS integration and a rubidium atomic clock.
+title: "RPi4 Clock by Will Whang"
+short_description: Compact CM4 clock with GNSS integration and a rubidium atomic clock.
 status: prototype
 picture: "/images/board-will-whangs-rpi4-clock.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/205"
