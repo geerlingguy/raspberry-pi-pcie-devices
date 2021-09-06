@@ -2,7 +2,7 @@
 layout: card
 title: "RDEXP PCIe x1 90° riser"
 picture: "/images/adpater-rdexp-pcie-x1-riser.jpg"
-functionality: "Plan to Test"
+functionality: "Currently Testing"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/186"
 buy_link: https://amzn.to/3fsBtkz
