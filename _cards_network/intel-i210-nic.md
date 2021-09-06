@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Intel I210-T1 Network Adapter"
-picture: "/images/network-intel-i210-nic.jpg"
+picture: "/images/network-intel-i210-nic.jpeg"
 functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/204"
