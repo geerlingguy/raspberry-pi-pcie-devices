@@ -1,6 +1,6 @@
 ---
 layout: board
-title: "ModBerry 500 CM4"
+title: "Techbase ModBerry 500 CM4"
 short_description: An industrial IoT computer based on the Compute Module 4.
 status: production
 picture: "/images/board-modberry-500-cm4.jpg"
