@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "VisionTek Radeon 5450 1GB PCIe x16"
+title: "VisionTek AMD Radeon 5450 1GB PCIe x16"
 picture: "/images/gpu-visiontek-radeon-5450.jpg"
 functionality: "None (so far)"
 driver_required: "Yes"

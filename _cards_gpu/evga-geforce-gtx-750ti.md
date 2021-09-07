@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "EVGA GeForce GTX 750 Ti"
+title: "EVGA Nvidia GeForce GTX 750 Ti"
 picture: "/images/gpu-evga-geforce-gtx-750ti.jpg"
 functionality: "None (so far)"
 driver_required: "Yes"

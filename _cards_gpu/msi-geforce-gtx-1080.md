@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "MSI GeForce GTX 1080 8G Gamer X"
+title: "MSI Nvidia GeForce GTX 1080 8G Gamer X"
 picture: "/images/gpu-msi-geforce-gtx-1080.jpg"
 functionality: "None (so far)"
 driver_required: "Yes"

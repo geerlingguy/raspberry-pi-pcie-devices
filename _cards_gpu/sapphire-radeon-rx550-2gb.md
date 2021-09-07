@@ -1,21 +1,20 @@
 ---
 layout: card
-title: "Sapphire Radeon RX 550 2GB PCIe x16"
-picture: "/images/gpu-sapphire-radeon-rx550.jpg"
-functionality: "None (so far)"
+title: "AMD Radeon RX 6700 XT 12GB PCIe x16"
+picture: "/images/gpu-radeon-rx6700xt.jpeg"
+functionality: "Currently Testing"
 driver_required: "Yes"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6"
-buy_link: https://amzn.to/34vadwW
-videos:
-  - https://www.youtube.com/watch?v=MxcafwjWw24
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/222"
+buy_link: https://amzn.to/3l1K8g7
+videos: []
 ---
-The Radeon RX 550 is a slightly older graphics card that is supported by the open source amdgpu driver in the Linux Kernel.
+The Radeon RX 6700 XT ("Navy Flounder") was released in 2021 and is supported by the open source amdgpu driver in the Linux Kernel, version 5.11 and later. It is also supported by AMD's [Radeon Software for Linux as of the 20.50 version](https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux-20-50).
 
-It will require a 1x to 16x adapter, or some other means of adapting the 16x-sized card pins into the 1x slot on the CM4 IO Board. You should also supply _at least_ 5A of 12V power to the CM4 IO Board if you're powering the card through the IO Board itself.
+It will require a 1x to 16x adapter, or some other means of adapting the 16x-sized card pins into the 1x slot on the CM4 IO Board. You will need to supply 20A of 12V power (about 230W) to the card directly through it's separate power plugs.
 
 ### `amdgpu` (open source) driver
 
-To get the amdgpu driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile).
+To get the amdgpu driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) on the 5.11 branch or later.
 
 Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select the `amdgpu` driver to install.
 
@@ -36,6 +35,6 @@ Now, after a reboot, you can explicitly load the module and see what happens by 
 sudo modprobe amdgpu
 ```
 
-In my case, the entire Pi locks up and requires a hard power reset. Go figure.
+I haven't yet run the card on the Pi, so we'll see what happens then!
 
-See the linked GitHub issue for more details on how I have been debugging this card, and [the patch](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6#issuecomment-751169935) I've used to get past a bad `memset()` call.
+See the linked GitHub issue for more details.

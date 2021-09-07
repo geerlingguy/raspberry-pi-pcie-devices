@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "Zotac GeForce GT 710 1GB PCIe x1"
+title: "Zotac Nvidia GeForce GT 710 1GB PCIe x1"
 picture: "/images/gpu-zotac-geforce-gt710.jpg"
 functionality: "None (so far)"
 driver_required: "Yes"
