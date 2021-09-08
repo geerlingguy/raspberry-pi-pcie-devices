@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Techbase AI GATEWAY 9500-CM4"
-short_description: A CM4-based industrail gatway incorporating the Modberry 500-CM4 and Coral from Google.
+short_description: An industrial device incorporating the Modberry 500-CM4 and Coral from Google.
 status: prototype
 picture: "/images/board-ai-gateway-9500-cm4.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/86"
