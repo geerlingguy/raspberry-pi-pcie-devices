@@ -1,5 +1,5 @@
 ---
-layout: board
+layout: card
 title: "Broadcom HBA 9405W-16i Tri-Mode Storage Adapter (LSI)"
 short_description: .
 status: prototype
