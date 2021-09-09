@@ -9,21 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066 | Raspberry Pi PCIe Devices</title>
+<title>Broadcom MegaRAID 9405W-16i storage controller (LSI) | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066" />
+<meta property="og:title" content="Broadcom MegaRAID 9405W-16i storage controller (LSI)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This card uses the same Realtek 8125 chip that’s in the Rosewill RC20001 2.5 Gbps card I tested, but the difference is it has two of them!" />
-<meta property="og:description" content="This card uses the same Realtek 8125 chip that’s in the Rosewill RC20001 2.5 Gbps card I tested, but the difference is it has two of them!" />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/syba-dual-25gbe-pcie-nic.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/syba-dual-25gbe-pcie-nic.html" />
+<meta name="description" content="This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver." />
+<meta property="og:description" content="This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-09-09T16:18:56+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066" />
+<meta property="twitter:title" content="Broadcom MegaRAID 9405W-16i storage controller (LSI)" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/syba-dual-25gbe-pcie-nic.html"},"description":"This card uses the same Realtek 8125 chip that’s in the Rosewill RC20001 2.5 Gbps card I tested, but the difference is it has two of them!","url":"https://pipci.jeffgeerling.com//cards_network/syba-dual-25gbe-pcie-nic.html","@type":"BlogPosting","headline":"Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066","dateModified":"2021-09-09T16:18:56+00:00","datePublished":"2021-09-09T16:18:56+00:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html"},"description":"This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver.","url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9405W-16i storage controller (LSI)","dateModified":"2021-09-09T16:18:56+00:00","datePublished":"2021-09-09T16:18:56+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -45,11 +45,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066</h1>
+        <h1 id="card_title">Broadcom MegaRAID 9405W-16i storage controller (LSI)</h1>
 
         <div class="card_picture">
           
-            <a href="/images/network-syba-dual-25gbe-pcie-nic.jpg"><img src="/images/network-syba-dual-25gbe-pcie-nic.jpg" alt="Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066"></a>
+            <a href="/images/storage-broadcom-megaraid-9405w-16i.jpg"><img src="/images/storage-broadcom-megaraid-9405w-16i.jpg" alt="Broadcom MegaRAID 9405W-16i storage controller (LSI)"></a>
           
         </div>
 
@@ -65,7 +65,7 @@
             <tr>
               <td>Full</td>
               <td>Yes</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/46">GitHub Issue</a></td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/196">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -79,29 +79,18 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>This card uses the same Realtek 8125 chip that’s in the <a href="/cards_network/rosewill-rc20001-25gbe.html">Rosewill RC20001 2.5 Gbps card</a> I tested, but the difference is it has <em>two</em> of them!</p>
+          <p>This card is similar to the <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/72">9460-16i</a>, and is new enough to be supported on ARM platforms by the in-tree <code class="language-plaintext highlighter-rouge">mpt3sas</code> driver.</p>
 
-<p>Between those two chips and the Pi is an ASMedia 1182 PCI Express 2.0 1x packet switch, which allows the two Realtek chips to work with the Pi over its single PCIe 1x lane.</p>
+<p>Joshua Boudreau, from 45Drives, used this card in a special ‘Storinator Jr’ build, and used a 45Drives fork of the linux kernel to build in the driver for the card; see <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/196#issuecomment-904656864">this GitHub comment</a> for details.</p>
 
-<p>The Realtek chips on this card require the Realtek 8125 driver, which can be compiled or <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">cross-compiled</a> into the Pi kernel.</p>
-
-<p>The driver can be selected with <code class="language-plaintext highlighter-rouge">menuconfig</code> in the path:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
-  &gt; Network device support
-    &gt; Ethernet driver support
-      &gt; Realtek devices
-        &gt; Realtek 8169/8168/8101/8125 ethernet support
-</code></pre></div></div>
-
-<p>I am still testing the card’s performance, and will update this page after that testing is complete.</p>
+<p>On 64-bit Pi OS, Josh had to remove <code class="language-plaintext highlighter-rouge">quiet</code> from the <code class="language-plaintext highlighter-rouge">/boot/cmdline.txt</code> configuration in order for the card to work. No clue why!</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/37QSNwj">Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066</a></p>
+          <a href="https://amzn.to/3srcZOh">Broadcom MegaRAID 9405W-16i storage controller (LSI)</a></p>
         </div>
 
       </section>
