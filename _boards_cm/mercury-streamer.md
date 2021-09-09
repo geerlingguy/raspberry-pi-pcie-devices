@@ -9,7 +9,7 @@ link: https://www.pi2design.com/coming-soon.html
 videos:
   - https://www.youtube.com/watch?v=YuLNqs21x2Q
 ---
-The Mercyruy Streamer (formerly known as 'CM4AES') is built by Pi 2 Design, who has a history of making high-quality audio output devices for the Raspberry Pi.
+The Mercury Streamer (formerly known as 'CM4AES') is built by Pi 2 Design, who has a history of making high-quality audio output devices for the Raspberry Pi.
 
 It includes multiple high-quality audio outputs, including S/PDIF, AES (coaxial), Optical audio (TOSlink), an AES balanced XLR jack, and an I2S HDMI output. It is designed for maximum audio fidelity, with a high quality power circuit.
 
