@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Dual CM4 Gigabit Switch Board"
-short_description: A CM4 carrier board with an integrated gigabit switch.
+short_description: A design for two CM4s and an integrated gigabit switch.
 status: prototype
 picture: "/images/board-rpi-cm4-gigabit-switch.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/178"
