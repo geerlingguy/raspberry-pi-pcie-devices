@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "XTRX PCIe Software Defined Radio"
-picture: "/images/card-xtrx-pcie-sdr.jpg"
+picture: "/images/multimedia-xtrx-pcie-sdr.jpg"
 functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/71"
