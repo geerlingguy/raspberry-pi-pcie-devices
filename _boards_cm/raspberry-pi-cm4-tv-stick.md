@@ -3,7 +3,7 @@ layout: board
 title: "Raspberry Pi CM4 TV Stick"
 short_description: A compact CM4 carrier board that plugs directly into HDMI.
 status: prototype
-picture: "/images/board-raspberry-pi-cm4-tv-stick.jpg"
+picture: "/images/board-raspberry-pi-cm4-tv-stick.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/181"
 link: https://hackaday.io/project/180969-raspberry-pi-cm4-tv-stick
 videos: []
