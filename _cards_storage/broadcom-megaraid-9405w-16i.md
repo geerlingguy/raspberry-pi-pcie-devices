@@ -2,7 +2,7 @@
 layout: card
 title: "Broadcom MegaRAID 9405W-16i storage controller (LSI)"
 picture: "/images/storage-broadcom-megaraid-9405w-16i.jpg"
-functionality: "Currently Testing"
+functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/196"
 buy_link: https://amzn.to/3srcZOh
