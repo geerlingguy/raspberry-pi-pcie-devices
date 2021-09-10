@@ -10,7 +10,7 @@ videos: []
 ---
 From Gumstix: *Note, this board is not compatible with CM3Lite.*
 
-The [Gumstix Raspberry Pi CM4 Uprev](https://www.gumstix.com/cm4-uprev.html) board allows the Raspberry Pi CM4 COM to be used on most existing CM3 boards. It includes a power indicator LED and SODIMM edge connection to route the CM4 pin-outs to the CM3's.
+The [Gumstix Raspberry Pi CM4 Uprev](https://www.gumstix.com/cm4-uprev.html) board allows the Raspberry Pi CM4 COM to be used on some existing CM3 boards. It includes a power indicator LED and SODIMM edge connection to route the CM4 pin-outs to the CM3's.
 
 I should note that it's been tested and discussed on the Turing Pi Discord, and so far nobody's been able to get the Uprev to work with the Turing Pi. Not sure why, but there could be signaling or power issues.
 
