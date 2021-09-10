@@ -8,4 +8,4 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://thepihut.com/products/dual-gigabit-ethernet-base-board-for-raspberry-pi-compute-module-4
 videos: []
 ---
-Looks to have a 2nd Gigabit Ethernet port off an internal USB 3.0 bus (with a Realtek chip for the NIC), similar to the USB 3.0-based approach [Seeed used on their board](https://pipci.jeffgeerling.com/boards_cm/seeed-dual-gig-cm4-routerboard.html). Biggest question is if it can perform well on that 2nd interface. It does have a lot more IO than the other boards, so that could make it a nice platform for DIY routers.
+This IO Board for the Compute Module 4 has a second Gigabit Ethernet port off an internal USB 3.0 bus, using a Realtek chip for the NIC. This is similar to the USB 3.0-based approach [Seeed used on their board](https://pipci.jeffgeerling.com/boards_cm/seeed-dual-gig-cm4-routerboard.html). With it's wide array of IO, it could make a nice platform for DIY routers.
