@@ -3,7 +3,7 @@ layout: board
 title: "Gumstix Raspberry Pi CM4 Uprev"
 short_description: A board that allows the CM4 to be used on some CM3 boards.
 status: production
-picture: "/images/board-gumstix-rpi-cm4-uprev.jpg"
+picture: "/images/board-gumstix-rpi-cm4-uprev.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/173"
 link: https://www.gumstix.com/cm4-uprev.html
 videos: []
