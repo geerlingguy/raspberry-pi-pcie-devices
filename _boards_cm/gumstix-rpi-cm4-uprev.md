@@ -8,7 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://www.gumstix.com/cm4-uprev.html
 videos: []
 ---
-From Gumstix: *Note, this board is not compatible with CM3Lite or CM4Lite.*
+From Gumstix: *Note, this board is not compatible with CM3Lite.*
 
 The [Gumstix Raspberry Pi CM4 Uprev](https://www.gumstix.com/cm4-uprev.html) board allows the Raspberry Pi CM4 COM to be used on most existing CM3 boards. It includes a power indicator LED and SODIMM edge connection to route the CM4 pin-outs to the CM3's.
 
