@@ -2,7 +2,7 @@
 layout: board
 title: "Techbase ClusBerry 9500-CM4"
 short_description: An industrial Raspberry Pi CM4 cluster.
-status: product
+status: production
 picture: "/images/board-clusberry-9500-cm4.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/86"
 link: https://clusberry.techbase.eu/#clusberry

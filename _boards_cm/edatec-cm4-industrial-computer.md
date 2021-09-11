@@ -2,7 +2,7 @@
 layout: board
 title: "EDATEC CM4 Industrial Computer"
 short_description: A CM4 carrier and metal enclosure designed with a number of interface options.
-status: product
+status: production
 picture: "/images/board-edatec-cm4-industrial.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/172"
 link: http://www.edatec.cn/en/Product/Camera_Modules/2019/0826/76.html
