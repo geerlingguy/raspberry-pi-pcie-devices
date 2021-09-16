@@ -1,10 +1,10 @@
 ---
 layout: card
 title: "45Drives' Storinator Jr"
-picture: "/images/storage-45drives-storinator-jr.jpg"
+picture: "/images/board-45drives-storinator-jr.jpg"
 functionality: "Currently Testing"
 driver_required: "Yes"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/42"
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/252"
 buy_link: []
 videos:
   - https://www.youtube.com/watch?v=A6X9ci8KvgE
