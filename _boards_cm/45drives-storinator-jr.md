@@ -1,5 +1,5 @@
 ---
-layout: card
+layout: board
 title: "45Drives' Storinator Jr"
 picture: "/images/board-45drives-storinator-jr.jpg"
 functionality: "Currently Testing"
