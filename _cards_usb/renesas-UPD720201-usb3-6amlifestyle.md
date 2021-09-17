@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "MZHOU USB 3.0 adapter with M.2 SATA SSD slot"
+title: "Renesas µPD720201 USB 3.0 Host Controller"
 picture: "/images/usb-renesas-UPD720201-usb3-6amlifestyle.jpeg"
 functionality: "Full"
 driver_required: "Yes"
