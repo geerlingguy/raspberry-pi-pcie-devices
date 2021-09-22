@@ -8,5 +8,6 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html
 videos:
   - https://www.youtube.com/watch?v=YuLNqs21x2Q
+  - https://www.youtube.com/watch?v=UQrMqjH68LM
 ---
 The reTerminal encloses a CM4 inside an enclosure incorporating a 720p 5" multi-touch IPS display, a high speed expansion interface, 2x USB 2.0, Gigabit Ethernet, a 40-in GPIO header, a Crypto co-processor, and more.
