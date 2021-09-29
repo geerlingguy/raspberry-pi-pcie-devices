@@ -7,6 +7,7 @@ picture: "/images/board-seeed-studio-reterminal.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/138"
 link: https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html
 videos:
+  - https://www.youtube.com/watch?v=Gai_w3uCtIM
   - https://www.youtube.com/watch?v=YuLNqs21x2Q
   - https://www.youtube.com/watch?v=UQrMqjH68LM
 ---
