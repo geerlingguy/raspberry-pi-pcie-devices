@@ -104,3 +104,4 @@ Connecting to host 10.45.0.1, port 5201
 
 * https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile
 * https://github.com/geerlingguy/raspberry-pi-pcie-devices/blob/master/_cards_network/rosewill-rc20001-25gbe.md
+* https://wiki.dfrobot.com/Compute_Module_4_IoT_Router_Board_Mini_SKU_DFR0767
