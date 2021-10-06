@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-home-assistant-amber.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/253"
 link: https://www.crowdsupply.com/nabu-casa/home-assistant-amber
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=iN7kiN9Cgxs
 ---
 The [Home Assistant Amber](https://www.crowdsupply.com/nabu-casa/home-assistant-amber) is a ready-to-use device based on the Raspberry Pi Compute Module 4, and is the easiest way to run [Home Assistant](https://www.nabucasa.com/) and experience the best home automation in the world.
 
