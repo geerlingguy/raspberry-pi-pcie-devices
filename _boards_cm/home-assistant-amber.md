@@ -1,6 +1,6 @@
 ---
 layout: board
-title: "Home Assitant Amber"
+title: "Home Assistant Amber"
 short_description:
 status: production
 picture: "/images/board-home-assistant-amber.jpg"
