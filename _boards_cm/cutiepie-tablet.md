@@ -8,7 +8,8 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2
 link: https://cutiepi.io
 videos:
   - https://www.youtube.com/watch?v=w9giSg6ORMk
+  - https://www.youtube.com/watch?v=t-ZQ9LRdXSk
 ---
-CutiePi is an ultra portable Raspberry Pi creation kit, in a tablet form factor. Liberate your Pi project from the desk, and start creating wherever an idea strikes you.
+CutiePi is an ultra portable Raspberry Pi tablet.
 
-At the heart of CutiePi is our custom PCB, the CutiePi board. This Raspberry Pi Compute Module 4 compatible carrier board comes with features for portable use, and is a proud OSHWA-certified open source hardware.
+The CutiePi is powered by a custom PCB, the CutiePi board. This Raspberry Pi Compute Module 4 compatible carrier board comes with features for portable use, and is a proud OSHWA-certified open source hardware.
