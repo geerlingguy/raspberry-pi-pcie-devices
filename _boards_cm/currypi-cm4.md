@@ -3,7 +3,7 @@ layout: board
 title: "CurryPi CM4 Cluster Board"
 short_description: A 4-node CM4 cluster board.
 status: prototype
-picture: "/images/currypi-cm4.jpeg"
+picture: "/images/board-currypi-cm4.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/272"
 link: https://twitter.com/arvidep/status/1445363759313297412
 videos: []
