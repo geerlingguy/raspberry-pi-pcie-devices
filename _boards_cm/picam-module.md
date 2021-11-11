@@ -3,7 +3,7 @@ layout: board
 title: "PiCam Module"
 short_description: An ultra-compact board to mount a Raspberry Pi camera and a CM4.
 status: production
-picture: "/images/picam-module.png"
+picture: "/images/board-picam-module.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/294"
 link: https://www.adafruit.com/product/5247
 videos: []
