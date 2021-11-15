@@ -4,7 +4,7 @@ title: "Radxa Taco"
 short_description: An ultimate CM4 carrier board designed for NAS/server/router applications
 status: prototype
 picture: "/images/board-radxa-taco.jpg"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/202"
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/268"
 link: https://wiki.radxa.com/Taco
 videos:
   - https://www.youtube.com/watch?v=iN7kiN9Cgxs
