@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "PiStorm32 CM4 Amiga"
-short_description: 68k Hardware Emulator
+short_description: 68k Hardware Emulator.
 status: prototype
 picture: "/images/board-pistorm32-cm4-amiga.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/271"
