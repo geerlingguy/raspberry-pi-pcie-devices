@@ -1,8 +1,8 @@
 ---
 layout: board
 title: "45Drives' Storinator Jr"
-short_description:
-status: A mini version of the Storinator built with a Raspberry Pi.
+short_description: A mini version of the Storinator built with a Raspberry Pi.
+status: prototype
 picture: "/images/board-45drives-storinator-jr.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/252"
 link: "https://twitter.com/45Drives/status/1438264868277211137"
