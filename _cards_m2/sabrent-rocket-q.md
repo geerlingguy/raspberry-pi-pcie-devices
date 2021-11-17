@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Sabrent Rocket Q 8TB M.2 NVMe SSD"
-picture: "/images/m2-sabrent-rocket-q.jpg"
+picture: "/images/m2-sabrent-rocket-q.jpeg"
 functionality: "Full"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/316"
