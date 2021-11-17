@@ -5,7 +5,7 @@ picture: "/images/network-compex-WLE200NX.jpeg"
 functionality: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/313"
-buy_link: https://www.amazon.com/Compex-WLE200NX-PCI-Express-Full-Size-MiniCard/dp/B010C7XRFA?&linkCode=sl1&tag=mmjjg-20&linkId=fc5838df48b4f9eda2835b5c59509a2c&language=en_US&ref_=as_li_ss_tl
+buy_link: https://amzn.to/3cigkI9
 videos: []
 ---
 Alftel just shipped me a Seaberry board to test, and it came with a few PCI Express devices pre-installed.
