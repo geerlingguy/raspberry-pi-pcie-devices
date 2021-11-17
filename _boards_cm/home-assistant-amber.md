@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Home Assistant Amber"
-short_description:
+short_description: Ready-to-use device providing the easiest way to run Home Assistant in the world.
 status: production
 picture: "/images/board-home-assistant-amber.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/253"
