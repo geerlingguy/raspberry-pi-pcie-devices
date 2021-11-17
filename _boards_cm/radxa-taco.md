@@ -7,6 +7,7 @@ picture: "/images/board-radxa-taco.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/268"
 link: https://wiki.radxa.com/Taco
 videos:
+  - https://www.youtube.com/watch?v=G_px298IF2k
   - https://www.youtube.com/watch?v=iN7kiN9Cgxs
 ---
 The Radxa Taco is the ultimate CM4 carrier board designed for NAS/server/router applications. The idea is based on the Quad SATA HAT for the Raspberry Pi 4 and goes much further. The Radxa Taco has the following features:
