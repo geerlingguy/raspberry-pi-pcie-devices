@@ -89,13 +89,13 @@ Drop a ⭐ if this project helped you!
 ## ✍️ Authors
 ### Jeff Geerling
 * Creator and maintainer
-* [@geerlingguy](/) on GitHub
+* [@geerlingguy](https://github.com/geerlingguy) on GitHub
 * [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCR-DXc1voovS8nhAvccRZhg?style=social)](https://www.youtube.com/c/JeffGeerling)
 
 ### Katie Geerling
 * Documentation writer
 * Occasional contributor
-* [@punnypenguins] on GitHub
+* [@punnypenguins](https://github.com/punnypenguins) on GitHub
 
 ## 📝 License
 
