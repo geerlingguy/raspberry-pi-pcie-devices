@@ -101,4 +101,4 @@ Drop a ⭐ if this project helped you!
 
 This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com/). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
 
-This project uses the [GNU General Public License, version 3](https://opensource.org/licenses/GPL-3.0).
+_**Raspberry Pi PCIe Devices** uses the [GNU General Public License, version 3](https://opensource.org/licenses/GPL-3.0)._
