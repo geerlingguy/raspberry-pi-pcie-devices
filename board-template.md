@@ -8,6 +8,8 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/I
 link: https://amzn.to/product-link-here
 videos: []
 ---
+# INSTRUCTIONS:
+
 ### Create a new file in the `_boards_cm` directory.
 
 1. Title it with the board name in all-lowercase, using dashes to separate words.

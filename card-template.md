@@ -8,6 +8,8 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/I
 buy_link: https://amzn.to/product-link-here
 videos: []
 ---
+# INSTRUCTIONS:
+
 ### Create a new file in the appropriate `_cards_[type]` directory.
 
 1. Title it with the card name in all-lowercase, using dashes to separate words.
