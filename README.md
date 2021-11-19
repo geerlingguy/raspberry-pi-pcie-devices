@@ -17,7 +17,7 @@
   <img src="/images/cm4-io-board-pcie-slot.jpeg" alt="CM4 IO Board PCIe Slot"/>
 </p>
 
-## 🔧 Setup and installation
+## Setup and installation
 
 To run a copy of this website in a local web development environment, you need to have **Jekyll**, **GitHub CLI** *OR* **GitHub Desktop**, and a local clone of the website's repository.
 
@@ -45,7 +45,7 @@ Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](http
 
 As long as `jekyll serve` is running, you'll be able to watch the site and all changes you make to it in real time.
 
-## 🧑‍💻 Contributing
+## Contributing
 
 ### Ways to contribute
 * **Add a card or board to the list:** Use issues and pull requests to add new board entries and card entries to the site.
@@ -81,22 +81,22 @@ To add a network card to the database:
 Add a new file named after the card in the appropriate `_boards_cm` directory.
 Copy the template out of [`board-template.md`](board-template.md) into this new file and follow the instructions it contains.
 
-## 🤝 Support
+## Support
 Drop a ⭐ if this project helped you!
 
 ![Patreon](https://img.shields.io/badge/-Patreon-f96854?style=for-the-badge&logo=patreon&logoColor=white)
 
-## 👤 Authors
-### Jeff Geerling 💻
+## Authors
+### Jeff Geerling
 * Creator and maintainer
 * [@geerlingguy](https://github.com/geerlingguy) on GitHub
 * [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCR-DXc1voovS8nhAvccRZhg?style=social)](https://www.youtube.com/c/JeffGeerling)
 
-### Katie Geerling 🧑‍🔬
+### Katie Geerling
 * Documentation writer and part-time contributor
 * [@punnypenguins](https://github.com/punnypenguins) on GitHub
 
-## 📝 License
+## License
 
 This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com/). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
 
