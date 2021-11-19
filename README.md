@@ -7,7 +7,7 @@
 [![Sponsors](https://img.shields.io/github/sponsors/geerlingguy)](https://github.com/sponsors/geerlingguy#sponsors)
 ![license](https://img.shields.io/github/license/geerlingguy/raspberry-pi-pcie-devices?logoColor=blue)
 
-[**Raspberry Pi PCIe Devices**](https://pipci.jeffgeerling.com/) is a compatibility database tracking which devices are and are not compatible with the [Raspberry Pi CM4](https://www.raspberrypi.com/products/compute-module-4/).
+[**Raspberry Pi PCIe Devices**](https://pipci.jeffgeerling.com/) is a compatibility database that tracks which devices are and are not compatible with the [Raspberry Pi CM4](https://www.raspberrypi.com/products/compute-module-4/).
 
 <p align="center">
   <img src="/images/rpi-pcie-devices.png" alt="Raspberry Pi PCIe Devices site header"/>
