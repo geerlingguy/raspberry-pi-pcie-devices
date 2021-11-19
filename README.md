@@ -34,7 +34,7 @@ There are two ways to use GitHub locally:
 * via [GitHub CLI](https://cli.github.com/), using the command line
 * via [GitHub Desktop](https://desktop.github.com/), an app available for macOS and Windows
 
-## 🧰 Development
+## ⚙️ Development
 
 Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](https://github.com/geerlingguy/raspberry-pi-pcie-devices) cloned, you can build and run the site locally.
 
@@ -86,15 +86,14 @@ Drop a ⭐ if this project helped you!
 
 ![Patreon](https://img.shields.io/badge/-Patreon-f96854?style=for-the-badge&logo=patreon&logoColor=white)
 
-## ✍️ Authors
-### Jeff Geerling
+## 👤 Authors
+### Jeff Geerling 💻
 * Creator and maintainer
 * [@geerlingguy](https://github.com/geerlingguy) on GitHub
 * [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCR-DXc1voovS8nhAvccRZhg?style=social)](https://www.youtube.com/c/JeffGeerling)
 
-### Katie Geerling
-* Documentation writer
-* Occasional contributor
+### Katie Geerling 🧑‍🔬
+* Documentation writer and part-time contributor
 * [@punnypenguins](https://github.com/punnypenguins) on GitHub
 
 ## 📝 License
