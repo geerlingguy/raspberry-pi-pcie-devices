@@ -13,7 +13,7 @@
   <img src="/images/cm4-io-board-pcie-slot.jpeg" alt="CM4 IO Board PCIe Slot"/>
 </p>
 
-## Setup and installation
+# Setup and installation
 
 To run a copy of this website in a local web development environment, you need to have **Jekyll**, **GitHub CLI** *OR* **GitHub Desktop**, and a local clone of the website's repository.
 
@@ -30,7 +30,7 @@ There are two ways to use GitHub locally:
 * via [GitHub CLI](https://cli.github.com/), using the command line
 * via [GitHub Desktop](https://desktop.github.com/), an app available for macOS and Windows
 
-## ⚙️ Development
+# ⚙️ Development
 
 Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](https://github.com/geerlingguy/raspberry-pi-pcie-devices) cloned, you can build and run the site locally.
 
@@ -41,7 +41,7 @@ Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](http
 
 As long as `jekyll serve` is running, you'll be able to watch the site and all changes you make to it in real time.
 
-## Contributing
+# Contributing
 
 ### Ways to contribute
 * **Add a card or board to the list:** Use issues and pull requests to add new board entries and card entries to the site.
@@ -77,12 +77,12 @@ To add a network card to the database:
 Add a new file named after the card in the appropriate `_boards_cm` directory.
 Copy the template out of [`board-template.md`](board-template.md) into this new file and follow the instructions it contains.
 
-## Support
+# Support
 Drop a ⭐ if this project helped you!
 
 ![Patreon](https://img.shields.io/badge/-Patreon-f96854?style=for-the-badge&logo=patreon&logoColor=white)
 
-## Authors
+# Authors
 ### Jeff Geerling
 * Creator and maintainer
 * [@geerlingguy](https://github.com/geerlingguy) on GitHub
@@ -92,7 +92,7 @@ Drop a ⭐ if this project helped you!
 * Documentation writer and part-time contributor
 * [@punnypenguins](https://github.com/punnypenguins) on GitHub
 
-## License
+# License
 
 This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com/). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
 
