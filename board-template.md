@@ -22,7 +22,21 @@ videos: []
   - `status`: Can be one of these:
     * prototype
     * production
-  - `picture`: Can have a path to a picture like `/images/[type]-card.jpg`, or `false`. Make sure you remember to drop the image into the `images` folder before you submit your pull request!
+    - `picture`: Can have a path to a picture like `/images/[card type]-card-name.jpg`, or `false`.
+      - `card type` can be
+        - adapter
+        - gpu
+        - m2
+        - multimedia
+        - network
+        - other
+        - storage
+        - usb
+      - `file type` can be
+        - png
+        - jpg
+        - jpeg
+      Make sure you remember to drop the image into the `images` folder before you submit your pull request!
   - `github_issue`: Should link to the GitHub issue corresponding to this card.
   - `link`: should link to the Amazon product page for this card. If no Amazon listing is available, you can substitute a different website instead.
   - `videos`: Is a list of YouTube video URLs. If there is a video to add, delete the `[]`, hit return, tab in once, add a dash, press the spacebar, and then paste the video url.

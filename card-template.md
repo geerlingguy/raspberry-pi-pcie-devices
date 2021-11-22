@@ -18,7 +18,21 @@ videos: []
 4. Replace all the values in its top section with the proper information:
   - `layout`: Should be left alone! Don't change this.
   - `title`: Replace *Name of Card Here* with the full name of the board.
-  - `picture`: Can have a path to a picture like `/images/[card type]-card-name.jpg`, or `false`. Make sure you remember to drop the image into the `images` folder before you submit your pull request!
+  - `picture`: Can have a path to a picture like `/images/[card type]-card-name.jpg`, or `false`.
+    - `card type` can be
+      - adapter
+      - gpu
+      - m2
+      - multimedia
+      - network
+      - other
+      - storage
+      - usb
+    - `file type` can be
+      - png
+      - jpg
+      - jpeg
+    Make sure you remember to drop the image into the `images` folder before you submit your pull request!
   - `functionality`: Can be one of the following:
     * "Currently Testing"
     * "Full"
