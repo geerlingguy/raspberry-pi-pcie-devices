@@ -30,7 +30,7 @@ There are two ways to use GitHub locally:
 * via [GitHub CLI](https://cli.github.com/), using the command line
 * via [GitHub Desktop](https://desktop.github.com/), an app available for macOS and Windows
 
-# ⚙️ Development
+# Development
 
 Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](https://github.com/geerlingguy/raspberry-pi-pcie-devices) cloned, you can build and run the site locally.
 
