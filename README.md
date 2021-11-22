@@ -30,27 +30,15 @@ There are two ways to use GitHub locally:
 * via [GitHub CLI](https://cli.github.com/), using the command line
 * via [GitHub Desktop](https://desktop.github.com/), an app available for macOS and Windows
 
-# Development
-
-Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](https://github.com/geerlingguy/raspberry-pi-pcie-devices) cloned, you can build and run the site locally.
-
-### Build the site locally
-1. In the command line, `cd` into the `raspberry-pi-pcie-devices` folder that contains the cloned repository.
-2. To build the site, run `jekyll serve`.
-3. You should now be able to access the local site at http://localhost:4000 in your web browser of choice.
-
-As long as `jekyll serve` is running, you'll be able to watch the site and all changes you make to it in real time.
-
 # Contributing
 
-### Ways to contribute
+## Ways to contribute:
 * **Add a card or board to the list:** Use issues and pull requests to add new board entries and card entries to the site.
 * **Test a card yourself:** If you want to test a card on your own, I'm happy to add it to the database, provided you give all the testing details, information like `lspci` and `dmesg` logs, etc. in a GitHub issue, and follow the project's conventions for card details.
 * **Fix problems with the repository:** If you find any typos, incorrect links or images, or other issues in this repository, please submit a pull request to fix the problem or [open a new issue](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/new/choose) to point the problem out for someone else to fix.
 * **Mail me a card or board:** I accept cards and boards mailed to me, and can occasionally pay shipping as well. I credit senders in all videos/posts that result from donated card testing!
 
-### General instructions for contributing
-
+## General instructions for contributing
 To contribute to **Raspberry Pi PCIe Devices**, follow these steps:
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository.
 2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) that new repository to your device.
@@ -61,11 +49,11 @@ To contribute to **Raspberry Pi PCIe Devices**, follow these steps:
 6. Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 7. Give yourself a high five, you did a great job. Thanks for contributing!
 
-### Add a card
+## Add a card
 Add a new file named after the card in the appropriate `_cards_[type]` directory.
 Copy the template out of [`card-template.md`](card-template.md) into this new file and follow the instructions it contains.
 
-#### Specific example: Adding a network card
+### Specific example: Adding a network card
 To add a network card to the database:
 1. Make sure a GitHub [issue](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues) exists for the card. Open a new issue for it you find that there isn't one.
 2. Copy the template into a new Markdown file you create inside `_cards_network`.
@@ -73,9 +61,20 @@ To add a network card to the database:
 4. Place a picture of the card named network-[name-of-card-here-minus-brackets].jpg inside the `images/` folder.
 5. Submit a pull request with your changes.
 
-### Add a board
+## Add a board
 Add a new file named after the card in the appropriate `_boards_cm` directory.
 Copy the template out of [`board-template.md`](board-template.md) into this new file and follow the instructions it contains.
+
+# Development
+
+Once you have Jekyll running and the [raspberry-pi-pcie-devices repository](https://github.com/geerlingguy/raspberry-pi-pcie-devices) cloned, you can build and run the site locally.
+
+### Build the site locally
+1. In the command line, `cd` into the `raspberry-pi-pcie-devices` folder that contains the cloned repository.
+2. To build the site, run `jekyll serve`.
+3. You should now be able to access the local site at http://localhost:4000 in your web browser of choice.
+
+As long as `jekyll serve` is running, you'll be able to watch the site and all changes you make to it in real time.
 
 # Support
 Drop a ⭐ if this project helped you!
