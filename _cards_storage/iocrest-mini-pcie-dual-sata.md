@@ -11,4 +11,5 @@ videos: []
 The [IOCrest mini PCIe dual SATA card](http://www.iocrest.com/index.php?id=2233) has an ASM1061 chip on it.
 
 With newer versions of Raspberry Pi OS, it works out of the box with the built-in AHCI driver.
-**Note: wont fit Raspberry Pi IO Board, due to mini PCIE connector!**
+
+**Note: incompatible with Raspberry Pi IO Board, due to mini PCIE connector!**
