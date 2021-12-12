@@ -5,7 +5,7 @@ short_description: A very mini carrier board for the CM4.
 status: prototype
 picture: "/images/board-uptime-lab-cm4-mincab.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/193"
-link: https://www.cnx-software.com/2021/08/10/mincab-smallest-raspberry-pi-cm4-carrier-board/
+link: https://uplab.pro/2021/10/mincab/
 videos:
   - https://www.youtube.com/watch?v=iN7kiN9Cgxs
 ---
