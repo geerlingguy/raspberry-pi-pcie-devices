@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "CM4 Slot Control Carrier Board"
-short_description: It’s a 6-lay Raspberry Pi CM4 carrier board.
+short_description: This CM4 carrier board has 12 relays and a bunch of other IO built-in.
 status: prototype
 picture: "/images/board-cm4-slot-control-carrier.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/304"
