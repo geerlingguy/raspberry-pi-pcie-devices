@@ -3,7 +3,7 @@ layout: board
 title: "Mini SS Main Board for CM4 Lite"
 short_description: A CM4-based Sega Saturn build for the CM4/CM4 Lite.
 status: production
-picture: "/images/board-mini-ss-main-board.jpg"
+picture: "/images/board-mini-ss-main-board.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-755448284"
 link: https://retrogamerestore.com/store/minisscm4/
 videos:
