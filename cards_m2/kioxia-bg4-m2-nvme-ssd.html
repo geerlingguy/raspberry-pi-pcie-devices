@@ -13,15 +13,15 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="KIOXIA BG4 M.2 NVMe SSD" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I received a KIOXIA BG4 M.2 NVMe SSD drive for testing with the Pi." />
-<meta property="og:description" content="I received a KIOXIA BG4 M.2 NVMe SSD drive for testing with the Pi." />
+<meta name="description" content="KIOXIA’s BG4 M.2 NVMe SSD drive drive is an inexpensive NVMe SSD commonly used in laptops that is mostly available used." />
+<meta property="og:description" content="KIOXIA’s BG4 M.2 NVMe SSD drive drive is an inexpensive NVMe SSD commonly used in laptops that is mostly available used." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_m2/kioxia-bg4-m2-nvme-ssd.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_m2/kioxia-bg4-m2-nvme-ssd.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="KIOXIA BG4 M.2 NVMe SSD" />
 <script type="application/ld+json">
-{"description":"I received a KIOXIA BG4 M.2 NVMe SSD drive for testing with the Pi.","url":"https://pipci.jeffgeerling.com//cards_m2/kioxia-bg4-m2-nvme-ssd.html","@type":"WebPage","headline":"KIOXIA BG4 M.2 NVMe SSD","@context":"https://schema.org"}</script>
+{"description":"KIOXIA’s BG4 M.2 NVMe SSD drive drive is an inexpensive NVMe SSD commonly used in laptops that is mostly available used.","url":"https://pipci.jeffgeerling.com//cards_m2/kioxia-bg4-m2-nvme-ssd.html","@type":"WebPage","headline":"KIOXIA BG4 M.2 NVMe SSD","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -77,9 +77,42 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>I received a <a href="https://business.kioxia.com/en-emea/ssd/client-ssd/bg4.html">KIOXIA BG4 M.2 NVMe SSD</a> drive for testing with the Pi.</p>
+          <p><a href="https://business.kioxia.com/en-emea/ssd/client-ssd/bg4.html">KIOXIA’s BG4 M.2 NVMe SSD</a> drive drive is an inexpensive NVMe SSD commonly used in laptops that is mostly available used.</p>
 
-<p>I should note this drive is typically used as an OEM part, and is not commonly found in retail sales channels, like Amazon here in the US. But you can find them used pretty easily.</p>
+<p>It is an inexpensive SSD that doesn’t include any DRM, and relies on a technology called NVMe Host Memory Buffer (HMB) that essentially moves NVMe cache to the system RAM.</p>
+
+<p>Using my <a href="https://raw.githubusercontent.com/geerlingguy/raspberry-pi-dramble/master/setup/benchmarks/disk-benchmark.sh">disk-benchmark.sh script</a>, I got the following performance numbers on the Pi CM4:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Benchmark</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fio 1M sequential read</td>
+      <td>192 MB/s</td>
+    </tr>
+    <tr>
+      <td>iozone 1M random read</td>
+      <td>170 MB/s</td>
+    </tr>
+    <tr>
+      <td>iozone 1M random write</td>
+      <td>157 MB/s</td>
+    </tr>
+    <tr>
+      <td>iozone 4K random read</td>
+      <td>29.71 MB/s</td>
+    </tr>
+    <tr>
+      <td>iozone 4K random write</td>
+      <td>54.50 MB/s</td>
+    </tr>
+  </tbody>
+</table>
 
         </div>
 
