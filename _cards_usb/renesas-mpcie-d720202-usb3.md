@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Renesas µPD720202 USB 3.0 Host Controller"
-picture: "/images/usb-renesas-mpcie-d720202.jpeg"
+picture: "/images/usb-renesas-mpcie-d720202.jpg"
 functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/264"
