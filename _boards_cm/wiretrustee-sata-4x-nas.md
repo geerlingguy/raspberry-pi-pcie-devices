@@ -9,8 +9,8 @@ link: https://www.crowdsupply.com/wiretrustee/wiretrustee-sata
 videos:
   - https://www.youtube.com/watch?v=ahrdx3TYxZc
 ---
-This 4x SATA NAS board by [Wiretrustee](https://wiretrustee.com) operates over the PCIe bus on the Compute Module 4 to deliver at least 220 MB/sec RAID performance. The integrated Marvell 88SE9215 controller does the PCIe <-> SATA signal conversion.
+This 4x SATA NAS board by [Wiretrustee](https://wiretrustee.com) has an integrated Marvell 88SE9215 controller on the PCIe bus to interface with up to 4 native SATA ports.
 
-The board will be made available [through Crowd Supply](https://www.crowdsupply.com/wiretrustee/wiretrustee-sata), and there will be 2.5" and 3.5" hard drive enclosures for it.
+The was originally going to be made available [through Crowd Supply](https://www.crowdsupply.com/wiretrustee/wiretrustee-sata) in 2021 with 2.5" and 3.5" hard drive enclosures, but the project was discontinued due to global parts supply shortages affecting production schedules.
 
-You can also visit [this GitHub repository](https://github.com/wiretrustee/cm4-sata-board) for open source files for the SATA board and enclosure.
+The [Wiretrustee SATA GitHub repository](https://github.com/wiretrustee/cm4-sata-board) should contain open source files for the SATA board and enclosure.
