@@ -26,3 +26,5 @@ Device Drivers
 ```
 
 Check out [DFRobot's documentation](https://wiki.dfrobot.com/Compute_Module_4_IoT_Router_Board_Mini_SKU_DFR0767) on the board.
+
+You can also compile your own OpenWRT image specific to this board following instructions like [these instructions from GitHub user martin-niklasson](https://gist.github.com/martin-niklasson/6912a7e5ba49b92801d54766f1d7277a).
