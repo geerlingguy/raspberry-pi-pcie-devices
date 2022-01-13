@@ -61,8 +61,8 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
-              <td>Maybe</td>
+              <td>Full</td>
+              <td>No</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/344">GitHub Issue</a></td>
             </tr>
           </tbody>
@@ -80,21 +80,31 @@
           <p>From the spec sheet:</p>
 
 <blockquote>
-  <p>Quectel EC25 Mini PCIe is a series of LTE category 4 module adopting standard PCI Express® Mini Card form factor (Mini PCIe). It is optimized specially for M2M and IoT applications, and delivers 150 Mbps downlink and 50 Mbps uplink data rates.</p>
+  <p>Quectel EC25 Mini PCIe is a series of LTE category 4 module adopting standard PCI Express Mini Card form factor (Mini PCIe). It is optimized specially for M2M and IoT applications, and delivers 150 Mbps downlink and 50 Mbps uplink data rates.</p>
 </blockquote>
 
-<p>Supposedly it has “USB serial drivers for Windows 7/8/8.1/10, Linux, Android” and some other Pi users have reported success with these models (the EU version).</p>
+<p>It supports Windows 7/8/8.1/10/11, Linux, Android, and many Pi users have reported success with these models.</p>
 
-<p>There’s a <a href="https://www.switchdoc.com/2021/05/tutorial-using-cellular-modems-with-the-raspberry-pi-4b/">tutorial for using cellular modems with the Pi 4</a> that I think should apply equally well for the CM4. We’ll see. There’s a <a href="https://techship.com/faq/how-to-step-by-step-set-up-a-data-connection-over-qmi-interface-using-qmicli-and-in-kernel-driver-qmi-wwan-in-linux/">more generic tutorial with qmi_wwan here</a>.</p>
+<p>I bought an EC25-A, since I’m using AT&amp;T wireless in North America. The -AF variant would work as well, but make sure you buy the variant you need for the networks in your geographical region.</p>
 
-<p>I also have a SIM from SixFab, but I will try to see if I can also get an AT&amp;T SIM working later, since I may have a bead on an unlimited data plan for a ‘decent-ish’ price, which might be nice for a project I want to do.</p>
+<p>To use the card with a Raspberry Pi, you either need a USB to mini PCIe adapter with a built-in SIM tray (which works with any Pi with a USB port), or a CM4 carrier board with a mini PCIe slot with USB data lines attached, and a SIM tray.</p>
+
+<p>I set the card into ECM (Ethernet Control Model) mode <a href="https://docs.sixfab.com/page/internet-connection-with-quectel-ec25-by-using-ecm-mode">following SixFab’s instructions</a>, and could communicate with it over USB using minicom:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install -y minicom
+$ minicom -D /dev/ttyUSB2 -b 115200
+</code></pre></div></div>
+
+<p>You can use AT commands (see an <a href="https://www.engineersgarage.com/at-commands-gsm-at-command-set/">AT command guide here</a>) to communicate with the modem. Once it’s successfully configured in ECM mode, you should see a <code class="language-plaintext highlighter-rouge">usb0</code> interface when running <code class="language-plaintext highlighter-rouge">ip a</code>. That interface will connect through to whatever LTE network your SIM card supports.</p>
+
+<p>I tested with a SixFab SIM on AT&amp;T’s network, as well as an AT&amp;T SIM from my iPhone, and both connected successfully, giving me around 10-12 Mbps in both directions.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://www.quectel.com/product/lte-ec25-mini-pcie-series">Quectel EC25-A LTE Cat 4 Mini PCIe Module</a></p>
+          <a href="https://amzn.to/3A9xXoJ">Quectel EC25-A LTE Cat 4 Mini PCIe Module</a></p>
         </div>
 
       </section>
