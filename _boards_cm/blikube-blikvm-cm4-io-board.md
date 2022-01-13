@@ -10,4 +10,4 @@ videos: []
 ---
 blicube is making a [bliKVM CM4 IO Board for Pi-KVM](https://www.aliexpress.com/item/1005003262886521.html?spm=a2g0o.store_pc_allProduct.8148356.5.39cd62bejpZaWF).
 
-The bliKVM integrates seemingly everything from the PiKVM v3 HAT into one compact package that fits in an even smaller space, and doesn't require as complicated an assembly process. Currently the board is priced at $80, the case at $25, and a combo pack with case, fan, OLED display, and board at $100. Pretty good deal! 
+blicube's bliKVM integrates Pi-KVM v3 features into a compact Compute Module 4-based board that fits in an even smaller space, and doesn't require as complicated an assembly process. The board can be bought standalone, or in a kit with a case, fan, and OLED display.
