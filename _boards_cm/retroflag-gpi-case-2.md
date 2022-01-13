@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Retroflag GPi CASE 2"
-short_description: A Game-Boy-inspired Raspberry Pi gaming handheld built around the CM4.
+short_description: A GameBoy-inspired gaming handheld built around the CM4.
 status: production
 picture: "/images/board-retroflag-gpi-case-2.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/350"
