@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "blicube's bliKVM CM4 IO Board for Pi-KVM"
-short_description: TODO
+short_description: A CM4-based Pi-KVM board for remote KVM-over-IP PC control.
 status: production
 picture: "/images/board-blikube-blikvm-cm4.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/345"
