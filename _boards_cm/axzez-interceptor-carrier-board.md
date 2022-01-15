@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Axzez Interceptor Carrier Board"
-short_description: An expansion board based on the Raspberry Pi Compute Module 4.
+short_description: A tiny CM4 board with 5 SATA slots, ATX power input, and 4 Ethernet ports.
 status: production
 picture: "/images/board-axzez-interceptor.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/354"
