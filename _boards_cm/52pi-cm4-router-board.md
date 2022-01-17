@@ -8,6 +8,6 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3
 link: https://amzn.to/3dol13A
 videos: []
 ---
-S2Pi's CM4 Router Board has two full-speed gigabit network ports, with the second port directly attached to the Pi's PCI Express bus for greater performance. It is designed especially for OpenWRT.
+52Pi's CM4 Router Board has two full-speed gigabit network ports, with the second port directly attached to the Pi's PCI Express bus for greater performance. It is designed especially for OpenWRT.
 
 A PoE or PoE+ HAT can be fitted to the board and power can be pulled from either of the two Ethernet ports (configurable via jumpers on the board). Alternatively, you can power the board via USB-C.
