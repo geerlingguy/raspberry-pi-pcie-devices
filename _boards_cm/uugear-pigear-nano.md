@@ -5,7 +5,7 @@ short_description: A CM4 carrier board that is basically the king of USB.
 status: prototype
 picture: "/images/board-uugear-pigear-nano.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/365"
-link: []
+link: https://www.uugear.com/product/pigear-nano/
 videos: []
 ---
 In case it's not apparent in the pictures, there's not one but three VLI USB 3 hubs on this board. One is a VLI VL805 like is found on the Raspberry Pi 4 model B.
