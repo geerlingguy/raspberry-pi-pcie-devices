@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Mirko's BitPiRat Computer (Gen 2)"
-short_description: A compact platform for cryptocurrency networks built around the Raspberry Pi CM4.
+short_description: A compact CM4 board with a full-size 2280 M.2 NVMe slot on the bottom.
 status: prototype
 picture: "/images/board-bitpirat-computer.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/363"
