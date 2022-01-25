@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "Broadcom BCM94360NG 802.11ac WiFi M.2 Adapter"
+title: "Sierra Wireless EM7565 4G LTE NGFF modem"
 picture: "/images/network-sierra-wireless-em7565.png"
 functionality: "Currently Testing"
 driver_required: "Yes"
