@@ -6,9 +6,10 @@ status: production
 picture: "/images/board-axzez-interceptor.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/354"
 link: https://www.axzez.com/axzez-circuit-boards
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=m_P82mFCRQQ
 ---
-Axzez just announced their new Interceptor CM4 Carrier Board, which has:
+Axzez's Interceptor CM4 Carrier Board has:
 
 - 2 HDMI ports (4Kp60)
 - 5 SATA ports (via JMicron JMB585)
@@ -20,3 +21,5 @@ Axzez just announced their new Interceptor CM4 Carrier Board, which has:
 - 4 3-pin fan connectors
 - 8-pin header for system power LED, power button and UART serial cable
 - Two FFC connectors (40 pos) for future expansion
+
+It seems ideal for DVR or network storage applications, and the FFC connectors may enable some interesting new use cases in the future.

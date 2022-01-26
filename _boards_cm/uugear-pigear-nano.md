@@ -6,9 +6,10 @@ status: prototype
 picture: "/images/board-uugear-pigear-nano.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/365"
 link: https://www.uugear.com/product/pigear-nano/
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=m_P82mFCRQQ
 ---
-In case it's not apparent in the pictures, there's not one but three VLI USB 3 hubs on this board. One is a VLI VL805 like is found on the Raspberry Pi 4 model B.
+There are three VLI USB 3 hubs on this board. One is a VLI VL805 like is found on the Raspberry Pi 4 model B.
 
 There are two additional VLI VL817 chips (USB 3.1 gen 1) that drive all those USB 3 ports on the rear. It also has an M.2 NVMe slot, though that is bridged through a RTL9210 M.2 NVMe to USB adapter. And it has a mini PCIe slot on the topside suitable for 4G LTE modules (with a SIM tray on the underside).
 

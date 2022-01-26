@@ -7,6 +7,7 @@ picture: "/images/board-mirkopc.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/101"
 link: https://hackaday.io/project/177626-mirkopc-cm4-carrier-board
 videos:
+  - https://www.youtube.com/watch?v=m_P82mFCRQQ
   - https://www.youtube.com/watch?v=4Womn10v71s
   - https://www.youtube.com/watch?v=DZMF1n75Km0
   - https://www.youtube.com/watch?v=YuLNqs21x2Q

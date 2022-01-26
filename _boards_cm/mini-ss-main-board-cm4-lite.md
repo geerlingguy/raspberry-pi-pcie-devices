@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2
 link: https://retrogamerestore.com/store/minisscm4/
 videos:
   - https://www.youtube.com/watch?v=mVlgFyst3OA
+  - https://www.youtube.com/watch?v=m_P82mFCRQQ
 ---
 The [Mini SS](https://retrogamerestore.com/store/minisscm4/) supports mini HDMI and CRT (Composite and RGBS) output. There's a planned extension board that would also give 1 Gbps network and a connector for the original Sega Saturn A/V cable. The Mini SS board emulates the original console using RetroPie 4.71 or later.
 

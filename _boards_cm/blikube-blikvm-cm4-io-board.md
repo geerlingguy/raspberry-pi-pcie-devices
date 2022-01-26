@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-blikube-blikvm-cm4.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/345"
 link: https://www.aliexpress.com/item/1005003262886521.html?spm=a2g0o.store_pc_allProduct.8148356.5.39cd62bejpZaWF
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=m_P82mFCRQQ
 ---
 blicube is making a [bliKVM CM4 IO Board for Pi-KVM](https://www.aliexpress.com/item/1005003262886521.html?spm=a2g0o.store_pc_allProduct.8148356.5.39cd62bejpZaWF).
 
