@@ -4,7 +4,7 @@ title: "Usb 3.0 Pci-e Host Card Japan NEC Chipset"
 picture: "/images/usb-Japan-NEC-Chipset.jpg"
 functionality: "Full"
 driver_required: "No"
-buy_link: https://www.amazon.com/SKYTEX-2-port-Superspeed-Japan-Chipset/dp/B003TI540G
+buy_link: https://amzn.to/3HhpaU7
 videos: []
 ---
 PCIe to USB 3.0 Adapter for Raspberry Pi Compute Module 4 IO Board. The main chipset is Japan NEC d720200F1.
