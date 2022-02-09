@@ -6,7 +6,8 @@ functionality: "Full"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/344"
 buy_link: https://amzn.to/3A9xXoJ
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=OLRldZjty_s
 ---
 From the spec sheet:
 
