@@ -44,12 +44,12 @@ You will be dropped into a shell inside the container's `/build` directory. From
   1. Compile the Kernel:
 
      ```
-     make -j8 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+     make -j -l`nproc` ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
      ```
 
 > For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
 
-> I set the jobs argument (`-j8`) based on a bit of benchmarking on my M1 Mac's processor. For different types of processors you may want to use more (or fewer) jobs depending on architecture and how many cores you have.
+> The job argument `-j` is set to unlimted here with make limiting the workload placed on the nuild machine with `-l`. The limiy is based off of total CPU useage, each hardware thread allowing the usage to go up another 100% (which translates to `1` here). This should allow you to keep using your computer with hte build happening but without it taking too much time. If the build fails try using `-jN` where `N` is a number smaller than your core count to reduce memory usage.
 
 ## Copying built Kernel via remote SSHFS filesystem
 
