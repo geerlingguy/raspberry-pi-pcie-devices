@@ -5,7 +5,7 @@ picture: "/images/storage-broadcom-megaraid-9440-8i.jpg"
 functionality: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/250"
-buy_link: https://www.newegg.com/lsi-9440-8i-sata-sas/p/N82E16816118279
+buy_link: https://amzn.to/3h03qAV
 videos: []
 ---
 The [9440-8i](https://www.broadcom.com/products/storage/raid-controllers/megaraid-9440-8i) should potentially work on the Pi, since the 94xx/95xx and newer cards have drivers that support ARM.
