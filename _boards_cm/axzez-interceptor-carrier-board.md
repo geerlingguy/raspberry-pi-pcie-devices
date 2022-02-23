@@ -7,6 +7,7 @@ picture: "/images/board-axzez-interceptor.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/354"
 link: https://www.axzez.com/axzez-circuit-boards
 videos:
+  - https://www.youtube.com/watch?v=NsfVI8s2gaI
   - https://www.youtube.com/watch?v=m_P82mFCRQQ
 ---
 Axzez's Interceptor CM4 Carrier Board has:
