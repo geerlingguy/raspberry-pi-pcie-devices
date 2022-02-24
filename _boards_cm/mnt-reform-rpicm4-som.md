@@ -3,7 +3,7 @@ layout: board
 title: "MNT Reform RCM4 Adapter"
 short_description: A Raspberry Pi CM4 adapter for the MNT Reform laptop.
 status: prototype
-picture: "/images/adapter-mnt-reform.png"
+picture: "/images/board-mnt-reform.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/397"
 link: "https://source.mnt.re/reform/mnt-reform-raspberry-pi-cm4-som"
 videos: []
