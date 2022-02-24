@@ -1,11 +1,11 @@
 ---
-layout: card
+layout: board
 title: "MNT Reform RCM4 Adapter"
+short_description: A Raspberry Pi CM4 adapter for the MNT Reform laptop.
+status: prototype
 picture: "/images/adapter-mnt-reform.png"
-functionality: "Unknown"
-driver_required: "Unknown"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/397"
-buy_link: []
+link: "https://source.mnt.re/reform/mnt-reform-raspberry-pi-cm4-som"
 videos: []
 ---
 The [MNT Reform RCM4 Adapter](https://source.mnt.re/reform/mnt-reform-raspberry-pi-cm4-som) is a Raspberry Pi Compute Module 4 adapter for the [MNT Reform](https://shop.mntmn.com/products/mnt-reform) open hardware laptop.
