@@ -16,7 +16,7 @@ Axzez's Interceptor CM4 Carrier Board has:
 - 5 SATA ports (via JMicron JMB585)
 - 4 RJ-45 gigabit ports (via managed RTL8367RB gigabit switch)
 - 4 USB 2.0 ports (2 via pin header)
-- RJ-485
+- RS-485
 - 24-pin ATX power supply connector
 - RTC clock with battery backup
 - 4 3-pin fan connectors
