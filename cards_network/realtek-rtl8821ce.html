@@ -9,21 +9,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>MZHOU USB 3.0 adapter with M.2 SATA SSD slot | Raspberry Pi PCIe Devices</title>
+<title>Realtek RL8821CE | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="MZHOU USB 3.0 adapter with M.2 SATA SSD slot" />
+<meta property="og:title" content="Realtek RL8821CE" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This USB 3.0 card uses a Renesas uPD720201 USB 3.0 controller, and works with the Raspberry Pi, and also includes a SATA M.2 slot which can accept SSDs." />
-<meta property="og:description" content="This USB 3.0 card uses a Renesas uPD720201 USB 3.0 controller, and works with the Raspberry Pi, and also includes a SATA M.2 slot which can accept SSDs." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_usb/mzhou-usb3-sata-iii.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_usb/mzhou-usb3-sata-iii.html" />
+<meta name="description" content="I pulled an 915620-001 Wireless card out of my HP Slim S01 desktop when I upgraded it to Intel’s AX200 WiFi 6 card. It uses Realtek’s RTL8821CE chipset, and supports 802.11ac and Bluetooth 4.2. It only has one antenna connection. Check the GitHub issue for more information and future updates." />
+<meta property="og:description" content="I pulled an 915620-001 Wireless card out of my HP Slim S01 desktop when I upgraded it to Intel’s AX200 WiFi 6 card. It uses Realtek’s RTL8821CE chipset, and supports 802.11ac and Bluetooth 4.2. It only has one antenna connection. Check the GitHub issue for more information and future updates." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/realtek-rtl8821ce.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/realtek-rtl8821ce.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-03-01T16:18:39+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="MZHOU USB 3.0 adapter with M.2 SATA SSD slot" />
+<meta property="twitter:title" content="Realtek RL8821CE" />
 <script type="application/ld+json">
-{"datePublished":"2022-03-01T16:18:39+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_usb/mzhou-usb3-sata-iii.html"},"description":"This USB 3.0 card uses a Renesas uPD720201 USB 3.0 controller, and works with the Raspberry Pi, and also includes a SATA M.2 slot which can accept SSDs.","url":"https://pipci.jeffgeerling.com//cards_usb/mzhou-usb3-sata-iii.html","@type":"BlogPosting","headline":"MZHOU USB 3.0 adapter with M.2 SATA SSD slot","dateModified":"2022-03-01T16:18:39+00:00","@context":"https://schema.org"}</script>
+{"description":"I pulled an 915620-001 Wireless card out of my HP Slim S01 desktop when I upgraded it to Intel’s AX200 WiFi 6 card. It uses Realtek’s RTL8821CE chipset, and supports 802.11ac and Bluetooth 4.2. It only has one antenna connection. Check the GitHub issue for more information and future updates.","url":"https://pipci.jeffgeerling.com//cards_network/realtek-rtl8821ce.html","@type":"WebPage","headline":"Realtek RL8821CE","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -45,11 +43,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">MZHOU USB 3.0 adapter with M.2 SATA SSD slot</h1>
+        <h1 id="card_title">Realtek RL8821CE</h1>
 
         <div class="card_picture">
           
-            <a href="/images/usb-mzhou-usb3-sata-iii.jpg"><img src="/images/usb-mzhou-usb3-sata-iii.jpg" alt="MZHOU USB 3.0 adapter with M.2 SATA SSD slot"></a>
+            <a href="/images/network-realtek-rtl8821ce.jpg"><img src="/images/network-realtek-rtl8821ce.jpg" alt="Realtek RL8821CE"></a>
           
         </div>
 
@@ -63,9 +61,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>Partial</td>
-              <td>Maybe</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/49">GitHub Issue</a></td>
+              <td>Currently Testing</td>
+              <td>Yes</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/401">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -79,18 +77,16 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>This USB 3.0 card uses a Renesas uPD720201 USB 3.0 controller, and works with the Raspberry Pi, and also includes a SATA M.2 slot which can accept SSDs.</p>
+          <p>I pulled an <a href="https://www.realtek.com/en/products/communications-network-ics/item/rtl8821ce">915620-001 Wireless card</a> out of my HP Slim S01 desktop when I upgraded it to Intel’s AX200 WiFi 6 card. It uses Realtek’s RTL8821CE chipset, and supports 802.11ac and Bluetooth 4.2. It only has one antenna connection.</p>
 
-<p>The catch is that the M.2 slot requires a ‘SATA input’ as well as SATA power. The card is meant to be a convenient way to add in both a SATA M.2 SSD and USB 3.0 to an older motherboard with an existing SATA connector and power supply.</p>
-
-<p>If you’d like to get the full functionality with this card, you’d also need to use a PCIe switch or port multiplier, a separate SATA card, and this card.</p>
+<p>Check the <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/401">GitHub issue</a> for more information and future updates.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/3hd31M9">MZHOU USB 3.0 adapter with M.2 SATA SSD slot</a></p>
+          <a href="https://amzn.to/35cHEro">Realtek RL8821CE</a></p>
         </div>
 
       </section>
