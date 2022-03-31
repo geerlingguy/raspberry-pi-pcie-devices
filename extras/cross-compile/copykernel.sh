@@ -11,11 +11,14 @@
 set -e
 
 # Mount Pi volumes locally (requires key authentication).
+# 1. Create key inside container: `ssh-keygen -t ed25519 -C "build-container"`
+# 2. Add key to Pi (run as root on Pi):
+#    `mkdir -p /root/.ssh && echo 'KEY_HERE' >> /root/.ssh/authorized_keys`
 printf "Mounting Pi volumes\n"
 mkdir -p /mnt/pi-ext4
 mkdir -p /mnt/pi-fat32
-sshfs root@10.0.100.119:/ /mnt/pi-ext4
-sshfs root@10.0.100.119:/boot /mnt/pi-fat32
+sshfs root@10.0.100.112:/ /mnt/pi-ext4
+sshfs root@10.0.100.112:/boot /mnt/pi-fat32
 
 # Install kernel modules.
 printf "Installing kernel modules\n"
