@@ -8,12 +8,17 @@ This build configuration has only been tested with the Raspberry Pi 4, CM4, and 
 
 ## Bringing up the build environment
 
-  1. Make sure Docker is installed.
-  1. Build the Docker image you'll use for compilation: `docker build -t cross-compile .`
-  1. Run an instance of the Docker image:
+  1. Install Docker (and Docker Compose if not using Docker Desktop).
+  1. Bring up the cross-compile environment:
 
      ```
-     docker run --device /dev/fuse --cap-add SYS_ADMIN --name cross-compile -it cross-compile bash
+     docker-compose up -d
+     ```
+
+  1. Log into the running container:
+
+     ```
+     docker attach cross-compile
      ```
 
 You will be dropped into a shell inside the container's `/build` directory. From here you can work on compiling the kernel.
@@ -49,35 +54,49 @@ You will be dropped into a shell inside the container's `/build` directory. From
 
 > For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
 
-> I set the jobs argument (`-j8`) based on a bit of benchmarking on my M1 Mac's processor. For different types of processors you may want to use more (or fewer) jobs depending on architecture and how many cores you have.
+> I set the jobs argument (`-j8`) based on a bit of benchmarking on my Mac's processor. For different types of processors you may want to use more (or fewer) jobs depending on architecture and how many cores you have.
+
+## Editing the kernel source inside /build/linux
+
+For the benefit of silly Mac users like me, I have a 'reverse NFS' mount available that lets me mount the linux checkout _from_ the container _to_ my Mac, meaning I can edit files from inside the container in a code editor on my Mac (like Sublime Text or some other IDE).
+
+This is helpful because:
+
+  - Most macOS installs don't have case-sensitive filesystems, so Linux codebase checkouts (which have files with duplicate filenames) will break.
+  - Docker for Mac is funny and runs in a VM, so if you mount a local (host) directory into the container, performance goes down the drain.
+
+To connect to the NFS share, create a folder like `nfs-share` on your Mac and run the command:
+
+```
+sudo mount -v -t nfs -o vers=4,port=2049 127.0.0.1:/ nfs-share
+```
 
 ## Copying built Kernel via remote SSHFS filesystem
 
 It is most convenient to manage the built modules by copying them over to a running Pi, instead of doing a microSD card swap dance every time you recompile.
 
-One prerequisite for this particular method is to set a `root` password on the Pi and allow root password login (there are other more secure ways... this is for convenience!).
+One prerequisite for this particular method is to make sure you can mount the remote Pi's filesystem via `sshfs`.
 
-### Configuring Root Password SSH login on the Pi
+The easiest way is to run the `setup.yml` playbook:
 
-Logged into the Pi with SSH, run `sudo su`, then `passwd`, and set a password.
+  1. Install Ansible.
+  2. Make sure the `inventory.ini` points at your Raspberry Pi and you can SSH into it.
+  3. Run `ansible-playbook setup.yml`.
 
-Edit the `/etc/ssh/sshd_config`, find the `PermitRootLogin` line, uncomment it, and change the value from `prohibit-password` to `yes`. (And comment out `PasswordAuthentication` if that line is set to `no`.)
+If you want to set it up manually instead, do this:
 
-Restart SSHD:
+  1. On the Pi: edit `/etc/ssh/sshd_config` and uncomment `PermitRootLogin`, then restart `sshd`.
+  2. Create an SSH key in the container, and copy the public key to the Pi's root user `authorized_keys`.
+
+### Install kernel modules and DTBs via SSHFS
+
+The best option is to use the Automated script. Within the container, run the command:
 
 ```
-sudo systemctl restart sshd
+copykernel
 ```
 
-Now make sure you can SSH into the Pi as `root` from the cross-compile VM, with:
-
-```
-ssh root@10.0.100.119
-```
-
-### Setting up an SSHFS mount
-
-Mount the Pi's filesystems into the cross-compile environment (requires `sshfs`):
+Or, if you want to run the process manually, run:
 
 ```
 mkdir -p /mnt/pi-ext4
@@ -86,7 +105,7 @@ sshfs root@10.0.100.119:/ /mnt/pi-ext4
 sshfs root@10.0.100.119:/boot /mnt/pi-fat32
 ```
 
-Install the kernel modules onto the drive:
+Install all the kernel modules:
 
 ```
 env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=/mnt/pi-ext4 modules_install

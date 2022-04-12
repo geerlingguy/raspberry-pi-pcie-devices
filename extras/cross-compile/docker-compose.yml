@@ -1,0 +1,38 @@
+---
+version: '3.8'
+
+services:
+  cross-compile:
+    build: .
+    container_name: cross-compile
+
+    # Allow attaching to the container.
+    stdin_open: true
+    tty: true
+
+    # Required to allow fuse and sshfs to work.
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse
+
+    volumes:
+      - linux:/build
+      # Mount local user's SSH key into container.
+      - ~/.ssh/id_ed25519:/root/.ssh/id_ed25519:ro
+
+  cross-compile-nfs:
+    image: gists/nfs-server
+    container_name: cross-compile-nfs
+    environment:
+      - "NFS_OPTION=fsid=0,rw,sync,insecure,all_squash,anonuid=0,anongid=0,no_subtree_check,nohide"
+    ports:
+      - "2049:2049"
+    volumes:
+      - linux:/nfs-share
+    cap_add:
+      - SYS_ADMIN
+      - SETPCAP
+
+volumes:
+  linux:
