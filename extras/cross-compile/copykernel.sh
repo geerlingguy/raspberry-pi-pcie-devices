@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# TODO: This file should be copied into the cross-compile environment as part
-# of the Dockerfile build process at /usr/local/bin/copykernel
+# This file should be located at /usr/local/bin/copykernel
 #
 # The script should also accept environment variables for things that should be
 # parameterized (like the Pi's IP address, `kernel8`, etc.). But I'm using it
@@ -17,8 +16,8 @@ set -e
 printf "Mounting Pi volumes\n"
 mkdir -p /mnt/pi-ext4
 mkdir -p /mnt/pi-fat32
-sshfs root@10.0.100.112:/ /mnt/pi-ext4
-sshfs root@10.0.100.112:/boot /mnt/pi-fat32
+sshfs root@10.0.100.127:/ /mnt/pi-ext4
+sshfs root@10.0.100.127:/boot /mnt/pi-fat32
 
 # Install kernel modules.
 printf "Installing kernel modules\n"

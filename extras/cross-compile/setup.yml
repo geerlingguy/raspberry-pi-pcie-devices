@@ -1,0 +1,78 @@
+---
+- name: Configure local build environment.
+  hosts: localhost
+  become: false
+  gather_facts: false
+
+  tasks:
+    - name: Ensure build environment is running.
+      community.docker.docker_compose:
+        project_src: ./
+
+- name: Set up SSH inside build environment.
+  hosts: build_environment
+  become: false
+  gather_facts: false
+
+  tasks:
+    - name: Generate OpenSSH keypair.
+      community.crypto.openssh_keypair:
+        path: /root/.ssh/id_rsa
+        size: 4096
+        state: present
+      when: generate_ssh_key
+
+    - name: Read public key into variable.
+      ansible.builtin.command: cat /root/.ssh/id_rsa.pub
+      register: public_key
+      changed_when: false
+      when: generate_ssh_key
+
+- name: Configure Raspberry Pi.
+  hosts: pi
+  become: true
+  gather_facts: false
+
+  handlers:
+    - name: restart ssh
+      ansible.builtin.service:
+        name: sshd
+        state: restarted
+
+  tasks:
+    - name: Modify SSH config.
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regex: "{{ item.regex }}"
+        line: "{{ item.line }}"
+      loop:
+        - regex: "^(# *)?PermitRootLogin"
+          line: "PermitRootLogin yes"
+      notify: restart ssh
+
+    - name: Write authorized keys for root user.
+      ansible.posix.authorized_key:
+        user: root
+        state: present
+        key: "{{ hostvars['cross-compile']['public_key']['stdout'] }}"
+      when: generate_ssh_key
+
+- name: Finish setting up build environment.
+  hosts: build_environment
+  become: false
+  gather_facts: false
+
+  tasks:
+    - name: Accept the Pi host key.
+      ansible.builtin.shell: /bin/bash -c "ssh-keyscan -H {{ groups['pi'][0] }} >> /root/.ssh/known_hosts"
+      changed_when: false
+      when: generate_ssh_key
+
+    - name: Create sshfs mount directories.
+      ansible.builtin.file:
+        path: "{{ item }}"
+        state: directory
+        mode: 0755
+      loop:
+        - /mnt/pi-ext4
+        - /mnt/pi-fat32
