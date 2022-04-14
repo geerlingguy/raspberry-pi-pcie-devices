@@ -9,6 +9,8 @@
 # Bail on errors
 set -e
 
+PI_ADDRESS=10.0.100.127
+
 # Mount Pi volumes locally (requires key authentication).
 # 1. Create key inside container: `ssh-keygen -t ed25519 -C "build-container"`
 # 2. Add key to Pi (run as root on Pi):
@@ -16,8 +18,8 @@ set -e
 printf "Mounting Pi volumes\n"
 mkdir -p /mnt/pi-ext4
 mkdir -p /mnt/pi-fat32
-sshfs root@10.0.100.127:/ /mnt/pi-ext4
-sshfs root@10.0.100.127:/boot /mnt/pi-fat32
+sshfs root@$PI_ADDRESS:/ /mnt/pi-ext4
+sshfs root@$PI_ADDRESS:/boot /mnt/pi-fat32
 
 # Install kernel modules.
 printf "Installing kernel modules\n"
@@ -34,3 +36,6 @@ cp arch/arm64/boot/dts/overlays/README /mnt/pi-fat32/overlays/
 printf "Cleaning up\n"
 umount /mnt/pi-ext4
 umount /mnt/pi-fat32
+
+# Reboot the Pi.
+ssh root@$PI_ADDRESS 'sudo reboot'

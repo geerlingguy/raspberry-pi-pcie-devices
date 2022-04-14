@@ -131,6 +131,12 @@ Reboot the Pi and _voila!_, you're done!
 
 > For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, `zImage` instead of `Image`, `kernel7l` instead of `kernel8`, and `arm` instead of `arm64`.
 
+### Hard Reset on the CM4 IO Board
+
+If you get a fatal kernel panic that doesn't get caught cleanly (which I do, quite often, when debugging PCI Express devices), you can quickly reset the CM4 IO Board by jumping pins 12 and 14 on J2 (GLOBAL_EN to GND).
+
+You can also 'boot' a shutdown CM4 by jumping pins 13 and 14 on J2 (GLOBAL_EN to RUN_PG).
+
 ### Kernel Headers
 
 If you also need the kernel headers and source available, you can do the following (before unmounting the filesystems):
