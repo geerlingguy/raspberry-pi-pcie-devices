@@ -95,9 +95,11 @@
 
 <p>Go to <code class="language-plaintext highlighter-rouge">Device Drivers</code> &gt; <code class="language-plaintext highlighter-rouge">Graphics support</code> on the <code class="language-plaintext highlighter-rouge">menuconfig</code> step, and select the <code class="language-plaintext highlighter-rouge">Silicon Motion SM750 framebuffer support</code> driver to install.</p>
 
-<p>After copying over the new kernel and modules, and rebooting, the entire Pi locks up and requires a hard power reset. Go figure.</p>
+<p>Before you compile the kernel, apply <a href="https://patch-diff.githubusercontent.com/raw/geerlingguy/linux/pull/2.diff">this patch</a> to your Linux checkout.</p>
 
-<p>See the linked GitHub issue for more details on how I tested this card. I’ve even tried contacting kernel maintainers who are or were listed as working on the module in the past, but to no avail.</p>
+<p>After copying over the new kernel and modules, and rebooting, the Pi should be able to at least boot to the console. Xorg and other window managers don’t seem to work.</p>
+
+<p>See the linked GitHub issue for more details.</p>
 
         </div>
 
