@@ -18,7 +18,7 @@ To get the card working currently, you need to:
   1. Image Pi OS (the older January 2022 copy built on top of Debian 5.10.x) to your Pi.
   2. Compile [Coreforge's GPU branch](https://github.com/Coreforge/linux/pull/1) and copy the built kernel to the Pi.
   3. Install AMD firmware: `sudo apt install -y firmware-amd-graphics`
-  4. Set up [this custom memcpy.so] to be preloaded on the system.
+  4. Set up [this custom memcpy.so](https://gist.github.com/Coreforge/91da3d410ec7eb0ef5bc8dee24b91359) to be preloaded on the system.
   5. Reboot.
 
 Once that's done, you should be able to get Xorg working, or just a console. Note that the driver doesn't seem quite stable yet.

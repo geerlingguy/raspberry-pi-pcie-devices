@@ -23,6 +23,8 @@ To get the sm750fb driver loaded, you have to [recompile the Linux kernel for Pi
 
 Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select the `Silicon Motion SM750 framebuffer support` driver to install.
 
-After copying over the new kernel and modules, and rebooting, the entire Pi locks up and requires a hard power reset. Go figure.
+Before you compile the kernel, apply [this patch](https://patch-diff.githubusercontent.com/raw/geerlingguy/linux/pull/2.diff) to your Linux checkout.
 
-See the linked GitHub issue for more details on how I tested this card. I've even tried contacting kernel maintainers who are or were listed as working on the module in the past, but to no avail.
+After copying over the new kernel and modules, and rebooting, the Pi should be able to at least boot to the console. Xorg and other window managers don't seem to work.
+
+See the linked GitHub issue for more details.
