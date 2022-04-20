@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4
 link: https://othermod.com/product/pspi-compute/
 videos:
   - https://www.youtube.com/watch?v=JORz7SodY0Y
+  - https://www.youtube.com/watch?v=a9pUc3dw5wc
 ---
 The [PSPi Compute](https://othermod.com/product/pspi-compute/) is a Compute Module 4-based set of boards that fit inside a PSP case.
 

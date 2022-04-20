@@ -8,5 +8,6 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4
 link: https://pockit.ai/
 videos:
   - https://www.youtube.com/watch?v=b3F9OtH2Xx4
+  - https://www.youtube.com/watch?v=a9pUc3dw5wc
 ---
 The [Pockit](https://pockit.ai/) is a modular Linux computer based on the Raspberry Pi Compute Module 4. The full system will include 80+ 'BLOCKS' that can be snapped together to make for a complete computer tailored to an individual project's needs. There's a [demo video](https://www.youtube.com/watch?v=b3F9OtH2Xx4) that highlights the latest developments for the project.

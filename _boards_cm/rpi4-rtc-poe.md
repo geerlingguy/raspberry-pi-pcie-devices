@@ -7,7 +7,8 @@ picture: "/images/board-rpi4-rtc-poe.jpg"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/309"
 link: "https://ab-log.ru/forum/viewtopic.php?f=1&t=1895"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=a9pUc3dw5wc
 ---
 The [RPi4-RTC-PoE](https://ab-log.ru/forum/viewtopic.php?f=1&t=1895) from ab-log is a DIN rail mini server offers PoE power, Gigabit Ethernet, USB 2.0, USB-over-Ethernet, an M.2 2230 slot for NVMe SSDs, a power button, status LEDs, an RTC, hardware watchdog, RS485, and ZigBee, and is a very compact little DIN server.
 
