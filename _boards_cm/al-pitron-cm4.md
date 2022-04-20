@@ -3,7 +3,7 @@ layout: board
 title: "Kontron AL Pi-Tron CM4"
 short_description: A stainless-steel-enclosed CM4 computer with multiple industrial interfaces.
 status: prototype
-picture: "/images/board-al-pitron-cm4.jpg"
+picture: "/images/board-al-pi-tron-cm4.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/422"
 link: https://www.kontron-electronics.com/products/automation/#produkt-2018
 videos: []
