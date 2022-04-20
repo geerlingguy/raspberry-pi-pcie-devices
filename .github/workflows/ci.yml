@@ -1,6 +1,14 @@
-name: CI
-'on':
-  pull_request:
+# GitHub Action for Jekyll
+#
+# Runs jekyll build on master and pushes output to gh-pages branch.
+# (Then GitHub deploys that static content.)
+
+name: Build & Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   github-pages:
@@ -20,3 +28,9 @@ jobs:
 
       - name: Build static site with Jekyll.
         run: bundle exec jekyll build
+
+      - name: Deploy static site to gh-pages branch.
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
