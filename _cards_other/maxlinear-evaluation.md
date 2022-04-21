@@ -1,11 +1,11 @@
 ---
-layout: board
+layout: card
 title: "MaxLinear XR17V358/SP339-0A-EB"
-short_description: A single chip, 8-channel PCIe UART optimized for higher performance and lower power.
-status: prototype
-picture: "/images/board-maxlinear-evaluation-board.jpg"
+picture: "/images/other-maxlinear-evaluation.jpg"
+functionality: "Maybe"
+driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/295"
-link: https://www.mouser.com/ProductDetail/MaxLinear/XR17V358-SP339-0A-EB?qs=%2Fha2pyFaduhe4eE0bF2O%2FpCsm8Euk3XYhWtX9Mbro9SoJjncLvWxhyKo%252B3JTUxBZ
+buy_link: https://www.mouser.com/ProductDetail/MaxLinear/XR17V358-SP339-0A-EB?qs=%2Fha2pyFaduhe4eE0bF2O%2FpCsm8Euk3XYhWtX9Mbro9SoJjncLvWxhyKo%252B3JTUxBZ
 videos: []
 ---
 From MaxLinear's [documentation](https://assets.maxlinear.com/web/documents/xr17v358.pdf):
