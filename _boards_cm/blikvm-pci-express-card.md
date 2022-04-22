@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "BliKVM PCI Express CM4 Card"
-short_description:
+short_description: A CM4 on a PCI Express card running PiKVM.
 status: production
 picture: "/images/board-blikvm-pci-express.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/424"
