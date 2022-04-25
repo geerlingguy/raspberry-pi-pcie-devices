@@ -8,51 +8,74 @@ This build configuration has only been tested with the Raspberry Pi 4, CM4, and 
 
 ## Bringing up the build environment
 
-  1. Install Docker (and Docker Compose if not using Docker Desktop).
-  1. Bring up the cross-compile environment:
+1. Install Docker (and Docker Compose if not using Docker Desktop).
 
-     ```
-     docker-compose up -d
-     ```
+2. Bring up the cross-compile environment:
+   
+   ```
+   docker-compose up -d
+   ```
 
-  1. Log into the running container:
-
-     ```
-     docker attach cross-compile
-     ```
+3. Log into the running container:
+   
+   ```
+   docker attach cross-compile
+   ```
 
 You will be dropped into a shell inside the container's `/build` directory. From here you can work on compiling the kernel.
 
 > After you `exit` out of that shell, the Docker container will stop, but will not be removed. If you want to jump back into it, you can run `docker start cross-compile` and `docker attach cross-compile`.
+> 
+> 
 
-## Compiling the Kernel
+## Compiling the Kenrel
 
-  1. Clone the linux repo (or clone a fork or a different branch):
+1. build the docker container image
+   
+   ```
+   docker build -t crosscompile .
+   ```
+
+2. run the image with the appropriate environment variables
+   
+   example
+   
+   ```
+   docker run -ti -e arch=arm64 -v /directory/for/the/build:/build crosscompile
+   ```
+
+with the -e arch= you specify the arch that you want to build for,  if you want to build for arm32 you just need to write arch=arm32.
+
+I've also introduced a debug option usable by inserting -e debug=true in the docker run command, that option is going to throw you into a bash prompt where you can test out pretty much whatever you want 
+
+## Compiling the Kernel (old version)
+
+1. Clone the linux repo (or clone a fork or a different branch):
 
      ```
      git clone --depth=1 https://github.com/raspberrypi/linux
      ```
 
-  1. Run the following commands to make the .config file:
+1. Run the following commands to make the .config file:
+   
+   ```
+   cd linux
+   make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
+   ```
 
-     ```
-     cd linux
-     make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
-     ```
+2. (Optionally) Either edit the .config file by hand or use menuconfig:
+   
+   ```
+   make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
+   ```
 
-  1. (Optionally) Either edit the .config file by hand or use menuconfig:
-
-     ```
-     make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- menuconfig
-     ```
-
-  1. Compile the Kernel:
-
-     ```
-     make -j8 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
-     ```
-
-> For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
+3. Compile the Kernel:
+   
+   ```
+   make -j8 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+   ```
+   
+   ~~
 
 > I set the jobs argument (`-j8`) based on a bit of benchmarking on my Mac's processor. For different types of processors you may want to use more (or fewer) jobs depending on architecture and how many cores you have.
 
@@ -62,8 +85,8 @@ For the benefit of silly Mac users like me, I have a 'reverse NFS' mount availab
 
 This is helpful because:
 
-  - Most macOS installs don't have case-sensitive filesystems, so Linux codebase checkouts (which have files with duplicate filenames) will break.
-  - Docker for Mac is funny and runs in a VM, so if you mount a local (host) directory into the container, performance goes down the drain.
+- Most macOS installs don't have case-sensitive filesystems, so Linux codebase checkouts (which have files with duplicate filenames) will break.
+- Docker for Mac is funny and runs in a VM, so if you mount a local (host) directory into the container, performance goes down the drain.
 
 To connect to the NFS share, create a folder like `nfs-share` on your Mac and run the command:
 
@@ -79,14 +102,14 @@ One prerequisite for this particular method is to make sure you can mount the re
 
 The easiest way is to run the `setup.yml` playbook:
 
-  1. Install Ansible.
-  2. Make sure the `inventory.ini` points at your Raspberry Pi and you can SSH into it.
-  3. Run `ansible-playbook setup.yml`.
+1. Install Ansible.
+2. Make sure the `inventory.ini` points at your Raspberry Pi and you can SSH into it.
+3. Run `ansible-playbook setup.yml`.
 
 If you want to set it up manually instead, do this:
 
-  1. On the Pi: edit `/etc/ssh/sshd_config` and uncomment `PermitRootLogin`, then restart `sshd`.
-  2. Create an SSH key in the container, and copy the public key to the Pi's root user `authorized_keys`.
+1. On the Pi: edit `/etc/ssh/sshd_config` and uncomment `PermitRootLogin`, then restart `sshd`.
+2. Create an SSH key in the container, and copy the public key to the Pi's root user `authorized_keys`.
 
 ### Install kernel modules and DTBs via SSHFS
 

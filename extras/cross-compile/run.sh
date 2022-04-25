@@ -10,7 +10,7 @@ if [ "$debug" == "" ]; then
     elif [ "$arch" == "arm32" ]; then
         architecture=aarch32-linux-gnu-
     fi
-    git clone --depth=1 https://github.com/raspberrypi/linux
+    git clone --depth=1 $linkkernel
     cd linux
     make ARCH=$arch CROSS_COMPILE=$architecture bcm2711_defconfig
     make ARCH=$arch CROSS_COMPILE=$architecture menuconfig
