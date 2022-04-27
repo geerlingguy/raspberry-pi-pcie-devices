@@ -13,15 +13,15 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="AMD Radeon HD 7470 1GB" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Dell’s AMD Radeon HD 7470 1GB has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to TechPowerUp). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser." />
-<meta property="og:description" content="Dell’s AMD Radeon HD 7470 1GB has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to TechPowerUp). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser." />
+<meta name="description" content="Dell’s AMD Radeon HD 7470 has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to TechPowerUp). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser." />
+<meta property="og:description" content="Dell’s AMD Radeon HD 7470 has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to TechPowerUp). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-hd-7470-1gb.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-hd-7470-1gb.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="AMD Radeon HD 7470 1GB" />
 <script type="application/ld+json">
-{"description":"Dell’s AMD Radeon HD 7470 1GB has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to TechPowerUp). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser.","url":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-hd-7470-1gb.html","@type":"WebPage","headline":"AMD Radeon HD 7470 1GB","@context":"https://schema.org"}</script>
+{"description":"Dell’s AMD Radeon HD 7470 has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to TechPowerUp). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser.","url":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-hd-7470-1gb.html","@type":"WebPage","headline":"AMD Radeon HD 7470 1GB","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -77,18 +77,28 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>Dell’s <a href="">AMD Radeon HD 7470 1GB</a> has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to <a href="https://www.techpowerup.com/gpu-specs/radeon-hd-7470-oem.c299">TechPowerUp</a>). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser.</p>
+          <p>Dell’s <a href="https://amzn.to/37Hseg4">AMD Radeon HD 7470</a> has 1GB of GDDR5 VRAM, uses the Caicos GPU (“Southern Islands”), and was launched in Jan 2012 (according to <a href="https://www.techpowerup.com/gpu-specs/radeon-hd-7470-oem.c299">TechPowerUp</a>). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi’s PCIe slot without an externally-powered riser.</p>
 
-<p>So far it seems the branch we’re working on in <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4">#4</a> (mainly by @Coreforge) also works with this card out of the box.</p>
+<p>To get the card working currently, you need to:</p>
 
-<p>See this card’s <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/430">GitHub issue</a> for more details.</p>
+<ol>
+  <li>Image Pi OS (the older January 2022 copy built on top of Debian 5.10.x) to your Pi.</li>
+  <li>Compile <a href="https://github.com/Coreforge/linux/pull/1">Coreforge’s GPU branch</a> and copy the built kernel to the Pi.</li>
+  <li>Install AMD firmware: <code class="language-plaintext highlighter-rouge">sudo apt install -y firmware-amd-graphics</code></li>
+  <li>Set up <a href="https://gist.github.com/Coreforge/91da3d410ec7eb0ef5bc8dee24b91359">this custom memcpy.so</a> to be preloaded on the system.</li>
+  <li>Reboot.</li>
+</ol>
+
+<p>Once that’s done, you should be able to get Xorg working, or just a console. Note that the driver doesn’t seem quite stable yet.</p>
+
+<p>See linked GitHub issue for more details and progress getting the card working.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://www.amazon.com/DELL-VVYN4-Radeon-HD7470-Video/dp/B014VTU6H2">AMD Radeon HD 7470 1GB</a></p>
+          <a href="https://amzn.to/37Hseg4">AMD Radeon HD 7470 1GB</a></p>
         </div>
 
       </section>
