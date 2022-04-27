@@ -7,6 +7,7 @@ driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/62"
 buy_link: https://www.asrockrack.com/general/productdetail.asp?Model=M2_VGA
 videos:
+  - https://www.youtube.com/watch?v=crnEygp4C6g
   - https://www.youtube.com/watch?v=MxcafwjWw24
 ---
 The M2_VGA is a tiny M.2 form-factor video card that features the SM750 GPU. This GPU doesn't have a 3D rendering engine, it only has 16 MB of RAM, and it's meant more for basic graphics like you'd find in a kiosk or an appliance—or as a very simple and power-efficient graphics processor for a server.

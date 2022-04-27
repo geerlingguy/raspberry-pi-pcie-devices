@@ -7,6 +7,7 @@ driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/123"
 buy_link: https://amzn.to/3nyHjUD
 videos:
+  - https://www.youtube.com/watch?v=crnEygp4C6g
   - https://www.youtube.com/watch?v=1hFPnpVqzkw
 ---
 The GTX 1080 is supported by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.

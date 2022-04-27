@@ -7,6 +7,7 @@ driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26"
 buy_link: https://amzn.to/3l2rrXs
 videos:
+  - https://www.youtube.com/watch?v=crnEygp4C6g
   - https://www.youtube.com/watch?v=MxcafwjWw24
 ---
 The GTX 750 Ti is a slightly older graphics card that is supported by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.

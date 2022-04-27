@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2
 buy_link: https://amzn.to/3l1K8g7
 videos:
   - https://www.youtube.com/watch?v=LO7Ip9VbOLY
+  - https://www.youtube.com/watch?v=crnEygp4C6g
 ---
 The Radeon RX 6700 XT ("Navy Flounder") was released in 2021 and is supported by the open source amdgpu driver in the Linux Kernel, version 5.11 and later. It is also supported by AMD's [Radeon Software for Linux as of the 20.50 version](https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux-20-50).
 
