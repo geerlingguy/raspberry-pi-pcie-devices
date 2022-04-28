@@ -19,11 +19,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-04-28T17:18:55+00:00" />
+<meta property="article:published_time" content="2022-04-28T21:57:47+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Broadcom MegaRAID 9405W-16i storage controller (LSI)" />
 <script type="application/ld+json">
-{"datePublished":"2022-04-28T17:18:55+00:00","dateModified":"2022-04-28T17:18:55+00:00","description":"This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver.","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html"},"url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9405W-16i storage controller (LSI)","@context":"https://schema.org"}</script>
+{"datePublished":"2022-04-28T21:57:47+00:00","dateModified":"2022-04-28T21:57:47+00:00","description":"This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver.","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html"},"url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9405w-16i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9405W-16i storage controller (LSI)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -73,7 +73,11 @@
         <div class="card_videos">
           <h3>Videos Related to this Card</h2>
             
-              <p>There are no videos for this card yet.</p>
+              <ul>
+                
+                  <li><a href="https://www.youtube.com/watch?v=A6X9ci8KvgE">Jeff Geerling Inspired Storinator</a></a></li>
+                
+              </ul>
             
         </div>
 
@@ -83,7 +87,9 @@
 
 <p>Joshua Boudreau, from 45Drives, used this card in a special ‘Storinator Jr’ build, and used a 45Drives fork of the linux kernel to build in the driver for the card; see <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/196#issuecomment-904656864">this GitHub comment</a> for details.</p>
 
-<p>On 64-bit Pi OS, Josh had to remove <code class="language-plaintext highlighter-rouge">quiet</code> from the <code class="language-plaintext highlighter-rouge">/boot/cmdline.txt</code> configuration in order for the card to work. No clue why!</p>
+<p>To use this card, you need to apply <a href="https://github.com/geerlingguy/linux/pull/4">this patch</a> to the <code class="language-plaintext highlighter-rouge">mpt3sas</code> driver and recompile the Linux kernel. You can then use <code class="language-plaintext highlighter-rouge">storcli</code> (download from Broadcom’s website) to manage the storage controller.</p>
+
+<p>On 64-bit Pi OS, there’s a kernel panic if you have the <code class="language-plaintext highlighter-rouge">quiet</code> option in your <code class="language-plaintext highlighter-rouge">/boot/cmdline.txt</code> configuration.</p>
 
         </div>
 
