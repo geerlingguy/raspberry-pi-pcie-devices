@@ -1,9 +1,9 @@
 ---
 layout: board
-title: "BliKVM PCI Express CM4 Card"
+title: "blicube's BliKVM PCI Express CM4 Card"
 short_description: A CM4 on a PCI Express card running PiKVM.
 status: production
-picture: "/images/board-blikvm-pci-express.png"
+picture: "/images/board-blikvm-pci-express.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/424"
 link: https://github.com/ThomasVon2021/pikvm-CM4-Board/issues/14#issuecomment-1097483063
 videos: []
