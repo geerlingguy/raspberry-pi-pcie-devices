@@ -14,3 +14,5 @@ videos:
   - https://www.youtube.com/watch?v=UQrMqjH68LM
 ---
 The reTerminal encloses a CM4 inside an enclosure incorporating a 720p 5" multi-touch IPS display, a high speed expansion interface, 2x USB 2.0, Gigabit Ethernet, a 40-in GPIO header, a Crypto co-processor, and more.
+
+The proprietary expansion port on the back allows the use of additional plug-and-play modules like the [reTerminal E10-1](https://www.seeedstudio.com/reTerminal-E10-1-p-5376.html), which adds on UPS/battery backup capability, PoE, a DC Jack, an LTE Mini PCIe slot, RS-485, RS-232, and CAN, as well as an additional Gigabit Ethernet port and an M.2 B-key slot for expansion storage.
