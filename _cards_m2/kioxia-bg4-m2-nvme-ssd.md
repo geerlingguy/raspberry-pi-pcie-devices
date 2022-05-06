@@ -8,9 +8,9 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3
 buy_link: https://amzn.to/328pLrz
 videos: []
 ---
-[KIOXIA's BG4 M.2 NVMe SSD](https://business.kioxia.com/en-emea/ssd/client-ssd/bg4.html) drive drive is an inexpensive NVMe SSD commonly used in laptops that is mostly available used.
+[KIOXIA's BG4 M.2 NVMe SSD](https://business.kioxia.com/en-emea/ssd/client-ssd/bg4.html) drive is an inexpensive NVMe SSD commonly used in laptops.
 
-It is an inexpensive SSD that doesn't include any DRM, and relies on a technology called NVMe Host Memory Buffer (HMB) that essentially moves NVMe cache to the system RAM.
+It is an inexpensive SSD that doesn't include any DRAM, and relies on a technology called NVMe Host Memory Buffer (HMB) that essentially moves NVMe cache to the system's RAM.
 
 Using my [disk-benchmark.sh script](https://raw.githubusercontent.com/geerlingguy/raspberry-pi-dramble/master/setup/benchmarks/disk-benchmark.sh), I got the following performance numbers on the Pi CM4:
 
