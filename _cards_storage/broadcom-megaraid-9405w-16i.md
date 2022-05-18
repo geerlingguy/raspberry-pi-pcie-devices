@@ -7,6 +7,7 @@ driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/196"
 buy_link: https://amzn.to/3srcZOh
 videos:
+  - https://www.youtube.com/watch?v=BBnomwpF_uY
   - https://www.youtube.com/watch?v=A6X9ci8KvgE
 ---
 This card is similar to the [9460-16i](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/72), and is new enough to be supported on ARM platforms by the in-tree `mpt3sas` driver.
