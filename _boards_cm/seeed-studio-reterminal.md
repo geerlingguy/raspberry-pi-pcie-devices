@@ -5,7 +5,7 @@ short_description: Embedded Linux on a CM4 with a 5" touchscreen.
 status: prototype
 picture: "/images/board-seeed-studio-reterminal.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/138"
-link: https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html
+link: https://amzn.to/3tibjIe
 videos:
   - https://www.youtube.com/watch?v=a9pUc3dw5wc
   - https://www.youtube.com/watch?v=iN7kiN9Cgxs
