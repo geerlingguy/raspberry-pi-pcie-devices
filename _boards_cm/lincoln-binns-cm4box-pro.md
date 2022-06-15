@@ -7,6 +7,7 @@ picture: "/images/board-lincoln-binns-cm4box-pro.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/88"
 link: https://lincolnbinns.com/shop/internet-of-things-iot/compute-module-4-enclosures.html
 videos:
+  - https://www.youtube.com/watch?v=9MqJI_F-sz8
   - https://www.youtube.com/watch?v=m_P82mFCRQQ
   - https://www.youtube.com/watch?v=iN7kiN9Cgxs
 ---
