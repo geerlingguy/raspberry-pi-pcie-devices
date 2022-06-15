@@ -1,11 +1,11 @@
 ---
 layout: board
 title: "Milü-X Industrial IoT Gateway System"
-short_description: TODO
-status: TODO
+short_description: An industrial computer in an explosion-proof enclosure.
+status: production
 picture: "/images/board-milu-x-industrial.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/447"
-link: TODO
+link: https://fieldcloud.com
 videos: []
 ---
 
