@@ -24,3 +24,6 @@ collections:
     output: true
   cards_usb:
     output: true
+
+plugins:
+  - jekyll-redirect-from
