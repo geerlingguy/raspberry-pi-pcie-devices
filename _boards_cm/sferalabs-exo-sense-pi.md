@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Exo Sense Pi"
-short_description:
+short_description: Multi-sensor package powered by the CM4.
 status: production
 picture: "/images/board-exo-sense-pi.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/444"
