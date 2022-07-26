@@ -13,6 +13,6 @@ The DeskPi Super6C](https://deskpi.com/collections/deskpi-super6c/products/deskp
 
 There's a USB 2.0 hub and two HDMI ports connected to the first Pi, which is nice for cluster management / debugging purposes.
 
-You can buy the board from [DeskPi](https://deskpi.com/collections/deskpi-super6c/products/deskpi-super6c-raspberry-pi-cm4-cluster-mini-itx-board-6-rpi-cm4-supported)and [DWMZone](https://dwmzone.com/en/raspberry-pi/1045-raspberry-pi-cm4-cluster-mini-itx-board-6-rpi-cm4-supported.html).
+You can buy the board from [DeskPi](https://deskpi.com/collections/deskpi-super6c/products/deskpi-super6c-raspberry-pi-cm4-cluster-mini-itx-board-6-rpi-cm4-supported) and [DWMZone](https://dwmzone.com/en/raspberry-pi/1045-raspberry-pi-cm4-cluster-mini-itx-board-6-rpi-cm4-supported.html).
 
 See the DeskPi Team's technical documentation of the board in their [super6c repo](https://github.com/DeskPi-Team/super6c).
