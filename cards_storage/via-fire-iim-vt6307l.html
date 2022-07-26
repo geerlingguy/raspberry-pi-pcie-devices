@@ -9,21 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller | Raspberry Pi PCIe Devices</title>
+<title>VIA Fire IIM VT6307L FireWire host controller | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller" />
+<meta property="og:title" content="VIA Fire IIM VT6307L FireWire host controller" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I have not yet tested this card, though it is already flashed into IT mode, so there’s a chance it will work on the Pi." />
-<meta property="og:description" content="I have not yet tested this card, though it is already flashed into IT mode, so there’s a chance it will work on the Pi." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/intel-SASUC8I-LSI-SAS3081E-R-raid.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/intel-SASUC8I-LSI-SAS3081E-R-raid.html" />
+<meta name="description" content="GitHub user @WACOMalt was able to get a Generic VT6307L / ASM1083 2+1 IEEE 1394 Firewire PCIe card working on the Compute Module 4." />
+<meta property="og:description" content="GitHub user @WACOMalt was able to get a Generic VT6307L / ASM1083 2+1 IEEE 1394 Firewire PCIe card working on the Compute Module 4." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/via-fire-iim-vt6307l.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/via-fire-iim-vt6307l.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-07-26T15:49:31+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller" />
+<meta property="twitter:title" content="VIA Fire IIM VT6307L FireWire host controller" />
 <script type="application/ld+json">
-{"datePublished":"2022-07-26T15:49:31+00:00","dateModified":"2022-07-26T15:49:31+00:00","description":"I have not yet tested this card, though it is already flashed into IT mode, so there’s a chance it will work on the Pi.","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/intel-SASUC8I-LSI-SAS3081E-R-raid.html"},"url":"https://pipci.jeffgeerling.com//cards_storage/intel-SASUC8I-LSI-SAS3081E-R-raid.html","@type":"BlogPosting","headline":"Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller","@context":"https://schema.org"}</script>
+{"datePublished":"2022-07-26T15:49:31+00:00","dateModified":"2022-07-26T15:49:31+00:00","description":"GitHub user @WACOMalt was able to get a Generic VT6307L / ASM1083 2+1 IEEE 1394 Firewire PCIe card working on the Compute Module 4.","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/via-fire-iim-vt6307l.html"},"url":"https://pipci.jeffgeerling.com//cards_storage/via-fire-iim-vt6307l.html","@type":"BlogPosting","headline":"VIA Fire IIM VT6307L FireWire host controller","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -45,11 +45,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller</h1>
+        <h1 id="card_title">VIA Fire IIM VT6307L FireWire host controller</h1>
 
         <div class="card_picture">
           
-            <a href="/images/storage-intel-SASUC8I-LSI-SAS3081E-R-raid.jpg"><img src="/images/storage-intel-SASUC8I-LSI-SAS3081E-R-raid.jpg" alt="Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller"></a>
+            <a href="/images/storage-vt6307l.jpg"><img src="/images/storage-vt6307l.jpg" alt="VIA Fire IIM VT6307L FireWire host controller"></a>
           
         </div>
 
@@ -64,8 +64,8 @@
           <tbody>
             <tr>
               <td>Currently Testing</td>
-              <td>Maybe</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/31">GitHub Issue</a></td>
+              <td>No</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/443">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -79,16 +79,20 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>I have not yet tested this card, though it is already flashed into IT mode, so there’s a chance it will work on the Pi.</p>
+          <p>GitHub user @WACOMalt was able to get a Generic VT6307L / ASM1083 2+1 IEEE 1394 Firewire PCIe card working on the Compute Module 4.</p>
 
-<p>Follow the linked GitHub issue for the latest updates.</p>
+<p>He compiled the kernel with <code class="language-plaintext highlighter-rouge">firewire-ohci</code> enabled, and added <code class="language-plaintext highlighter-rouge">dtoverlay=pcie-32bit-dma</code> to <code class="language-plaintext highlighter-rouge">/boot/config.txt</code>, and was able to get DVGrab to capture footage live and from tapes.</p>
+
+<p>He did report trouble initializing the camera shortly after boot, and said his only concern was reliability—there were a few dropped frames or failed initializations.</p>
+
+<p>See the <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/443">GitHub issue</a> for more information and updates.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/3qydoNk">Intel SASUC8I / LSI SAS3081E-R LSI 1068e RAID controller</a></p>
+          <a href="https://www.viatech.com/en/silicon/legacy/peripherals/ieee-1394/vt6307ls/">VIA Fire IIM VT6307L FireWire host controller</a></p>
         </div>
 
       </section>
