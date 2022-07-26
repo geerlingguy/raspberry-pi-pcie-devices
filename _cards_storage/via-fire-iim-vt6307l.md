@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "VIA Fire IIM VT6307L host controller"
+title: "VIA Fire IIM VT6307L FireWire host controller"
 picture: "/images/storage-vt6307l.jpg"
 functionality: "Currently Testing"
 driver_required: "No"
