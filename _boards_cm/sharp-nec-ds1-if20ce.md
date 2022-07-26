@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-sharp-nec-ds1-if20ce.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/445"
 link: https://www.sharpnecdisplays.us/products/accessories/mpi4e
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=-epPf7D8oMk
 ---
 The [Sharp/NEC DS1-IF20CE Compute Module Interface Board](https://www.sharpnecdisplays.us/products/accessories/mpi4e), product code MPI4E, is part of Sharp/NEC's display solution for a MediaPlayer/SoC integration with their displays. [Here is a user manual mentioning the board](https://assets.sharpnecdisplays.us/documents/installationguides/ma-series-installationguide.pdf).
 
