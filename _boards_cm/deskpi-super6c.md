@@ -5,7 +5,7 @@ short_description: Cluster up to 6 CM4s with NVMe and Gigabit networking.
 status: production
 picture: "/images/board-deskpi-super6c.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/425"
-link: https://deskpi.com/collections/deskpi-super6c/products/deskpi-super6c-raspberry-pi-cm4-cluster-mini-itx-board-6-rpi-cm4-supported
+link: https://amzn.to/3psoOmE
 videos:
   - https://www.youtube.com/watch?v=ecdm3oA-QdQ
 redirect_from: /boards_cm/cm4-cluster-mini-itx
