@@ -18,7 +18,7 @@ DIGIUM TE420 FEATURES:
 
 ### Installation Notes
 
-Add the following to ```boot/config.txt```:
+This card supports both 32-bit and 64-bit kernels, and needs the following added to ```boot/config.txt``` in order to support 32-bit DMA:
 
 ```
 # Force PCIe config to support 32bit DMA addresses at the expense of
