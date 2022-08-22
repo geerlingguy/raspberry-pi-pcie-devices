@@ -19,11 +19,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_other/sangoma-a10x.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-08-18T02:30:47+00:00" />
+<meta property="article:published_time" content="2022-08-22T03:56:49+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Sangoma Technologies Corp. A10x T1/E1 AFT cards" />
 <script type="application/ld+json">
-{"description":"Sangoma is the market leader in supporting reliable SD-WAN failover solutions for large retail organizations over a T1 / E1 internet connection. Sangoma’s world-class A-series T1 / E1 data cards have been dominating the market sector since 1984, being installed into appliances of large vendors and OEMs, supporting some of the largest Point-of-Sale (POS) T1 WAN failover solutions and data applications.","headline":"Sangoma Technologies Corp. A10x T1/E1 AFT cards","dateModified":"2022-08-18T02:30:47+00:00","url":"https://pipci.jeffgeerling.com//cards_other/sangoma-a10x.html","datePublished":"2022-08-18T02:30:47+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_other/sangoma-a10x.html"},"@context":"https://schema.org"}</script>
+{"description":"Sangoma is the market leader in supporting reliable SD-WAN failover solutions for large retail organizations over a T1 / E1 internet connection. Sangoma’s world-class A-series T1 / E1 data cards have been dominating the market sector since 1984, being installed into appliances of large vendors and OEMs, supporting some of the largest Point-of-Sale (POS) T1 WAN failover solutions and data applications.","headline":"Sangoma Technologies Corp. A10x T1/E1 AFT cards","dateModified":"2022-08-22T03:56:49+00:00","url":"https://pipci.jeffgeerling.com//cards_other/sangoma-a10x.html","datePublished":"2022-08-22T03:56:49+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_other/sangoma-a10x.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -63,7 +63,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Not working</td>
+              <td>Full (32-bit kernel only)</td>
               <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/471">GitHub Issue</a></td>
             </tr>
@@ -87,15 +87,28 @@
 
 <h3 id="installation">Installation</h3>
 
-<p>Kernel driver: <a href="https://wiki.freepbx.org/display/DAS/Telephony+Card+Driver+Download">Wanpipe</a></p>
+<p>This driver only supports 32-bit kernels, and needs the following added to <code class="language-plaintext highlighter-rouge">boot/config.txt</code> in order to support 32-bit DMA:</p>
 
-<p>Needs some changes for ARM.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Force PCIe config to support 32bit DMA addresses at the expense of
+# having to bounce buffers.
+dtoverlay=pcie-32bit-dma
+</code></pre></div></div>
+
+<p>Kernel drivers:</p>
+
+<ul>
+  <li><a href="https://github.com/hharte/wanpipe-rpi-cm4">Patched driver</a> with changes to support support the Raspberry Pi CM4 (32-bit kernel only.)</li>
+  <li>Original <a href="https://wiki.freepbx.org/display/DAS/Telephony+Card+Driver+Download">Wanpipe</a> driver from Sangoma.</li>
+</ul>
 
 <p>To compile, run “./Setup dahdi –silent”</p>
 
 <h3 id="status">Status</h3>
 
-<p>Not currently working, due to attempt to use IRQ 255.</p>
+<p>Currently working with <a href="https://github.com/hharte/wanpipe-rpi-cm4">patched driver</a> on 32-bit kernels only.</p>
+
+<p>Support for 64-bit kernels is unlikely as the driver makes extensive use of non-64-bit aligned bitops functions, which are not supported on ARM processors, and lead to an alignment trap.</p>
+
 
         </div>
 
