@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://www.dfrobot.com/product-2242.html
 videos:
   - https://www.youtube.com/watch?v=w7teLVwi408
+  - https://www.youtube.com/watch?v=o2NTvaRv4Yg
 ---
 The IoT Router Board Mini is the smallest two-port dual-gigabit router board for the Compute Module 4. It is a no-frills 2-port gigabit router, with the 2nd port using an RTL8111 network chip on the PCI express bus, meaning you'll have two full gigabit network interfaces.
 
