@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <script async="" src="//analytics.midwesternmac.com/tracker.js" id="fathom-script"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>MikroTik CCR2004-1G-2XS-PCIe | Raspberry Pi PCIe Devices</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MikroTik CCR2004-1G-2XS-PCIe" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The MikroTik CCR2004-1G-2XS-PCIe is a SmartNIC/Router-NIC/poor man’s DPU equipped with:" />
+<meta property="og:description" content="The MikroTik CCR2004-1G-2XS-PCIe is a SmartNIC/Router-NIC/poor man’s DPU equipped with:" />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/mikrotik-ccr2004-1g-2xs-pcie.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/mikrotik-ccr2004-1g-2xs-pcie.html" />
+<meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-30T14:46:07+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MikroTik CCR2004-1G-2XS-PCIe" />
+<script type="application/ld+json">
+{"description":"The MikroTik CCR2004-1G-2XS-PCIe is a SmartNIC/Router-NIC/poor man’s DPU equipped with:","url":"https://pipci.jeffgeerling.com//cards_network/mikrotik-ccr2004-1g-2xs-pcie.html","@type":"BlogPosting","headline":"MikroTik CCR2004-1G-2XS-PCIe","dateModified":"2022-08-30T14:46:07+00:00","datePublished":"2022-08-30T14:46:07+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/mikrotik-ccr2004-1g-2xs-pcie.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="sponsor_banner" href="https://github.com/sponsors/geerlingguy">Sponsor</a>
+          <a id="forkme_banner" href="https://github.com/geerlingguy/raspberry-pi-pcie-devices">View on GitHub</a>
+
+          <h2 id="project_title"><a href="/">Raspberry Pi PCIe Devices</a></h2>
+          <h2 id="project_tagline">Raspberry Pi PCI Express device compatibility database</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1 id="card_title">MikroTik CCR2004-1G-2XS-PCIe</h1>
+
+        <div class="card_picture">
+          
+            <a href="/images/network-mikrotik-ccr2004-1g-2xs-pcie.jpg"><img src="/images/network-mikrotik-ccr2004-1g-2xs-pcie.jpg" alt="MikroTik CCR2004-1G-2XS-PCIe"></a>
+          
+        </div>
+
+        <table class="card_details_table">
+          <thead>
+            <tr>
+              <th>Functionality</th>
+              <th>Driver Required?</th>
+              <th>More Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full</td>
+              <td>Yes</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/477">GitHub Issue</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="card_videos">
+          <h3>Videos Related to this Card</h2>
+            
+              <p>There are no videos for this card yet.</p>
+            
+        </div>
+
+        <div class="card_content">
+          <h3>Description and Notes</h3>
+          <p>The MikroTik <a href="https://mikrotik.com/product/ccr2004_1g_2xs_pcie">CCR2004-1G-2XS-PCIe</a> is a SmartNIC/Router-NIC/poor man’s <a href="https://en.wikipedia.org/wiki/Data_processing_unit">DPU</a> equipped with:</p>
+
+<ul>
+  <li>2x 25G SFP28 network ports</li>
+  <li>1x 10M/100M/1G management port</li>
+  <li>An Annapurna Labs (Amazon) AL52400 SmartNIC SoC (quad-core Cortex-A57[^1] @ 1.5GHz)</li>
+  <li>4GB of RAM + 128MiB parallel NAND (why, MikroTik? a 4-8GB eMMC costs the same, and would let you run containers on it…)</li>
+</ul>
+
+<p>[^1] may actually be Cortex-A72</p>
+
+<p>The card runs MikroTik RouterOS; the three network ports are attached to the AL52400 SoC, which is the same SoC Amazon used in the ~third generation of their <a href="https://aws.amazon.com/ec2/nitro/">AWS Nitro</a> network and storage virtualization system cards.</p>
+
+<hr />
+
+<p>The card presents itself as four Atheros AR8151 PCIe Gigabit Ethernet NICs - the PCIe lanes connect to the SoC, which emulates the AR8151 hardware.</p>
+
+<p>MikroTik added support for <a href="https://lore.kernel.org/all/20210527144423.3395719-1-gatis@mikrotik.com/t/#u">multiple TX/RX queues</a> and <a href="https://lore.kernel.org/all/20210513114326.699663-1-gatis@mikrotik.com/t/#u">10G/25G link speeds</a> to the kernel’s <code class="language-plaintext highlighter-rouge">atl1c</code> driver to support this.</p>
+
+<p>Testing this card requires the Atheros L1C driver to be compiled into the Pi OS kernel. Because it is not included by default, you need to recompile the kernel with the following option enabled through <code class="language-plaintext highlighter-rouge">menuconfig</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
+  -&gt; Network device support
+    -&gt; Ethernet driver support
+      -&gt; Atheros Devices
+        -&gt; Atheros L1C Gigabit Ethernet support
+</code></pre></div></div>
+
+<p>You will also need to add the following line to <code class="language-plaintext highlighter-rouge">/boot/config.txt</code> to enable 32-bit DMA transfers:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtoverlay=pcie-32bit-dma
+</code></pre></div></div>
+
+<p>Any of the four PCIe vNIC ports can be directly mapped to either of the SFP28 ports in “passthrough mode”, leaving two ports free to communicate with the SoC, or all six ports can be used as regular routed/bridged ports in RouterOS as normal.</p>
+
+<p>Performance is in line with other high-speed NICs, able to achieve somewhere slightly north of 3Gbps throughput. Passthrough mode vs. bridged mode does not affect performance here as the limiter is the CM4’s PCIe interface.</p>
+
+<hr />
+
+<p><code class="language-plaintext highlighter-rouge">lspci -vvv</code> output (NICs 2-4 trimmed for brevity:)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>01:00.0 Ethernet controller: Qualcomm Atheros AR8151 v2.0 Gigabit Ethernet
+        Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+        Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast &gt;TAbort- &lt;TAbort- &lt;MAbort- &gt;SERR- &lt;PERR- INTx-
+        Latency: 0
+        Interrupt: pin A routed to IRQ 65
+        Region 0: Memory at 600000000 (64-bit, non-prefetchable) [size=64K]
+        Capabilities: [40] Power Management version 3
+                Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot-,D3cold-)
+                Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+        Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+                Address: 0000000000000000  Data: 0000
+        Capabilities: [70] Express (v2) Endpoint, MSI 00
+                DevCap: MaxPayload 256 bytes, PhantFunc 0, Latency L0s unlimited, L1 unlimited
+                        ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset- SlotPowerLimit 0.000W
+                DevCtl: CorrErr- NonFatalErr- FatalErr- UnsupReq-
+                        RlxdOrd+ ExtTag- PhantFunc- AuxPwr- NoSnoop+
+                        MaxPayload 128 bytes, MaxReadReq 512 bytes
+                DevSta: CorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-
+                LnkCap: Port #0, Speed 8GT/s, Width x8, ASPM not supported
+                        ClockPM- Surprise- LLActRep- BwNot- ASPMOptComp+
+                LnkCtl: ASPM Disabled; RCB 64 bytes, Disabled- CommClk-
+                        ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+                LnkSta: Speed 5GT/s (downgraded), Width x1 (downgraded)
+                        TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+                DevCap2: Completion Timeout: Range ABCD, TimeoutDis+ NROPrPrP- LTR-
+                         10BitTagComp- 10BitTagReq- OBFF Not Supported, ExtFmt- EETLPPrefix-
+                         EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-
+                         FRS- TPHComp+ ExtTPHComp-
+                         AtomicOpsCap: 32bit- 64bit- 128bitCAS-
+                DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis- LTR- OBFF Disabled,
+                         AtomicOpsCtl: ReqEn-
+                LnkCap2: Supported Link Speeds: 2.5-8GT/s, Crosslink- Retimer- 2Retimers- DRS-
+                LnkCtl2: Target Link Speed: 8GT/s, EnterCompliance- SpeedDis-
+                         Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+                         Compliance De-emphasis: -6dB
+                LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete- EqualizationPhase1-
+                         EqualizationPhase2- EqualizationPhase3- LinkEqualizationRequest-
+                         Retimer- 2Retimers- CrosslinkRes: unsupported
+        Capabilities: [d0] Vital Product Data
+                Not readable
+        Capabilities: [100 v2] Advanced Error Reporting
+                UESta:  DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+                UEMsk:  DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+                UESvrt: DLP- SDES+ TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+                CESta:  RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
+                CEMsk:  RxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr+
+                AERCap: First Error Pointer: 00, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-
+                        MultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-
+                HeaderLog: 00000000 00000000 00000000 00000000
+        Capabilities: [148 v1] Device Serial Number 00-00-00-00-00-00-00-00
+        Capabilities: [158 v1] Secondary PCI Express
+                LnkCtl3: LnkEquIntrruptEn- PerformEqu-
+                LaneErrStat: 0
+        Capabilities: [178 v5] Extended Capability ID 0x905
+        Kernel driver in use: atl1c
+        Kernel modules: atl1c
+
+01:00.1 Ethernet controller: Qualcomm Atheros AR8151 v2.0 Gigabit Ethernet
+[...]
+01:00.2 Ethernet controller: Qualcomm Atheros AR8151 v2.0 Gigabit Ethernet
+[...]
+01:00.3 Ethernet controller: Qualcomm Atheros AR8151 v2.0 Gigabit Ethernet
+</code></pre></div></div>
+
+<p>Test setup photo:</p>
+
+<p><img src="https://user-images.githubusercontent.com/4232981/187349894-a49815be-aa75-48e6-aa99-0f0943d212e1.jpeg" alt="IMG_2631" /></p>
+
+
+        </div>
+
+        <div class="card_buy_link">
+          <h3>Buy this Card</h3>
+          <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
+          <a href="https://www.streakwave.com/mikrotik-ccr2004-1g-2xs-pcie-cloud-core-router-2004-pcie-adapter">MikroTik CCR2004-1G-2XS-PCIe</a></p>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">The Raspberry Pi PCIe Devices project is maintained by <a href="https://github.com/geerlingguy">geerlingguy</a></p>
+      </footer>
+    </div>
+
+    
+      <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+      <script>
+      (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+          (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+      })(document, window, '//analytics.midwesternmac.com/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'JVIIB');
+      fathom('trackPageview');
+      </script>
+      <!-- / Fathom -->
+    
+  </body>
+</html>
