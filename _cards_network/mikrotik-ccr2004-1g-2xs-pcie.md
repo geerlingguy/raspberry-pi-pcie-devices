@@ -13,12 +13,12 @@ The MikroTik [CCR2004-1G-2XS-PCIe](https://mikrotik.com/product/ccr2004_1g_2xs_p
 
 - 2x 25G SFP28 network ports
 - 1x 10M/100M/1G management port
-- An Annapurna Labs (Amazon) AL52400 SmartNIC SoC (quad-core Cortex-A57[^1] @ 1.5GHz)
+- An Annapurna Labs (Amazon) AL32400 SmartNIC SoC (quad-core Cortex-A57[^1] @ 1.7GHz)
 - 4GB of RAM + 128MiB parallel NAND (why, MikroTik? a 4-8GB eMMC costs the same, and would let you run containers on it...)
 
 [^1] may actually be Cortex-A72
 
-The card runs MikroTik RouterOS; the three network ports are attached to the AL52400 SoC, which is the same SoC Amazon used in the ~third generation of their [AWS Nitro](https://aws.amazon.com/ec2/nitro/) network and storage virtualization system cards.
+The card runs MikroTik RouterOS; the three network ports are attached to the AL32400 SoC, which is the same SoC Amazon used in the ~third generation of their [AWS Nitro](https://aws.amazon.com/ec2/nitro/) network and storage virtualization system cards.
 
 ---
 
