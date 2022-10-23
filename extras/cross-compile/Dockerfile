@@ -15,7 +15,8 @@ RUN mkdir /build
 
 COPY copykernel.sh /usr/local/bin/copykernel
 RUN chmod +x /usr/local/bin/copykernel
+COPY run.sh /bin
 
 WORKDIR /build
-
-CMD ["bash"]
+ENV linkkernel=https://github.com/raspberrypi/linux
+CMD cp /bin/run.sh . && bash run.sh
