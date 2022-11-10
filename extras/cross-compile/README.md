@@ -80,7 +80,7 @@ One prerequisite for this particular method is to make sure you can mount the re
 The easiest way is to run the `setup.yml` playbook:
 
   1. Install Ansible.
-  2. Make sure the `inventory.ini` points at your Raspberry Pi and you can SSH into it.
+  2. Make sure the `inventory.ini` points at your Raspberry Pi (change the `127.0.0.1` IP address to the IP of the Pi on your network) and you can SSH into it.
   3. Run `ansible-playbook setup.yml`.
 
 If you want to set it up manually instead, do this:
@@ -93,8 +93,14 @@ If you want to set it up manually instead, do this:
 The best option is to use the Automated script. Within the container, run the command:
 
 ```
-copykernel
+PI_ADDRESS=10.0.100.127 copykernel
 ```
+
+> Change the `PI_ADDRESS` here to the IP address of the Pi you're managing.
+
+The script will reboot Pi, and once rebooted, your new kernel should be in place!
+
+#### Manual kernel module install via SSHFS
 
 Or, if you want to run the process manually, run:
 
@@ -133,9 +139,9 @@ Reboot the Pi and _voila!_, you're done!
 
 ### Hard Reset on the CM4 IO Board
 
-If you get a fatal kernel panic that doesn't get caught cleanly (which I do, quite often, when debugging PCI Express devices), you can quickly reset the CM4 IO Board by jumping pins 12 and 14 on J2 (GLOBAL_EN to GND).
+If you get a fatal kernel panic that doesn't get caught cleanly (which I do, quite often, when debugging PCI Express devices), you can quickly reset the CM4 IO Board by jumping pins 12 and 14 on J2 (`GLOBAL_EN` to `GND`).
 
-You can also 'boot' a shutdown CM4 by jumping pins 13 and 14 on J2 (GLOBAL_EN to RUN_PG).
+You can also 'boot' a shutdown CM4 by jumping pins 13 and 14 on J2 (`GLOBAL_EN` to `RUN_PG`).
 
 ### Kernel Headers
 
