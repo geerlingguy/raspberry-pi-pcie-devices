@@ -1,11 +1,11 @@
 ---
 layout: board
 title: "Radxa Taco"
-short_description: An ultimate CM4 carrier board designed for NAS/server/router applications.
-status: prototype
+short_description: CM4 carrier board designed for NAS/server/router applications.
+status: production
 picture: "/images/board-radxa-taco.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/268"
-link: https://wiki.radxa.com/Taco
+link: https://shop.allnetchina.cn/products/taco
 videos:
   - https://www.youtube.com/watch?v=V3jwQzb46Zc
   - https://www.youtube.com/watch?v=G_px298IF2k
@@ -21,4 +21,4 @@ The Radxa Taco is the ultimate CM4 carrier board designed for NAS/server/router 
   - 10P header for Top Board with OLED and button
   - RTC/USB 2/uSD card
 
-The bare board should be available for purchase in early 2022, and a kit with a case, board, and compute module should be available soon after.
+The bare board is available for purchase, and a kit with a case, board, and compute module may be available soon after. The board also works with Radxa's own CM3 module.
