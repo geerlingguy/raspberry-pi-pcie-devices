@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/3
 buy_link: https://amzn.to/34A3sth
 videos:
   - https://www.youtube.com/watch?v=1kWAdtoq8TQ
+  - https://www.youtube.com/watch?v=TdUxWEyafUg
 ---
 This adapter worked great with the [Intel AX200 Desktop Kit](https://amzn.to/2Ldea2t).
 

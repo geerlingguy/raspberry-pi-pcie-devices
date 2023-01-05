@@ -6,7 +6,8 @@ functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/120"
 buy_link: https://amzn.to/3aIBJK9
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=TdUxWEyafUg
 ---
 To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:
 
