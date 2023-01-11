@@ -2,7 +2,7 @@
 layout: card
 title: "AMD Radeon RX 6700 XT 12GB PCIe x16"
 picture: "/images/gpu-radeon-rx6700xt.jpeg"
-functionality: "Currently Testing"
+functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/222"
 buy_link: https://amzn.to/3l1K8g7
@@ -37,6 +37,6 @@ Now, after a reboot, you can explicitly load the module and see what happens by 
 sudo modprobe amdgpu
 ```
 
-I haven't yet run the card on the Pi, so we'll see what happens then!
+So far nobody has been able to get the `amdgpu` drivers to get far in their initialization stages. The Pi crashes due to PCIe bus memory allocation/mapping errors.
 
 See the linked GitHub issue for more details.
