@@ -2,7 +2,7 @@
 layout: card
 title: "Delock Module MiniPCIe SM750 VGA/DVI/HDMI Graphics Card"
 picture: "/images/gpu-delock-module-minipcie-sm750.jpg"
-functionality: "Unknown"
+functionality: "Partial"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/398"
 buy_link: https://www.delock.de/produkte/G_95256/merkmale.html?setLanguage=en

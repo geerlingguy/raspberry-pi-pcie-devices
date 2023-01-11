@@ -2,7 +2,7 @@
 layout: card
 title: "AMD Radeon HD 7470 1GB"
 picture: "/images/gpu-radeon-hd-7470.jpg"
-functionality: "Currently Testing"
+functionality: "Partial"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/430"
 buy_link: https://amzn.to/37Hseg4
@@ -19,6 +19,6 @@ To get the card working currently, you need to:
   4. Set up [this custom memcpy.so](https://gist.github.com/Coreforge/91da3d410ec7eb0ef5bc8dee24b91359) to be preloaded on the system.
   5. Reboot.
 
-Once that's done, you should be able to get Xorg working, or just a console. Note that the driver doesn't seem quite stable yet.
+Once that's done, you should be able to get Xorg working, or just a console. Note that the driver doesn't seem quite stable yet, and many features of the card are not accessible.
 
 See linked GitHub issue for more details and progress getting the card working.

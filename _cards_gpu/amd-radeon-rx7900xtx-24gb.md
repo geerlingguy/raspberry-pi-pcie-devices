@@ -2,7 +2,7 @@
 layout: card
 title: "AMD Radeon RX 7900 XTX 24GB PCIe x16"
 picture: "/images/gpu-radeon-rx7900xtx.png"
-functionality: "Currently Testing"
+functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/503"
 buy_link: https://amzn.to/3W58gyX
@@ -35,6 +35,6 @@ Now, after a reboot, you can explicitly load the module and see what happens by 
 sudo modprobe amdgpu
 ```
 
-I haven't yet run the card on the Pi, so we'll see what happens then!
+When I do this, the entire system crashes and requires a hard power reset. So far nobody has been able to get beyond the basic initialization due to PCIe memory allocation and access errors on the Pi's bus.
 
 See the linked GitHub issue for more details.
