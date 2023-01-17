@@ -13,17 +13,17 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Broadcom MegaRAID 9440-8i storage adapter (LSI)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The 9440-8i should potentially work on the Pi, since the 94xx/95xx and newer cards have drivers that support ARM." />
-<meta property="og:description" content="The 9440-8i should potentially work on the Pi, since the 94xx/95xx and newer cards have drivers that support ARM." />
+<meta name="description" content="This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver." />
+<meta property="og:description" content="This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9440-8i.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9440-8i.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-01-13T22:47:41+00:00" />
+<meta property="article:published_time" content="2023-01-17T20:18:12+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Broadcom MegaRAID 9440-8i storage adapter (LSI)" />
 <script type="application/ld+json">
-{"description":"The 9440-8i should potentially work on the Pi, since the 94xx/95xx and newer cards have drivers that support ARM.","url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9440-8i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9440-8i storage adapter (LSI)","dateModified":"2023-01-13T22:47:41+00:00","datePublished":"2023-01-13T22:47:41+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9440-8i.html"},"@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9440-8i.html"},"description":"This card is similar to the 9460-16i, and is new enough to be supported on ARM platforms by the in-tree mpt3sas driver.","url":"https://pipci.jeffgeerling.com//cards_storage/broadcom-megaraid-9440-8i.html","@type":"BlogPosting","headline":"Broadcom MegaRAID 9440-8i storage adapter (LSI)","dateModified":"2023-01-17T20:18:12+00:00","datePublished":"2023-01-17T20:18:12+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -63,7 +63,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
+              <td>Full</td>
               <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/250">GitHub Issue</a></td>
             </tr>
@@ -79,9 +79,11 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>The <a href="https://www.broadcom.com/products/storage/raid-controllers/megaraid-9440-8i">9440-8i</a> should potentially work on the Pi, since the 94xx/95xx and newer cards have drivers that support ARM.</p>
+          <p>This card is similar to the <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/72">9460-16i</a>, and is new enough to be supported on ARM platforms by the in-tree <code class="language-plaintext highlighter-rouge">mpt3sas</code> driver.</p>
 
-<p>You can follow @wallentx’s testing progress with it over on the <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/250">GitHub issue</a>.</p>
+<p>To use this card, you need to apply <a href="https://github.com/geerlingguy/linux/pull/4">this patch</a> to the <code class="language-plaintext highlighter-rouge">mpt3sas</code> driver and recompile the Linux kernel. You can then use <code class="language-plaintext highlighter-rouge">storcli</code> (download from Broadcom’s website) to manage the storage controller.</p>
+
+<p>On 64-bit Pi OS, there’s a kernel panic if you have the <code class="language-plaintext highlighter-rouge">quiet</code> option in your <code class="language-plaintext highlighter-rouge">/boot/cmdline.txt</code> configuration.</p>
 
         </div>
 
