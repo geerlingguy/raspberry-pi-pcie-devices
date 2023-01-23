@@ -7,6 +7,7 @@ picture: "/images/board-uptime-lab-cm4-blade.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-738877163"
 link: https://computeblade.com
 videos:
+  - https://www.youtube.com/shorts/bBdq2hf5R0I
   - https://www.youtube.com/watch?v=zH9GwYZu_aE
   - https://www.youtube.com/watch?v=4vSGl5kpf-k
   - https://www.youtube.com/watch?v=YuLNqs21x2Q
