@@ -93,7 +93,7 @@ If you want to set it up manually instead, do this:
 The best option is to use the Automated script. Within the container, run the command:
 
 ```
-PI_ADDRESS=10.0.100.127 copykernel
+PI_ADDRESS=10.0.100.170 copykernel
 ```
 
 > Change the `PI_ADDRESS` here to the IP address of the Pi you're managing.
