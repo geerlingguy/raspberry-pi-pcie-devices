@@ -9,21 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Generic PCE164P NO3 VER 008S 1x to 16x riser | Raspberry Pi PCIe Devices</title>
+<title>Intel Arc A750 Limited Edition | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Generic PCE164P NO3 VER 008S 1x to 16x riser" />
+<meta property="og:title" content="Intel Arc A750 Limited Edition" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Follow the GitHub issue for more details about this card’s current testing progress." />
-<meta property="og:description" content="Follow the GitHub issue for more details about this card’s current testing progress." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html" />
+<meta name="description" content="The Intel Arc A750 Limited Edition is one of Intel’s first consumer standalone graphics cards. The driver support for X86 is… okay at best right now. And for ARM64, nonexistent." />
+<meta property="og:description" content="The Intel Arc A750 Limited Edition is one of Intel’s first consumer standalone graphics cards. The driver support for X86 is… okay at best right now. And for ARM64, nonexistent." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_gpu/intel-arc-a750.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/intel-arc-a750.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-02-15T17:12:17+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Generic PCE164P NO3 VER 008S 1x to 16x riser" />
+<meta property="twitter:title" content="Intel Arc A750 Limited Edition" />
 <script type="application/ld+json">
-{"description":"Follow the GitHub issue for more details about this card’s current testing progress.","url":"https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html"},"headline":"Generic PCE164P NO3 VER 008S 1x to 16x riser","dateModified":"2023-02-15T17:12:17+00:00","datePublished":"2023-02-15T17:12:17+00:00","@context":"https://schema.org"}</script>
+{"description":"The Intel Arc A750 Limited Edition is one of Intel’s first consumer standalone graphics cards. The driver support for X86 is… okay at best right now. And for ARM64, nonexistent.","url":"https://pipci.jeffgeerling.com//cards_gpu/intel-arc-a750.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/intel-arc-a750.html"},"headline":"Intel Arc A750 Limited Edition","dateModified":"2023-02-15T17:12:17+00:00","datePublished":"2023-02-15T17:12:17+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -45,11 +45,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Generic PCE164P NO3 VER 008S 1x to 16x riser</h1>
+        <h1 id="card_title">Intel Arc A750 Limited Edition</h1>
 
         <div class="card_picture">
           
-            <a href="/images/adpater-pce164p-no6-ver-008s-riser.jpg"><img src="/images/adpater-pce164p-no6-ver-008s-riser.jpg" alt="Generic PCE164P NO3 VER 008S 1x to 16x riser"></a>
+            <a href="/images/gpu-intel-a750.jpg"><img src="/images/gpu-intel-a750.jpg" alt="Intel Arc A750 Limited Edition"></a>
           
         </div>
 
@@ -63,9 +63,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
-              <td>No</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14">GitHub Issue</a></td>
+              <td>None</td>
+              <td>Yes</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/510">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -79,14 +79,26 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>Follow the GitHub issue for more details about this card’s current testing progress.</p>
+          <p>The Intel Arc A750 Limited Edition is one of Intel’s first consumer standalone graphics cards. The driver support for X86 is… okay at best right now. And for ARM64, nonexistent.</p>
+
+<p>Physically, it requires a x16 PCIe socket. You will need to supply about 225W to the card directly through it’s 8-pin and 6-pin PCIe power plugs.</p>
+
+<h3 id="i915-open-source-driver">i915 Open Source Driver</h3>
+
+<p>To get the i915 driver loaded, you have to <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">recompile the Linux kernel for Pi OS</a> on the 6.2 branch (<code class="language-plaintext highlighter-rouge">rpi-6.2.y</code>) or later.</p>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">Device Drivers</code> &gt; <code class="language-plaintext highlighter-rouge">Graphics support</code> on the <code class="language-plaintext highlighter-rouge">menuconfig</code> step, and select the <code class="language-plaintext highlighter-rouge">i915</code> driver to install.</p>
+
+<p>…unfortunately, at this time, that driver only supports X86 systems, so it isn’t able to be selected if cross-compiling for ARM.</p>
+
+<p>See the linked GitHub issue for more details.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/34LzVgt">Generic PCE164P NO3 VER 008S 1x to 16x riser</a></p>
+          <a href="https://amzn.to/40UZIy6">Intel Arc A750 Limited Edition</a></p>
         </div>
 
       </section>
