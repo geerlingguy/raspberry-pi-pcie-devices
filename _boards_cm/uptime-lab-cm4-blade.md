@@ -2,7 +2,7 @@
 layout: board
 title: "Uptime Lab CM4 Blade"
 short_description: 20 CM4s with M.2 NVMe storage and TPM 2.0 in 1U.
-status: prototype
+status: production
 picture: "/images/board-uptime-lab-cm4-blade.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-738877163"
 link: https://computeblade.com

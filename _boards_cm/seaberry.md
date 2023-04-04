@@ -2,7 +2,7 @@
 layout: board
 title: "Seaberry - Mini ITX motherboard"
 short_description: Mini ITX motherboard with tons of PCI Express slots.
-status: prototype
+status: production
 picture: "/images/board-seaberry.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/130"
 link: https://www.tindie.com/products/alftel/seaberry-pi-cm4-carrier-board/

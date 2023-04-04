@@ -1,8 +1,8 @@
 ---
 layout: board
 title: "Zega II Game Gear drop-in CM4 RetroPie Kit"
-short_description: Upcoming Zega Mame Gear powered with a Raspberry Pi CM4.
-status: prototype
+short_description: Zega Mame Gear powered with a Raspberry Pi CM4.
+status: production
 picture: "/images/board-sega-game-gear-cm4-retropie.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/191"
 link: https://www.zarcade.uk/page/zega-mame-gear-ii

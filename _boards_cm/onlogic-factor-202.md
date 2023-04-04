@@ -2,7 +2,7 @@
 layout: board
 title: "Factor 202 Raspberry Pi Industrial IoT Gateway"
 short_description: An industrial IoT computer based on the Raspberry Pi CM4.
-status: prototype
+status: production
 picture: "/images/board-onlogic-factor-202.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/408"
 link: https://www.onlogic.com/fr202/

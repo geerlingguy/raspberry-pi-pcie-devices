@@ -1,7 +1,7 @@
 ---
 layout: board
 title: "Axzez Interceptor Carrier Board"
-short_description: A tiny CM4 board with 5 SATA slots, ATX power input, and 4 Ethernet ports.
+short_description: CM4 board with 5 SATA ports, ATX power input, 4 Ethernet ports, and expansion for 16 PoE ports.
 status: production
 picture: "/images/board-axzez-interceptor.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/354"

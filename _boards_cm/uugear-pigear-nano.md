@@ -2,7 +2,7 @@
 layout: board
 title: "UUGear PiGear Nano"
 short_description: CM4 board with 8x USB 3 ports, M.2 NVMe, 4G mini PCIe, industrial IO, and more.
-status: prototype
+status: production
 picture: "/images/board-uugear-pigear-nano.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/365"
 link: https://www.uugear.com/product/pigear-nano/

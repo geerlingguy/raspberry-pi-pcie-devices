@@ -2,7 +2,7 @@
 layout: board
 title: "CM4-BoxPro"
 short_description: An open hardware carrier with galvanically-isolated interfaces.
-status: prototype
+status: production
 picture: "/images/board-lincoln-binns-cm4box-pro.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/88"
 link: https://lincolnbinns.com/shop/internet-of-things-iot/compute-module-4-enclosures.html

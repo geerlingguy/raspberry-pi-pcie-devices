@@ -2,7 +2,7 @@
 layout: board
 title: "PiBox 2 Mini"
 short_description: KubeSail's two-drive NAS solution based on the CM4.
-status: prototype
+status: production
 picture: "/images/board-pibox-2-mini-nas.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/112"
 link: https://pibox.io

@@ -2,7 +2,7 @@
 layout: board
 title: "Seeed Studio reTerminal"
 short_description: Embedded Linux on a CM4 with a 5" touchscreen.
-status: prototype
+status: production
 picture: "/images/board-seeed-studio-reterminal.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/138"
 link: https://amzn.to/3tibjIe

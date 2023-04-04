@@ -2,7 +2,7 @@
 layout: board
 title: "CutiePie Tablet"
 short_description: A CM4-based touchscreen tablet with a handle.
-status: prototype
+status: production
 picture: "/images/board-cutiepie-tablet.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-744026463"
 link: https://cutiepi.io

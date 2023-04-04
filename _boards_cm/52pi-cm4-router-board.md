@@ -2,7 +2,7 @@
 layout: board
 title: "52Pi CM4 Router Board"
 short_description: An expansion board based on the Raspberry Pi Compute Module 4.
-status: prototype
+status: production
 picture: "/images/board-52pi-cm4-router.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/337"
 link: https://amzn.to/3dol13A
