@@ -9,6 +9,7 @@ link: https://www.axzez.com/axzez-circuit-boards
 videos:
   - https://www.youtube.com/watch?v=NsfVI8s2gaI
   - https://www.youtube.com/watch?v=m_P82mFCRQQ
+  - https://www.youtube.com/watch?v=xp7JqUJgsXQ
 ---
 Axzez's Interceptor CM4 Carrier Board has:
 

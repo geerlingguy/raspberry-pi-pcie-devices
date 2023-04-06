@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-pikvm-v4.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/496"
 link: https://www.kickstarter.com/projects/mdevaev/pikvm-v4
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=xp7JqUJgsXQ
 ---
 The PiKVM v4 is the latest iteration of the reference PiKVM device. It comes in two CM4-powered variants: the Plus and the mini.
 

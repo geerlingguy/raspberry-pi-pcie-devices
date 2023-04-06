@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-zymbit-secure-compute-node.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/516"
 link: https://store.zymbit.com/products/secure-compute-node-d35
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=xp7JqUJgsXQ
 ---
 The [Secure Edge Node - D35](https://store.zymbit.com/products/secure-compute-node-d35) is an extremely secure computing platform built around the Compute Module 4:
 

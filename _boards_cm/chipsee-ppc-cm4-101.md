@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-chipsee-industrial-panel-pc.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/517"
 link: https://chipsee.com/product/ppc-cm4-101/
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=xp7JqUJgsXQ
 ---
 The [Chipsee 10.1" Industrial Panel PC](https://chipsee.com/product/ppc-cm4-101/) (model PPC-CM4-101) is a 10.1" touchscreen powered by a Raspberry Pi.
 
