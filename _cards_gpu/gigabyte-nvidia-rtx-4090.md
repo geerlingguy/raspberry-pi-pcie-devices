@@ -2,7 +2,7 @@
 layout: card
 title: "Gigabyte Nvidia RTX 4090 OC"
 picture: "/images/gpu-nvidia-rtx-4090-oc.jpg"
-functionality: "Currently Testing"
+functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/504"
 buy_link: https://amzn.to/3KaTN26
@@ -34,7 +34,18 @@ chmod +x NVIDIA-Linux-aarch64-525.89.02.run
 sudo ./NVIDIA-Linux-aarch64-525.89.02.run
 ```
 
-TODO: What happens?
+After doing that, I was unable to get any display outputs through the card, and when running `startx`, I would get the error:
+
+```
+...
+[   130.737] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[   130.737] (EE) 
+[   130.737] (EE) Backtrace:
+[   130.739] (EE) 0: /usr/lib/xorg/Xorg (OsLookupColor+0x188) [0x555bacc538]
+[   130.740] (EE) unw_get_proc_info failed: no unwind info found [-10]
+[   130.740] (EE) 
+[   130.740] (EE) Segmentation fault at address 0x124
+```
 
 ### Nouveau (open source) driver
 
