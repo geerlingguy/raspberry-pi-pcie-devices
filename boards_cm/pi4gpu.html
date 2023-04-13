@@ -9,21 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>CM4-Powered 3D Printer Board by @MayerMakes | Raspberry Pi PCIe Devices</title>
+<title>BladeBerry v1.0 | Raspberry Pi PCIe Devices</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="CM4-Powered 3D Printer Board by @MayerMakes" />
+<meta property="og:title" content="BladeBerry v1.0" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The Compute Module 4 Powered 3D Printer Board, created by Clem (@MAYERMAKES from Element14 Presents, includes Trinamic Stepper drivers, an ESP32-S2, an ATMega2560-16AU, and many other components. The board allows you to use a CM4 to control the 3D printer’s motors, rather than using a computer." />
-<meta property="og:description" content="The Compute Module 4 Powered 3D Printer Board, created by Clem (@MAYERMAKES from Element14 Presents, includes Trinamic Stepper drivers, an ESP32-S2, an ATMega2560-16AU, and many other components. The board allows you to use a CM4 to control the 3D printer’s motors, rather than using a computer." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//boards_cm/cm4-3d-printer-mayermakes.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//boards_cm/cm4-3d-printer-mayermakes.html" />
+<meta name="description" content="This board is a collaboration between Mirek of Mirkotronics and Jeff Geerling." />
+<meta property="og:description" content="This board is a collaboration between Mirek of Mirkotronics and Jeff Geerling." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//boards_cm/pi4gpu.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//boards_cm/pi4gpu.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Devices" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-04-13T21:51:58+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="CM4-Powered 3D Printer Board by @MayerMakes" />
+<meta property="twitter:title" content="BladeBerry v1.0" />
 <script type="application/ld+json">
-{"description":"The Compute Module 4 Powered 3D Printer Board, created by Clem (@MAYERMAKES from Element14 Presents, includes Trinamic Stepper drivers, an ESP32-S2, an ATMega2560-16AU, and many other components. The board allows you to use a CM4 to control the 3D printer’s motors, rather than using a computer.","url":"https://pipci.jeffgeerling.com//boards_cm/cm4-3d-printer-mayermakes.html","@type":"BlogPosting","headline":"CM4-Powered 3D Printer Board by @MayerMakes","dateModified":"2023-04-13T21:51:58+00:00","datePublished":"2023-04-13T21:51:58+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//boards_cm/cm4-3d-printer-mayermakes.html"},"@context":"https://schema.org"}</script>
+{"description":"This board is a collaboration between Mirek of Mirkotronics and Jeff Geerling.","url":"https://pipci.jeffgeerling.com//boards_cm/pi4gpu.html","@type":"BlogPosting","headline":"BladeBerry v1.0","dateModified":"2023-04-13T21:51:58+00:00","datePublished":"2023-04-13T21:51:58+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//boards_cm/pi4gpu.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -47,11 +47,11 @@
 
         <a href="/boards_cm">&lt; Back to Boards and Projects</a>
 
-        <h1 id="board_title">CM4-Powered 3D Printer Board by @MayerMakes</h1>
+        <h1 id="board_title">BladeBerry v1.0</h1>
 
         <div class="board_picture">
           
-            <a href="/images/board-cm4-3d-printer-mayermakes.png"><img src="/images/board-cm4-3d-printer-mayermakes.png" alt="CM4-Powered 3D Printer Board by @MayerMakes"></a>
+            <a href="/images/board-pi4gpu.jpeg"><img src="/images/board-pi4gpu.jpeg" alt="BladeBerry v1.0"></a>
           
         </div>
 
@@ -64,15 +64,19 @@
           </thead>
           <tbody>
             <tr>
-              <td><a href="https://www.element14.com/community/docs/DOC-96583/l/episode-496-compute-module-4-powered-3d-printer-board">More Info</a></td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/pull/127">GitHub Issue</a></td>
+              <td><a href="https://github.com/geerlingguy/pi4gpu">More Info</a></td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/525">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
 
         <div class="board_content">
           <h3>Description</h3>
-          <p>The Compute Module 4 Powered 3D Printer Board, created by Clem (<a href="https://twitter.com/MAYERMAKES">@MAYERMAKES</a> from <em>Element14 Presents</em>, includes Trinamic Stepper drivers, an ESP32-S2, an ATMega2560-16AU, and many other components. The board allows you to use a CM4 to control the 3D printer’s motors, rather than using a computer.</p>
+          <p>This board is a collaboration between <a href="https://twitter.com/Mirko_DIY">Mirek of Mirkotronics</a> and <a href="https://www.jeffgeerling.com">Jeff Geerling</a>.</p>
+
+<p>The PCIe x4 (physical - only x1 connected signals) card is meant to slot into a special adapter board that allows plugging up to a x16 PCI Express card (mainly intended for graphics cards) directly into this card for testing purposes.</p>
+
+<p>The card exposes 1 Gbps Ethernet, full-size HDMI, two USB 2.0 ports, and a 12v barrel plug on the back. It has a USB-C port for programming on the inside edge, as well as a 6-pin PCIe pinout power input so it can be powered internally or from the same power supply used to power the card under test.</p>
 
         </div>
 
@@ -81,7 +85,7 @@
             
               <ul>
                 
-                  <li><a href="https://www.youtube.com/watch?v=cFzY_oXxi4A">#RaspberryPi Compute Module 4 Controlled #3DPrinter Board</a></a></li>
+                  <li><a href="https://www.youtube.com/watch?v=l9dItRUjQ0k">A computer you plug into your graphics card</a></a></li>
                 
               </ul>
             
