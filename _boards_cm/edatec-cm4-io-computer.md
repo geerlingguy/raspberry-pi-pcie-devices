@@ -3,7 +3,7 @@ layout: board
 title: "EDATEC CM4 IO Computer"
 short_description: CM4 IO Computer is an industrial computer series based on the Raspberry Pi Compute Module 4 and IO board. 
 status: production
-picture: "/images/edatec-cm4-io-computer.jpg"
+picture: "/images/ed-cm4-io-computer.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/523"
 link: https://www.edatec.cn/en/elpc/cm4-io-comp.html
 
