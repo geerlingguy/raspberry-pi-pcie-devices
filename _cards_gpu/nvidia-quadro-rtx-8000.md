@@ -6,7 +6,8 @@ functionality: "Partial"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/480"
 buy_link: https://amzn.to/3Ke16pB
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
 The Quadro RTX 8000 is supported (well, not really on ARM64) by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.
 

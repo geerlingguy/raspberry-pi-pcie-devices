@@ -6,7 +6,8 @@ functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/504"
 buy_link: https://amzn.to/3KaTN26
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
 The RTX 4090 is supported by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.
 

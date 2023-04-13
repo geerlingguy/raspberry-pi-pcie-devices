@@ -6,7 +6,8 @@ functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/509"
 buy_link: https://amzn.to/3XoHaTM
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
 The RTX A2000 is supported by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.
 

@@ -6,7 +6,8 @@ functionality: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/503"
 buy_link: https://amzn.to/3W58gyX
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
 The Radeon RX 7900 XT ("Navi 31") was released in 2022 and is supported by the open source amdgpu driver in the Linux Kernel, version 6.0 and later. It is also supported by AMD's [Radeon Software for Linux as of the 22.40 version](https://www.amd.com/en/support/kb/release-notes/rn-amdgpu-unified-linux-22-40).
 

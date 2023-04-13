@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4
 buy_link: https://amzn.to/37Hseg4
 videos:
   - https://www.youtube.com/watch?v=crnEygp4C6g
+  - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
 Dell's [AMD Radeon HD 7470](https://amzn.to/37Hseg4) has 1GB of GDDR5 VRAM, uses the Caicos GPU ("Southern Islands"), and was launched in Jan 2012 (according to [TechPowerUp](https://www.techpowerup.com/gpu-specs/radeon-hd-7470-oem.c299)). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi's PCIe slot without an externally-powered riser.
 
