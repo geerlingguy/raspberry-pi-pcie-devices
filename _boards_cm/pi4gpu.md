@@ -1,7 +1,7 @@
 ---
 layout: board
-title: "BladeBerry v1.0"
-short_description: A low profile (1U) CM4 board.
+title: "Pi4GPU"
+short_description: A PCI Express card carrier that marries the CM4 to a graphics card.
 status: prototype
 picture: "/images/board-pi4gpu.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/525"
