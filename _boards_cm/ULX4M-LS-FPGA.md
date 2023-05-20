@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "ULX4M FPGA"
+title: "ULX4M-LS (SDRAM) FPGA"
 picture: "/images/board-ulx4m-ls-fpga.jpg"
 functionality: "Full"
 driver_required: "Yes"
