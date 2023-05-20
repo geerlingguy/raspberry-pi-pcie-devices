@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "ULX4M FPGA"
-picture: "/images/board-ulx4m-lm-fpga.jpg"
+picture: "/images/board-ulx4m-ld-fpga.jpg"
 functionality: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/535"
