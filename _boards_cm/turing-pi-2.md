@@ -5,7 +5,7 @@ short_description: 4 CM4 Cluster on a Mini ITX board.
 status: production
 picture: "/images/board-turing-pi-2.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issue-743990222"
-link: https://turingpi.com/v2/
+link: https://turingpi.com/product/turing-pi-2/
 videos:
   - https://www.youtube.com/watch?v=RijuRF0ITdE
   - https://www.youtube.com/watch?v=OLRldZjty_s
