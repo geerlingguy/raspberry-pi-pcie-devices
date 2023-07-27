@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-timebeat-timecard-mini-pcie.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/497"
 link: 
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=dxtVyDXvIBE
 ---
 Timebeat's [TimeCard mini PCIe card](https://store.timebeat.app/products/ocp-tap-timecard-mini-complete-edition) sits in a server's PCIe slot, exposing two serial interfaces (one to an optional Raspberry Pi CM4, one to an optional GPS unit), and the card also holds a TXCO (Temperature Controlled Crystal Oscillator) or OXCO (Oven-Controlled Crystal Oscillator) to hold time very accurately if the signal is lost.
 
