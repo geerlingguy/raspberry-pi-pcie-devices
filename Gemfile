@@ -11,5 +11,3 @@ gem 'nokogiri', '~> 1.10'
 gem 'jekyll-redirect-from'
 
 gem "mini_magick", "~> 4.11"
-
-gem "webrick", "~> 1.8"
