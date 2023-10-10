@@ -590,6 +590,10 @@ Small Device Styles
     min-width: 240px;
     max-width: 320px;
     font-size: 11px; } }
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  letter-spacing: 0; }
+
 #header_wrap .inner {
   padding: 40px 10px 10px; }
 
@@ -602,13 +606,27 @@ Small Device Styles
   top: 0;
   right: 200px;
   z-index: 12;
-  padding: 10px 40px 10px 10px;
+  padding: 10px 20px;
   color: #fff;
-  background: url("/images/heart.png") #db61a2 no-repeat 90% 50%;
+  background-color: #db61a2;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0090ff;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
 
 #project_title {
   background: none;
@@ -617,7 +635,11 @@ Small Device Styles
     color: inherit; }
 
 #project_tagline {
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 0; }
+
+#main_content p:first-of-type {
+  margin-top: 0; }
 
 .card_table,
 .board_table {

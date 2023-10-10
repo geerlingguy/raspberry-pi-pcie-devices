@@ -6,6 +6,10 @@ If you would like to add a new device to the site, or correct the information ab
 
 ## Local Editing
 
-This site uses Jekyll to build and serve pages. On a local workstation, clone the repository, make sure you have Ruby, Bundler, and Jekyll installed, then run `jekyll serve`.
+This site uses Jekyll to build and serve pages. On a local workstation, clone the repository, make sure you have Ruby, Bundler, and Jekyll installed, then run:
+
+```
+bundle exec jekyll serve
+```
 
 Access the local site at the address Jekyll provides.
