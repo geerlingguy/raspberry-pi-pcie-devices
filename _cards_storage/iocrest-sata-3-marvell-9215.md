@@ -2,7 +2,8 @@
 layout: card
 title: "IO Crest 4 Port SATA III PCIe x1 with Marvell 9215"
 picture: "/images/storage-iocrest-sata-3-marvell-9215.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1"
 buy_link: https://amzn.to/2HpEWCP

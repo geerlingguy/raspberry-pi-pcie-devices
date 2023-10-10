@@ -2,7 +2,8 @@
 layout: card
 title: "VisionTek AMD Radeon 5450 1GB PCIe x16"
 picture: "/images/gpu-visiontek-radeon-5450.jpg"
-functionality: "Partial"
+functionality_cm4: "Partial"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/4"
 buy_link: https://amzn.to/2Hh6KcI

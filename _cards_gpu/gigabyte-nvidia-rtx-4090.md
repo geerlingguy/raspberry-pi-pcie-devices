@@ -2,7 +2,8 @@
 layout: card
 title: "Gigabyte Nvidia RTX 4090 OC"
 picture: "/images/gpu-nvidia-rtx-4090-oc.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/504"
 buy_link: https://amzn.to/3KaTN26

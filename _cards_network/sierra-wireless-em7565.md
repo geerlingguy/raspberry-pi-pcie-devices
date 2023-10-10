@@ -2,7 +2,8 @@
 layout: card
 title: "Sierra Wireless EM7565 4G LTE NGFF modem"
 picture: "/images/network-sierra-wireless-em7565.png"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/366"
 buy_link: https://amzn.to/3nKDnBe

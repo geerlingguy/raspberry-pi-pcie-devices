@@ -2,7 +2,8 @@
 layout: card
 title: "Broadcom MegaRAID 9460-16i storage controller"
 picture: "/images/storage-broadcom-megaraid-9460-16i.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/72"
 buy_link: https://amzn.to/3arF4O4

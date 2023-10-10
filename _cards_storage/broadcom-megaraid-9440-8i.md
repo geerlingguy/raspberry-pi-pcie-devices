@@ -2,7 +2,8 @@
 layout: card
 title: "Broadcom MegaRAID 9440-8i storage adapter (LSI)"
 picture: "/images/storage-broadcom-megaraid-9440-8i.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/250"
 buy_link: https://amzn.to/3h03qAV

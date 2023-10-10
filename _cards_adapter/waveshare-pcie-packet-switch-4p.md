@@ -2,7 +2,8 @@
 layout: card
 title: "Waveshare PCIe-Packet-Switch-4P"
 picture: "/images/adpater-pcie-packet-switch-4p.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/389"
 buy_link: https://www.waveshare.net/wiki/PCIe-Packet-Switch-4P

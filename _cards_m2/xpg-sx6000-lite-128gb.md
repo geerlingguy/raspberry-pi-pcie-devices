@@ -2,7 +2,8 @@
 layout: card
 title: "XPG SX6000 Lite 120GB SSD"
 picture: "/images/m2-xpg-sx6000-lite-128gb.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/48"
 buy_link: https://amzn.to/34WE69c

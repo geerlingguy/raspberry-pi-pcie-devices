@@ -2,7 +2,8 @@
 layout: card
 title: "ALFA Network's WiFi HaLow AHM27292U"
 picture: "/images/network-alfa-wifi-halow-ahm27292u.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/394"
 buy_link: https://www.alfa.com.tw/products/ahm27292u?variant=36517185781832

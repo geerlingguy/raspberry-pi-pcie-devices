@@ -2,7 +2,8 @@
 layout: card
 title: "ZS ZHISHANG PCI-E X1 to 4 PCI-E X16 Expansion Riser"
 picture: "/images/adapter-zs-zhishang-riser.jpeg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/125"
 buy_link: https://amzn.to/3u8oqdJ

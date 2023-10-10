@@ -2,7 +2,8 @@
 layout: card
 title: "NGFF NVMe M-key SSD to M.2 Key A/E Adapter"
 picture: "/images/m2-ngff-m-key-ssd-to-a-e-key-adapter.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/91"
 buy_link: https://amzn.to/3ebaIBq

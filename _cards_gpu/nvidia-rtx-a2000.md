@@ -2,7 +2,8 @@
 layout: card
 title: "PNY Nvidia RTX A2000 (Quadro)"
 picture: "/images/gpu-nvidia-rtx-a2000.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/509"
 buy_link: https://amzn.to/3XoHaTM

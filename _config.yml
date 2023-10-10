@@ -1,6 +1,6 @@
 ---
 theme: jekyll-theme-slate
-title: Raspberry Pi PCIe Devices
+title: Raspberry Pi PCIe Database
 description: Raspberry Pi PCI Express device compatibility database
 url: https://pipci.jeffgeerling.com/
 fathom_analytics: true
@@ -23,6 +23,8 @@ collections:
   cards_storage:
     output: true
   cards_usb:
+    output: true
+  hats:
     output: true
 
 plugins:

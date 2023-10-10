@@ -2,7 +2,8 @@
 layout: card
 title: "WD PC SN520 NVMe M.2 2230 SSD"
 picture: "/images/m2-wd-pc-sn520-2230-nvme-ssd.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/90"
 buy_link: https://amzn.to/2MrmvA7

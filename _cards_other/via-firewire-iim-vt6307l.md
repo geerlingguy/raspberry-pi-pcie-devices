@@ -2,7 +2,8 @@
 layout: card
 title: "VIA FireWire IIM VT6307L host controller"
 picture: "/images/storage-vt6307l.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/443"
 buy_link: https://www.viatech.com/en/silicon/legacy/peripherals/ieee-1394/vt6307ls/

@@ -2,7 +2,8 @@
 layout: card
 title: "Samsung 980 SSD 500 GB NVMe SSD"
 picture: "/images/m2-samsung-980-nvme.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/355"
 buy_link: https://www.amazon.com/gp/product/B08V7GT6F3

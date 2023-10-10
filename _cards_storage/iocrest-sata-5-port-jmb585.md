@@ -2,7 +2,8 @@
 layout: card
 title: "IOCrest JMB585 PCIe Gen3 SATA Controller"
 picture: "/images/storage-iocrest-sata-5-port-jmb585.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/64"
 buy_link: https://amzn.to/3rkbK1d

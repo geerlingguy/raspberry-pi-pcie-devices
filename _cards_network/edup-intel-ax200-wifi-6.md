@@ -2,7 +2,8 @@
 layout: card
 title: "EDUP PCIe Intel AX200 WiFi 6 Adapter"
 picture: "/images/network-edup-intel-ax200.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/22"
 buy_link: https://amzn.to/3pnFF8S

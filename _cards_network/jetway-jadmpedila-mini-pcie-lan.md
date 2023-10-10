@@ -2,7 +2,8 @@
 layout: card
 title: "Jetway JADMPEIDLA dual-gigabit Mini PCIe LAN card with Intel i350"
 picture: "/images/network-jetway-jadmpedila-mini-pcie-lan.jpeg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/315"
 buy_link: https://amzn.to/3Csbp1U

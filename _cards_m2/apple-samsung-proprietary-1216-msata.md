@@ -2,7 +2,8 @@
 layout: card
 title: "Apple Samsung 12+16 Proprietary SSD for Macbook Pro (SM0128G) + Adapter"
 picture: "/images/m2-apple-1216-ssd.png"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/157"
 buy_link: "https://amzn.to/3Acn04Z"

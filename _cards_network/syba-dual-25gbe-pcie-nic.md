@@ -2,7 +2,8 @@
 layout: card
 title: "Syba Dual 2.5 Gigabit Ethernet PCIe NIC SD-PEX24066"
 picture: "/images/network-syba-dual-25gbe-pcie-nic.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/46"
 buy_link: https://amzn.to/37QSNwj

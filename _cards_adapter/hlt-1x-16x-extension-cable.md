@@ -2,7 +2,8 @@
 layout: card
 title: "HLT PCIe 1x to 16x extension cable"
 picture: "/images/adapter-hlt-1x-16x-extension-cable.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14"
 buy_link: https://amzn.to/32oz9ou

@@ -2,7 +2,8 @@
 layout: card
 title: "Mellanox ConnectX-3 EN CX311A SFP+ 10G Ethernet Adapter"
 picture: "/images/network-mellanox-connectx-3-EN-CX311A-sfp-10g.jpeg"
-functionality: "Minimal"
+functionality_cm4: "Minimal"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/143"
 buy_link: https://amzn.to/2TlVSQN

@@ -2,7 +2,8 @@
 layout: card
 title: "AMD Radeon Pro WX 2100 Graphics"
 picture: "/images/gpu-radeon-pro-wx2100.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/331"
 buy_link: https://www.amazon.com/AMD-RADEON-2100-GDDR5-2XMDP/dp/B073CK9MLR

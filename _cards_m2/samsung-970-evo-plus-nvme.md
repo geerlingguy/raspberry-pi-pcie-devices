@@ -2,7 +2,8 @@
 layout: card
 title: "Samsung 970 EVO Plus 250 GB NVMe SSD"
 picture: "/images/m2-samsung-970-evo-plus-nvme.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/48"
 buy_link: https://amzn.to/2MfPhTP

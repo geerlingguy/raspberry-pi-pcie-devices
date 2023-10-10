@@ -2,7 +2,8 @@
 layout: card
 title: "Sintech M.2 (NGFF) NVMe SSD to Mini PCIe Adapter (with 20cm Cable)"
 picture: "/images/adapter-sintech-mpcie-m2.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/355"
 buy_link: https://www.amazon.com/gp/product/B07DZ8SB8X

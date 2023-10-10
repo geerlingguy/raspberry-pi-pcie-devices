@@ -2,7 +2,8 @@
 layout: card
 title: "MikroTik CCR2004-1G-2XS-PCIe"
 picture: "/images/network-mikrotik-ccr2004-1g-2xs-pcie.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/477"
 buy_link: https://www.streakwave.com/mikrotik-ccr2004-1g-2xs-pcie-cloud-core-router-2004-pcie-adapter

@@ -4,6 +4,7 @@ title: "RPi4-RTC-PoE DIN rail mini server"
 short_description: A mini-server for DIN-rail with PoE, RTC, DALI-2, RS485(DMX-512) and ZigBee.
 status: production
 picture: "/images/board-rpi4-rtc-poe.jpg"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/309"
 link: "https://ab-log.ru/forum/viewtopic.php?f=1&t=1895"

@@ -2,7 +2,8 @@
 layout: card
 title: "AMD Radeon HD 7470 1GB"
 picture: "/images/gpu-radeon-hd-7470.jpg"
-functionality: "Partial"
+functionality_cm4: "Partial"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/430"
 buy_link: https://amzn.to/37Hseg4

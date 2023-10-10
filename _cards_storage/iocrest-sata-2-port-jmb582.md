@@ -2,7 +2,8 @@
 layout: card
 title: "IOCrest JMB582 PCIe Gen3 SATA Controller"
 picture: "/images/storage-iocrest-sata-2-port-jmb582.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/64"
 buy_link: https://amzn.to/3tmBsUU

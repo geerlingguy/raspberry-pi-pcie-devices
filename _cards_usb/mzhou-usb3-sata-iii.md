@@ -2,7 +2,8 @@
 layout: card
 title: "MZHOU USB 3.0 adapter with M.2 SATA SSD slot"
 picture: "/images/usb-mzhou-usb3-sata-iii.jpg"
-functionality: "Partial"
+functionality_cm4: "Partial"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/49"
 buy_link: https://amzn.to/3hd31M9

@@ -2,7 +2,8 @@
 layout: card
 title: "ASUS PCE-AC51 802.11ac WiFi Adapter"
 picture: "/images/network-asus-pce-ac51.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/20"
 buy_link: https://amzn.to/3ldzLVn

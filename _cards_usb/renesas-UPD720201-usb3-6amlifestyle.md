@@ -2,7 +2,8 @@
 layout: card
 title: "Renesas µPD720201 USB 3.0 Host Controller"
 picture: "/images/usb-renesas-UPD720201-usb3-6amlifestyle.jpeg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/103"
 buy_link: https://amzn.to/2SLzEY4

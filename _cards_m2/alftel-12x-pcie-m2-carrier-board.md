@@ -2,7 +2,8 @@
 layout: card
 title: "Alftel 12x PCI Express M.2 Carrier Board"
 picture: "/images/m2-alftel-12x-pcie-m2-carrier-board.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/80"
 buy_link: https://www.tindie.com/products/alftel/pci-express-carrier-board-for-x12-m2-radio-cards/

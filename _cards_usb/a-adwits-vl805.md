@@ -2,7 +2,8 @@
 layout: card
 title: "A ADWITS PCIe 1x 'PCI Experss' USB 3.0 adapter with VL805"
 picture: "/images/usb-a-adwits-vl805.jpg"
-functionality: "Limited"
+functionality_cm4: "Limited"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/45"
 buy_link: https://amzn.to/37CKTHr

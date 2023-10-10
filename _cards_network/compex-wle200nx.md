@@ -2,7 +2,8 @@
 layout: card
 title: "Compex WLE200NX 802.11n 2x2 mini PCIe WiFi card"
 picture: "/images/network-compex-WLE200NX.jpeg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/313"
 buy_link: https://amzn.to/3cigkI9

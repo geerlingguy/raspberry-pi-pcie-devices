@@ -2,7 +2,8 @@
 layout: card
 title: "Broadcom BCM94360NG 802.11ac WiFi M.2 Adapter"
 picture: "/images/network-broadcom-bcm94360ng.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/77"
 buy_link: https://amzn.to/2Zy0xi4

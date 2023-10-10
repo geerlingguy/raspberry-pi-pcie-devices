@@ -2,7 +2,8 @@
 layout: card
 title: "Digium, Inc. Wildcard TE420 quad-span T1/E1/J1 card 3.3V (PCI-Express) (5th gen)"
 picture: "/images/other-digium-te420.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/469"
 buy_link: https://dcomcomputers.com/digium-te420-quad-t1-e1-pcie-card.html

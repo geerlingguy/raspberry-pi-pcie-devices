@@ -2,7 +2,8 @@
 layout: card
 title: "Sangoma Technologies Corp. A10x T1/E1 AFT cards"
 picture: "/images/other-sangoma-a108.png"
-functionality: "Full (32-bit kernel only)"
+functionality_cm4: "Full (32-bit kernel only)"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/471"
 buy_link: https://www.amazon.com/Sangoma-A101E/dp/B001BDI8KY/

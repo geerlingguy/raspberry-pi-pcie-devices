@@ -2,7 +2,8 @@
 layout: card
 title: "ConnectX-3 Pro Dual port SFP+ Ethernet / MT27520"
 picture: "/images/network-mellanox-connectx-3-pro.jpg"
-functionality: "Some"
+functionality_cm4: "Some"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/139"
 buy_link: https://amzn.to/3nPDee0

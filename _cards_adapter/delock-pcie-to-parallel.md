@@ -2,7 +2,8 @@
 layout: card
 title: "Delock PCI Express Card to 1x Parallel IEEE 1284"
 picture: "/images/adapter-delock-pcie-to-parallel.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "N/A"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/54"
 buy_link: https://amzn.to/3dFithZ

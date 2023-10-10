@@ -2,7 +2,8 @@
 layout: card
 title: "Realtek RL8821CE"
 picture: "/images/network-realtek-rtl8821ce.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/401"
 buy_link: https://amzn.to/35cHEro

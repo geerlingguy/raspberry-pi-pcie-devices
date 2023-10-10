@@ -2,7 +2,8 @@
 layout: card
 title: "Vantec 2+1 FireWire 800/400 PCIe Combo Host Card (UGT-FW210)"
 picture: "/images/other-vantec-ugt-fw210.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/297"
 buy_link: https://www.vantecusa.com/products_detail.php?p_id=130

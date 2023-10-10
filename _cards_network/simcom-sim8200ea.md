@@ -2,7 +2,8 @@
 layout: card
 title: "SimCom SIM8200EA-M2"
 picture: "/images/network-sim8200ea-m2.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/442"
 buy_link: https://www.simcom.com/product/SIM8200EA_M2.html

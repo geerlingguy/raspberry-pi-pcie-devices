@@ -2,7 +2,8 @@
 layout: card
 title: "Coral M.2 Accelerator with Dual Edge TPU"
 picture: "/images/m2-coral-m2-accelerator-dual-edge-tpu.jpeg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/318"
 buy_link: https://coral.ai/products/m2-accelerator-dual-edgetpu/

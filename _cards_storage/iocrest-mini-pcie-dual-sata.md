@@ -2,7 +2,8 @@
 layout: card
 title: "IOCrest mini PCIe dual SATA card (ASM1061 chipset)"
 picture: "/images/storage-iocrest-mini-pcie-dual-sata.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/314"
 buy_link: https://amzn.to/3oF77iz

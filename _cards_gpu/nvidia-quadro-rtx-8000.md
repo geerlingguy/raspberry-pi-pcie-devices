@@ -2,7 +2,8 @@
 layout: card
 title: "Nvidia Quadro RTX 8000"
 picture: "/images/gpu-nvidia-quadro-rtx-8000.jpg"
-functionality: "Partial"
+functionality_cm4: "Partial"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/480"
 buy_link: https://amzn.to/3Ke16pB

@@ -2,7 +2,8 @@
 layout: card
 title: "Google Coral TPU M.2 Accelerator A+E Key"
 picture: "/images/m2-coral-accelerator-ae-key.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/44"
 buy_link: https://amzn.to/3jWowRg

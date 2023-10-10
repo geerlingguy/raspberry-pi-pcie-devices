@@ -2,7 +2,8 @@
 layout: card
 title: "XTRX PCIe Software Defined Radio"
 picture: "/images/multimedia-xtrx-pcie-sdr.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/71"
 buy_link: "https://www.crowdsupply.com/fairwaves/xtrx"

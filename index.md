@@ -2,15 +2,17 @@
 layout: default
 title: Home
 ---
-<img src="{{ site.url }}/images/cm4-io-board-pcie-slot.jpeg" style="display: block; margin: auto;" width="595" height="300" />
+<img src="{{ site.url }}/images/pi-pcie-raspberry-pi-5.jpg" style="display: block; margin: auto;" width="389" height="152" />
 
-The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane directly on the board. I'm ([Jeff Geerling](https://www.jeffgeerling.com)) testing many PCIe cards with the Pi and adding them to the listing below. Also check out videos about them on [my YouTube channel](https://www.youtube.com/c/JeffGeerling)!
+The Raspberry Pi has PCI Express! There are some quirks to getting certain devices working with 64-bit Arm (arm64), so [Jeff Geerling](https://www.jeffgeerling.com) started testing PCIe devices on the Compute Module 4 and Pi 5, and is centralizing the resources on this site. Many experiences are documented on [Jeff Geerling's YouTube channel](https://www.youtube.com/c/JeffGeerling)!
 
-[This project is maintained on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices); suggest new cards to test or share your own experiences there. These helpful resources can help you in your own PCIe testing on the Pi, or can inspire you to create your own custom Pi boards!
+[This project is maintained on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices); suggest new cards to test or share your own experiences there.
+
+## More Resources
 
   - **[Compute Module 4-based Products and Boards](boards_cm)**
+  - **[Raspberry Pi 5 HATs and Boards](hats)**
   - [Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
-  - [Instructions for increasing BAR space allocations](https://gist.github.com/geerlingguy/9d78ea34cab8e18d71ee5954417429df)
 
 ## Categories
 {: .no_toc}
@@ -25,7 +27,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -41,7 +44,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -55,7 +59,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -71,7 +76,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -85,7 +91,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -101,7 +108,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -115,7 +123,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -131,7 +140,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -145,7 +155,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -161,7 +172,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -175,7 +187,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -191,7 +204,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -205,7 +219,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -221,7 +236,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -235,7 +251,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
     <tr>
       <th>Picture</th>
       <th>Device</th>
-      <th>Functionality</th>
+      <th>CM4 Functionality</th>
+      <th>Pi 5 Functionality </th>
       <th>Driver Required?</th>
     </tr>
   </thead>
@@ -251,7 +268,8 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
         <a href="{{ card.url }}"><strong>{{ card.title }}</strong></a><br>
         (<a href="{{ card.buy_link }}">Buy this Card</a>)
       </td>
-      <td>{{ card.functionality }}</td>
+      <td>{{ card.functionality_cm4 }}</td>
+      <td>{{ card.functionality_pi5 }}</td>
       <td>{{ card.driver_required }}</td>
     </tr>
 {% endfor %}
@@ -263,6 +281,6 @@ The Raspberry Pi Compute Module 4 IO Board exposes the Pi's PCI Express 1x lane 
 
 [![GitHub Stats](https://github-readme-stats.vercel.app/api/pin?username=geerlingguy&repo=raspberry-pi-pcie-devices&show_icons=true&hide_border=true&show_owner=true&theme=graywhite)](https://github.com/geerlingguy/raspberry-pi-pcie-devices)
 
-This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
+This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi Compute Module 4 and Raspberry Pi 5 model B are products of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
 
 > Many of the device links on this page are Amazon affiliate links. If you do not wish to use those links, copy the device name to search for it at any major electronics retailer (e.g. [Newegg](https://www.newegg.com), [Micro Center](https://www.microcenter.com), [Amazon](https://www.amazon.com), etc.).

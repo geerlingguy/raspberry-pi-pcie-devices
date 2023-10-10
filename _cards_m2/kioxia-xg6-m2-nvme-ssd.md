@@ -2,7 +2,8 @@
 layout: card
 title: "KIOXIA XG6 M.2 NVMe SSD"
 picture: "/images/m2-kioxia-xg6-m2-nvme-ssd.jpeg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/325"
 buy_link: https://amzn.to/3wZEbFP

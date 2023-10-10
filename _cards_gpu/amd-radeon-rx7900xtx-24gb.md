@@ -2,7 +2,8 @@
 layout: card
 title: "AMD Radeon RX 7900 XTX 24GB PCIe x16"
 picture: "/images/gpu-radeon-rx7900xtx.png"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/503"
 buy_link: https://amzn.to/3W58gyX

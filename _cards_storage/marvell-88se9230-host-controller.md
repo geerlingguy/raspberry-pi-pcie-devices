@@ -2,7 +2,8 @@
 layout: card
 title: "Marvell 88SE9230 Host Controller"
 picture: "/images/storage-marvell-88se9230.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/284"
 buy_link: https://amzn.to/3CglHTk

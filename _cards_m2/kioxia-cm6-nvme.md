@@ -2,7 +2,8 @@
 layout: card
 title: "KIOXIA CM6 PCIe NVMe SFF-TA-1001 (U.3)"
 picture: "/images/m2-kioxia-cm6-nvme.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/129"
 buy_link: https://business.kioxia.com/en-apac/ssd/enterprise-ssd/cm6-r.html

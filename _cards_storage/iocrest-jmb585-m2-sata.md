@@ -2,7 +2,8 @@
 layout: card
 title: "IOCrest M.2 to 5 Ports SATA with JMB585"
 picture: "/images/storage-iocrest-jmb585-m2-sata.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/85"
 buy_link: https://amzn.to/2P26l1c

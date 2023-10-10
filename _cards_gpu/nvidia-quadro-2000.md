@@ -2,7 +2,8 @@
 layout: card
 title: "Nvidia Quadro 2000"
 picture: "/images/gpu-nvidia-quadro-2000.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/526"
 buy_link: https://amzn.to/3GHk2dK

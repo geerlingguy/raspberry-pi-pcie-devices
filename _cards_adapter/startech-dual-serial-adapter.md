@@ -2,7 +2,8 @@
 layout: card
 title: "StarTech 2-Port PCI Express Serial Card with 16C1050 UART"
 picture: "/images/adapter-startech-dual-serial-card.jpg"
-functionality: "Maybe"
+functionality_cm4: "Maybe"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/290"
 buy_link: https://www.amazon.com/StarTech-com-PCI-Express-Serial-Card/dp/B01N25W4P9?&linkCode=sl1&tag=mmjjg-20&linkId=43581808575e797da0c72d537acb564d&language=en_US&ref_=as_li_ss_tl

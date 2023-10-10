@@ -2,7 +2,8 @@
 layout: card
 title: "Usb 3.0 Pci-e Host Card Japan NEC Chipset"
 picture: "/images/usb-Japan-NEC-Chipset.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 buy_link: https://amzn.to/3HhpaU7
 videos: []

@@ -2,7 +2,8 @@
 layout: card
 title: "MaxLinear XR17V358/SP339-0A-EB"
 picture: "/images/other-maxlinear-evaluation.jpg"
-functionality: "Maybe"
+functionality_cm4: "Maybe"
+functionality_pi5: "Untested"
 driver_required: "Maybe"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/295"
 buy_link: https://www.mouser.com/ProductDetail/MaxLinear/XR17V358-SP339-0A-EB?qs=%2Fha2pyFaduhe4eE0bF2O%2FpCsm8Euk3XYhWtX9Mbro9SoJjncLvWxhyKo%252B3JTUxBZ

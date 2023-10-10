@@ -2,7 +2,8 @@
 layout: card
 title: "Time Card - Open Compute Project"
 picture: "/images/other-time-card.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/199"
 buy_link: https://github.com/opencomputeproject/Time-Appliance-Project/tree/master/Time-Card

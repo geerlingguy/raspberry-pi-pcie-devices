@@ -2,7 +2,8 @@
 layout: card
 title: "MSI Nvidia GeForce GTX 1080 8G Gamer X"
 picture: "/images/gpu-msi-geforce-gtx-1080.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/123"
 buy_link: https://amzn.to/3nyHjUD

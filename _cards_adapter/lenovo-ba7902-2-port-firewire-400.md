@@ -2,7 +2,8 @@
 layout: card
 title: "I/O Crest SI-PEX60016 1 to 2 Port PCIe Switch"
 picture: "/images/adapter-lenovo-ba7902.jpg"
-functionality: "None"
+functionality_cm4: "None"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/113"
 buy_link: https://www.ebay.com/itm/304020563817

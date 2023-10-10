@@ -2,7 +2,8 @@
 layout: card
 title: "JMicron JMB362 SATA Host Controller"
 picture: "/images/storage-jmicron-jmb362-host-controller.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/203"
 link: http://igorx.irk.ru/datasheet/TqUCpXc3Yr9dhgoVN2lS.pdf

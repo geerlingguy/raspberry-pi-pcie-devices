@@ -2,7 +2,8 @@
 layout: card
 title: "Quectel EC25-A LTE Cat 4 Mini PCIe Module"
 picture: "/images/network-quectel-ec25-a.jpeg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/344"
 buy_link: https://amzn.to/3A9xXoJ

@@ -2,7 +2,8 @@
 layout: card
 title: "ASUS XG-C100C 10G Network Adapter"
 picture: "/images/network-asus-xg-c100c.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/15"
 buy_link: https://amzn.to/38wYOiL

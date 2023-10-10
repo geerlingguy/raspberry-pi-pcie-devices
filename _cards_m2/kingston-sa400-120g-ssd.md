@@ -2,7 +2,8 @@
 layout: card
 title: "Kingston SA400 120 GB SSD"
 picture: "/images/m2-kingston-sa400-120g-ssd.jpg"
-functionality: "Currently Testing"
+functionality_cm4: "Currently Testing"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/48"
 buy_link: https://amzn.to/3aTEauf

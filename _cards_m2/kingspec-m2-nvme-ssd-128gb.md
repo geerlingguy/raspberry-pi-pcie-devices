@@ -2,7 +2,8 @@
 layout: card
 title: "KingSpec 128GB M.2 2242 NVMe SSD"
 picture: "/images/m2-kingspec-m2-nvme-ssd-128gb.jpg"
-functionality: "Full"
+functionality_cm4: "Full"
+functionality_pi5: "Untested"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/92"
 buy_link: https://amzn.to/3rnTnJm
