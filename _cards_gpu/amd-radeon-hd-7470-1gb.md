@@ -3,7 +3,7 @@ layout: card
 title: "AMD Radeon HD 7470 1GB"
 picture: "/images/gpu-radeon-hd-7470.jpg"
 functionality_cm4: "Partial"
-functionality_pi5: "Untested"
+functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/430"
 buy_link: https://amzn.to/37Hseg4
@@ -12,6 +12,8 @@ videos:
   - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
 Dell's [AMD Radeon HD 7470](https://amzn.to/37Hseg4) has 1GB of GDDR5 VRAM, uses the Caicos GPU ("Southern Islands"), and was launched in Jan 2012 (according to [TechPowerUp](https://www.techpowerup.com/gpu-specs/radeon-hd-7470-oem.c299)). Power draw is rated at 27W maximum, which could be an issue if driving it direct off the Pi's PCIe slot without an externally-powered riser.
+
+## Compute Module 4
 
 To get the card working currently, you need to:
 
@@ -24,3 +26,7 @@ To get the card working currently, you need to:
 Once that's done, you should be able to get Xorg working, or just a console. Note that the driver doesn't seem quite stable yet, and many features of the card are not accessible.
 
 See linked GitHub issue for more details and progress getting the card working.
+
+## Raspberry Pi 5
+
+I was able to get the card identified by installing the `radeon` driver in a custom-built Pi OS kernel, but it did not seem to work out of the box. Some driver modification may be necessary.

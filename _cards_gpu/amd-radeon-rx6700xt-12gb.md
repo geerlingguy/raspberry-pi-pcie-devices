@@ -18,13 +18,13 @@ It will require a 1x to 16x adapter, or some other means of adapting the 16x-siz
 
 ### `amdgpu` (open source) driver
 
-To get the amdgpu driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) on the 5.11 branch or later.
+To get the amdgpu driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile).
 
 Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select the `amdgpu` driver to install.
 
 Also make sure you have the AMD firmware installed (`sudo apt install -y firmware-amd-graphics`) or the driver will complain about missing files.
 
-If you want to be able to boot the Pi all the way, make sure to blacklist the `amdgpu` kernel module:
+On the Compute Module 4, to avoid the whole system from locking up on boot, make sure to blacklist the `amdgpu` kernel module:
 
 ```
 sudo nano /etc/modprobe.d/blacklist-amdgpu.conf
@@ -39,6 +39,8 @@ Now, after a reboot, you can explicitly load the module and see what happens by 
 sudo modprobe amdgpu
 ```
 
-So far nobody has been able to get the `amdgpu` drivers to get far in their initialization stages. The Pi crashes due to PCIe bus memory allocation/mapping errors.
+On the Compute Module 4, nobody has been able to get the `amdgpu` drivers to get far in their initialization stages. The Pi crashes due to PCIe bus memory allocation/mapping errors.
+
+On the Pi 5, the system doesn't crash, but I get an error `*ERROR* hw_init of IP block <psp> failed -22`.
 
 See the linked GitHub issue for more details.
