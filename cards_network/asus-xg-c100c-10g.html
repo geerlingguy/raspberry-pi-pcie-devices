@@ -20,11 +20,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/asus-xg-c100c-10g.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-11T14:13:27+00:00" />
+<meta property="article:published_time" content="2023-10-11T14:43:06+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="ASUS XG-C100C 10G Network Adapter" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/asus-xg-c100c-10g.html"},"description":"This 10 Gigabit network card has an Aquantia AQC107 802.3bz NBase-T ethernet controller, which requires the AQtion driver.","url":"https://pipci.jeffgeerling.com//cards_network/asus-xg-c100c-10g.html","@type":"BlogPosting","headline":"ASUS XG-C100C 10G Network Adapter","dateModified":"2023-10-11T14:13:27+00:00","datePublished":"2023-10-11T14:13:27+00:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/asus-xg-c100c-10g.html"},"description":"This 10 Gigabit network card has an Aquantia AQC107 802.3bz NBase-T ethernet controller, which requires the AQtion driver.","url":"https://pipci.jeffgeerling.com//cards_network/asus-xg-c100c-10g.html","@type":"BlogPosting","headline":"ASUS XG-C100C 10G Network Adapter","dateModified":"2023-10-11T14:43:06+00:00","datePublished":"2023-10-11T14:43:06+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -66,7 +66,7 @@
           <tbody>
             <tr>
               <td>Full</td>
-              <td>Untested</td>
+              <td>Full</td>
               <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/15">GitHub Issue</a></td>
             </tr>
@@ -77,6 +77,8 @@
           <h3>Videos Related to this Card</h2>
             
               <ul>
+                
+                  <li><a href="https://www.youtube.com/watch?v=nBtOEmUqASQ">Raspberry Pi 5: EVERYTHING you need to know</a></a></li>
                 
                   <li><a href="https://www.youtube.com/watch?v=FTP5h9jnVx0">10 Gigabit Ethernet on a Raspberry Pi?!</a></a></li>
                 
@@ -107,6 +109,8 @@ Device Drivers
 <p>After copying over the new kernel and installing modules, you should see a new network interface.</p>
 
 <p>On my Compute Module 4, without any overclock and without changing the MTU from the default of 1500, I was able to get about 3.26 Gbps of bandwidth through the card.</p>
+
+<p>On my Pi 5, I was able to get about 6 Gbps of bandwidth if I set the external port to PCIe Gen 3.0 speeds.</p>
 
 <p>Note that you may be able to get 10 gigabit speeds over shorter Cat5e or Cat6 cable runs, but Cat6a or better cabling is recommended for 10G over copper!</p>
 
