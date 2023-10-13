@@ -1,7 +1,7 @@
 ---
 layout: board
-title: "Raspberry Pi NVMe HAT"
-short_description: The official Pi HAT for M.2 2230 or 2240 NVMe SSDs.
+title: "Mirko Electronics HAT5M1"
+short_description: A Pi HAT for a single M.2 2230 or 2240 NVMe SSD.
 status: prototype
 picture: "/images/hat-mirko-hat5m1-hat.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/550"
