@@ -20,11 +20,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_m2/coral-m2-accelerator-dual-edge-tpu.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-10-13T20:32:34+00:00" />
+<meta property="article:published_time" content="2023-10-15T04:16:09+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Coral M.2 Accelerator with Dual Edge TPU" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_m2/coral-m2-accelerator-dual-edge-tpu.html"},"description":"The Coral M.2 Accelerator with Dual Edge TPU uses an interesting feature of M.2 E-key slots—it uses both lanes that are in the spec to the slot (though most board manufacturers only implement one lane per slot).","url":"https://pipci.jeffgeerling.com//cards_m2/coral-m2-accelerator-dual-edge-tpu.html","@type":"BlogPosting","headline":"Coral M.2 Accelerator with Dual Edge TPU","dateModified":"2023-10-13T20:32:34+00:00","datePublished":"2023-10-13T20:32:34+00:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_m2/coral-m2-accelerator-dual-edge-tpu.html"},"description":"The Coral M.2 Accelerator with Dual Edge TPU uses an interesting feature of M.2 E-key slots—it uses both lanes that are in the spec to the slot (though most board manufacturers only implement one lane per slot).","url":"https://pipci.jeffgeerling.com//cards_m2/coral-m2-accelerator-dual-edge-tpu.html","@type":"BlogPosting","headline":"Coral M.2 Accelerator with Dual Edge TPU","dateModified":"2023-10-15T04:16:09+00:00","datePublished":"2023-10-15T04:16:09+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -65,9 +65,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
+              <td>None</td>
               <td>Untested</td>
-              <td>Maybe</td>
+              <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/318">GitHub Issue</a></td>
             </tr>
           </tbody>
@@ -86,7 +86,9 @@
 
 <p>The Seaberry board comes with slots that implement both lanes per M.2 E-key slot, though, so this card could work if the device supports it. Sadly, as we’ve seen with the single TPU (<a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/44">see issue #44</a>), the Compute Module 4’s PCIe implementation is currently incompatible with the Coral PCIe driver.</p>
 
-<p>But other boards like Radxa’s CM3 and Pine64’s SOQuartz (both of which use a RockChip SoC) might work with it…</p>
+<p>Other CM4-pinout-compatible boards <em>might</em> work with it (but nobody’s had success yet).</p>
+
+<p>The Raspberry Pi 5 model B may work with it, but right now testing is devoted to the single TPU model, since there are currently no HATs available with a dual-lane M.2 E-key slot (and it’s likely there never <em>will</em> be one, unless we can get the singl TPU model working reliably).</p>
 
         </div>
 
