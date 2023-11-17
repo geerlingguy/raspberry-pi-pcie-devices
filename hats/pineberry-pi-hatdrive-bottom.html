@@ -14,17 +14,17 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Pineberry Pi HatDrive! Bottom" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The Pineberry Pi HatDrive! Top is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector." />
-<meta property="og:description" content="The Pineberry Pi HatDrive! Top is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector." />
+<meta name="description" content="The Pineberry Pi HatDrive! Bottom is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector." />
+<meta property="og:description" content="The Pineberry Pi HatDrive! Bottom is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//hats/pineberry-pi-hatdrive-bottom.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//hats/pineberry-pi-hatdrive-bottom.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-11-15T23:39:48+00:00" />
+<meta property="article:published_time" content="2023-11-17T04:53:24+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Pineberry Pi HatDrive! Bottom" />
 <script type="application/ld+json">
-{"description":"The Pineberry Pi HatDrive! Top is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector.","headline":"Pineberry Pi HatDrive! Bottom","dateModified":"2023-11-15T23:39:48+00:00","url":"https://pipci.jeffgeerling.com//hats/pineberry-pi-hatdrive-bottom.html","datePublished":"2023-11-15T23:39:48+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/pineberry-pi-hatdrive-bottom.html"},"@context":"https://schema.org"}</script>
+{"description":"The Pineberry Pi HatDrive! Bottom is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector.","headline":"Pineberry Pi HatDrive! Bottom","dateModified":"2023-11-17T04:53:24+00:00","url":"https://pipci.jeffgeerling.com//hats/pineberry-pi-hatdrive-bottom.html","datePublished":"2023-11-17T04:53:24+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/pineberry-pi-hatdrive-bottom.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -73,9 +73,25 @@
 
         <div class="board_content">
           <h3>Description</h3>
-          <p>The Pineberry Pi HatDrive! Top is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector.</p>
+          <p>The Pineberry Pi HatDrive! Bottom is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi’s PCIe external connector.</p>
 
-<p>I am currently testing this board and will add more information here in the future, like how to enable the Pi’s PCIe bus, how to mount the board, and any other interesting features like interfaces for power monitoring or status display.</p>
+<p>To boot off an NVMe SSD using this board, please follow the <a href="https://www.jeffgeerling.com/blog/2023/nvme-ssd-boot-raspberry-pi-5">NVMe SSD Boot on Raspberry Pi 5</a> guide on my website.</p>
+
+<p>If you just wish to use NVMe storage and will boot off microSD, netboot, or USB, you need to enable the external PCIe port on the Pi 5:</p>
+
+<ol>
+  <li>Edit the boot config file (<code class="language-plaintext highlighter-rouge">sudo nano /boot/config.txt</code>)</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">dtparam=nvme</code> to the bottom of the file, save it, and reboot</li>
+</ol>
+
+<p>If you wish to experiment with PCIe Gen 3 speeds, you can add the following line after the <code class="language-plaintext highlighter-rouge">nvme</code> line above:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtparam=pciex1_gen=3
+</code></pre></div></div>
+
+<p>PineberryPi is currently testing a number of SSDs in this HAT and their Bottom-oriented 2280-size board, so visit their website for more info.</p>
+
+<p>The ‘Bottom’ version of this HAT has a separate 5V power input adapter—I am currently asking Pineberry Pi how it is to be used.</p>
 
         </div>
 
