@@ -3,7 +3,7 @@ layout: card
 title: "AMD Radeon RX 6700 XT 12GB PCIe x16"
 picture: "/images/gpu-radeon-rx6700xt.jpeg"
 functionality_cm4: "None"
-functionality_pi5: "Untested"
+functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/222"
 buy_link: https://amzn.to/3l1K8g7
