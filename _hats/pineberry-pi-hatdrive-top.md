@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-pineberry-pi-hatdrive-top.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/559"
 link: "https://pineberrypi.com/products/hat-top-2230-2240-for-rpi5"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=EXWu4SUsaY8
 redirect_from: /hats/mirko-hat5m1-hat
 ---
 The Pineberry Pi HatDrive! Top is an M.2 HAT for the Raspberry Pi 5. It accepts 2230 or 2242-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi's PCIe external connector.

@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-pineberry-pi-hatdrive-bottom.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/559"
 link: "https://pineberrypi.com/products/hatdrive-bottom-2230-2242-2280-for-rpi5"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=EXWu4SUsaY8
 ---
 The Pineberry Pi HatDrive! Bottom is an M.2 HAT for the Raspberry Pi 5. It accepts 2242 or 2280-sized NVMe SSDs (or any other PCIe device with M.2 M-key), and includes a 40mm FPC cable to connect the HAT to the Pi's PCIe external connector.
 
