@@ -5,7 +5,7 @@ picture: "/images/gpu-evga-geforce-rtx-3080ti.jpg"
 functionality_cm4: "None"
 functionality_pi5: "Currently Testing"
 driver_required: "Yes"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/26"
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/549"
 buy_link: https://amzn.to/3PJFMcM
 videos:
   - https://www.youtube.com/watch?v=nBtOEmUqASQ
