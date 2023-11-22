@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/1
 link: https://www.makerfabs.com/raspberry-pi-cm4-tv-stick.html
 videos:
   - https://www.youtube.com/watch?v=iN7kiN9Cgxs
+  - https://www.youtube.com/watch?v=KghZIgkKZcs
 ---
 The Raspberry Pi CM4 TV Stick is a carrier that plugs directly to HDMI port. Perfect for Kodi, RetroPie, or just using a Pi attached directly to a monitor or TV for any use case. Power is through USB-C, though.
 
