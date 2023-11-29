@@ -7,7 +7,8 @@ functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/564"
 buy_link: https://amzn.to/3SUkT1R
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=BLg-1w2QayU
 ---
 The Radeon RX 460 is a slightly older graphics card that is supported by the open source amdgpu driver in the Linux Kernel.
 
