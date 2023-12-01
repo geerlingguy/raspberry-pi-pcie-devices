@@ -9,6 +9,7 @@ link: https://amzn.to/3psoOmE
 videos:
   - https://www.youtube.com/watch?v=ecdm3oA-QdQ
   - https://www.youtube.com/watch?v=UT5UbSJOyog
+  - https://www.youtube.com/watch?v=v56JNYCk11E
 redirect_from: /boards_cm/cm4-cluster-mini-itx
 ---
 The [DeskPi Super6C](https://deskpi.com/collections/deskpi-super6c/products/deskpi-super6c-raspberry-pi-cm4-cluster-mini-itx-board-6-rpi-cm4-supported) is a standard size mini-ITX board that supports up to 6 CM4 modules, with an M.2 slot and microSD card slot available to each of the boards. It uses a 4-pin ATX CPU power plug, and has two RJ45 Gigabit Ethernet ports connected through an onboard 8-port Gigabit switch.
