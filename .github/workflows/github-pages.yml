@@ -8,14 +8,14 @@ jobs:
     container: ruby:3-buster
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/cache@v3
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
 
       - name: Install Ruby dependencies.
         run: |
-          gem install bundler
+          gem install bundler -v 2.4.22
           bundle install
 
       - name: Build static site with Jekyll.
