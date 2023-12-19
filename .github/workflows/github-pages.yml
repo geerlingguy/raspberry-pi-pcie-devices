@@ -5,7 +5,7 @@ name: CI
 jobs:
   github-pages:
     runs-on: ubuntu-latest
-    container: ruby:2-buster
+    container: ruby:3-buster
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v1
