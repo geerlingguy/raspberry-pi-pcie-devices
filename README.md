@@ -13,3 +13,9 @@ bundle exec jekyll serve
 ```
 
 Access the local site at the address Jekyll provides.
+
+## Updating Dependencies
+
+```
+bundle update
+```
