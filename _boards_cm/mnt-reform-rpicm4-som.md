@@ -5,14 +5,9 @@ short_description: A Raspberry Pi CM4 adapter for the MNT Reform laptop.
 status: prototype
 picture: "/images/board-mnt-reform.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/397"
-link: "https://source.mnt.re/reform/mnt-reform-raspberry-pi-cm4-som"
+link: https://shop.mntre.com/products/mnt-reform-cm4-processor-module-adapter
 videos:
+  - https://www.youtube.com/watch?v=_DA0Jr4WH-4
   - https://www.youtube.com/watch?v=a9pUc3dw5wc
 ---
-The [MNT Reform RCM4 Adapter](https://source.mnt.re/reform/mnt-reform-raspberry-pi-cm4-som) is a Raspberry Pi Compute Module 4 adapter for the [MNT Reform](https://shop.mntmn.com/products/mnt-reform) open hardware laptop.
-
-Social media posts:
-- https://mastodon.social/@mntmn/107581480356172805
-- https://mastodon.social/@mntmn/107837330047564462
-
-For more information and future updates, please follow the [GitHub issue](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/397).
+The [MNT Reform CM4 Processor Module Adapter](https://source.mnt.re/reform/mnt-reform-raspberry-pi-cm4-som) is a Raspberry Pi Compute Module 4 adapter for the [MNT Reform](https://shop.mntmn.com/products/mnt-reform) open hardware laptop.
