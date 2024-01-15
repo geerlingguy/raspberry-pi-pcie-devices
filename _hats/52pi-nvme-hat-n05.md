@@ -1,9 +1,9 @@
 ---
 layout: hat
-title: "52Pi NO5 M.2 2242 NVMe Top"
+title: "52Pi N05 M.2 2242 NVMe Top"
 short_description: 52Pi's Shorter NVMe HAT for 2230 or 2242 SSDs.
 status: production
-picture: "/images/52pi-nvme-hat-no5.png"
+picture: "/images/52pi-nvme-hat-n05.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/569"
 link: "https://52pi.com/collections/hat-addons/products/n05-m-2-2242-pcie-to-nvme-top"
 videos: []
