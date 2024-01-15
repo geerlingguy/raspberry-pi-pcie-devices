@@ -1,5 +1,5 @@
 ---
-layout: board
+layout: hat
 title: "Pineberry Pi HatDrive! Bottom"
 short_description: A Pi HAT for a single M.2 2242 or 2280 NVMe SSD.
 status: production

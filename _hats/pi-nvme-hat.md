@@ -1,5 +1,5 @@
 ---
-layout: board
+layout: hat
 title: "Raspberry Pi NVMe HAT"
 short_description: The official Pi HAT for M.2 2230 or 2240 NVMe SSDs.
 status: prototype

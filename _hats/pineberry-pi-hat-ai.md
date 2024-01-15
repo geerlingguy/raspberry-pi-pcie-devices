@@ -1,5 +1,5 @@
 ---
-layout: board
+layout: hat
 title: "Pineberry Pi Hat AI!"
 short_description: M.2 E-key PCIe slot HAT for the Pi 5.
 status: prototype

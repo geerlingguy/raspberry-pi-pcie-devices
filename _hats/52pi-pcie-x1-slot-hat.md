@@ -1,5 +1,5 @@
 ---
-layout: board
+layout: hat
 title: "52Pi PCIe x1 Slot HAT"
 short_description: PCIe x1 open-ended slot atop the Pi 5.
 status: prototype

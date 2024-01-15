@@ -1,5 +1,5 @@
 ---
-layout: board
+layout: hat
 title: "Pimoroni NVMe BASE"
 short_description: NVMe Base for Raspberry Pi 5
 status: production
