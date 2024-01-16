@@ -3,7 +3,7 @@ layout: hat
 title: "52Pi N04 M.2 2280 NVMe Top"
 short_description: 52Pi's Longer NVMe HAT for 2230, 2242, 2260, or 2280 SSDs.
 status: production
-picture: "/images/52pi-nvme-hat-n04.png"
+picture: "/images/hat-52pi-nvme-hat-n04.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/570"
 link: "https://52pi.com/collections/hat-addons/products/n04-m-2-2280-pcie-to-nvme-top"
 videos: []

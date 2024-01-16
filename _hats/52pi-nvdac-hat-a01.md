@@ -3,7 +3,7 @@ layout: hat
 title: "52Pi NVDAC"
 short_description: 52Pi's 2230/2242 NVMe and PCM5122 DAC HAT.
 status: prototype
-picture: "/images/52pi-nvdac-hat-a01.jpg"
+picture: "/images/hat-52pi-nvdac-hat-a01.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/582"
 link: "https://twitter.com/tltangliang/status/1746746102181998730"
 videos: []

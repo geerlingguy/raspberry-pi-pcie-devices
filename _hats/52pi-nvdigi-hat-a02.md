@@ -3,7 +3,7 @@ layout: hat
 title: "52Pi NVDigi"
 short_description: 52Pi's 2230/2242 NVMe and WM8804 Digi HAT.
 status: prototype
-picture: "/images/52pi-nvdigi-hat-a02.jpg"
+picture: "/images/hat-52pi-nvdigi-hat-a02.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/583"
 link: "https://twitter.com/tltangliang/status/1746746102181998730"
 videos: []
