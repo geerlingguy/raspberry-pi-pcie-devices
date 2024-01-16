@@ -3,7 +3,7 @@ layout: hat
 title: "52Pi PCIe x1 Slot HAT"
 short_description: PCIe x1 open-ended slot atop the Pi 5.
 status: prototype
-picture: "/images/hat-52pi-pcie-x1-slot-hat.jpeg"
+picture: "/images/52pi/hat-52pi-pcie-x1-slot-hat.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/566"
 link: "https://twitter.com/tltangliang/status/1732244831160942708"
 videos: []
