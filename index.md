@@ -9,6 +9,7 @@ The Raspberry Pi has PCI Express! There are some quirks to getting certain devic
 [This project is maintained on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices); suggest new cards to test or share your own experiences there.
 
 ## More Resources
+{: .no_toc}
 
   - **[Compute Module 4-based Products and Boards](boards_cm)**
   - **[Raspberry Pi 5 HATs and Boards](hats)**
