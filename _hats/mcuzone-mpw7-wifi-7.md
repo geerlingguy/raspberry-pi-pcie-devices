@@ -2,7 +2,7 @@
 layout: hat
 title: "Mcuzone MPW7 E-key WiFi 7 HAT"
 short_description: A WiFi HAT with an E-Key M.2 slot for Pi 5.
-status: prototype
+status: production
 picture: "/images/hat-mcuzone-mpw7-wifi-7.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/599"
 link: "https://www.aliexpress.us/item/3256806224989235.html"
