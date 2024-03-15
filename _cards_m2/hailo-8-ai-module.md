@@ -3,7 +3,7 @@ layout: card
 title: "Hailo-8 M.2 AI Accelerator"
 picture: "/images/m2-hailo-8-ai-module.jpg"
 functionality_cm4: "Untested"
-functionality_pi5: "Untested"
+functionality_pi5: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/164"
 buy_link: https://hailo.ai/products/ai-accelerators/hailo-8-m2-ai-acceleration-module/
