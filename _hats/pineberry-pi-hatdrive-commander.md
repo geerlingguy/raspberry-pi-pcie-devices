@@ -1,14 +1,12 @@
 ---
 layout: hat
-title: "Pineberry Pi HatNET! 2.5G"
-short_description: A 2.5 Gigabit network HAT for the Pi 5.
-status: prototype
-picture: "/images/hat-pineberry-pi-hatnet-2.5g.jpeg"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/617"
-link: "https://pineberrypi.com/products/hatnet-2-5g-2-5-gigabit-ethernet-for-raspberry-pi-5"
+title: "Pineberry Pi HatBRICK! Commander"
+short_description: A HAT which allows connecting two devices to the Pi 5 PCIe Bus.
+status: production
+picture: "/images/hat-pineberry-pi-hatdrive-commander.png"
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/612"
+link: "https://pineberrypi.com/products/hatbrick-commander-2-ports-gen2-for-raspberry-pi-5"
 videos:
   - https://www.youtube.com/watch?v=l30sADfDiM8
 ---
-The Pineberry Pi HatNET! 2.5G is a 2.5 Gigabit NIC for the Raspberry Pi 5.
-
-It uses the Realtek RTL8125BG NIC, and the same Ethernet jack that's on the Pi 5 itself. It works out of the box, no driver installation is necessary on Raspberry Pi OS, though you may need to enable the PCI external port by adding `dtparam=pciex1` to the end of the `/boot/firmware/config.txt` file and rebooting.
+The Pineberry Pi HatBRICK! Commander splits the Pi's single PCIe Gen 2.0 lane into two PCIe Gen 2.0 ports, via an integrated ASMedia ASM8211e PCIe Gen 2.0 switch chip.
