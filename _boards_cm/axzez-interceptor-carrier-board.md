@@ -10,6 +10,7 @@ videos:
   - https://www.youtube.com/watch?v=NsfVI8s2gaI
   - https://www.youtube.com/watch?v=m_P82mFCRQQ
   - https://www.youtube.com/watch?v=xp7JqUJgsXQ
+  - https://www.youtube.com/watch?v=7wkVGcdI2vk
 ---
 Axzez's Interceptor CM4 Carrier Board has:
 
