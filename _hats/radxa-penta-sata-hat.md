@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6
 link: "https://radxa.com/products/accessories/penta-sata-hat/"
 videos:
   - https://www.youtube.com/watch?v=l30sADfDiM8
+  - https://www.youtube.com/watch?v=D8EIs8s303k
 ---
 This HAT includes four SATA drive connectors, plus one edge connector for a 5th drive, 12V power inputs (molex or barrel jack) to power both the drives and the Pi 5 via GPIO, a cable for the 5th drive, an FFC cable to connect the HAT to the Pi 5, and screws for the mounting.
 
