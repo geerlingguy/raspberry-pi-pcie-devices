@@ -6,7 +6,9 @@ status: production
 picture: "/images/hat-geekworm-x1011-4-drive-nvme.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/618"
 link: "https://geekworm.com/collections/raspberry-pi/products/x1011"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=yLZET7Jhza8
+  - https://www.youtube.com/watch?v=GYN3ub8Qb_I
 ---
 Geekworm's X1011 is a 4-drive M.2 NVMe SSD carrier which uses an ASmedia PCIe Gen 2 switch to bridge four NVMe drives to a Raspberry Pi 5.
 

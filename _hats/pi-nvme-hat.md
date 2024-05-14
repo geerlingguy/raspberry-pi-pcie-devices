@@ -2,10 +2,13 @@
 layout: hat
 title: "Raspberry Pi NVMe HAT"
 short_description: The official Pi HAT for M.2 2230 or 2240 NVMe SSDs.
-status: prototype
+status: production
 picture: "/images/hat-raspberry-pi-nvme.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/548"
-link: "https://twitter.com/aallan/status/1707415398646202636"
-videos: []
+link: "https://www.raspberrypi.com/products/m2-hat-plus/"
+videos:
+  - https://www.youtube.com/watch?v=GYN3ub8Qb_I
 ---
-The Raspberry Pi NVMe HAT was announced along with the Raspberry Pi 5, but no release date has been set yet. Please check the above GitHub issue for more info.
+The Raspberry Pi NVMe HAT allows you to add on 2230 and 2242-size NVMe SSDs, and fits inside the official Pi 5 case, though with little room for airflow.
+
+There is enough room underneath to fit an Active Cooler.

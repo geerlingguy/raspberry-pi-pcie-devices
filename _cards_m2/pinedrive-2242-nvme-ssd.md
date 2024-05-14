@@ -7,7 +7,8 @@ functionality_pi5: "Full"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/631"
 buy_link: https://pineboards.io/products/pinedrive-nvme-ssd-256gb-2242
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=GYN3ub8Qb_I
 ---
 The [Pinedrive NVMe SSD 256GB (2242)](https://pineboards.io/products/pinedrive-nvme-ssd-256gb-2242) costs €45,99 EUR (about $50 USD as of this writing), and is verified to work with the Raspberry Pi 5 (and earlier generations).
 

@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/5
 link: "https://amzn.to/3vWYrLZ"
 videos:
   - https://www.youtube.com/watch?v=OEctB0HOpZ8
+  - https://www.youtube.com/watch?v=GYN3ub8Qb_I
 ---
 The Waveshare PoE HAT (F) for Raspberry Pi 5 is a $30 PoE HAT that should power the Raspberry Pi 5 off any PoE or PoE+ network switch/adapter.
 

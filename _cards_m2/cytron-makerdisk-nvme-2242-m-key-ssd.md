@@ -7,7 +7,8 @@ functionality_pi5: "Full"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/632"
 buy_link: https://www.cytron.io/p-nvme-2242-b-plus-m-key-makerdisk-ssd-128gb-preloaded-rpi-os
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=GYN3ub8Qb_I
 ---
 Cytron sells an [NVMe 2242 M-Key MakerDisk SSD](https://www.cytron.io/p-nvme-2242-b-plus-m-key-makerdisk-ssd-128gb-preloaded-rpi-os) in 128, 256, and 512 GB sizes.
 

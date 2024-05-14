@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-pimoroni-nvme-base.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/565"
 link: "https://shop.pimoroni.com/products/nvme-base"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=GYN3ub8Qb_I
 ---
 Pimoroni's NVMe Base adds a twist to the concept of an NVMe mounted underneath the Pi 5—or rather, a 'bend'.
 
