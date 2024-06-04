@@ -9,6 +9,7 @@ link: "https://pineboards.io/products/hatbrick-commander-2-ports-gen2-for-raspbe
 videos:
   - https://www.youtube.com/watch?v=l30sADfDiM8
   - https://www.youtube.com/watch?v=GYN3ub8Qb_I
+  - https://www.youtube.com/watch?v=HgIMJbN0DS0
 redirect_from: /hats/pineberry-pi-hatdrive-commander
 ---
 The Pineboards HatBRICK! Commander splits the Pi's single PCIe Gen 2.0 lane into two PCIe Gen 2.0 ports, via an integrated ASMedia ASM8211e PCIe Gen 2.0 switch chip.

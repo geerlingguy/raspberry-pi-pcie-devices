@@ -9,6 +9,7 @@ link: "https://pineboards.io/products/hat-top-2230-2240-for-rpi5"
 videos:
   - https://www.youtube.com/watch?v=EXWu4SUsaY8
   - https://www.youtube.com/watch?v=jjzvh-bfV-E
+  - https://www.youtube.com/watch?v=HgIMJbN0DS0
 redirect_from:
   - /hats/mirko-hat5m1-hat
   - /hats/pineberry-pi-hatdrive-top

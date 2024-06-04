@@ -7,7 +7,8 @@ functionality_pi5: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/318"
 buy_link: https://coral.ai/products/m2-accelerator-dual-edgetpu/
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=HgIMJbN0DS0
 ---
 The [Coral M.2 Accelerator with Dual Edge TPU](https://coral.ai/products/m2-accelerator-dual-edgetpu/) uses an interesting feature of M.2 E-key slots—it uses both lanes that are in the spec to the slot (though most board manufacturers only implement one lane per slot).
 

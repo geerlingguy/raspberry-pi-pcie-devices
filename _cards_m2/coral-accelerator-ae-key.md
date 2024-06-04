@@ -7,7 +7,8 @@ functionality_pi5: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/44"
 buy_link: https://amzn.to/3jWowRg
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=HgIMJbN0DS0
 ---
 Coral TPU accelerators offer an easy way to add advanced (and fast!) ML and AI coprocessors to embedded devices. You can use them for things like image recognition, and they are integrated into popular software like Frigate.
 
