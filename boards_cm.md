@@ -82,4 +82,4 @@ The following boards are either not yet commercially available or one-offs and _
 ## About
 {: .no_toc}
 
-This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi Compute Module 4 is a product of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
+This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). Raspberry Pi is a product of [Raspberry Pi Ltd](https://www.raspberrypi.com).
