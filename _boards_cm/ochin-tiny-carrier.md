@@ -3,7 +3,7 @@ layout: board
 title: "Ochin Tiny Carrier Board"
 short_description: A compact carrier board for the CM4.
 status: production
-picture: "/images/ochin-board.jpg"
+picture: "/images/board-ochin-board.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/485"
 link: https://www.seeedstudio.com/Ochin-Tiny-Carrier-Board-for-Raspberry-Pi-Compute-Module-4-p-5463.html
 videos: []

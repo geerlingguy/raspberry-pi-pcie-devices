@@ -3,7 +3,7 @@ layout: board
 title: "Piunora - CM4 in Metro/Arduino form factor"
 short_description: M.2 underneath, Arduino-style connections up top.
 status: production
-picture: "/images/piunora-rev1-production-med-res.jpg"
+picture: "/images/board-piunora-rev1-production-med-res.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/25#issuecomment-742956897"
 link: https://www.diodes-delight.com/products/piunora/
 videos:

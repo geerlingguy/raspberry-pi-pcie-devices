@@ -3,7 +3,7 @@ layout: hat
 title: "HackerGadgets NVMe HAT"
 short_description: An NVMe HAT designed for maximum airflow and fitment inside the Pi 5 case.
 status: prototype
-picture: "/images/hackergadgets-nvme-hat.jpeg"
+picture: "/images/hat-hackergadgets-nvme-hat.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/577"
 link: "https://twitter.com/vileer_com/status/1746743319307407861"
 videos: []

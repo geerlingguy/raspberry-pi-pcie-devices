@@ -3,7 +3,7 @@ layout: board
 title: "MPi4 NEC MediaPlayer Kit"
 short_description: An open platform solution for digital signage applications.
 status: production
-picture: "/images/mpi4-nec-mediaplayer-kit.jpg"
+picture: "/images/board-mpi4-nec-mediaplayer-kit.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/386"
 link: https://www.sharpnecdisplays.eu/p/uk/en/products/accessories/details/t/options/computing/rp/raspberrypi-compute-module4.xhtml
 videos:

@@ -3,7 +3,7 @@ layout: hat
 title: "Geekworm X1001 NVMe HAT"
 short_description: A slim 2280 NVMe SSD HAT for Pi 5.
 status: production
-picture: "/images/geekworm-x1001-nvme-hat.jpg"
+picture: "/images/hat-geekworm-x1001-nvme-hat.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/575"
 link: "https://amzn.to/48QYOFT"
 videos: []

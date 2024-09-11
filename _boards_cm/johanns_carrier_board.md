@@ -4,7 +4,7 @@ title: "Johann's Carrier Board"
 short_description: CM4 board with M.2 slot, Gigabit Ethernet, 12V supply, HDMI, USB, micro SD, CSI, DSI and uHAT 
  connector.
 status: prototype
-picture: "/images/johanns-carrier-board.jpeg"
+picture: "/images/board-johanns-carrier-board.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/540"
 ---
 # Warning
