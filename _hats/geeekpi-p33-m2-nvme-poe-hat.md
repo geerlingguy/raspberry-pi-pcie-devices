@@ -3,7 +3,7 @@ layout: hat
 title: "GeeekPi P33 M.2 NVME M-Key PoE+ Hat"
 short_description: M.2 NVMe and PoE+ HAT for Pi 5.
 status: production
-picture: "/images/geeekpi-p33-m2-nvme-poe-hat.png"
+picture: "/images/hat-geeekpi-p33-m2-nvme-poe-hat.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/664"
 link: "https://amzn.to/4egKnhh"
 videos: []
