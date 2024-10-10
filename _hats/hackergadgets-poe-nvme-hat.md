@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-hackergadgets-poe-nvme-hat.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/666"
 link: "https://hackergadgets.com/products/nvme-and-poe-hat-for-raspberry-pi-5"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=x9ceI0_r_Kg
 ---
 HackerGadgets designed this PoE+ HAT to fit inside the official Pi 5 case, while also cramming in a few other special features:
 

@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-n-fuse-poe-hat-pcie.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/625"
 link: "https://n-fuse.co/devices/SBCPoE-RPi-Power-over-Ethernet-Hat-for-Raspberry-Pi-5-with-mPCIe-Slot-m2-slot.html"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=x9ceI0_r_Kg
 ---
 n\|fuse has a set of PCIe HATs including PoE+ support, for:
 

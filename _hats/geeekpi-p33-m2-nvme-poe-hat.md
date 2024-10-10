@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-geeekpi-p33-m2-nvme-poe-hat.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/664"
 link: "https://amzn.to/4egKnhh"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=x9ceI0_r_Kg
 ---
 This HAT supports PoE+, supplying the Pi with at 5.1V / 4.5A, and provides enough clearance for the Pi 5 Active Cooler to be used with the Pi.
 
