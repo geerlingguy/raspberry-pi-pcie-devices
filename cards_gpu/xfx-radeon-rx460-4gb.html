@@ -20,11 +20,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/xfx-radeon-rx460-4gb.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-10T14:14:16+00:00" />
+<meta property="article:published_time" content="2024-10-14T15:23:27+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="XFX AMD Radeon RX 460 4GB PCIe x16" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-10T14:14:16+00:00","datePublished":"2024-10-10T14:14:16+00:00","description":"The Radeon RX 460 is a slightly older graphics card that is supported by the open source amdgpu driver in the Linux Kernel.","headline":"XFX AMD Radeon RX 460 4GB PCIe x16","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/xfx-radeon-rx460-4gb.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/xfx-radeon-rx460-4gb.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-14T15:23:27+00:00","datePublished":"2024-10-14T15:23:27+00:00","description":"The Radeon RX 460 is a slightly older graphics card that is supported by the open source amdgpu driver in the Linux Kernel.","headline":"XFX AMD Radeon RX 460 4GB PCIe x16","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/xfx-radeon-rx460-4gb.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/xfx-radeon-rx460-4gb.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -66,7 +66,7 @@
           <tbody>
             <tr>
               <td>None</td>
-              <td>Currently Testing</td>
+              <td>Yes</td>
               <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/564">GitHub Issue</a></td>
             </tr>
@@ -100,7 +100,9 @@
 
 <p>Also make sure you have the AMD firmware installed (<code class="language-plaintext highlighter-rouge">sudo apt install -y firmware-amd-graphics</code>) or the driver will complain about missing files.</p>
 
-<p>For the time being, to get this card working, you need to apply some patches currently being maintained in Coreforge’s Pi OS Linux fork.</p>
+<p>For the time being, to get this card working, you need to apply <a href="https://github.com/geerlingguy/linux/pull/8">this patch</a> maintained in Coreforge’s Pi OS Linux fork.</p>
+
+<p>For full speed, you should also <a href="https://www.jeffgeerling.com/blog/2023/forcing-pci-express-gen-30-speeds-on-pi-5">force PCIe Gen 3 speed on the PCIe bus</a>.</p>
 
 <p>See the linked GitHub issue for more details.</p>
 
