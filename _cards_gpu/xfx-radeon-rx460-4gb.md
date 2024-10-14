@@ -3,7 +3,7 @@ layout: card
 title: "XFX AMD Radeon RX 460 4GB PCIe x16"
 picture: "/images/gpu-xfx-radeon-rx460-4gb.jpg"
 functionality_cm4: "None"
-functionality_pi5: "Currently Testing"
+functionality_pi5: "Yes"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/564"
 buy_link: https://amzn.to/3SUkT1R
@@ -23,6 +23,8 @@ Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select
 
 Also make sure you have the AMD firmware installed (`sudo apt install -y firmware-amd-graphics`) or the driver will complain about missing files.
 
-For the time being, to get this card working, you need to apply some patches currently being maintained in Coreforge's Pi OS Linux fork.
+For the time being, to get this card working, you need to apply [this patch](https://github.com/geerlingguy/linux/pull/8) maintained in Coreforge's Pi OS Linux fork.
+
+For full speed, you should also [force PCIe Gen 3 speed on the PCIe bus](https://www.jeffgeerling.com/blog/2023/forcing-pci-express-gen-30-speeds-on-pi-5).
 
 See the linked GitHub issue for more details.
