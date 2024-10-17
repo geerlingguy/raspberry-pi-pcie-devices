@@ -10,6 +10,7 @@ buy_link: https://amzn.to/3SUkT1R
 videos:
   - https://www.youtube.com/watch?v=BLg-1w2QayU
   - https://www.youtube.com/watch?v=EAlrCFJZlnI
+  - https://www.youtube.com/watch?v=a-ImUnRwjAo
 ---
 The Radeon RX 460 is a slightly older graphics card that is supported by the open source amdgpu driver in the Linux Kernel.
 

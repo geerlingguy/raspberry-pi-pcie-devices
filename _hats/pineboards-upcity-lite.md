@@ -8,6 +8,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6
 link: "https://pineboards.io/products/hat-upcity-lite-for-raspberry-pi-5"
 videos:
   - https://www.youtube.com/watch?v=EAlrCFJZlnI
+  - https://www.youtube.com/watch?v=a-ImUnRwjAo
 ---
 Pineboards uPCIty Lite adds an open-ended PCIe x4 slot on top of the Pi 5.
 
