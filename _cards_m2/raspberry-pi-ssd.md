@@ -3,7 +3,7 @@ layout: card
 title: "Raspberry Pi SSD"
 picture: "/images/m2-raspberry-pi-ssd.jpg"
 functionality_cm4: "Untested"
-functionality_pi5: "Untested"
+functionality_pi5: "Full"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/679"
 buy_link: https://www.raspberrypi.com/products/ssd/
