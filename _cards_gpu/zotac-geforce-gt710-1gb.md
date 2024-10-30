@@ -3,7 +3,7 @@ layout: card
 title: "Zotac Nvidia GeForce GT 710 1GB PCIe x1"
 picture: "/images/gpu-zotac-geforce-gt710.jpg"
 functionality_cm4: "None"
-functionality_pi5: "Untested"
+functionality_pi5: "None"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/2"
 buy_link: https://amzn.to/3mdy1LE
