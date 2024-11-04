@@ -41,6 +41,6 @@ sudo modprobe amdgpu
 
 On the Compute Module 4, nobody has been able to get the `amdgpu` drivers to get far in their initialization stages. The Pi crashes due to PCIe bus memory allocation/mapping errors.
 
-On the Pi 5, the system doesn't crash, but I get an error `*ERROR* hw_init of IP block <psp> failed -22`.
+On the Pi 5, we are able to get full GPU graphics acceleration using Coreforge's [rpi-6.6.y-gpu](https://github.com/Coreforge/linux/tree/rpi-6.6.y-gpu) branch. If running Pi OS, you may have to restart `lightdm` after booting, otherwise it will default to the Pi's built-in GPU.
 
 See the linked GitHub issue for more details.
