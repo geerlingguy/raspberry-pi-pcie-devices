@@ -7,7 +7,8 @@ functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/680"
 buy_link: https://amzn.to/48HUH0g
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=7Qx_bdFSSuc
 ---
 The Radeon Pro W7700 was released in 2023 and is supported by the open source `amdgpu` driver in the Linux Kernel.
 
