@@ -1,9 +1,9 @@
 ---
 layout: card
 title: "Innodisk EGPL-T101"
-picture: "/images/network-innodisk-egpl-t101.png"
+picture: "/images/network-innodisk-egpl-t101.jpg"
 functionality_cm4: "Currently Testing"
-functionality_pi5: "Untested"
+functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/364"
 buy_link: https://www.innodisk.com/en/products/embedded-peripheral/communication/egpl-t101
