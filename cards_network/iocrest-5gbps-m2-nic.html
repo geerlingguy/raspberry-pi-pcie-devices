@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Generic PCE164P NO3 VER 008S 1x to 16x riser | Raspberry Pi PCIe Database</title>
+<title>IOCrest M.2 5 Gbps NIC | Raspberry Pi PCIe Database</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Generic PCE164P NO3 VER 008S 1x to 16x riser" />
+<meta property="og:title" content="IOCrest M.2 5 Gbps NIC" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Follow the GitHub issue for more details about this card’s current testing progress." />
-<meta property="og:description" content="Follow the GitHub issue for more details about this card’s current testing progress." />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html" />
+<meta name="description" content="The IOCrest M.2 5 Gbps NIC is a 5 GbE M.2 adapter that includes an RJ45 plug for half height or full height PCI Express slots. It can operate at 10/100/1000/2500/5000 Mbps, and requires the Realtek RTL8126 driver." />
+<meta property="og:description" content="The IOCrest M.2 5 Gbps NIC is a 5 GbE M.2 adapter that includes an RJ45 plug for half height or full height PCI Express slots. It can operate at 10/100/1000/2500/5000 Mbps, and requires the Realtek RTL8126 driver." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/iocrest-5gbps-m2-nic.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/iocrest-5gbps-m2-nic.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-11-22T17:14:10+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Generic PCE164P NO3 VER 008S 1x to 16x riser" />
+<meta property="twitter:title" content="IOCrest M.2 5 Gbps NIC" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-22T17:14:10+00:00","datePublished":"2024-11-22T17:14:10+00:00","description":"Follow the GitHub issue for more details about this card’s current testing progress.","headline":"Generic PCE164P NO3 VER 008S 1x to 16x riser","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html"},"url":"https://pipci.jeffgeerling.com//cards_adapter/pce164p-no6-ver-008s-riser.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-22T17:14:10+00:00","datePublished":"2024-11-22T17:14:10+00:00","description":"The IOCrest M.2 5 Gbps NIC is a 5 GbE M.2 adapter that includes an RJ45 plug for half height or full height PCI Express slots. It can operate at 10/100/1000/2500/5000 Mbps, and requires the Realtek RTL8126 driver.","headline":"IOCrest M.2 5 Gbps NIC","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/iocrest-5gbps-m2-nic.html"},"url":"https://pipci.jeffgeerling.com//cards_network/iocrest-5gbps-m2-nic.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -46,11 +46,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Generic PCE164P NO3 VER 008S 1x to 16x riser</h1>
+        <h1 id="card_title">IOCrest M.2 5 Gbps NIC</h1>
 
         <div class="card_picture">
           
-            <a href="/images/adpater-pce164p-no6-ver-008s-riser.jpg"><img src="/images/adpater-pce164p-no6-ver-008s-riser.jpg" alt="Generic PCE164P NO3 VER 008S 1x to 16x riser"></a>
+            <a href="/images/network-iocrest-5gbps-m2-nic.jpeg"><img src="/images/network-iocrest-5gbps-m2-nic.jpeg" alt="IOCrest M.2 5 Gbps NIC"></a>
           
         </div>
 
@@ -65,10 +65,10 @@
           </thead>
           <tbody>
             <tr>
-              <td>Currently Testing</td>
               <td>Untested</td>
-              <td>No</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/14">GitHub Issue</a></td>
+              <td>Full</td>
+              <td>Yes</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/675">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -82,14 +82,29 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>Follow the GitHub issue for more details about this card’s current testing progress.</p>
+          <p>The IOCrest M.2 5 Gbps NIC is a 5 GbE M.2 adapter that includes an RJ45 plug for half height or full height PCI Express slots. It can operate at 10/100/1000/2500/5000 Mbps, and requires the Realtek RTL8126 driver.</p>
+
+<p>To get PCIe Gen 3 speeds, edit <code class="language-plaintext highlighter-rouge">/boot/firmware/config.txt</code> and add the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtparam=pciex1_gen=3
+</code></pre></div></div>
+
+<p>Then reboot. The kernel driver is not included in the Linux kernel until at least 6.9, so for now, the easiest way to get it running is to install the official driver from Realtek:</p>
+
+<ol>
+  <li><a href="https://www.realtek.com/Download/ToDownload?type=direct&amp;downloadid=4445">Download the driver from Realtek’s website</a></li>
+  <li>Expand the driver: <code class="language-plaintext highlighter-rouge">tar -xvf r8126-10.014.01.tar.bz2</code></li>
+  <li>Install the driver: <code class="language-plaintext highlighter-rouge">cd r8126-10.014.01/ &amp;&amp; sudo ./autorun.sh</code></li>
+</ol>
+
+<p>It should begin working immediately, giving full 5 Gbps network speed on network switches which support that speed.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/34LzVgt">Generic PCE164P NO3 VER 008S 1x to 16x riser</a></p>
+          <a href="https://amzn.to/47SyuMz">IOCrest M.2 5 Gbps NIC</a></p>
         </div>
 
       </section>
