@@ -14,17 +14,17 @@
 <meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="Innodisk EGPL-T101" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny form factor. It has an Aquantia chip inside, and should be well supported under Linux. See GitHub issue for more information and updates on testing." />
-<meta property="og:description" content="The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny form factor. It has an Aquantia chip inside, and should be well supported under Linux. See GitHub issue for more information and updates on testing." />
+<meta name="description" content="The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny 2280 form factor. It has an Aquantia chip inside, and is well supported under Linux." />
+<meta property="og:description" content="The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny 2280 form factor. It has an Aquantia chip inside, and is well supported under Linux." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/innodisk-egpl-t101.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/innodisk-egpl-t101.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-11-22T17:14:10+00:00" />
+<meta property="article:published_time" content="2024-11-22T17:41:59+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Innodisk EGPL-T101" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-22T17:14:10+00:00","datePublished":"2024-11-22T17:14:10+00:00","description":"The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny form factor. It has an Aquantia chip inside, and should be well supported under Linux. See GitHub issue for more information and updates on testing.","headline":"Innodisk EGPL-T101","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/innodisk-egpl-t101.html"},"url":"https://pipci.jeffgeerling.com//cards_network/innodisk-egpl-t101.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-22T17:41:59+00:00","datePublished":"2024-11-22T17:41:59+00:00","description":"The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny 2280 form factor. It has an Aquantia chip inside, and is well supported under Linux.","headline":"Innodisk EGPL-T101","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/innodisk-egpl-t101.html"},"url":"https://pipci.jeffgeerling.com//cards_network/innodisk-egpl-t101.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -66,7 +66,7 @@
           <tbody>
             <tr>
               <td>Currently Testing</td>
-              <td>Currently Testing</td>
+              <td>Full</td>
               <td>Yes</td>
               <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/364">GitHub Issue</a></td>
             </tr>
@@ -82,7 +82,28 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny form factor. It has an Aquantia chip inside, and should be well supported under Linux. See <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/364">GitHub issue</a> for more information and updates on testing.</p>
+          <p>The Innodisk EGPL-T101 is a 10 GbE M.2 adapter in a tiny 2280 form factor. It has an Aquantia chip inside, and is well supported under Linux.</p>
+
+<p>To get it to work with Pi OS, you need to compile a custom Linux kernel following Raspberry Pi’s instructions, and select the Aquantia drivers with <code class="language-plaintext highlighter-rouge">make menuconfig</code> before building:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
+  &gt; Network device support
+    &gt; PHY Device support and infrastructure
+      &gt; Aquantia PHYs
+
+Device Drivers
+  &gt; Network device support
+    &gt; Ethernet driver support
+      &gt; aQuantia devices
+        &gt; aQuantia AQtion(tm) Support
+</code></pre></div></div>
+
+<p>This card gets around 6 Gbps up and down when using PCIe Gen 3 speeds. To enable that speed on a Pi 5, edit <code class="language-plaintext highlighter-rouge">/boot/firmware/config.txt</code> and add:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtparam=pciex1_gen=3
+</code></pre></div></div>
+
+<p>Then reboot your Pi.</p>
 
         </div>
 
