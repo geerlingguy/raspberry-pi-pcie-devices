@@ -2,7 +2,7 @@
 layout: default
 title: Boards
 ---
-## Compute Module 4 Boards and Projects
+## Compute Module Boards and Projects
 {: .no_toc}
 
 If you think a project should be added here, please [open an issue on GitHub](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues) to add it.
@@ -82,4 +82,4 @@ The following boards are either not yet commercially available or one-offs and _
 ## About
 {: .no_toc}
 
-This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). Raspberry Pi is a product of [Raspberry Pi Ltd](https://www.raspberrypi.com).
+This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). Raspberry Pi is a product of [Raspberry Pi Ltd](https://www.raspberrypi.com/about/).

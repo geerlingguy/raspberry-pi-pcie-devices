@@ -11,7 +11,7 @@ The Raspberry Pi has PCI Express! There are some quirks to getting certain devic
 ## More Resources
 {: .no_toc}
 
-  - **[Compute Module 4-based Products and Boards](boards_cm)**
+  - **[Compute Module Products and Boards](boards_cm)**
   - **[Raspberry Pi 5 HATs and Boards](hats)**
   - [Raspberry Pi Linux Cross-compilation Environment](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile)
 
@@ -282,6 +282,6 @@ The Raspberry Pi has PCI Express! There are some quirks to getting certain devic
 
 [![GitHub Stats](https://github-readme-stats.vercel.app/api/pin?username=geerlingguy&repo=raspberry-pi-pcie-devices&show_icons=true&hide_border=true&show_owner=true&theme=graywhite)](https://github.com/geerlingguy/raspberry-pi-pcie-devices)
 
-This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi Compute Module 4 and Raspberry Pi 5 model B are products of [Raspberry Pi (Trading) Limited](https://www.raspberrypi.org/about/).
+This project is maintained by [Jeff Geerling](https://www.jeffgeerling.com). The Raspberry Pi is a products of [Raspberry Pi Ltd](https://www.raspberrypi.com/about/).
 
 > Many of the device links on this page are Amazon affiliate links. If you do not wish to use those links, copy the device name to search for it at any major electronics retailer (e.g. [Newegg](https://www.newegg.com), [Micro Center](https://www.microcenter.com), [Amazon](https://www.amazon.com), etc.).

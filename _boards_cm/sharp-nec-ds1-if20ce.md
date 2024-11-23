@@ -14,3 +14,5 @@ The [Sharp/NEC DS1-IF20CE Compute Module Interface Board](https://www.sharpnecdi
 They used to sell the CM3+ version of the board ([DS1-IF10CE](https://www.bhphotovideo.com/c/product/1339096-REG/nec_ds1_if10ce_raspberry_pi_compute_module.html)) standalone.
 
 It's built to be integrated exclusively into NEC's MultiSync displays. It contains an edge connector exposing certain GPIO pins to the monitor's internal bus, so you can control the monitor via serial connection, and also accept signals from the monitor (e.g. for shutdown, IR control for media applications, etc.). Externally it includes 2 USB-A ports and an Ethernet port connected to the Pi, along with an internal Ethernet connection through to the monitor's built-in Ethernet switch. It also has a micro USB port for flashing the eMMC along with a boot select switch exposed externally.
+
+Sharp exposes downloads for their official Media Player utility on their website: [Raspberry Pi Compute Module Downloads](https://www.sharpnecdisplays.us/support-and-services/raspberrypi/244#softwaredownloads/)

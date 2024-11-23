@@ -1,10 +1,10 @@
 # Intel I340-T4 Benchmark Playbook
 
-This playbook is meant to run an `iperf` benchmark against a Compute Module 4 with the Intel I340-T4 PCIe NIC.
+This playbook is meant to run an `iperf` benchmark against a Pi with the Intel I340-T4 PCIe NIC.
 
 The playbook requires Ansible to be installed on a controller computer, which should be able to see four computers connected directly to the ports on the NIC, which are mapped with static IPs via the `/etc/dhcpcd.conf` file.
 
-Additionally, `iperf` should already be installed on _all_ the computers, including the Compute Module 4.
+Additionally, `iperf` should already be installed on _all_ the computers, including the Pi.
 
 The playbook can be run with:
 
