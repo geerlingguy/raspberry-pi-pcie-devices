@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>MPi4 NEC MediaPlayer Kit | Raspberry Pi PCIe Database</title>
+<title>MPi4 NEC MediaPlayer Kit (DS1-IF20CE) | Raspberry Pi PCIe Database</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="MPi4 NEC MediaPlayer Kit" />
+<meta property="og:title" content="MPi4 NEC MediaPlayer Kit (DS1-IF20CE)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Sharp / NEC displays has a MPi4 NEC MediaPlayer Kit available that connects a Raspberry Pi directly into one of their display solutions using their modular display system." />
-<meta property="og:description" content="Sharp / NEC displays has a MPi4 NEC MediaPlayer Kit available that connects a Raspberry Pi directly into one of their display solutions using their modular display system." />
+<meta name="description" content="The Sharp/NEC DS1-IF20CE Compute Module Interface Board, product code MPI4E, is part of Sharp/NEC’s display solution for a MediaPlayer/SoC integration with their displays. Here is a user manual mentioning the board." />
+<meta property="og:description" content="The Sharp/NEC DS1-IF20CE Compute Module Interface Board, product code MPI4E, is part of Sharp/NEC’s display solution for a MediaPlayer/SoC integration with their displays. Here is a user manual mentioning the board." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//boards_cm/mpi4-mediaplayer-kit.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//boards_cm/mpi4-mediaplayer-kit.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-11-27T19:18:54+00:00" />
+<meta property="article:published_time" content="2024-11-27T19:22:18+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="MPi4 NEC MediaPlayer Kit" />
+<meta property="twitter:title" content="MPi4 NEC MediaPlayer Kit (DS1-IF20CE)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-27T19:18:54+00:00","datePublished":"2024-11-27T19:18:54+00:00","description":"Sharp / NEC displays has a MPi4 NEC MediaPlayer Kit available that connects a Raspberry Pi directly into one of their display solutions using their modular display system.","headline":"MPi4 NEC MediaPlayer Kit","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//boards_cm/mpi4-mediaplayer-kit.html"},"url":"https://pipci.jeffgeerling.com//boards_cm/mpi4-mediaplayer-kit.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-11-27T19:22:18+00:00","datePublished":"2024-11-27T19:22:18+00:00","description":"The Sharp/NEC DS1-IF20CE Compute Module Interface Board, product code MPI4E, is part of Sharp/NEC’s display solution for a MediaPlayer/SoC integration with their displays. Here is a user manual mentioning the board.","headline":"MPi4 NEC MediaPlayer Kit (DS1-IF20CE)","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//boards_cm/mpi4-mediaplayer-kit.html"},"url":"https://pipci.jeffgeerling.com//boards_cm/mpi4-mediaplayer-kit.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -48,11 +48,11 @@
 
         <a href="/boards_cm">&lt; Back to Boards and Projects</a>
 
-        <h1 id="board_title">MPi4 NEC MediaPlayer Kit</h1>
+        <h1 id="board_title">MPi4 NEC MediaPlayer Kit (DS1-IF20CE)</h1>
 
         <div class="board_picture">
           
-            <a href="/images/board-mpi4-nec-mediaplayer-kit.jpg"><img src="/images/board-mpi4-nec-mediaplayer-kit.jpg" alt="MPi4 NEC MediaPlayer Kit"></a>
+            <a href="/images/board-mpi4-nec-mediaplayer-kit.jpg"><img src="/images/board-mpi4-nec-mediaplayer-kit.jpg" alt="MPi4 NEC MediaPlayer Kit (DS1-IF20CE)"></a>
           
         </div>
 
@@ -73,9 +73,13 @@
 
         <div class="board_content">
           <h3>Description</h3>
-          <p>Sharp / NEC displays has a <a href="https://www.sharpnecdisplays.eu/p/uk/en/products/accessories/details/t/options/computing/rp/raspberrypi-compute-module4.xhtml">MPi4 NEC MediaPlayer Kit</a> available that connects a Raspberry Pi directly into one of their display solutions using their modular display system.</p>
+          <p>The <a href="https://www.sharpnecdisplays.us/products/accessories/mpi4e">Sharp/NEC DS1-IF20CE Compute Module Interface Board</a>, product code MPI4E, is part of Sharp/NEC’s display solution for a MediaPlayer/SoC integration with their displays. <a href="https://assets.sharpnecdisplays.us/documents/installationguides/ma-series-installationguide.pdf">Here is a user manual mentioning the board</a>.</p>
 
-<p>Meant for digital signage applications, the board comes preinstalled with NEC MediaPlayer, and there’s a version with WiFi and an external antenna connector for wireless use.</p>
+<p>They used to sell the CM3+ version of the board (<a href="https://www.bhphotovideo.com/c/product/1339096-REG/nec_ds1_if10ce_raspberry_pi_compute_module.html">DS1-IF10CE</a>) standalone.</p>
+
+<p>It’s built to be integrated exclusively into NEC’s MultiSync displays. It contains an edge connector exposing certain GPIO pins to the monitor’s internal bus, so you can control the monitor via serial connection, and also accept signals from the monitor (e.g. for shutdown, IR control for media applications, etc.). Externally it includes 2 USB-A ports and an Ethernet port connected to the Pi, along with an internal Ethernet connection through to the monitor’s built-in Ethernet switch. It also has a micro USB port for flashing the eMMC along with a boot select switch exposed externally.</p>
+
+<p>Sharp exposes downloads for their official Media Player utility on their website: <a href="https://www.sharpnecdisplays.us/support-and-services/raspberrypi/244#softwaredownloads/">Raspberry Pi Compute Module Downloads</a></p>
 
         </div>
 
@@ -85,6 +89,8 @@
               <ul>
                 
                   <li><a href="https://www.youtube.com/watch?v=zr4WQ8dhhG8">Sharp NEC Display Solutions - Message Family of Large Format Displays (ME • M • MA Series)</a></a></li>
+                
+                  <li><a href="https://www.youtube.com/watch?v=-epPf7D8oMk">Smarter than a Smart TV! (Raspberry Pi Inside)</a></a></li>
                 
               </ul>
             
