@@ -10,21 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Intel AX210NGW WiFi 6E 802.11ax M.2 | Raspberry Pi PCIe Database</title>
+<title>Intel BE200 WiFi 7 802.11be M.2 non vPro | Raspberry Pi PCIe Database</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Intel AX210NGW WiFi 6E 802.11ax M.2" />
+<meta property="og:title" content="Intel BE200 WiFi 7 802.11be M.2 non vPro" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:" />
 <meta property="og:description" content="To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:" />
-<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/intel-ax210-wifi-6e.html" />
-<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/intel-ax210-wifi-6e.html" />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-12-02T17:31:40+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Intel AX210NGW WiFi 6E 802.11ax M.2" />
+<meta property="twitter:title" content="Intel BE200 WiFi 7 802.11be M.2 non vPro" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-02T17:31:40+00:00","datePublished":"2024-12-02T17:31:40+00:00","description":"To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:","headline":"Intel AX210NGW WiFi 6E 802.11ax M.2","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/intel-ax210-wifi-6e.html"},"url":"https://pipci.jeffgeerling.com//cards_network/intel-ax210-wifi-6e.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-02T17:31:40+00:00","datePublished":"2024-12-02T17:31:40+00:00","description":"To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:","headline":"Intel BE200 WiFi 7 802.11be M.2 non vPro","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html"},"url":"https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -46,11 +46,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-        <h1 id="card_title">Intel AX210NGW WiFi 6E 802.11ax M.2</h1>
+        <h1 id="card_title">Intel BE200 WiFi 7 802.11be M.2 non vPro</h1>
 
         <div class="card_picture">
           
-            <a href="/images/network-intel-ax210-wifi-6e.jpeg"><img src="/images/network-intel-ax210-wifi-6e.jpeg" alt="Intel AX210NGW WiFi 6E 802.11ax M.2"></a>
+            <a href="/images/network-intel-be200-wi-fi-7.jpg"><img src="/images/network-intel-be200-wi-fi-7.jpg" alt="Intel BE200 WiFi 7 802.11be M.2 non vPro"></a>
           
         </div>
 
@@ -65,10 +65,10 @@
           </thead>
           <tbody>
             <tr>
-              <td>Full</td>
+              <td>Untested</td>
               <td>Full</td>
               <td>Yes</td>
-              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/120">GitHub Issue</a></td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/670">GitHub Issue</a></td>
             </tr>
           </tbody>
         </table>
@@ -76,11 +76,7 @@
         <div class="card_videos">
           <h3>Videos Related to this Card</h2>
             
-              <ul>
-                
-                  <li><a href="https://www.youtube.com/watch?v=TdUxWEyafUg">WiFi 6E takes Pi to 1.5 GIGABITS—faster than my Mac!</a></a></li>
-                
-              </ul>
+              <p>There are no videos for this card yet.</p>
             
         </div>
 
@@ -94,26 +90,28 @@
       &gt; Intel Wireless WiFi Next Gen AGN - Wireless-N/Advanced-N/Ultimate-N (iwlwifi)
         &gt; Intel Wireless WiFi MVM Firmware support
 </code></pre></div></div>
+<p><a href="https://www.raspberrypi.com/documentation/computers/linux_kernel.html#kernel">Details on how to compile a kernel, you may want to look at cross-compiling for a significant speed bump</a>
+<a href="https://wireless.docs.kernel.org/en/latest/en/users/drivers/iwlwifi.html">Details on iwlwifi</a></p>
 
-<p>Then you also need to install the <a href="https://www.intel.com/content/www/us/en/support/articles/000005511/wireless.html">latest Intel firmware package for the AX210</a>:</p>
+<p>Then you also need to install the <a href="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git">latest Intel firmware for the BE200</a>:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget https://wireless.wiki.kernel.org/_media/en/users/drivers/iwlwifi-ty-59.601f3a66.0.tgz
-$ tar -xvzf iwlwifi-ty-59.601f3a66.0.tgz
-$ cd iwlwifi-ty-59.601f3a66.0/
-$ sudo cp iwlwifi-*.ucode /lib/firmware
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cp linux-firmware-20241110/iwl* /lib/firmware/
 $ sudo reboot
 </code></pre></div></div>
 
-<p>To physically connect it to a Compute Module 4, you may need to buy an M.2 A+E key to PCI Express card adapter—ideally one that comes with antenna connections, like <a href="https://amzn.to/3UG6OCL">this one from Amazon</a>.</p>
+<p>To physically connect it to a Pi 5, you may need to buy an M.2 A+E key to PCI Express card adapter, like <a href="https://thepihut.com/products/m-2-2242-e-key-top-for-raspberry-pi-5">this one from ThePiHut</a>.
+Please note that the antenna connections use MHF4, not UHF - thus you likely need to order a pair of antennas (or adapter cables) as well.</p>
 
-<p>Support for using this card in AP mode (so the Raspberry Pi can act as a WiFi 6 Access Point) may be possible, see the linked GitHub issue for more.</p>
+<p>Please note that 6 GHz support was only introduced to NetworkManager in v1.46 &amp; v1.48, thus you’ll have a better experience with an upgrade to Debian (testing): trixie (which includes NetworkManager v1.50)</p>
+
+<p>At this point, I’ve only tried this as Wi-Fi 7 client - not as an AP.</p>
 
         </div>
 
         <div class="card_buy_link">
           <h3>Buy this Card</h3>
           <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
-          <a href="https://amzn.to/3aIBJK9">Intel AX210NGW WiFi 6E 802.11ax M.2</a></p>
+          <a href="https://amzn.to/3B02v0r">Intel BE200 WiFi 7 802.11be M.2 non vPro</a></p>
         </div>
 
       </section>
