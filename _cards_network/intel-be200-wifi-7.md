@@ -5,10 +5,9 @@ picture: "/images/network-intel-be200-wi-fi-7.jpg"
 functionality_cm4: "Untested"
 functionality_pi5: "Full"
 driver_required: "Yes"
-github_issue: none
-buy_link: https://www.alternate.de/html/product/100044899
-videos:
-  - none
+github_issue: https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/670
+buy_link: https://amzn.to/3B02v0r
+videos: []
 ---
 To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:
 
