@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-wisdpi-5gbe-poe.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/682"
 link: "https://www.wisdpi.com/products/wp-nh5000p"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=2RAdIQL4j1I
 ---
 ## Features:
 - Optimized for Raspberry Pi 5: WP-NH5000P is specifically designed to complement the Raspberry Pi 5, ensuring seamless integration and optimal performance.
