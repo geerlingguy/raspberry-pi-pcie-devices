@@ -9,7 +9,7 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6
 buy_link: https://amzn.to/4f7AkeH
 videos: []
 ---
-The Quadro RTX 400 is supported by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.
+The RTX 400 is an Ampere-generation workstation GPU supported by both Nvidia's proprietary driver and the open source Nouveau driver in the Linux Kernel.
 
 You need to provide a physical x16 slot. No external power is required, besides up to 75W of PCIe slot power.
 
