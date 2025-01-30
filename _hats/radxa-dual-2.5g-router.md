@@ -14,7 +14,7 @@ The interfaces are adapted through an ASM2806 PCIe Gen 3 switch, with 2 uplinks 
 
 It has a 40 pin GPIO plug, which supplies power to the Pi, and it is not pass-through type, so you would not be able to mount another HAT on top of this board.
 
-To use the board at Gen 3.0 speeds, after connecting it to the Pi, you need to add the following lines to `/boot/firmware/config.txt`:
+**You must manually enable the external PCIe connector** to get this HAT to work on the Pi 5. Also, if you want Gen 3.0 speeds, also add that setting in `/boot/firmware/config.txt` and reboot:
 
 ```
 dtparam=pciex1
