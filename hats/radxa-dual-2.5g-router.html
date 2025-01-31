@@ -14,17 +14,17 @@
 <meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="Radxa Dual 2.5G Router HAT" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), and a 12V power input." />
-<meta property="og:description" content="This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), and a 12V power input." />
+<meta name="description" content="This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), an additional PCIe FPC connector (to stack an additional PCIe HAT on top) and a 12V power input." />
+<meta property="og:description" content="This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), an additional PCIe FPC connector (to stack an additional PCIe HAT on top) and a 12V power input." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-01-30T23:55:44+00:00" />
+<meta property="article:published_time" content="2025-01-31T17:03:57+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Radxa Dual 2.5G Router HAT" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-30T23:55:44+00:00","datePublished":"2025-01-30T23:55:44+00:00","description":"This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), and a 12V power input.","headline":"Radxa Dual 2.5G Router HAT","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"},"url":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-31T17:03:57+00:00","datePublished":"2025-01-31T17:03:57+00:00","description":"This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), an additional PCIe FPC connector (to stack an additional PCIe HAT on top) and a 12V power input.","headline":"Radxa Dual 2.5G Router HAT","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"},"url":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -73,16 +73,21 @@
 
         <div class="board_content">
           <h3>Description</h3>
-          <p>This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), and a 12V power input.</p>
+          <p>This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), an additional PCIe FPC connector (to stack an additional PCIe HAT on top) and a 12V power input.</p>
 
-<p>The interfaces are adapted through an ASM2806 PCIe Gen 3 switch, with 2 uplinks (the Pi 5 can only use 1), and 4 downlinks—the 4th is exposed as a Pi 5 style PCIe FPC header, so you can daisy-chain other PCIe boards on top of this one!</p>
+<p>The interfaces are adapted through an ASM2806 PCIe Gen 3 switch, with 2 uplinks (the Pi 5 can only use 1), and 4 downlinks.</p>
 
-<p>It has a 40 pin GPIO plug, which supplies power to the Pi, and it is not pass-through type, so you would not be able to mount another HAT on top of this board.</p>
+<p>It has a 40 pin GPIO plug, which supplies power to the Pi, and it is not pass-through type, so you would not be able to mount another HAT requiring GPIO on top of this board.</p>
 
 <p><strong>You must manually enable the external PCIe connector</strong> to get this HAT to work on the Pi 5. Also, if you want Gen 3.0 speeds, also add that setting in <code class="language-plaintext highlighter-rouge">/boot/firmware/config.txt</code> and reboot:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtparam=pciex1
 dtparam=pciex1_gen=3
+</code></pre></div></div>
+
+<p>Because this HAT is not ‘HAT+’ compatible, if you want to <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#boot-from-pcie">boot from PCIe</a>, you must also edit the Raspberry Pi EEPROM (<code class="language-plaintext highlighter-rouge">sudo rpi-eeprom-config -e</code>) and add the following line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PCIE_PROBE=1
 </code></pre></div></div>
 
 <p>I am currently testing the board and will update this page with more information later.</p>
