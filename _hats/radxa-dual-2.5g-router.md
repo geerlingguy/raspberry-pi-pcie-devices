@@ -21,10 +21,32 @@ dtparam=pciex1
 dtparam=pciex1_gen=3
 ```
 
+## Booting from NVMe SSD
+
 Because this HAT is not 'HAT+' compatible, if you want to [boot from PCIe](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#boot-from-pcie), you must also edit the Raspberry Pi EEPROM (`sudo rpi-eeprom-config -e`) and add the following line:
 
 ```
 PCIE_PROBE=1
 ```
 
-I am currently testing the board and will update this page with more information later.
+## Realtek 2.5G NIC performance
+
+The included Realtek NICs are supported out of the box on Raspberry Pi OS, though using the Linux kernel's included driver.
+
+Performance is good, but you may get better performance installing the `r8125` driver directly.
+
+The best way to do that, while keeping the driver and the OS up to date easily, is to use the [`realtek-r8125-dkms` package](https://github.com/awesometic/realtek-r8125-dkms):
+
+Download the latest release from https://github.com/awesometic/realtek-r8125-dkms/releases — then run:
+
+```
+sudo dpkg -i realtek-r8125-dkms*.deb
+```
+
+You can also manually [download the r8125 driver from Realtek](https://www.realtek.com/Download/List?cate_id=584) and run it's included `autorun.sh` script, but that installation method is more difficult to maintain over time.
+
+## External PCIe FPC Difficulties
+
+So far I have not been able to get any additional PCIe HATs or even another Dual 2.5G Router HAT to work using the downstream PCIe FPC included on this board.
+
+See my current progress here: [Dual 2.5G Router HAT - FPC Connector use](https://forum.radxa.com/t/dual-2-5g-router-hat-fpc-connector-use/25972?u=geerlingguy).
