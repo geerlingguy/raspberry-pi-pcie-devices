@@ -14,17 +14,17 @@
 <meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="Intel BE200 WiFi 7 802.11be M.2 non vPro" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:" />
-<meta property="og:description" content="To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:" />
+<meta name="description" content="Since early 2025, Raspberry Pi OS includes the Intel iwlwifi driver, so all you need to do to enable this card is install the appropriate firmware." />
+<meta property="og:description" content="Since early 2025, Raspberry Pi OS includes the Intel iwlwifi driver, so all you need to do to enable this card is install the appropriate firmware." />
 <link rel="canonical" href="https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html" />
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-03-03T19:56:43+00:00" />
+<meta property="article:published_time" content="2025-03-03T22:13:22+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Intel BE200 WiFi 7 802.11be M.2 non vPro" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-03T19:56:43+00:00","datePublished":"2025-03-03T19:56:43+00:00","description":"To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:","headline":"Intel BE200 WiFi 7 802.11be M.2 non vPro","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html"},"url":"https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-03T22:13:22+00:00","datePublished":"2025-03-03T22:13:22+00:00","description":"Since early 2025, Raspberry Pi OS includes the Intel iwlwifi driver, so all you need to do to enable this card is install the appropriate firmware.","headline":"Intel BE200 WiFi 7 802.11be M.2 non vPro","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html"},"url":"https://pipci.jeffgeerling.com//cards_network/intel-be200-wifi-7.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -82,29 +82,54 @@
 
         <div class="card_content">
           <h3>Description and Notes</h3>
-          <p>To get this card working on the Pi, you need to compile a custom kernel with the following kernel configuration option added:</p>
+          <p>Since early 2025, Raspberry Pi OS includes the Intel <code class="language-plaintext highlighter-rouge">iwlwifi</code> driver, so all you need to do to enable this card is install the appropriate firmware.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Device Drivers
-  &gt; Network device support
-    &gt; Wireless LAN
-      &gt; Intel Wireless WiFi Next Gen AGN - Wireless-N/Advanced-N/Ultimate-N (iwlwifi)
-        &gt; Intel Wireless WiFi MVM Firmware support
-</code></pre></div></div>
-<p><a href="https://www.raspberrypi.com/documentation/computers/linux_kernel.html#kernel">Details on how to compile a kernel, you may want to look at cross-compiling for a significant speed bump</a>
-<a href="https://wireless.docs.kernel.org/en/latest/en/users/drivers/iwlwifi.html">Details on iwlwifi</a></p>
+<p>The firmware version will change over time as Pi OS is updated to newer kernels, but as of March 2025, running kernel 6.6.y, the instructions for installing the appropriate firmware are as follows:</p>
 
-<p>Then you also need to install the <a href="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git">latest Intel firmware for the BE200</a>:</p>
+<p>First, check the <code class="language-plaintext highlighter-rouge">dmesg</code> logs to see which firmware files are being loaded (and failing); run <code class="language-plaintext highlighter-rouge">dmesg | grep iwlwifi</code> to do so.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo cp linux-firmware-20241110/iwl* /lib/firmware/
-$ sudo reboot
+<p>Then, in the <a href="https://web.git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/">linux-firmware</a> repository, search for that driver version.</p>
+
+<p>Download both the <code class="language-plaintext highlighter-rouge">ucode</code> and <code class="language-plaintext highlighter-rouge">pnvm</code> files for the firmware version that’s missing, and make sure they end up in the <code class="language-plaintext highlighter-rouge">/lib/firmware</code> directory:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /lib/firmware
+sudo wget -o - -q https://web.git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/iwlwifi-gl-c0-fm-c0-83.ucode
+sudo wget -o - -q https://web.git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/iwlwifi-gl-c0-fm-c0.pnvm
 </code></pre></div></div>
 
-<p>To physically connect it to a Pi 5, you may need to buy an M.2 A+E key to PCI Express card adapter, like <a href="https://thepihut.com/products/m-2-2242-e-key-top-for-raspberry-pi-5">this one from ThePiHut</a>.
-Please note that the antenna connections use MHF4, not UHF - thus you likely need to order a pair of antennas (or adapter cables) as well.</p>
+<p>To physically connect the card to a Pi 5, you may need to buy an M.2 A+E key to PCI Express card adapter, like <a href="https://amzn.to/3XpXOpg">Waveshare’s PCIe to M.2 E-key HAT+</a>. The Waveshare HAT includes adapters from the MHF4 to u.FL antenna connectors, and you can then use any standard SMA screw-on antenna with the HAT. Otherwise, you have to figure out how to get MHF4 to some form of antenna.</p>
 
-<p>Please note that 6 GHz support was only introduced to NetworkManager in v1.46 &amp; v1.48, thus you’ll have a better experience with an upgrade to Debian (testing): trixie (which includes NetworkManager v1.50)</p>
+<p>At this point, I’ve only tried this as Wi-Fi 7 client - not as an AP. Others on GitHub have successfully used it in AP mode, but I’m not sure if that works across all bands or just some.</p>
 
-<p>At this point, I’ve only tried this as Wi-Fi 7 client - not as an AP.</p>
+<h2 id="bluetooth-support">Bluetooth Support</h2>
+
+<p>Bluetooth support requires a USB connection—not all M.2 adapter HATs supply this (though the Waveshare mentioned above does).</p>
+
+<p>With that, you will need to download the appropriate Bluetooth firmware for the WiFi card into <code class="language-plaintext highlighter-rouge">/lib/firmware/intel</code>. Search <code class="language-plaintext highlighter-rouge">dmesg | grep Bluetooth</code> and see if there are messages about missing firmware. Then go find that missing firmware in the <a href="https://web.git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/intel/">linux-firmware repository’s <code class="language-plaintext highlighter-rouge">intel</code> section</a> and download it, for example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /lib/firmware/intel
+sudo wget -o - -q https://web.git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/intel/ibt-0291-0291.ddc
+sudo wget -o - -q https://web.git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain/intel/ibt-0291-0291.sfi
+</code></pre></div></div>
+
+<p>Check for Bluetooth functionality:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Shows active Bluetooth adapters
+sudo hciconfig
+
+# Disable built-in bluetooth and enable Intel Bluetooth
+sudo hciconfig hci1 down
+sudo hciconfig hci0 up
+
+# If RF-kill blocks enabling the device, check why:
+rfkill list all
+
+# Then unblock it if it's blocked:
+sudo rfkill unblock bluetooth
+
+# Check for Bluetooth devices:
+bluetoothctl scan on
+</code></pre></div></div>
 
         </div>
 
