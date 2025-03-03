@@ -20,11 +20,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-02-03T21:36:37+00:00" />
+<meta property="article:published_time" content="2025-03-03T19:24:02+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Radxa Dual 2.5G Router HAT" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-02-03T21:36:37+00:00","datePublished":"2025-02-03T21:36:37+00:00","description":"This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), an additional PCIe FPC connector (to stack an additional PCIe HAT on top) and a 12V power input.","headline":"Radxa Dual 2.5G Router HAT","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"},"url":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-03T19:24:02+00:00","datePublished":"2025-03-03T19:24:02+00:00","description":"This HAT includes two 2.5 Gbps Ethernet ports (Realtek 8125BG), an M.2 M-key NVMe slot (2230, 2242, 2260, 2280), an additional PCIe FPC connector (to stack an additional PCIe HAT on top) and a 12V power input.","headline":"Radxa Dual 2.5G Router HAT","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"},"url":"https://pipci.jeffgeerling.com//hats/radxa-dual-2.5g-router.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -85,12 +85,33 @@
 dtparam=pciex1_gen=3
 </code></pre></div></div>
 
+<h2 id="booting-from-nvme-ssd">Booting from NVMe SSD</h2>
+
 <p>Because this HAT is not ‘HAT+’ compatible, if you want to <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#boot-from-pcie">boot from PCIe</a>, you must also edit the Raspberry Pi EEPROM (<code class="language-plaintext highlighter-rouge">sudo rpi-eeprom-config -e</code>) and add the following line:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PCIE_PROBE=1
 </code></pre></div></div>
 
-<p>I am currently testing the board and will update this page with more information later.</p>
+<h2 id="realtek-25g-nic-performance">Realtek 2.5G NIC performance</h2>
+
+<p>The included Realtek NICs are supported out of the box on Raspberry Pi OS, though using the Linux kernel’s included driver.</p>
+
+<p>Performance is good, but you may get better performance installing the <code class="language-plaintext highlighter-rouge">r8125</code> driver directly.</p>
+
+<p>The best way to do that, while keeping the driver and the OS up to date easily, is to use the <a href="https://github.com/awesometic/realtek-r8125-dkms"><code class="language-plaintext highlighter-rouge">realtek-r8125-dkms</code> package</a>:</p>
+
+<p>Download the latest release from https://github.com/awesometic/realtek-r8125-dkms/releases — then run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo dpkg -i realtek-r8125-dkms*.deb
+</code></pre></div></div>
+
+<p>You can also manually <a href="https://www.realtek.com/Download/List?cate_id=584">download the r8125 driver from Realtek</a> and run it’s included <code class="language-plaintext highlighter-rouge">autorun.sh</code> script, but that installation method is more difficult to maintain over time.</p>
+
+<h2 id="external-pcie-fpc-difficulties">External PCIe FPC Difficulties</h2>
+
+<p>So far I have not been able to get any additional PCIe HATs or even another Dual 2.5G Router HAT to work using the downstream PCIe FPC included on this board.</p>
+
+<p>See my current progress here: <a href="https://forum.radxa.com/t/dual-2-5g-router-hat-fpc-connector-use/25972?u=geerlingguy">Dual 2.5G Router HAT - FPC Connector use</a>.</p>
 
         </div>
 
