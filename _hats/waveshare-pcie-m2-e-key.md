@@ -6,7 +6,8 @@ status: production
 picture: "/images/hat-waveshare-pcie-m2-e-key.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/709"
 link: "https://amzn.to/43m4sAC"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=1oXrJ4wQ2dQ
 ---
 The PCIe to M.2 E-Key HAT+ HAT is intended for WiFi and Bluetooth cards, like the Intel AX210, or the BE200.
 
