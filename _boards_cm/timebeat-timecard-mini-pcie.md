@@ -5,7 +5,7 @@ short_description: A CM4 on a PCI Express card that manages time with GPS, PPS, 
 status: production
 picture: "/images/board-timebeat-timecard-mini-pcie.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/497"
-link: 
+link: https://store.timebeat.app/products/open-timecard-mini-2-0
 videos:
   - https://www.youtube.com/watch?v=dxtVyDXvIBE
 ---

@@ -6,8 +6,7 @@ status: prototype
 picture: "/images/board-ocp-tap-switchberry-v1.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/715"
 link: https://github.com/Time-Appliances-Project/Incubation-Projects/tree/master/Hardware/Switchberry_V1
-videos:
-  - []
+videos: []
 ---
 The Switchberry V1 is an OCP-TAP open source hardware project to build an open 1 Gbps managed Ethernet switch with PTP capabilities:
 
