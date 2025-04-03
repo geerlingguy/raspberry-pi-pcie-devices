@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/hat-ocp-tap-timehat-v2.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/674"
 link: "https://www.tindie.com/products/timeappliances/timehat-2/"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=zT71UvUxhjU
 redirect_from:
   - /hats/ocp-tap-timehat
   - /hats/ocp-tap-timehat-v2
