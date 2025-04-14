@@ -3,7 +3,7 @@ layout: hat
 title: "52Pi U2500 Dual M.2 NVME USB3.0 To 2.5g Ethernet"
 short_description: 52Pi's 2230/2242 NVMe and dual 2.5G Ethernet HAT.
 status: production
-picture: "images/hat-52pi-nvme-dual-25g-eth-hat-u2500-w02.jpg"
+picture: "/images/hat-52pi-nvme-dual-25g-eth-hat-u2500-w02.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/718"
 link: "https://52pi.com/products/u5000-m-2-nvme-dual-usb3-0-to-2-5g-ethernet-for-raspberry-pi-5"
 videos: []
