@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
+gem "webrick"
 gem "jekyll", "~> 3.9"
 gem "jekyll-theme-slate", "~> 0.1"
 gem "kramdown-parser-gfm"
