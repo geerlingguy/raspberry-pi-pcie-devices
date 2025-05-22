@@ -1,7 +1,7 @@
 ---
 layout: board
-title: "Cytron CM4 Maker Board"
-short_description: A board for makers with an NVMe 2242 slot and plenty of GPIO and Grove and Stemma QT ports.
+title: "CM5 Minima"
+short_description: Minimal size OSHW CM5 boards with maximum IO and.
 status: production
 picture: "/images/cm5-minima-rev1.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/705"
