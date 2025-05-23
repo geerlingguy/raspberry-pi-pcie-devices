@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-strato-pi-max.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/733"
 link: https://sferalabs.cc/strato-pi-max/
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=qQ42lbLFxv8
 ---
 The [Strato Pi Max](https://sferalabs.cc/strato-pi-max/) is a modular DIN rail mounted Raspberry Pi CM5 industrial computer.
 

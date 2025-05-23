@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-edatec-ed-sbc3300.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/731"
 link: https://edatec.cn/sbc/sbc3300
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=qQ42lbLFxv8
 ---
 The EDAtec [ED-SBC3300](https://edatec.cn/sbc/sbc3300) is a fanless Mini ITX board for CM5 with many industrial IO interfaces, a fanless heatsink design, and multiple power input options (barrel jack, power terminals, or PoE with an add-on module.
 

@@ -1,12 +1,13 @@
 ---
 layout: board
-title: "TypeOrTalk V2"
+title: "TypeOrTalk"
 short_description: A mechanical keyboard with private, local AI speech to text using a CM5.
 status: prototype
 picture: "/images/board-type-or-talk-v2.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/734"
 link: https://typeortalk.com/products/typeortalk-v2-keybaord
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=qQ42lbLFxv8
 redirect_from: /boards_cm/type-or-talk-v2
 ---
 The [TypeOrTalk V2](https://typeortalk.com/products/typeortalk-v2-keybaord) is a 'smart keyboard', which is a functional mechanical keyboard (powered by RP2040), with an integrated CM5 that runs Whisper AI speech to text transcription, a local/private offline model.

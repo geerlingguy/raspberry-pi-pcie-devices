@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-mirkopc-v2.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/727"
 link: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/727"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=qQ42lbLFxv8
 ---
 A 2nd version of the MirkoPC, a 9cm x 9cm mini PC powered by a Compute Module 5.
 

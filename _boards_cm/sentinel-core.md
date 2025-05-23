@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/board-sentinel-core.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/730"
 link: https://sanctuary-systems.com/sentinel-core/
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=qQ42lbLFxv8
 ---
 The [Sentinel Core](https://sanctuary-systems.com/sentinel-core/) is a Mini ITX motherboard for the Raspberry Pi CM5 meant for Home Assistant installations using AMD GPU-powered AI inference for applications like [Home Assistant Voice](https://www.home-assistant.io/voice-pe/).
 

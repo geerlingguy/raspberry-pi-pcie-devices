@@ -6,7 +6,8 @@ status: production
 picture: "/images/cm5-minima-rev1.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/705"
 link: https://github.com/piecol/CM5_MINIMA_REV1
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=qQ42lbLFxv8
 ---
 Pierluigi Colangeli designed a variety of 'MINIMA' CM5 carrier boards, suitable for different purposes. All are open source hardware, and can be tweaked for your own needs (indeed, someone's already [morphed one into a Cubesat build](https://www.youtube.com/watch?v=EpIjtnP0WAk)).
 
