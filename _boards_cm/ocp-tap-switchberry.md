@@ -1,6 +1,6 @@
 ---
 layout: board
-title: "OCP-TAP Switchberry V1"
+title: "OCP-TAP Switchberry"
 short_description: A CM-based managed 7-port Gigabit Ethernet switch for PTP.
 status: prototype
 picture: "/images/board-ocp-tap-switchberry.jpeg"
