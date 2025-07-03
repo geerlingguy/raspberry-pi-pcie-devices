@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "AMD Radeon RX 7600"
-picture: "/images/ggpu-amd-radeon-rx-9060-xt.png"
+picture: "/images/gpu-amd-radeon-rx-9060-xt.png"
 functionality_cm4: "None"
 functionality_pi5: "Currently Testing"
 driver_required: "Yes"
