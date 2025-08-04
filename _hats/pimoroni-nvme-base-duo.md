@@ -2,7 +2,7 @@
 layout: hat
 title: "Pimoroni NVMe Base Duo"
 short_description: Dual-NVMe Base for Raspberry Pi 5
-status: prototype
+status: production
 picture: "/images/hat-pimoroni-nvme-base-duo.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/609"
 link: "https://shop.pimoroni.com/products/nvme-base-duo-for-raspberry-pi-5"
