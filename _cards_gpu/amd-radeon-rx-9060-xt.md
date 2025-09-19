@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "AMD Radeon RX 7600"
+title: "AMD Radeon RX 9060 XT"
 picture: "/images/gpu-amd-radeon-rx-9060-xt.png"
 functionality_cm4: "None"
 functionality_pi5: "Currently Testing"
