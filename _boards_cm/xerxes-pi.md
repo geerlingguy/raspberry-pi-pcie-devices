@@ -3,7 +3,7 @@ layout: board
 title: "Xerxes Pi"
 short_description: CM5 Blade server that fits in 1U of rack space.
 status: prototype
-picture: "https://rapidanalysis.com/xerxes/fanthumbnail.jpg"
+picture: "/images/board-xerxes-pi.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/753"
 link: https://www.kickstarter.com/projects/1907647187/small-board-big-possibilities-xerxes-pi
 videos: 
