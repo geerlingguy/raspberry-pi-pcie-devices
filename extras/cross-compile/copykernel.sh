@@ -27,7 +27,7 @@ env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH
 
 # Copy kernel and DTBs to Pi.
 printf "Copying kernel and DTBs\n"
-cp arch/arm64/boot/Image /mnt/pi-fat32/kernel8.img
+cp arch/arm64/boot/Image /mnt/pi-fat32/kernel_2712.img
 cp arch/arm64/boot/dts/broadcom/*.dtb /mnt/pi-fat32/
 cp arch/arm64/boot/dts/overlays/*.dtb* /mnt/pi-fat32/overlays/
 cp arch/arm64/boot/dts/overlays/README /mnt/pi-fat32/overlays/
