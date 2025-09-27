@@ -1,7 +1,7 @@
 ---
 layout: card
 title: "Intel Arc B580"
-picture: "/images/gpu-intel-b580.jpg"
+picture: "/images/gpu-intel-arc-b580.png"
 functionality_cm4: "None"
 functionality_pi5: "Some"
 driver_required: "Yes"
