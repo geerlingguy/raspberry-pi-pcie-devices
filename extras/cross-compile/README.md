@@ -1,10 +1,10 @@
 # Raspberry Pi Linux Cross-compilation Environment
 
-> **NOTE**: The old Vagrant and VirtualBox-based build environment is now stored in the [`legacy-vagrant`](legacy-vagrant/) directory.
-
 This environment can be used to [cross-compile the Raspberry Pi OS kernel](https://www.raspberrypi.org/documentation/linux/kernel/building.md) from a Linux, Windows, or Mac workstation using Docker.
 
-This build configuration has only been tested with the Raspberry Pi 4, CM4, and Pi 400, and run on macOS.
+You can also skip the 'Bringing up the build environment' section and just compile the kernel directly on the Pi itself.
+
+This build configuration currently targets Raspberry Pi 5, CM5, and Pi 500/500+, and on macOS using Docker Desktop, using the Pi OS 64-bit build.
 
 ## Bringing up the build environment
 
@@ -12,7 +12,7 @@ This build configuration has only been tested with the Raspberry Pi 4, CM4, and 
   1. Bring up the cross-compile environment:
 
      ```
-     docker-compose up -d
+     docker compose up -d
      ```
 
   1. Log into the running container:
@@ -27,17 +27,19 @@ You will be dropped into a shell inside the container's `/build` directory. From
 
 ## Compiling the Kernel
 
+If compiling on the Raspberry Pi directly, omit the `ARCH` and `CROSS_COMPILE` options.
+
   1. Clone the linux repo (or clone a fork or a different branch):
 
      ```
      git clone --depth=1 https://github.com/raspberrypi/linux
      ```
 
-  1. Run the following commands to make the .config file:
+  1. Run the following commands to make the .config file (change the `bcm2712` to `bcm2711` if compiling for Pi 4/400/CM4):
 
      ```
      cd linux
-     make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
+     make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2712_defconfig
      ```
 
   1. (Optionally) Either edit the .config file by hand or use menuconfig:
@@ -49,12 +51,23 @@ You will be dropped into a shell inside the container's `/build` directory. From
   1. Compile the Kernel:
 
      ```
-     make -j8 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
+     make -j6 ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- Image modules dtbs
      ```
 
-> For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, and `zImage` instead of `Image`.
+> I set the jobs argument (`-j6`) conservatively. If you have more processor cores, you may be able to speed up compilation with a higher number, like `-j8` or `-j10`.
 
-> I set the jobs argument (`-j8`) based on a bit of benchmarking on my Mac's processor. For different types of processors you may want to use more (or fewer) jobs depending on architecture and how many cores you have.
+**If you're cross-compiling the kernel**: proceed to the next sections.
+
+**If you're compiling the kernel on a Raspberry Pi**: install the new kernel and kernel modules directly, then reboot the Pi:
+
+```
+sudo make -j6 modules_install
+sudo cp /boot/firmware/$KERNEL.img /boot/firmware/$KERNEL-backup.img
+sudo cp arch/arm64/boot/Image.gz /boot/firmware/$KERNEL.img
+sudo cp arch/arm64/boot/dts/broadcom/*.dtb /boot/firmware/
+sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/firmware/overlays/
+sudo cp arch/arm64/boot/dts/overlays/README /boot/firmware/overlays/
+```
 
 ## Editing the kernel source inside /build/linux
 
@@ -120,7 +133,7 @@ env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH
 Copy the kernel and DTBs onto the drive:
 
 ```
-cp arch/arm64/boot/Image /mnt/pi-fat32/kernel8.img
+cp arch/arm64/boot/Image /mnt/pi-fat32/kernel_2712.img
 cp arch/arm64/boot/dts/broadcom/*.dtb /mnt/pi-fat32/
 cp arch/arm64/boot/dts/overlays/*.dtb* /mnt/pi-fat32/overlays/
 cp arch/arm64/boot/dts/overlays/README /mnt/pi-fat32/overlays/
@@ -134,8 +147,6 @@ umount /mnt/pi-fat32
 ```
 
 Reboot the Pi and _voila!_, you're done!
-
-> For 32-bit Pi OS, use `ARCH=arm`, `CROSS_COMPILE=arm-linux-gnueabihf-`, `zImage` instead of `Image`, `kernel7l` instead of `kernel8`, and `arm` instead of `arm64`.
 
 ### Hard Reset on the CM4 IO Board
 
@@ -182,7 +193,7 @@ sudo mount /dev/sdb2 mnt/ext4
 Copy the kernel and DTBs onto the drive:
 
 ```
-sudo cp arch/arm64/boot/Image mnt/fat32/kernel8.img
+sudo cp arch/arm64/boot/Image mnt/fat32/kernel_2712.img
 sudo cp arch/arm64/boot/dts/broadcom/*.dtb mnt/fat32/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README mnt/fat32/overlays/
@@ -201,13 +212,11 @@ sudo env PATH=$PATH make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD
 Copy the kernel and DTBs onto the drive:
 
 ```
-sudo cp arch/arm64/boot/Image mnt/fat32/kernel8.img
+sudo cp arch/arm64/boot/Image mnt/fat32/kernel_2712.img
 sudo cp arch/arm64/boot/dts/broadcom/*.dtb mnt/fat32/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* mnt/fat32/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README mnt/fat32/overlays/
 ```
-
-> For 32-bit Pi OS, use `kernel7l` instead of `kernel8`.
 
 ### Unmounting the drive
 
