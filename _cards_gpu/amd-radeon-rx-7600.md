@@ -9,7 +9,6 @@ github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/6
 buy_link: https://amzn.to/3OboSn4
 videos:
   - https://www.youtube.com/watch?v=AyR7iCS7gNI
-  - https://www.youtube.com/watch?v=AyR7iCS7gNI
 ---
 The Radeon RX 7600 is a low-end graphics card supported by the open source `amdgpu` driver in the Linux Kernel.
 
