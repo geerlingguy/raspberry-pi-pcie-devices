@@ -61,9 +61,10 @@ You will be dropped into a shell inside the container's `/build` directory. From
 **If you're compiling the kernel on a Raspberry Pi**: install the new kernel and kernel modules directly, then reboot the Pi:
 
 ```
+KERNEL=kernel_2712
 sudo make -j6 modules_install
 sudo cp /boot/firmware/$KERNEL.img /boot/firmware/$KERNEL-backup.img
-sudo cp arch/arm64/boot/Image.gz /boot/firmware/$KERNEL.img
+sudo cp arch/arm64/boot/Image /boot/firmware/$KERNEL.img
 sudo cp arch/arm64/boot/dts/broadcom/*.dtb /boot/firmware/
 sudo cp arch/arm64/boot/dts/overlays/*.dtb* /boot/firmware/overlays/
 sudo cp arch/arm64/boot/dts/overlays/README /boot/firmware/overlays/
