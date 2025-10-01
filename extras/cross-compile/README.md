@@ -27,7 +27,7 @@ You will be dropped into a shell inside the container's `/build` directory. From
 
 ## Compiling the Kernel
 
-If compiling on the Raspberry Pi directly, omit the `ARCH` and `CROSS_COMPILE` options.
+**If compiling on the Raspberry Pi directly**: omit the `ARCH` and `CROSS_COMPILE` options, and install required dependencies with: `sudo apt install -y git bc sshfs bison flex libssl-dev python3 make kmod libc6-dev libncurses5-dev`.
 
   1. Clone the linux repo (or clone a fork or a different branch):
 
