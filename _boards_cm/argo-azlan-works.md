@@ -3,7 +3,7 @@ layout: board
 title: "Argo"
 short_description: A tiny Raspberry Pi CM5 carrier PCB with built in battery management!
 status: prototype
-picture: "/images/argo-cm5-pcb.jpeg"
+picture: "/images/argo-cm5-pcb.jpg"
 link: "https://github.com/azlan-works/Argo"
 videos: []
 ---
