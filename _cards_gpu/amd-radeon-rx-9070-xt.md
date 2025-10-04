@@ -7,7 +7,8 @@ functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/766"
 buy_link: https://amzn.to/4pNiDao
-videos: []
+videos:
+  - https://www.youtube.com/live/Q3bY0qHl8gw
 ---
 The Radeon RX 9060 XT is a midrange graphics card supported by the open source `amdgpu` driver in the Linux Kernel.
 
