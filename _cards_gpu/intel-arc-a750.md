@@ -3,7 +3,7 @@ layout: card
 title: "Intel Arc A750 Limited Edition"
 picture: "/images/gpu-intel-a750.jpg"
 functionality_cm4: "None"
-functionality_pi5: "Untested"
+functionality_pi5: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/510"
 buy_link: https://amzn.to/40UZIy6

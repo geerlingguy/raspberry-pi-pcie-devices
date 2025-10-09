@@ -1,18 +1,17 @@
 ---
 layout: card
-title: "Intel Arc B580"
-picture: "/images/gpu-intel-arc-b580.png"
+title: "Intel Arc A310 ECO"
+picture: "/images/gpu-intel-arc-a310.jpeg"
 functionality_cm4: "None"
-functionality_pi5: "Full"
+functionality_pi5: "Untested"
 driver_required: "Yes"
-github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/695"
-buy_link: https://amzn.to/42Svo9P
-videos:
-  - https://www.youtube.com/live/Q3bY0qHl8gw
+github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/778"
+buy_link: https://amzn.to/4mWEDgm
+videos: []
 ---
-The Intel Arc B580 is Intel's second generation standalone graphics card, in the 'Battlemage' series. The Xe driver has improved a bit since the first generation 'Archimedes' cards, but is still a little rough.
+The Intel Arc A310 ECO is the cheapest of Intel's Arc graphics cards.
 
-Physically, it requires a x16 PCIe socket. You will need to supply about 225W to the card directly through it's two 8-pin PCIe power plugs.
+Physically, it requires a x16 PCIe socket. The card pulls all power from the card slot, so you need to supply up to 70W to the card slot through an external adapter (don't try running it directly off the Pi's PCIe connection).
 
 ### Xe Open Source Driver
 
