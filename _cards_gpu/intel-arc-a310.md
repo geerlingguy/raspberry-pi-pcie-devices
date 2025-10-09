@@ -3,7 +3,7 @@ layout: card
 title: "Intel Arc A310 ECO"
 picture: "/images/gpu-intel-arc-a310.jpeg"
 functionality_cm4: "None"
-functionality_pi5: "Untested"
+functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/778"
 buy_link: https://amzn.to/4mWEDgm
