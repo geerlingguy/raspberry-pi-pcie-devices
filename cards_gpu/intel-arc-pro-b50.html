@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <script async="" src="//analytics.midwesternmac.com/tracker.js" id="fathom-script"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Intel Arc Pro B50 | Raspberry Pi PCIe Database</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Intel Arc Pro B50" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Intel Arc Pro B50 is Intel’s entry level low-profile slot-power-only workstation graphics card." />
+<meta property="og:description" content="The Intel Arc Pro B50 is Intel’s entry level low-profile slot-power-only workstation graphics card." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//cards_gpu/intel-arc-pro-b50.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/intel-arc-pro-b50.html" />
+<meta property="og:site_name" content="Raspberry Pi PCIe Database" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-10-10T14:34:40+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Intel Arc Pro B50" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-10-10T14:34:40+00:00","datePublished":"2025-10-10T14:34:40+00:00","description":"The Intel Arc Pro B50 is Intel’s entry level low-profile slot-power-only workstation graphics card.","headline":"Intel Arc Pro B50","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/intel-arc-pro-b50.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/intel-arc-pro-b50.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="sponsor_banner" href="https://github.com/sponsors/geerlingguy">Sponsor <i class="fa-solid fa-heart"></i></a>
+          <a id="forkme_banner" href="https://github.com/geerlingguy/raspberry-pi-pcie-devices">View on GitHub <i class="fa-brands fa-github"></i></a>
+
+          <h2 id="project_title"><a href="/">Raspberry Pi PCIe Database</a></h2>
+          <h2 id="project_tagline">Raspberry Pi PCI Express device compatibility database</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <h1 id="card_title">Intel Arc Pro B50</h1>
+
+        <div class="card_picture">
+          
+            <a href="/images/gpu-intel-arc-pro-b50.jpg"><img src="/images/gpu-intel-arc-pro-b50.jpg" alt="Intel Arc Pro B50"></a>
+          
+        </div>
+
+        <table class="card_details_table">
+          <thead>
+            <tr>
+              <th>CM4 Functionality</th>
+              <th>Pi 5 Functionality</th>
+              <th>Driver Required?</th>
+              <th>More Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>None</td>
+              <td>Full</td>
+              <td>Yes</td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/779">GitHub Issue</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="card_videos">
+          <h3>Videos Related to this Card</h2>
+            
+              <p>There are no videos for this card yet.</p>
+            
+        </div>
+
+        <div class="card_content">
+          <h3>Description and Notes</h3>
+          <p>The Intel Arc Pro B50 is Intel’s entry level low-profile slot-power-only workstation graphics card.</p>
+
+<p>It’s not meant to compete with large dual or triple-slot GPUs with extra power connectors, the goal is to cram in a somewhat efficient and quiet GPU into an SFF PC. Giving 16 GB of VRAM for a $350 price point (at launch) is quite generous, compared to Nvidia’s A1000 and AMD’s, well… they don’t really have a competing two-slot-cooler low-profile card right now.</p>
+
+<p>Physically, it requires a x16 PCIe socket. The card pulls all power from the card slot, so you need to supply up to 70W to the card slot through an eGPU dock or adapter (don’t try running it directly off the Pi’s PCIe connection).</p>
+
+<h3 id="xe-open-source-driver">Xe Open Source Driver</h3>
+
+<p>To get the Xe driver loaded, you have to <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">recompile the Linux kernel for Pi OS</a> on the 6.15 branch (<code class="language-plaintext highlighter-rouge">rpi-6.15.y</code>) or later.</p>
+
+<p>Go to <code class="language-plaintext highlighter-rouge">Device Drivers</code> &gt; <code class="language-plaintext highlighter-rouge">Graphics support</code> on the <code class="language-plaintext highlighter-rouge">menuconfig</code> step, and select the <code class="language-plaintext highlighter-rouge">Xe</code> driver to install.</p>
+
+<p>Before compiling the kernel, run <code class="language-plaintext highlighter-rouge">make menuconfig</code> and set:</p>
+
+<ol>
+  <li>Device Drivers &gt; Graphics support &gt; Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) &gt; Intel Xe Graphics</li>
+  <li>Device Drivers &gt; Graphics support &gt; Direct Rendering Manager (XFree86 4.1.0 and higher DRI support) &gt; Intel Xe Graphics &gt; Force probe xe for selected Intel hardware IDs &gt; <code class="language-plaintext highlighter-rouge">*</code> (enter <code class="language-plaintext highlighter-rouge">*</code> manually for the value)</li>
+</ol>
+
+<p>There are a few other tweaks that need to be made to get this card to output a signal and work with Vulkan, OpenGL, etc. on a Pi.</p>
+
+<p>See the linked GitHub issue for more details.</p>
+
+        </div>
+
+        <div class="card_buy_link">
+          <h3>Buy this Card</h3>
+          <p>If you'd like to purchase this card, it helps me out if you use the following product link:<br>
+          <a href="https://www.newegg.com/Intel-Arc-Pro-B50-16GB-Workstation-SFF-Graphics-Card/p/N82E16814883007">Intel Arc Pro B50</a></p>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">The Raspberry Pi PCIe Database project is maintained by <a href="https://github.com/geerlingguy">geerlingguy</a></p>
+      </footer>
+    </div>
+
+    
+      <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+      <script>
+      (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+          (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+      })(document, window, '//analytics.midwesternmac.com/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'JVIIB');
+      fathom('trackPageview');
+      </script>
+      <!-- / Fathom -->
+    
+  </body>
+</html>
