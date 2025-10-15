@@ -10,7 +10,7 @@ buy_link: https://amzn.to/42Svo9P
 videos:
   - https://www.youtube.com/live/Q3bY0qHl8gw
 ---
-The Intel Arc B580 is Intel's second generation standalone graphics card, in the 'Battlemage' series. The Xe driver has improved a bit since the first generation 'Archimedes' cards, but is still a little rough.
+The Intel Arc B580 is Intel's second generation standalone graphics card, in the 'Battlemage' series. The Xe driver has improved a bit since the first generation 'Alchemist' cards, but is still a little rough.
 
 Physically, it requires a x16 PCIe socket. You will need to supply about 225W to the card directly through it's two 8-pin PCIe power plugs.
 
