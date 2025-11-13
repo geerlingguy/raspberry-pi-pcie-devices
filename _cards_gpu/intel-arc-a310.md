@@ -7,7 +7,8 @@ functionality_pi5: "Currently Testing"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/778"
 buy_link: https://amzn.to/4mWEDgm
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=ewDJpxQEGo4
 ---
 The Intel Arc A310 ECO is the cheapest of Intel's Arc graphics cards.
 

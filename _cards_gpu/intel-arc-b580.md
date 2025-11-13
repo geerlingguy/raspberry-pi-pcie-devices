@@ -8,6 +8,7 @@ driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/695"
 buy_link: https://amzn.to/42Svo9P
 videos:
+  - https://www.youtube.com/watch?v=ewDJpxQEGo4
   - https://www.youtube.com/live/Q3bY0qHl8gw
 ---
 The Intel Arc B580 is Intel's second generation standalone graphics card, in the 'Battlemage' series. The Xe driver has improved a bit since the first generation 'Alchemist' cards, but is still a little rough.

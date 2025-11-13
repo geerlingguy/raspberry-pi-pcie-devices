@@ -7,7 +7,8 @@ functionality_pi5: "Full"
 driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/779"
 buy_link: https://www.newegg.com/Intel-Arc-Pro-B50-16GB-Workstation-SFF-Graphics-Card/p/N82E16814883007
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=ewDJpxQEGo4
 ---
 The Intel Arc Pro B50 is Intel's entry level low-profile slot-power-only workstation graphics card.
 

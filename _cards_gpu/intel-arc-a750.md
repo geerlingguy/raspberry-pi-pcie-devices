@@ -8,6 +8,7 @@ driver_required: "Yes"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/510"
 buy_link: https://amzn.to/40UZIy6
 videos:
+  - https://www.youtube.com/watch?v=ewDJpxQEGo4
   - https://www.youtube.com/live/Q3bY0qHl8gw
   - https://www.youtube.com/watch?v=l9dItRUjQ0k
 ---
