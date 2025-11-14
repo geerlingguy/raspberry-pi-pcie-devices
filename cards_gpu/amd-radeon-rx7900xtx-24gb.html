@@ -20,11 +20,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx7900xtx-24gb.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-11-13T17:48:24+00:00" />
+<meta property="article:published_time" content="2025-11-14T16:00:28+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="AMD Radeon RX 7900 XTX 24GB PCIe x16" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-11-13T17:48:24+00:00","datePublished":"2025-11-13T17:48:24+00:00","description":"The Radeon RX 7900 XT (“Navi 31”) was released in 2022 and is supported by the open source amdgpu driver in the Linux Kernel, version 6.0 and later. It is also supported by AMD’s Radeon Software for Linux as of the 22.40 version.","headline":"AMD Radeon RX 7900 XTX 24GB PCIe x16","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx7900xtx-24gb.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx7900xtx-24gb.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-11-14T16:00:28+00:00","datePublished":"2025-11-14T16:00:28+00:00","description":"The Radeon RX 7900 XT (“Navi 31”) was released in 2022 and is supported by the open source amdgpu driver in the Linux Kernel, version 6.0 and later. It is also supported by AMD’s Radeon Software for Linux as of the 22.40 version.","headline":"AMD Radeon RX 7900 XTX 24GB PCIe x16","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx7900xtx-24gb.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx7900xtx-24gb.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -92,26 +92,7 @@
 
 <h3 id="amdgpu-open-source-driver"><code class="language-plaintext highlighter-rouge">amdgpu</code> (open source) driver</h3>
 
-<p>To get the amdgpu driver loaded, you have to <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">recompile the Linux kernel for Pi OS</a> on the 6.0 branch (<code class="language-plaintext highlighter-rouge">rpi-6.0.y</code>) or later.</p>
-
-<p>Go to <code class="language-plaintext highlighter-rouge">Device Drivers</code> &gt; <code class="language-plaintext highlighter-rouge">Graphics support</code> on the <code class="language-plaintext highlighter-rouge">menuconfig</code> step, and select the <code class="language-plaintext highlighter-rouge">amdgpu</code> driver to install.</p>
-
-<p>Also make sure you have the AMD firmware installed (<code class="language-plaintext highlighter-rouge">sudo apt install -y firmware-amd-graphics</code>) or the driver will complain about missing files.</p>
-
-<p>If you want to be able to boot the Pi all the way, make sure to blacklist the <code class="language-plaintext highlighter-rouge">amdgpu</code> kernel module:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /etc/modprobe.d/blacklist-amdgpu.conf
-
-# Put this inside the file and save it:
-blacklist amdgpu
-</code></pre></div></div>
-
-<p>Now, after a reboot, you can explicitly load the module and see what happens by following <code class="language-plaintext highlighter-rouge">dmesg</code> in another terminal session:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo modprobe amdgpu
-</code></pre></div></div>
-
-<p>When I do this, the entire system crashes and requires a hard power reset. So far nobody has been able to get beyond the basic initialization due to PCIe memory allocation and access errors on the Pi’s bus.</p>
+<p>To get the amdgpu driver and firmware installed, follow the directions in <a href="https://www.jeffgeerling.com/blog/2025/using-amd-gpus-on-raspberry-pi-without-recompiling-linux">this blog post</a>.</p>
 
 <p>See the linked GitHub issue for more details.</p>
 

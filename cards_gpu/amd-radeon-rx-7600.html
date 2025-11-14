@@ -20,11 +20,11 @@
 <meta property="og:url" content="https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx-7600.html" />
 <meta property="og:site_name" content="Raspberry Pi PCIe Database" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-11-13T17:48:24+00:00" />
+<meta property="article:published_time" content="2025-11-14T16:00:28+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="AMD Radeon RX 7600" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-11-13T17:48:24+00:00","datePublished":"2025-11-13T17:48:24+00:00","description":"The Radeon RX 7600 is a low-end graphics card supported by the open source amdgpu driver in the Linux Kernel.","headline":"AMD Radeon RX 7600","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx-7600.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx-7600.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-11-14T16:00:28+00:00","datePublished":"2025-11-14T16:00:28+00:00","description":"The Radeon RX 7600 is a low-end graphics card supported by the open source amdgpu driver in the Linux Kernel.","headline":"AMD Radeon RX 7600","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx-7600.html"},"url":"https://pipci.jeffgeerling.com//cards_gpu/amd-radeon-rx-7600.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -92,15 +92,7 @@
 
 <h3 id="amdgpu-open-source-driver"><code class="language-plaintext highlighter-rouge">amdgpu</code> (open source) driver</h3>
 
-<p>To get the amdgpu driver loaded, you have to <a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile">recompile the Linux kernel for Pi OS</a>.</p>
-
-<p>Go to <code class="language-plaintext highlighter-rouge">Device Drivers</code> &gt; <code class="language-plaintext highlighter-rouge">Graphics support</code> on the <code class="language-plaintext highlighter-rouge">menuconfig</code> step, and select the <code class="language-plaintext highlighter-rouge">amdgpu</code> driver to install.</p>
-
-<p>Also make sure you have the AMD firmware installed (<code class="language-plaintext highlighter-rouge">sudo apt install -y firmware-amd-graphics</code>) or the driver will complain about missing files.</p>
-
-<p>On the Compute Module 4, it doesn’t seem we can get <code class="language-plaintext highlighter-rouge">amdgpu</code> drivers to work with the Pi’s PCIe bus.</p>
-
-<p>On the Pi 5, we have tested Coreforge’s Pi OS Linux GPU support branch, and it runs great!</p>
+<p>To get the amdgpu driver and firmware installed, follow the directions in <a href="https://www.jeffgeerling.com/blog/2025/using-amd-gpus-on-raspberry-pi-without-recompiling-linux">this blog post</a>.</p>
 
 <p>See the linked GitHub issue for more details.</p>
 
