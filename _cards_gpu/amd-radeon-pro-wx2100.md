@@ -11,4 +11,8 @@ videos: []
 ---
 The [AMD Radeon Pro WX 2100 Graphics](https://www.amd.com/en/products/professional-graphics/radeon-pro-wx-2100) is a mid-range professional graphics card.
 
-See the [GitHub issue](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/331) for more details.
+### `amdgpu` (open source) driver
+
+To get the amdgpu driver and firmware installed, follow the directions in [this blog post](https://www.jeffgeerling.com/blog/2025/using-amd-gpus-on-raspberry-pi-without-recompiling-linux).
+
+See the linked GitHub issue for more details.

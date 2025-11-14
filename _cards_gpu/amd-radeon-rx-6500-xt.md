@@ -15,12 +15,6 @@ It requires a 16x PCIe card slot. You will need to supply power to the card dire
 
 ### `amdgpu` (open source) driver
 
-To get the amdgpu driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile).
-
-Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select the `amdgpu` driver to install.
-
-Also make sure you have the AMD firmware installed (`sudo apt install -y firmware-amd-graphics`) or the driver will complain about missing files.
-
-On the Pi 5, we have tested both Coreforge's Pi OS Linux GPU support branch and the simpler 15-line patch from yanghaku, and both offer full functionality.
+To get the amdgpu driver and firmware installed, follow the directions in [this blog post](https://www.jeffgeerling.com/blog/2025/using-amd-gpus-on-raspberry-pi-without-recompiling-linux).
 
 See the linked GitHub issue for more details.

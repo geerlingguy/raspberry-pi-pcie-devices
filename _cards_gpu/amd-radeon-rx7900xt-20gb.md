@@ -16,10 +16,6 @@ It requires a physical x16 PCIe socket. You will need to supply 26A of 12V power
 
 ### `amdgpu` (open source) driver
 
-To get the amdgpu driver loaded, you have to [recompile the Linux kernel for Pi OS](https://github.com/geerlingguy/raspberry-pi-pcie-devices/tree/master/extras/cross-compile) on the 6.15 branch (`rpi-6.15.y`) or later.
+To get the amdgpu driver and firmware installed, follow the directions in [this blog post](https://www.jeffgeerling.com/blog/2025/using-amd-gpus-on-raspberry-pi-without-recompiling-linux).
 
-Go to `Device Drivers` > `Graphics support` on the `menuconfig` step, and select the `amdgpu` driver to install.
-
-Also make sure you have the AMD firmware installed (`sudo apt install -y firmware-amd-graphics`) or the driver will complain about missing files.
-
-The amdgpu driver needs a small patch to work correctly with the Raspberry Pi's PCIe bus; see the linked GitHub issue for more details.
+See the linked GitHub issue for more details.
