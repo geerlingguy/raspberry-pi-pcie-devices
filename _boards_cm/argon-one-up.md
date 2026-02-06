@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-argon-one-up.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/744"
 link: "https://www.kickstarter.com/projects/argonforty/upton-one-the-true-raspberry-pi-compute-module-5-laptop"
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=Ef70x0izkFU
 ---
 The Argon ONE UP [launched on Kickstarter in 2025](https://www.kickstarter.com/projects/argonforty/upton-one-the-true-raspberry-pi-compute-module-5-laptop), and was shipped to backers in early 2026.
 
