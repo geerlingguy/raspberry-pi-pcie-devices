@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-exaviz-cruiser-cm5.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/802"
 link: https://exa-pedia.com/docs/cruiser/
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=2LayXUxMjPU
 ---
 Exaviz' Cruiser board blends 2x SATA ports, SATA power, a PoE-enabled switch, 2.5 Gbps Ethernet, an ESP32, and M.2 NVMe support to a Compute Module 5.
 
