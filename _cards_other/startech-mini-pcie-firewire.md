@@ -20,4 +20,12 @@ dtparam=pciex1
 dtoverlay=pcie-32bit-dma
 ```
 
-And it seems to work! He recorded footage using [DVgrab](https://linux.die.net/man/1/dvgrab), and uploaded it to a few threads on Reddit. As someone who owns a working Canon GL2 (which is similar to the GL1 and XL1 I used for my earliest YouTube videos), I am very interested in replicating this setup, so I've ordered the hardware as well :)
+And it seems to be recognized! For better reliability, you should also disable PCIe ASPM by adding the following to `/boot/firmware/cmdline.txt`:
+
+```
+pcie_aspm=off
+```
+
+You will also need to [recompile the Linux kernel](https://www.jeffgeerling.com/blog/2025/how-recompile-linux-on-raspberry-pi/), adding in the `FIREWIRE_OHCI` option in your custom compiled kernel.
+
+You can record footage with [DVgrab](https://linux.die.net/man/1/dvgrab). See the linked GitHub issue for some examples.
