@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <script async="" src="//analytics.midwesternmac.com/tracker.js" id="fathom-script"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Computer Equipment Group Firehat | Raspberry Pi PCIe Database</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Computer Equipment Group Firehat" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Firehat is part of the ‘equip-1’, a portable MRU, or Memory Recording Unit. You can use this HAT’s FireWire (IEEE 1394) interface to ingest footage either played back via tape (e.g. MiniDV) or directly through a camera as an input." />
+<meta property="og:description" content="The Firehat is part of the ‘equip-1’, a portable MRU, or Memory Recording Unit. You can use this HAT’s FireWire (IEEE 1394) interface to ingest footage either played back via tape (e.g. MiniDV) or directly through a camera as an input." />
+<link rel="canonical" href="https://pipci.jeffgeerling.com//hats/computer-equipment-group-firehat.html" />
+<meta property="og:url" content="https://pipci.jeffgeerling.com//hats/computer-equipment-group-firehat.html" />
+<meta property="og:site_name" content="Raspberry Pi PCIe Database" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-03-03T22:06:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Computer Equipment Group Firehat" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-03-03T22:06:00+00:00","datePublished":"2026-03-03T22:06:00+00:00","description":"The Firehat is part of the ‘equip-1’, a portable MRU, or Memory Recording Unit. You can use this HAT’s FireWire (IEEE 1394) interface to ingest footage either played back via tape (e.g. MiniDV) or directly through a camera as an input.","headline":"Computer Equipment Group Firehat","mainEntityOfPage":{"@type":"WebPage","@id":"https://pipci.jeffgeerling.com//hats/computer-equipment-group-firehat.html"},"url":"https://pipci.jeffgeerling.com//hats/computer-equipment-group-firehat.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="sponsor_banner" href="https://github.com/sponsors/geerlingguy">Sponsor <i class="fa-solid fa-heart"></i></a>
+          <a id="forkme_banner" href="https://github.com/geerlingguy/raspberry-pi-pcie-devices">View on GitHub <i class="fa-brands fa-github"></i></a>
+
+          <h2 id="project_title"><a href="/">Raspberry Pi PCIe Database</a></h2>
+          <h2 id="project_tagline">Raspberry Pi PCI Express device compatibility database</h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+
+        <a href="/hats">&lt; Back to HATs and Boards</a>
+
+        <h1 id="board_title">Computer Equipment Group Firehat</h1>
+
+        <div class="board_picture">
+          
+            <a href="/images/hat-computer-equipment-group-firehat.jpeg"><img src="/images/hat-computer-equipment-group-firehat.jpeg" alt="Computer Equipment Group Firehat"></a>
+          
+        </div>
+
+        <table class="board_details_table">
+          <thead>
+            <tr>
+              <th>Website</th>
+              <th>More Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://equip-1.c-e.group">More Info</a></td>
+              <td><a href="https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/805">GitHub Issue</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="board_content">
+          <h3>Description</h3>
+          <p>The Firehat is part of the ‘equip-1’, a portable MRU, or Memory Recording Unit. You can use this HAT’s FireWire (IEEE 1394) interface to ingest footage either played back via tape (e.g. MiniDV) or directly through a camera as an input.</p>
+
+<p>It records using <code class="language-plaintext highlighter-rouge">dvgrab</code> (<code class="language-plaintext highlighter-rouge">sudo apt install -y dvgrab</code>), and requires the <code class="language-plaintext highlighter-rouge">CONFIG_FIREWIRE_OHCI</code> option in the Linux kernel.</p>
+
+<h2 id="pi-setup">Pi Setup</h2>
+
+<h3 id="recompile-the-linux-kernel-with-firewire-support">Recompile the Linux Kernel with Firewire support</h3>
+
+<p><a href="https://www.jeffgeerling.com/blog/2025/how-recompile-linux-on-raspberry-pi/">Recompile the Linux kernel</a>, enabling the following features:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">CONFIG_FIREWIRE</code> (Device Drivers -&gt; IEEE 1394 (FireWire) support -&gt; FireWire driver stack)</li>
+  <li><code class="language-plaintext highlighter-rouge">CONFIG_FIREWIRE_OHCI</code> (Device Drivers -&gt; IEEE 1394 (FireWire) support -&gt; FireWire driver stack -&gt; OHCI-1394 controllers)</li>
+</ul>
+
+<h3 id="configure-pi-boot-options">Configure Pi Boot options</h3>
+
+<p>At the end of <code class="language-plaintext highlighter-rouge">/boot/firmware/config.txt</code>, under <code class="language-plaintext highlighter-rouge">[all]</code>, add:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dtparam=pciex1
+dtoverlay=pcie-32bit-dma
+</code></pre></div></div>
+
+<p>At the end of the line in <code class="language-plaintext highlighter-rouge">/boot/firmware/cmdline.txt</code>, add:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pcie_aspm=off
+</code></pre></div></div>
+
+<h2 id="equip-1-setup">Equip-1 Setup</h2>
+
+<p>The OLED display and buttons use the Pi’s GPIO to display status information and start/stop recordings directly. You need to install additional software to get them to work.</p>
+
+<p>See the <a href="https://github.com/computerequipmentgroup/equip-1/blob/main/os/os.py">equip-1 GitHub project</a> or this HAT’s linked GitHub issue for more info.</p>
+
+        </div>
+
+        <div class="board_videos">
+          <h3>Videos Related to this HAT</h2>
+            
+              <p>There are no videos for this HAT yet.</p>
+            
+        </div>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">The Raspberry Pi PCIe Database project is maintained by <a href="https://github.com/geerlingguy">geerlingguy</a></p>
+      </footer>
+    </div>
+
+    
+      <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+      <script>
+      (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+          (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+      })(document, window, '//analytics.midwesternmac.com/tracker.js', 'fathom');
+      fathom('set', 'siteId', 'JVIIB');
+      fathom('trackPageview');
+      </script>
+      <!-- / Fathom -->
+    
+  </body>
+</html>
