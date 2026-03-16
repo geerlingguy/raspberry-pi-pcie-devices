@@ -7,6 +7,7 @@ picture: "/images/board-switchberry.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/715"
 link: https://github.com/Time-Appliances-Project/Incubation-Projects/tree/master/Hardware/Switchberry
 videos:
+  - https://www.youtube.com/watch?v=wxFHw57XGjA
   - https://www.youtube.com/watch?v=qQ42lbLFxv8
 redirect_from:
   - /boards_cm/ocp-tap-switchberry-v1
