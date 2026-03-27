@@ -6,7 +6,8 @@ status: prototype
 picture: "/images/hat-computer-equipment-group-firehat.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/805"
 link: https://equip-1.c-e.group
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=BuKeW45OL-g
 ---
 The Firehat is part of the 'equip-1', a portable MRU, or Memory Recording Unit. You can use this HAT's FireWire (IEEE 1394) interface to ingest footage either played back via tape (e.g. MiniDV) or directly through a camera as an input.
 
