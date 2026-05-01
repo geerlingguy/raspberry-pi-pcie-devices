@@ -6,7 +6,8 @@ status: production
 picture: "/images/board-deskpi-super4c.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/814"
 link: https://amzn.to/3OKv75e
-videos: []
+videos:
+  - https://www.youtube.com/watch?v=AjmKpDNsTa8
 ---
 The [DeskPi Super4c](https://deskpi.com/products/deskpi-super4c-raspberry-pi-cm5-cluster-mini-itx-board-esp32-wroom-32e-n4-module-supports-2-4ghz-wi-fi-bluetooth-power-supply-included) is a 4-node Pi CM5 Cluster Board.
 
