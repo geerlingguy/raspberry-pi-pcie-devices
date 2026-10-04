@@ -3,7 +3,7 @@ layout: card
 title: "KIOXIA BG4 M.2 NVMe SSD"
 picture: "/images/m2-kioxia-bg4-m2-nvme-ssd.jpeg"
 functionality_cm4: "Full"
-functionality_pi5: "Untested"
+functionality_pi5: "Expansion only, can't boot"
 driver_required: "No"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/326"
 buy_link: https://amzn.to/328pLrz
@@ -22,3 +22,6 @@ Using my [disk-benchmark.sh script](https://raw.githubusercontent.com/geerlinggu
 | iozone 1M random write | 157 MB/s |
 | iozone 4K random read | 29.71 MB/s |
 | iozone 4K random write | 54.50 MB/s |
+
+With a non-HAT+ PCIe expansion card, Raspberry Pi 5 recognizes KIOXIA BG4 SSD when forcing PCIE 3.0 but **not** in PCIE 2.0 (default).
+In either 2.0 or 3.0, can not boot into system from the SSD, reporting `` Failed to open the device 'nvme' ''.
