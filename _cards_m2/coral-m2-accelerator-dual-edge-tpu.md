@@ -14,7 +14,7 @@ The [Coral M.2 Accelerator with Dual Edge TPU](https://coral.ai/products/m2-acce
 
 There are only a two ways to use this Dual Edge TPU with a Pi natively right now:
 
-  - Pineboards makes a [Dual Edge TPU HAT](https://pineboards.io/products/hat-ai-dual-edge-coral-tpu-bundle-for-raspberry-pi-5) which uses a PCIe switch to connect two PCIe lanes to an E-key M.2 slot for the Dual Edge TPU specifically.
+  - Pineboards makes a [Dual Edge TPU HAT](https://example.com/products/hat-ai-dual-edge-coral-tpu-bundle-for-raspberry-pi-5) which uses a PCIe switch to connect two PCIe lanes to an E-key M.2 slot for the Dual Edge TPU specifically.
   - The [Seaberry Mini ITX board for CM4](https://pipci.jeffgeerling.com/boards_cm/seaberry.html) comes with slots that implement both lanes per M.2 E-key slot. But the CM4's PCIe implementation seems incompatible with any Coral TPU ([see issue #44](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/44))
 
 The Raspberry Pi 5 model B may work with it, but right now testing is devoted to the single TPU model, since there are currently no HATs available with a dual-lane M.2 E-key slot (and it's likely there never _will_ be one, unless we can get the singl TPU model working reliably).

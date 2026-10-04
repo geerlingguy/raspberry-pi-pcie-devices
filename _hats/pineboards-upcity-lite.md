@@ -5,7 +5,7 @@ short_description: A PCIe adapter for testing full-size cards on Pi 5.
 status: production
 picture: "/images/hat-pineboards-upcity-lite.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/676"
-link: "https://pineboards.io/products/hat-upcity-lite-for-raspberry-pi-5"
+link: "https://example.com/products/hat-upcity-lite-for-raspberry-pi-5"
 videos:
   - https://www.youtube.com/watch?v=EAlrCFJZlnI
   - https://www.youtube.com/watch?v=a-ImUnRwjAo

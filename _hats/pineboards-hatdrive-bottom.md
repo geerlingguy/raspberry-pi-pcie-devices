@@ -5,7 +5,7 @@ short_description: A Pi HAT for a single M.2 2242 or 2280 NVMe SSD.
 status: production
 picture: "/images/hat-pineboards-hatdrive-bottom.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/559"
-link: "https://pineboards.io/products/hatdrive-bottom-2230-2242-2280-for-rpi5"
+link: "https://example.com/products/hatdrive-bottom-2230-2242-2280-for-rpi5"
 videos:
   - https://www.youtube.com/watch?v=AyR7iCS7gNI
   - https://www.youtube.com/watch?v=7Qx_bdFSSuc

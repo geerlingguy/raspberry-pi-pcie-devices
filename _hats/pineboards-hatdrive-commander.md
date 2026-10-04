@@ -5,7 +5,7 @@ short_description: A HAT which allows connecting two devices to the Pi 5 PCIe Bu
 status: production
 picture: "/images/hat-pineboards-hatdrive-commander.png"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/612"
-link: "https://pineboards.io/products/hatbrick-commander-2-ports-gen2-for-raspberry-pi-5"
+link: "https://example.com/products/hatbrick-commander-2-ports-gen2-for-raspberry-pi-5"
 videos:
   - https://www.youtube.com/watch?v=l30sADfDiM8
   - https://www.youtube.com/watch?v=GYN3ub8Qb_I

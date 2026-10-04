@@ -5,7 +5,7 @@ short_description: M.2 E-key PCIe slot HAT for the Pi 5.
 status: production
 picture: "/images/hat-pineboards-hat-ai.jpg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/567"
-link: "https://pineboards.io/products/hat-ai-for-raspberry-pi-5"
+link: "https://example.com/products/hat-ai-for-raspberry-pi-5"
 videos: []
 redirect_from: /hats/pineberry-pi-hat-ai
 ---

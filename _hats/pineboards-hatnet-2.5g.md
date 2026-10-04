@@ -5,7 +5,7 @@ short_description: A 2.5 Gigabit network HAT for the Pi 5.
 status: production
 picture: "/images/hat-pineboards-hatnet-2.5g.jpeg"
 github_issue: "https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/617"
-link: "https://pineboards.io/products/hatnet-2-5g-2-5-gigabit-ethernet-for-raspberry-pi-5"
+link: "https://example.com/products/hatnet-2-5g-2-5-gigabit-ethernet-for-raspberry-pi-5"
 videos:
   - https://www.youtube.com/watch?v=l30sADfDiM8
 redirect_from: /hats/pineberry-pi-hatnet-2.5g
